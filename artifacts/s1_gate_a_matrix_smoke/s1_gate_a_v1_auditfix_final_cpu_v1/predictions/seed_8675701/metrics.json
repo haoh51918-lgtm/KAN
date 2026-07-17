@@ -1,0 +1,106 @@
+{
+  "C6": {
+    "clean_nrmse": 0.8406705491721108,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.7900120492177111,
+      "method": "circular_moving_date_block",
+      "point": 0.8406705491721108,
+      "replicates": 2,
+      "seed": 1224107446713648597,
+      "upper": 0.9022218161611536
+    },
+    "noisy_nrmse": 0.8343764067517553
+  },
+  "E1": {
+    "clean_nrmse": 1.000510327996406,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.996353574021738,
+      "method": "circular_moving_date_block",
+      "point": 1.000510327996406,
+      "replicates": 2,
+      "seed": 2460261334749026899,
+      "upper": 1.0124039396819324
+    },
+    "noisy_nrmse": 0.9952003669685319
+  },
+  "E2": {
+    "clean_nrmse": 1.0003835778006027,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.9902737647428987,
+      "method": "circular_moving_date_block",
+      "point": 1.0003835778006027,
+      "replicates": 2,
+      "seed": 8158934498519976301,
+      "upper": 1.0002542921880742
+    },
+    "noisy_nrmse": 0.9950477508635246
+  },
+  "E3": {
+    "clean_nrmse": 0.981527085322552,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.9887017766331763,
+      "method": "circular_moving_date_block",
+      "point": 0.981527085322552,
+      "replicates": 2,
+      "seed": 1744187915137219279,
+      "upper": 1.0599495805316095
+    },
+    "noisy_nrmse": 0.975816882953229
+  },
+  "E3_HARD": {
+    "clean_nrmse": 0.9631239866694323,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.9599510297393388,
+      "method": "circular_moving_date_block",
+      "point": 0.9631239866694323,
+      "replicates": 2,
+      "seed": 8146670232989117153,
+      "upper": 0.9644115615735358
+    },
+    "noisy_nrmse": 0.9569997305381891
+  },
+  "E4": {
+    "clean_nrmse": 0.9814506460186064,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.9729436251576765,
+      "method": "circular_moving_date_block",
+      "point": 0.9814506460186064,
+      "replicates": 2,
+      "seed": 6807537876901201172,
+      "upper": 0.9826042606168902
+    },
+    "noisy_nrmse": 0.9757427238440696
+  },
+  "E4_HARD_ANALYTICAL": {
+    "clean_nrmse": 0.9631239866694323,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.9589677698863596,
+      "method": "circular_moving_date_block",
+      "point": 0.9631239866694323,
+      "replicates": 2,
+      "seed": 1793592080198801014,
+      "upper": 0.9690069506580747
+    },
+    "noisy_nrmse": 0.9569997305381891
+  },
+  "E5": {
+    "clean_nrmse": 0.9003609660590653,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.8060635021640039,
+      "method": "circular_moving_date_block",
+      "point": 0.9003609660590653,
+      "replicates": 2,
+      "seed": 8001101923584617897,
+      "upper": 0.9618885516353199
+    },
+    "noisy_nrmse": 0.8864657155716409
+  }
+}

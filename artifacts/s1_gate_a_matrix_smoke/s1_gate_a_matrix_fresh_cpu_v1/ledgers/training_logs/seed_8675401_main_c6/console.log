@@ -1,0 +1,3 @@
+run=seed_8675401_main_c6 arm=C6 device=cpu dtype=float64 parameters=361 max_steps=1
+step=1 train_mse=0.273243651786 penalty_total=0 validation_clean_nrmse=1.55200437476 selected=True
+selected_step=1 selected_validation_clean_nrmse=1.55200437476 manifest=artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/manifests/C6/seed_8675401_main_c6/manifest.json

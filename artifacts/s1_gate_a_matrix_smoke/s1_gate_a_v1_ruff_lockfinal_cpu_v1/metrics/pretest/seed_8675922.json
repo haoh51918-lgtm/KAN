@@ -1,0 +1,433 @@
+{
+  "C6": {
+    "candidate_evaluations": {
+      "reason": "neural optimizer arm has no candidate-evaluation search",
+      "value": "N/A"
+    },
+    "clean_nrmse": {
+      "reason": "matched MLP has no independent hard-fidelity target: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": {
+      "reason": "matched MLP is not an executable AST",
+      "value": "N/A"
+    },
+    "complexity_ast_nodes": {
+      "reason": "matched MLP is not an executable AST",
+      "value": "N/A"
+    },
+    "complexity_free_constants": {
+      "reason": "matched MLP is not an executable AST",
+      "value": "N/A"
+    },
+    "complexity_serialized_length": {
+      "reason": "matched MLP is not an executable AST",
+      "value": "N/A"
+    },
+    "description_length": {
+      "reason": "matched MLP is not an executable AST",
+      "value": "N/A"
+    },
+    "fidelity_max_absolute_error": {
+      "reason": "matched MLP has no independent hard-fidelity target: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "matched MLP has no independent hard-fidelity target: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "matched MLP has no independent hard-fidelity target: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "matched MLP has no independent hard-fidelity target: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": 634548224,
+    "residual_spline_energy_ratio": {
+      "reason": "matched MLP has no independent hard-fidelity target: residual_spline_energy_ratio",
+      "value": "N/A"
+    },
+    "sample_presentations": 16,
+    "selected_source": {
+      "reason": "matched MLP has no additive source selector",
+      "value": "N/A"
+    },
+    "selected_window": {
+      "reason": "matched MLP has no additive source selector",
+      "value": "N/A"
+    },
+    "shape_nrmse": 1.13640139362689,
+    "source_recovery_exact": {
+      "reason": "matched MLP has no additive source selector",
+      "value": "N/A"
+    },
+    "source_recovery_mass": {
+      "reason": "matched MLP has no additive source selector",
+      "value": "N/A"
+    },
+    "steps": 1,
+    "test_inference_flops": 57760,
+    "trainable_parameters": 361,
+    "training_search_flops": 11552,
+    "wall_clock_seconds": 0.0019328193739056587
+  },
+  "E1": {
+    "candidate_evaluations": {
+      "reason": "neural optimizer arm has no candidate-evaluation search",
+      "value": "N/A"
+    },
+    "clean_nrmse": {
+      "reason": "E1 has no independent hard-fidelity target: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": {
+      "reason": "free spline is not an executable AST",
+      "value": "N/A"
+    },
+    "complexity_ast_nodes": {
+      "reason": "free spline is not an executable AST",
+      "value": "N/A"
+    },
+    "complexity_free_constants": {
+      "reason": "free spline is not an executable AST",
+      "value": "N/A"
+    },
+    "complexity_serialized_length": {
+      "reason": "free spline is not an executable AST",
+      "value": "N/A"
+    },
+    "description_length": {
+      "reason": "free spline is not an executable AST",
+      "value": "N/A"
+    },
+    "fidelity_max_absolute_error": {
+      "reason": "E1 has no independent hard-fidelity target: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "E1 has no independent hard-fidelity target: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "E1 has no independent hard-fidelity target: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "E1 has no independent hard-fidelity target: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": 634531840,
+    "residual_spline_energy_ratio": {
+      "reason": "E1 has no independent hard-fidelity target: residual_spline_energy_ratio",
+      "value": "N/A"
+    },
+    "sample_presentations": 16,
+    "selected_source": "Return(Close,5)",
+    "selected_window": 5,
+    "shape_nrmse": 0.998324114501018,
+    "source_recovery_exact": true,
+    "source_recovery_mass": 0.40949977955015965,
+    "steps": 1,
+    "test_inference_flops": 18400,
+    "trainable_parameters": 115,
+    "training_search_flops": 3680,
+    "wall_clock_seconds": 0.002980944700539112
+  },
+  "E2": {
+    "candidate_evaluations": 48,
+    "clean_nrmse": {
+      "reason": "E2 metric is not applicable: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": 4,
+    "complexity_ast_nodes": 25,
+    "complexity_free_constants": 25,
+    "complexity_serialized_length": 1102,
+    "description_length": 1102,
+    "fidelity_max_absolute_error": {
+      "reason": "E2 metric is not applicable: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "E2 metric is not applicable: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "E2 metric is not applicable: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "E2 metric is not applicable: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": {
+      "reason": "E2 post-hoc search has no isolated peak-memory measurement",
+      "value": "N/A"
+    },
+    "residual_spline_energy_ratio": 0.0,
+    "sample_presentations": {
+      "reason": "E2 has no minibatch optimizer",
+      "value": "N/A"
+    },
+    "selected_source": "Return(Close,5)",
+    "selected_window": 5,
+    "shape_nrmse": 0.9982765957866381,
+    "source_recovery_exact": true,
+    "source_recovery_mass": 0.40949977955015965,
+    "steps": {
+      "reason": "E2 uses bounded post-hoc fits, not optimizer steps",
+      "value": "N/A"
+    },
+    "test_inference_flops": {
+      "reason": "prospective test-inference FLOPs are defined only for neural arms",
+      "value": "N/A"
+    },
+    "trainable_parameters": 0,
+    "training_search_flops": 6792960,
+    "wall_clock_seconds": 3.4367029825225472
+  },
+  "E3": {
+    "candidate_evaluations": {
+      "reason": "neural optimizer arm has no candidate-evaluation search",
+      "value": "N/A"
+    },
+    "clean_nrmse": {
+      "reason": "E3 metric is not applicable: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": 4,
+    "complexity_ast_nodes": 25,
+    "complexity_free_constants": 25,
+    "complexity_serialized_length": 1099,
+    "description_length": 1099,
+    "fidelity_max_absolute_error": {
+      "reason": "E3 metric is not applicable: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "E3 metric is not applicable: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "E3 metric is not applicable: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "E3 metric is not applicable: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": 634548224,
+    "residual_spline_energy_ratio": 0.0,
+    "sample_presentations": 16,
+    "selected_source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+    "selected_window": 20,
+    "shape_nrmse": 0.9959443700944111,
+    "source_recovery_exact": false,
+    "source_recovery_mass": 0.40998644374318866,
+    "steps": 1,
+    "test_inference_flops": 38560,
+    "trainable_parameters": 241,
+    "training_search_flops": 7712,
+    "wall_clock_seconds": 0.005066270940005779
+  },
+  "E4": {
+    "candidate_evaluations": {
+      "reason": "neural optimizer arm has no candidate-evaluation search",
+      "value": "N/A"
+    },
+    "clean_nrmse": {
+      "reason": "E4 metric is not applicable: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": 4,
+    "complexity_ast_nodes": 25,
+    "complexity_free_constants": 25,
+    "complexity_serialized_length": 1099,
+    "description_length": 1099,
+    "eligible": false,
+    "fidelity_max_absolute_error": {
+      "reason": "E4 metric is not applicable: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "E4 metric is not applicable: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "E4 metric is not applicable: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "E4 metric is not applicable: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": 634548224,
+    "residual_raw_energy": 6.860379745081222e-10,
+    "residual_spline_energy_ratio": 1.447879508624701e-05,
+    "sample_presentations": 16,
+    "selected_source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+    "selected_window": 20,
+    "shape_nrmse": 0.9958920613658381,
+    "source_recovery_exact": false,
+    "source_recovery_mass": 0.40923147380371555,
+    "steps": 1,
+    "test_inference_flops": 57760,
+    "trainable_parameters": 361,
+    "training_search_flops": 11552,
+    "wall_clock_seconds": 0.010875110514461994
+  },
+  "E5": {
+    "candidate_evaluations": 2,
+    "clean_nrmse": {
+      "reason": "E5 metric is not applicable: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": 4,
+    "complexity_ast_nodes": 6,
+    "complexity_free_constants": 2,
+    "complexity_serialized_length": 468,
+    "description_length": 468,
+    "fidelity_max_absolute_error": {
+      "reason": "E5 metric is not applicable: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "E5 metric is not applicable: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "E5 metric is not applicable: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "E5 metric is not applicable: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": {
+      "reason": "E5 search has no isolated peak-memory measurement",
+      "value": "N/A"
+    },
+    "residual_spline_energy_ratio": 0.0,
+    "sample_presentations": {
+      "reason": "E5 has no minibatch optimizer",
+      "value": "N/A"
+    },
+    "selected_source": "Return(Close,2)",
+    "selected_window": 2,
+    "shape_nrmse": 1.0809260112235284,
+    "source_recovery_exact": false,
+    "source_recovery_mass": 1.0,
+    "steps": {
+      "reason": "E5 is a bounded AST search, not a neural optimizer",
+      "value": "N/A"
+    },
+    "test_inference_flops": {
+      "reason": "prospective test-inference FLOPs are defined only for neural arms",
+      "value": "N/A"
+    },
+    "trainable_parameters": 0,
+    "training_search_flops": 1280,
+    "wall_clock_seconds": 0.0007137386128306389
+  },
+  "HARD": {
+    "candidate_evaluations": {
+      "reason": "no governed primitive was fitted for this seed: candidate_evaluations",
+      "value": "N/A"
+    },
+    "clean_nrmse": {
+      "reason": "no governed primitive was fitted for this seed: clean_nrmse",
+      "value": "N/A"
+    },
+    "complexity_ast_depth": {
+      "reason": "no governed primitive was fitted for this seed: complexity_ast_depth",
+      "value": "N/A"
+    },
+    "complexity_ast_nodes": {
+      "reason": "no governed primitive was fitted for this seed: complexity_ast_nodes",
+      "value": "N/A"
+    },
+    "complexity_free_constants": {
+      "reason": "no governed primitive was fitted for this seed: complexity_free_constants",
+      "value": "N/A"
+    },
+    "complexity_serialized_length": {
+      "reason": "no governed primitive was fitted for this seed: complexity_serialized_length",
+      "value": "N/A"
+    },
+    "description_length": {
+      "reason": "no governed primitive was fitted for this seed",
+      "value": "N/A"
+    },
+    "fidelity_max_absolute_error": {
+      "reason": "no governed primitive was fitted for this seed: fidelity_max_absolute_error",
+      "value": "N/A"
+    },
+    "fidelity_nrmse": {
+      "reason": "no governed primitive was fitted for this seed: fidelity_nrmse",
+      "value": "N/A"
+    },
+    "fidelity_pearson": {
+      "reason": "no governed primitive was fitted for this seed: fidelity_pearson",
+      "value": "N/A"
+    },
+    "noisy_nrmse": {
+      "reason": "no governed primitive was fitted for this seed: noisy_nrmse",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": {
+      "reason": "no governed primitive was fitted for this seed: peak_memory_bytes",
+      "value": "N/A"
+    },
+    "residual_spline_energy_ratio": {
+      "reason": "no governed primitive was fitted for this seed: residual_spline_energy_ratio",
+      "value": "N/A"
+    },
+    "sample_presentations": {
+      "reason": "no governed primitive was fitted for this seed: sample_presentations",
+      "value": "N/A"
+    },
+    "selected_source": {
+      "reason": "no governed primitive was fitted for this seed: selected_source",
+      "value": "N/A"
+    },
+    "selected_window": {
+      "reason": "no governed primitive was fitted for this seed: selected_window",
+      "value": "N/A"
+    },
+    "shape_nrmse": {
+      "reason": "no governed primitive was fitted for this seed: shape_nrmse",
+      "value": "N/A"
+    },
+    "source_recovery_exact": {
+      "reason": "no governed primitive was fitted for this seed: source_recovery_exact",
+      "value": "N/A"
+    },
+    "source_recovery_mass": {
+      "reason": "no governed primitive was fitted for this seed: source_recovery_mass",
+      "value": "N/A"
+    },
+    "steps": {
+      "reason": "no governed primitive was fitted for this seed: steps",
+      "value": "N/A"
+    },
+    "test_inference_flops": {
+      "reason": "no governed primitive was fitted for this seed: test_inference_flops",
+      "value": "N/A"
+    },
+    "trainable_parameters": {
+      "reason": "no governed primitive was fitted for this seed: trainable_parameters",
+      "value": "N/A"
+    },
+    "training_search_flops": {
+      "reason": "no governed primitive was fitted for this seed: training_search_flops",
+      "value": "N/A"
+    },
+    "wall_clock_seconds": {
+      "reason": "no governed primitive was fitted for this seed: wall_clock_seconds",
+      "value": "N/A"
+    }
+  },
+  "seed": 8675922
+}

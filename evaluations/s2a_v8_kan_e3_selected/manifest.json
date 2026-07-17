@@ -1,0 +1,121 @@
+{
+  "arm": "kan_e3_selected",
+  "authority_receipt": {
+    "arm": "kan_e3_selected",
+    "authority_sha256": "0e577828473909b53b72c680e64efdb2cf94c33206b4d83d3e8e2686e3a02ada",
+    "base_lock_sha256": "d5e17ebea34653f09bb4d8ee7046fc4afc819afab7d1c51cef1b137b4dc55472",
+    "boundary": "before_each_scientific_or_control_arm",
+    "consumption_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/governance/authority/s2a_kan_e3_vertical_v8/arm_consumptions/kan_e3_selected.json",
+    "consumption_sha256": "2cfa4e609d18c9bb24cecbad27aa906995cb9415deb97971703a9f7cf0312a9f",
+    "receipt_sha256": "900e8b65de64174e59e0e50be4c99b9e28c3f32d59f1b3d945d47700ceb804eb",
+    "sequence": 3
+  },
+  "development_opening": {
+    "authority_receipt_sha256": "e92b12dcc2f10b2fd1a81225e92667826ad67646053c723a73d85523e2facee9",
+    "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/governance/openings/s2a_kan_e3_vertical_v8_development.json",
+    "sha256": "6b520a40bafe764b00cbf365ed12e58ef1f1964303232e5f3da2bd342e920b57",
+    "topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535"
+  },
+  "diagnostic_files": {
+    "portfolio_daily.parquet": "459f81bc1aba69b8ef0feaa1b09ff1e8091e9f6bbb812e5611493742f983b6ba",
+    "prediction_coverage.parquet": "335f03271005ebcd57842c1db9463f81d371cba90924f8284d242f31c406e830",
+    "qlib_report.parquet": "1bae533b78a8b59fa29d95e4e16d8b5386bc751c5090dc331eb67c076d394a79"
+  },
+  "evidence_class": "corrective_adaptive_repeated_development_screen",
+  "files": {
+    "kan_e3_selected_cumulative_excess.csv": {
+      "bytes": 52252,
+      "sha256": "396d799fbad76112aeeddf00f7d09aa38b6e3b5116457622130300a6191ddf9e"
+    },
+    "portfolio_daily.parquet": {
+      "bytes": 38581,
+      "sha256": "459f81bc1aba69b8ef0feaa1b09ff1e8091e9f6bbb812e5611493742f983b6ba"
+    },
+    "prediction_coverage.parquet": {
+      "bytes": 12334,
+      "sha256": "335f03271005ebcd57842c1db9463f81d371cba90924f8284d242f31c406e830"
+    },
+    "qlib_report.parquet": {
+      "bytes": 91541,
+      "sha256": "1bae533b78a8b59fa29d95e4e16d8b5386bc751c5090dc331eb67c076d394a79"
+    }
+  },
+  "final_claim_allowed": false,
+  "formal_promotion_allowed": false,
+  "identity_pins": {
+    "base_lock_sha256": "d5e17ebea34653f09bb4d8ee7046fc4afc819afab7d1c51cef1b137b4dc55472",
+    "development_opening_sha256": "6b520a40bafe764b00cbf365ed12e58ef1f1964303232e5f3da2bd342e920b57",
+    "development_topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535",
+    "implementation_lock_sha256": "cd558a954e65475e45975330882d4e2bff6cad27ed18bf095c6b4dd98f29a6c0",
+    "mining_manifest_sha256": "b02b71436bad1cb1d8872d3ea6299bbd8925f768be2df2e9c9ecd35399f1d4af",
+    "mining_rebind_receipt_sha256": "4354f1bb6ad35fd162099b0c1ecfd832244cb2f373045ec9c60db0ea6b4cbe59",
+    "provider_identity": {
+      "file_count": 60168,
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+      "stat_inventory_sha256": "17d210c4f3e0aa3631d93024cca1ff35ecad6ba4548506faf39ccb2cd4178a34",
+      "total_bytes": 632291118,
+      "tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1"
+    }
+  },
+  "input": {
+    "artifact_panel_end": "2021-12-31T00:00:00",
+    "artifact_panel_rows": 868920,
+    "development_values_source": "independent_ast_replay_from_raw_pit",
+    "factor_count": 7,
+    "factor_library": true,
+    "kan_mined": true,
+    "kind": "verified_factor_library",
+    "library_role": "kan_e3_selected",
+    "manifest_sha256": "117496297ae14127975ecea0070b29f5b373b2b27668265ad9e87e1b4ffdca74",
+    "mining_rebind_receipt_sha256": "4354f1bb6ad35fd162099b0c1ecfd832244cb2f373045ec9c60db0ea6b4cbe59",
+    "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_kan_e3_selected_v6",
+    "selected_factor_ids": [
+      "kan_price_volume_023",
+      "kan_price_volume_030",
+      "kan_price_volume_044",
+      "kan_price_volume_052",
+      "kan_price_volume_059",
+      "kan_reversal_060",
+      "kan_short_price_020"
+    ],
+    "source_protocol_id": "s2a_kan_e3_vertical_v6",
+    "verification": {
+      "factor_count": 7,
+      "library_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_kan_e3_selected_v6",
+      "panel_rows": 868920,
+      "verified": true
+    }
+  },
+  "metrics": {
+    "IC": 0.015630028838464084,
+    "ICIR": 0.0863096189433111,
+    "Rank IC": 0.013064536065648677,
+    "Rank ICIR": 0.07266866200158469,
+    "annualized_return": -0.032625150682421666,
+    "calmar_ratio": -0.14389283663604718,
+    "information_ratio": -0.3788229849479266,
+    "max_drawdown": -0.22673227830612247
+  },
+  "protocol_id": "s2a_kan_e3_vertical_v8",
+  "quanta_identity": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/configs/backtest.yaml",
+    "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+    "effective_qlib_provider": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+    "execution_closure_clean": true,
+    "imported_runner_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+    "model_protocol": "LightGBM num_boost_round=500 early_stopping_round=50",
+    "package_tree_object": "8ea3865d81db92a2efbf0537cac1f5d15a2d149e",
+    "portfolio_protocol": "TopkDropout topk=50 n_drop=5 cost-aware open-price",
+    "qlib_provider_tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1",
+    "repository": "/zju_0012/htq/aaai26_alpha/QuantaAlpha",
+    "runner_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+    "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8",
+    "verified": true
+  },
+  "schema_version": "mirage_s2a_quanta_evaluation_v2",
+  "scientific_result": false,
+  "stage": "S2a",
+  "topology_key": "evaluation:kan_e3_selected",
+  "topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535"
+}

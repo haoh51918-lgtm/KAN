@@ -1,0 +1,26 @@
+{
+  "attempt_budget": 256,
+  "authority_receipt_sha256": "c8dc674d9ffb3542feaafcdb3fbfcf52fb179bb595efe3075645bf1fef5c452f",
+  "base_lock_sha256": "a90c84f2d59b147686169824903016ac2b1f3c68056bc37fd06027e20d4b51d3",
+  "config_sha256": "84cd14e31073deafed7efe57b322d5c03442fbc83aebca71031d6a81f81edcfc",
+  "data_identity": {
+    "cache_path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+    "cache_sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+    "config_path": "configs/data/pit_cache.json",
+    "config_sha256": "5db3cef008cb26f8c287feb39560ab96809b2f8b743080751d177c8004359cc3"
+  },
+  "implementation_lock_sha256": "37d345c1ab5520d9e7c18d6137fad0a91109cdc9d20319162ddea170b5d95a41",
+  "protocol_id": "s2a_kan_e3_vertical_v4",
+  "schema_version": "mirage_mining_entitlement_v2",
+  "state": "consumed_before_first_label_access",
+  "topology_preclaim_sha256": "98f668df0575f8ae1247230e33e4b22c4212d0b6c37173d4902d170c6a32db20",
+  "topology_sha256": "635787451b2a9c3bc0e19898f25759885f58a9057038c35b63779bf5b3f1c8e4",
+  "train": [
+    "2016-01-01",
+    "2020-12-31"
+  ],
+  "validation": [
+    "2021-01-01",
+    "2021-12-31"
+  ]
+}

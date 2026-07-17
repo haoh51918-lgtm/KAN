@@ -1,0 +1,154 @@
+{
+  "accounting": {
+    "attempted_candidates": 3,
+    "budget_exhausted": true,
+    "budget_exhausted_attempts": 1,
+    "distinct_valid_ast_evaluations": 2,
+    "duplicate_attempts": 0,
+    "fit_attempts": 2,
+    "fit_failures": 0,
+    "invalid_ast_attempts": 0,
+    "invalid_execution_attempts": 0,
+    "successful_fits": 2,
+    "wall_clock_seconds": 0.0008600139990448952
+  },
+  "arm": "E5",
+  "generation_mode": "deterministic_frozen_generator",
+  "implementation": "deterministic_sparse_additive_typed_symbolic_regression",
+  "metadata": {
+    "matrix_mode": "smoke",
+    "seed": 8675701,
+    "test_once": false
+  },
+  "model_spec": {
+    "path": "configs/model_specs/s1_gate_a_e5_v0.json",
+    "resolved_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/configs/model_specs/s1_gate_a_e5_v0.json",
+    "sha256": "bf7da7fddfe49c75d2e7534d517b159625b986e55f94edaf25b52855d72c27e5"
+  },
+  "numpy_version": "2.3.5",
+  "paths": {
+    "ledger": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/E5/seed_8675701/ledger.jsonl",
+    "manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/E5/seed_8675701/manifest.json",
+    "selected_model": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/E5/seed_8675701/selected_model.json"
+  },
+  "schema_version": 1,
+  "selected": {
+    "canonical": {
+      "children": [
+        {
+          "op": "Constant",
+          "role": "intercept",
+          "value_hex": "-0x1.fef638c2dc6c6p-4",
+          "value_type": "finite_real"
+        },
+        {
+          "children": [
+            {
+              "op": "Constant",
+              "role": "term_coefficient",
+              "value_hex": "0x1.9102c95d9b7ccp-2",
+              "value_type": "finite_real"
+            },
+            {
+              "child": {
+                "op": "Input",
+                "source": "Return(Close,2)",
+                "source_index": 0,
+                "value_type": "finite_real"
+              },
+              "name": "Identity",
+              "op": "Primitive",
+              "value_type": "finite_real"
+            }
+          ],
+          "op": "Mul",
+          "value_type": "finite_real"
+        }
+      ],
+      "op": "Add",
+      "value_type": "finite_real"
+    },
+    "complexity": {
+      "ast_depth": 4,
+      "ast_node_count": 6,
+      "free_constants": 2,
+      "serialized_description_length": 469
+    },
+    "source_mass": {
+      "masses": [
+        {
+          "mass": 1.0,
+          "source": "Return(Close,2)",
+          "source_index": 0,
+          "window": 2
+        },
+        {
+          "mass": 0.0,
+          "source": "Return(Close,5)",
+          "source_index": 1,
+          "window": 5
+        },
+        {
+          "mass": 0.0,
+          "source": "Return(Close,10)",
+          "source_index": 2,
+          "window": 10
+        },
+        {
+          "mass": 0.0,
+          "source": "Return(Close,20)",
+          "source_index": 3,
+          "window": 20
+        },
+        {
+          "mass": 0.0,
+          "source": "SafeDiv(Sub(High,Low),Close)",
+          "source_index": 4,
+          "window": null
+        },
+        {
+          "mass": 0.0,
+          "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+          "source_index": 5,
+          "window": 20
+        }
+      ],
+      "status": "defined"
+    },
+    "source_metadata": [
+      {
+        "source": "Return(Close,2)",
+        "source_index": 0,
+        "window": 2
+      }
+    ]
+  },
+  "selection": {
+    "canonical_structural_identity": "e45238d303855044b8c4b5b45a9ad688170b29e4851fd5175e44b153b80ea72d",
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_value": 0.8855383920146795,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_executable_complexity"
+  },
+  "settings": {
+    "complexity_tolerance_nrmse": 0.005,
+    "max_depth": 5,
+    "max_distinct_valid_evaluations": 2,
+    "max_nodes": 15,
+    "seed": 8675701,
+    "two_term_parent_beam_size": 32
+  },
+  "sha256": {
+    "ledger": "7d0d2c54df19903bc0cec94401ed6e64bee406f374970a31d62586fdc4adc6a6",
+    "selected_model": "cf57924fe520a5da559387f6bae3efcb4388b4b33c7aee21cda97ecf13a39a85"
+  },
+  "source_names": [
+    "Return(Close,2)",
+    "Return(Close,5)",
+    "Return(Close,10)",
+    "Return(Close,20)",
+    "SafeDiv(Sub(High,Low),Close)",
+    "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+  ]
+}

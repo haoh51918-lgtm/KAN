@@ -1,0 +1,156 @@
+{
+  "arm": "E2",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          0.05581709010306359,
+          0.08346727994382398,
+          -9.366683198658167e-05,
+          0.0029999994995371956
+        ],
+        "edge": 0,
+        "primitive": "NegativeHinge(0)",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          2.1248529409325063,
+          0.7932396077797954,
+          0.0030505504500990127,
+          2.6994002402725764e-06
+        ],
+        "edge": 1,
+        "primitive": "Tanh",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          2.1061380202741073,
+          0.791440401467203,
+          0.003060577577099405,
+          -9.800748354040462e-06
+        ],
+        "edge": 2,
+        "primitive": "Tanh",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          0.13571391081115047,
+          0.09694553350686212,
+          -4.3246307509706466e-07,
+          0.002999999535693694
+        ],
+        "edge": 3,
+        "primitive": "NegativeHinge(0)",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          3.8516528778404364,
+          -3.2878587705902005,
+          -0.0015407067354909153,
+          0.0014433846924237872
+        ],
+        "edge": 4,
+        "primitive": "Tanh",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          2.307514203383885,
+          -4.271530387126502,
+          -0.0028781163037538723,
+          0.0001265458544759989
+        ],
+        "edge": 5,
+        "primitive": "Tanh",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": 0.0029999999596422976,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "8215ef1238dc4731c6a36fec2beaebbb211b24f8e2dcd6a0f42daf83de6032cf",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1120
+  },
+  "metadata": {
+    "fit_manifest": {
+      "e1_or_target_retraining": false,
+      "fits_per_edge": 8,
+      "optimizer": "scipy.optimize.least_squares",
+      "scipy_version": "1.17.1",
+      "selection_data": "train_inputs_and_e1_edges_only",
+      "selection_metric": "train_edge_mse",
+      "settings": {
+        "initial_parameters": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "loss": "linear",
+        "lower_bound": -8.0,
+        "max_nfev": 500,
+        "method": "trf",
+        "upper_bound": 8.0
+      },
+      "tie_break": "primitive_dictionary_order",
+      "total_fits": 48
+    },
+    "test_once": false
+  },
+  "paths": {
+    "checkpoint": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E2/seed_8675912/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "NegativeHinge(0)",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Tanh",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Tanh",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "NegativeHinge(0)",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Tanh",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "Tanh",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ]
+}

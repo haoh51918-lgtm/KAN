@@ -1,0 +1,8 @@
+{
+  "arm": "E3_HARD",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E3_HARD/seed_8675912/manifest.json",
+  "input_manifest_sha256": "fef87ea7ee70433281f0cbf0657b19d180e64bb387186713d8f631591136e7db",
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912",
+  "schema_version": 1,
+  "seed": 8675912
+}

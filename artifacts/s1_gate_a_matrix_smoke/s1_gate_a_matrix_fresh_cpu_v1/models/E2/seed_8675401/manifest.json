@@ -1,0 +1,174 @@
+{
+  "arm": "E2",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          1.9575691340443901,
+          -0.649584829945294,
+          0.0027397547192334667,
+          -0.0002248158353896201
+        ],
+        "edge": 0,
+        "primitive": "Clip(-1,1)",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          2.050374589779804,
+          -0.7768022913554474,
+          0.0031069907318967706,
+          1.60441830638345e-05
+        ],
+        "edge": 1,
+        "primitive": "Tanh",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          2.204604732458151,
+          -0.7940080290629573,
+          0.002979553798339636,
+          -7.020249908110239e-05
+        ],
+        "edge": 2,
+        "primitive": "Tanh",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          2.162305647290868,
+          -0.8043522421379712,
+          0.002986784446815004,
+          -7.955198415056021e-06
+        ],
+        "edge": 3,
+        "primitive": "Tanh",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          -2.519944358676599,
+          4.65898916102534,
+          -0.001492095680124433,
+          -0.001510379789188455
+        ],
+        "edge": 4,
+        "primitive": "Tanh",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          0.04806642061355563,
+          -0.06960590487288312,
+          2.3184133280557882e-05,
+          -0.002999999010457046
+        ],
+        "edge": 5,
+        "primitive": "PositiveHinge(0)",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": -0.002999999890740621,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "23c99f84da67df4a12db73fcf6c74d594b8fc8646a384019e0ccebda72be240b",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1108
+  },
+  "metadata": {
+    "fit_manifest": {
+      "e1_or_target_retraining": false,
+      "fits_per_edge": 8,
+      "optimizer": "scipy.optimize.least_squares",
+      "scipy_version": "1.17.1",
+      "selection_data": "train_inputs_and_e1_edges_only",
+      "selection_metric": "train_edge_mse",
+      "settings": {
+        "initial_parameters": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "loss": "linear",
+        "lower_bound": -8.0,
+        "max_nfev": 500,
+        "method": "trf",
+        "upper_bound": 8.0
+      },
+      "tie_break": "primitive_dictionary_order",
+      "total_fits": 48
+    },
+    "test_once": false
+  },
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/models/E2/seed_8675401/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Clip(-1,1)",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Tanh",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Tanh",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "Tanh",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Tanh",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "PositiveHinge(0)",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ],
+  "test_once": {
+    "evaluated": true,
+    "matrix_metrics": {
+      "clean_nrmse": 0.9899629262335211,
+      "clean_nrmse_bootstrap": {
+        "block_dates": 20,
+        "lower": 0.9952592870519662,
+        "method": "circular_moving_date_block",
+        "point": 0.9899629262335211,
+        "replicates": 2,
+        "seed": 8158934498519976001,
+        "upper": 1.0108445921987
+      },
+      "noisy_nrmse": 1.0044200816437845
+    },
+    "matrix_opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/predictions/seed_8675401",
+    "prediction_key": "E2_prediction"
+  }
+}

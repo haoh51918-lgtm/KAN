@@ -1,0 +1,117 @@
+{
+  "ast_hardening_replay": {
+    "atom_count": 32,
+    "candidate_ast_identities_sha256": "ec3564db3c4b3e699e15caab4f68fff230b6892e1960953971bf3ffbd0dcb5ef",
+    "completed_updates_per_miner": 300,
+    "exact_public_ast_replay_count": 64,
+    "exact_public_ast_replay_sha256": "85f2640e3dd1da2745401dc21f7beb783fa495c71387f7f21ffdf8a9b61d519b",
+    "exact_public_support_replay_count": 64,
+    "exact_public_support_replay_sha256": "cbd6d5382344833d2c5767bd353ac28e8678d971b8b4e061bb478e30d3459db0",
+    "final_logits_sha256": "7b5aeb1fe1d5f279531714b11ca4ee6b904f883b1f98f369ae9060e5160edd64",
+    "hardening_receipt_count": 64,
+    "miner_count": 64,
+    "profile": "short_price",
+    "scheduled_updates_per_miner": 300,
+    "trajectory_sha256": "80e4b4fa77b0b3eb23a17eab099781cd0e3c63efe3b9b22d79de9f17e9e441a6"
+  },
+  "environment": {
+    "cublas_workspace_config": ":4096:8",
+    "cuda_runtime": "12.9",
+    "cudnn_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cudnn_runtime": 91002,
+    "deterministic_algorithms": true,
+    "device": "cuda:1",
+    "device_capability": [
+      8,
+      0
+    ],
+    "device_name": "NVIDIA A800-SXM4-80GB",
+    "device_total_memory": 85167243264,
+    "matmul_allow_tf32": false,
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "pythonhashseed": "0",
+    "torch": "2.9.1+cu129",
+    "visible_device_count": 2
+  },
+  "mlp_control_replay": {
+    "completed_updates_per_control": 300,
+    "control_count": 6,
+    "exact_public_replay": {
+      "compared_count": 2874,
+      "masks_equal": true,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "mismatch_count": 0,
+      "replay_atol": 0.0,
+      "replay_rtol": 0.0,
+      "replay_sha256": "3be92cb0ad835b1a49957d887314f1519052a321c384ab94d518aae618ca86cd",
+      "seam": "canonical CPU publication replay to independent CPU checkpoint replay"
+    },
+    "factor_library_publication_allowed": false,
+    "final_parameters_sha256": "8af076c1f579ac0804dabcb87ada4bd66861c06ef7b50346def5cc0d84d755bc",
+    "gpu_training_vs_cpu_publication_diagnostic": {
+      "compared_count": 2838,
+      "gating": false,
+      "max_abs_error": 1.1102230246251565e-16,
+      "max_rel_error": 3.4863667766978834e-16,
+      "max_rel_error_definition": "abs(cpu_publication-gpu_training)/abs(gpu_training), with 0 for exact zero pairs and inf for nonzero error over gpu_training zero",
+      "mismatch_count": 3
+    },
+    "pairing_global_attempt_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "promotion_eligible": false,
+    "replay_count": 6,
+    "role": "falsification_control_never_production",
+    "scheduled_updates_per_control": 300,
+    "trajectory_sha256": "19e53d5a7e39d3b0432d7d1e2f98c62c4df31a56eace132f04cff53e3d3bdc70"
+  },
+  "output_label": "cuda1",
+  "passed": true,
+  "role": "compatibility_gate_not_scientific_evidence",
+  "schema_version": "s2a_v4_train_only_ast_mlp_compatibility_v1",
+  "source_sha256": {
+    "runtime/s2a_v4_eval/tools/compatibility_smoke.py": "07a73d34642feddacc0c356b766be7dbbf7454d73955c6eab68c4e3079ad3200",
+    "src/mirage_kan/artifacts/v2_bundle.py": "2c0014aff49a9d4a1c2fb01d8737d23b1dd62b476155edfb4ee5a28bd5e2d55d",
+    "src/mirage_kan/data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+    "src/mirage_kan/dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+    "src/mirage_kan/evaluation/v2_runner.py": "d427f487ccd0bc07bad4f133cdd2703575c51ccb0fb0d49780bd7273ca97be65",
+    "src/mirage_kan/mining/e3.py": "ecb53e0ba75cc846374a4a55476b652ececb3287b0b70345772332b8e9ae4649",
+    "src/mirage_kan/mining/e3_runner.py": "130979ce233ebb2b1d6f45afe343d8e4dbbc5b51b2eb16e43344851989f61f67",
+    "src/mirage_kan/mining/mlp_control.py": "9b215120fa76601532e0a04d3c85796c369086eef993f2c6e66c6b2f82cb7b26"
+  },
+  "synthetic_data": {
+    "date_max": "2020-05-06",
+    "date_min": "2020-01-02",
+    "dates": 90,
+    "in_universe_all_raw_unobserved_rows": 0,
+    "instruments": 6,
+    "observed_rows": {
+      "close": 540,
+      "high": 540,
+      "low": 540,
+      "open": 540,
+      "volume": 540
+    },
+    "qlib_provider_initialized": false,
+    "real_quanta_label_access": false,
+    "rows": 540,
+    "scope": "synthetic_train_only_within_train_validation_boundary",
+    "source_path": null,
+    "source_sha256": null,
+    "synthetic_target_used": true,
+    "test_period_values_used": false,
+    "tradability_present": false,
+    "universe_rows": 539
+  }
+}

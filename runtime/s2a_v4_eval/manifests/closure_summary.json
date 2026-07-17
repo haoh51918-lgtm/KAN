@@ -1,0 +1,25 @@
+{
+  "categories": {
+    "evidence_files": 10,
+    "frozen_root_files": 5,
+    "runtime_closure_tools": 5
+  },
+  "installed_distribution_count": 217,
+  "machine_manifest_sha256": {
+    "installed_distributions.json": "3ddc491aea69bdd3d4d2034b1cb374fae8b9deaf1a38473fedac31d4fb5d66b0",
+    "installed_distributions.tsv": "f3ace30aea9957afea079d827f288ea077fdd808bc541b5a8df754e1d572704a",
+    "runtime_files.json": "e6af9b54b8c0c26ce3020809acb32fb004eb756b83fcb85232b1e5efa7f1ca40",
+    "runtime_files.tsv": "144724c81aba473cc7cd32b8f280b4bcfbdb81a65fbbc3f8cb7ee8fb18875c93",
+    "wheelhouse_files.json": "fa9bc99f47c27abb31c71fa0db34aa7adb2dde97ff31195ba9b4f89b724e0589",
+    "wheelhouse_files.tsv": "efb5114e1c96bf9f1adb895b9cd3167b61b1a651fe96827d358c16b20621f9a6"
+  },
+  "passed": true,
+  "schema_version": "s2a_v4_closure_summary_v1",
+  "wheelhouse": {
+    "applicable_distribution_count": 217,
+    "artifact_count": 223,
+    "sdist_count": 1,
+    "total_bytes": 4884582030,
+    "wheel_count": 222
+  }
+}

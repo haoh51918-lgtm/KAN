@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "matmul_allow_tf32": false,
+    "mlflow_allow_file_store": "true",
+    "mlflow_tracking_uri_env": null,
+    "python_dont_write_bytecode": "1",
+    "pythonpath": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src",
+    "qlib_data_dir": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data"
+  },
+  "mlflow_raw_default_diagnostic": {
+    "authoritative": false,
+    "tracking_uri": "sqlite:////zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking/mlflow.db",
+    "used_by_receipt": false
+  },
+  "passed": true,
+  "preimport": {
+    "mlflow_allow_file_store": "true",
+    "mlflow_tracking_uri_env": null,
+    "qlib_absent_from_sys_modules": true
+  },
+  "qlib_experiment_manager": {
+    "authoritative": true,
+    "resolved_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking/mlruns",
+    "uri": "file:/zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking/mlruns"
+  },
+  "qlib_imported_before_tracking_receipt": false,
+  "qlib_provider_initialized": false,
+  "qlib_version": "0.9.7",
+  "real_quanta_label_access": false,
+  "schema_version": "s2a_v4_tracking_preimport_receipt_v1",
+  "tracking_cwd": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking"
+}

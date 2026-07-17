@@ -1,0 +1,60 @@
+{
+  "arrays": {
+    "scaler": {
+      "path": "artifacts/s1_gate_a_symbolic_smoke/data/s1_gate_a_e4_tiny_cuda/arrays/scaler.npz",
+      "sha256": "55c7264ac4703f9b86c8f11079e9d31615c7195e572d09bf472ce15e90052490"
+    },
+    "test": {
+      "path": "artifacts/s1_gate_a_symbolic_smoke/data/s1_gate_a_e4_tiny_cuda/arrays/test.npz",
+      "sha256": "d5e35aed2605a000fb28156ba607e09350c7d12b51d8bbefc941e847ff85fe67"
+    },
+    "train": {
+      "path": "artifacts/s1_gate_a_symbolic_smoke/data/s1_gate_a_e4_tiny_cuda/arrays/train.npz",
+      "sha256": "f67205bcbe2faad468b698462121a00ef602ce4e73651c474248e6d3b8f77be2"
+    },
+    "validation": {
+      "path": "artifacts/s1_gate_a_symbolic_smoke/data/s1_gate_a_e4_tiny_cuda/arrays/validation.npz",
+      "sha256": "df677960307a78465d4be416cfb63c1b34bcf145c051559d22bb27e198be3223"
+    }
+  },
+  "content_sha256": "a5ccd7abcb8fe5e25eef747c608819be1da0b041050e76a198bf2453555d0ea1",
+  "feature_names": [
+    "Return(Close,2)",
+    "Return(Close,5)",
+    "Return(Close,10)",
+    "Return(Close,20)",
+    "SafeDiv(Sub(High,Low),Close)",
+    "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+  ],
+  "provenance": {
+    "candidate_ast_identities": [
+      "c4c6c3cef8f28f7714299de925c1246dd174a34a1694b19166e9d13a08d5712c",
+      "b79930ec3da1c8a499b6a4dc154ecc21f01dbe6561d0fe7cead38a5f4be9b385",
+      "60e3c2f8482dab63baf079ee371a0ff95cbbc9e78f0e46d59cdc2bde09e1bae0",
+      "20445d226aeabe5315cfad859c6833696257e3553b8840fe78c98964001e97db",
+      "82e5305c5a9878e74fb22b32adb38f60cc487c7d36e7dced8562c91527546589",
+      "b2a6d0f261106710ae6691e3927d625f72f763b434c61d1afe386e89c11664bf"
+    ],
+    "content_sha256": "a5ccd7abcb8fe5e25eef747c608819be1da0b041050e76a198bf2453555d0ea1",
+    "innovation_draw_order": [
+      "return",
+      "volatility",
+      "open",
+      "high",
+      "low",
+      "volume",
+      "target_noise"
+    ],
+    "numpy_version": "2.3.5",
+    "resolved_config_sha256": "3a17e34be1fc3674976ed1c0782d1e4c516ca62189b15618a6bfc41788b39701",
+    "rng": "numpy.random.Generator(PCG64)",
+    "schema_version": 1,
+    "seed": 41,
+    "split_seed_offsets": {
+      "test": 20000,
+      "train": 0,
+      "validation": 10000
+    }
+  },
+  "schema_version": 1
+}

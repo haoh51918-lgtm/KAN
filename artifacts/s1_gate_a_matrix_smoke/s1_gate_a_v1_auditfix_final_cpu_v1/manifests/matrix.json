@@ -1,0 +1,221 @@
+{
+  "controls": [
+    "E4_NULL",
+    "E4_SOURCE_REMOVED"
+  ],
+  "core_children": {
+    "controls": {
+      "null": {
+        "8675701": {
+          "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/null/seed_8675701/manifest.json",
+          "sha256": "729a43b03f08a9f40860940a32f91b2291a5ef7161422eadf8abb43f78817180"
+        },
+        "8675702": {
+          "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/null/seed_8675702/manifest.json",
+          "sha256": "6b7444aee83081ff0c5ab72ed1f9d097e874aa6a9658fa9fc2bc69db5c8aecc0"
+        }
+      },
+      "source_removed": {
+        "8675701": {
+          "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/source_removed/seed_8675701/manifest.json",
+          "sha256": "4bfbbb34fc5441592c2087b2848cdf5680bae966fcdde047be259e7273d13811"
+        },
+        "8675702": {
+          "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/source_removed/seed_8675702/manifest.json",
+          "sha256": "d7288cae25141e325c1b4d4beb38a42ecbccfc3c64f4b2747b18d5a89987ac9b"
+        }
+      }
+    },
+    "data": {
+      "8675701": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/data/seed_8675701/manifest.json",
+        "sha256": "c5c947586430a6876c565bc1867265ffc0d67c3cf64ec0caf36d62ea5430cbd4"
+      },
+      "8675702": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/data/seed_8675702/manifest.json",
+        "sha256": "b96954d01b41bfa9376e3c60afe65e3b228a06d15a2c2355414d2017ed9dd3ff"
+      }
+    },
+    "event_log": {
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/ledgers/matrix_events.jsonl",
+      "sha256": "f4b4189c2f4905f03aa4fd8c9489083598076db0431ee4bb8a5d856a9aa68a37"
+    },
+    "openings": {
+      "8675701": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/predictions/seed_8675701/manifest.json",
+        "sha256": "2ac3b2e39417ed3de0caf27724d84638ecc3b2ed8bde80e65893995d0a210159"
+      },
+      "8675702": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/predictions/seed_8675702/manifest.json",
+        "sha256": "ce5c9e45dca641a6b824c769f123c13377187b777ff1058c92ce0996a9e795ed"
+      }
+    },
+    "pretest_ready": {
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/pretest_ready.json",
+      "sha256": "4c68eb062275012a7ee7bb8e629396f0d3c107bb52bc5d57e19905b3164da40f"
+    },
+    "promotion": {
+      "null_promotion": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/null_promotion/manifest.json",
+        "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+      },
+      "promotion": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/promotion/manifest.json",
+        "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+      }
+    },
+    "reports": [
+      {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/reports/smoke.json",
+        "sha256": "d692569cb4d7e9ad419a27accbe9da1d5613accb9f34e5b8f5aa4457de29d9a3"
+      },
+      {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/reports/smoke.md",
+        "sha256": "9370382b5cac5f984397b59a9595952961c24ee0e4335b872fda7c697dc81068"
+      }
+    ],
+    "seed_summaries": {
+      "8675701": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/metrics/seed_8675701.json",
+        "sha256": "2b22386e03b64ace45165bfbcbb8f08be2aa9472b5f44354ef18735c7efdaea0"
+      },
+      "8675702": {
+        "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/metrics/seed_8675702.json",
+        "sha256": "f17a082e95063b1d0073a9557304462f64034cdaf943836df2dd2b801cba107b"
+      }
+    }
+  },
+  "event_log": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/ledgers/matrix_events.jsonl",
+  "implementation_after": {
+    "aggregate_sha256": "5aef31e87932d373e24237a0c2aed354b998f3929fea2f7c22fd42e6d4bfd74f",
+    "files": {
+      "configs/experiments/s1_gate_a_matrix_runner_v0.json": "1f0f6343c81121309625bf20b97a29dd6b9089bb0b1e0bd995fdc87902f2f05e",
+      "configs/model_specs/s1_gate_a_capacity_v0.json": "5f44976edaf8a0e8f1d1034c23300b0cf193623d1390f8bb989a2311acf46195",
+      "configs/model_specs/s1_gate_a_e5_v0.json": "bf7da7fddfe49c75d2e7534d517b159625b986e55f94edaf25b52855d72c27e5",
+      "configs/model_specs/s1_gate_a_promotion_v0.json": "1ed556dd731bf1422090dc903d68807f32ccc2d618d21552c145a15c21cdb817",
+      "configs/model_specs/s1_gate_a_symbolic_v0.json": "5a969224bf4930849096e5b9da38867d18ae029235591efec4982b6555515280",
+      "pyproject.toml": "6a10cd02d771950d0ae673a9ebae42cf36006bc6e15340db3beac29f8099ee13",
+      "src/mirage_kan/__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+      "src/mirage_kan/artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+      "src/mirage_kan/artifacts/library.py": "949171ba95bdc54387ce4abce543145d6de7c8b20f194a57a365ac9e23447c97",
+      "src/mirage_kan/cli.py": "d85eaa650e3100beb887df8317b668b53e6673fba221f709df6df7b93c2c25f1",
+      "src/mirage_kan/data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+      "src/mirage_kan/data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+      "src/mirage_kan/dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+      "src/mirage_kan/dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+      "src/mirage_kan/evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+      "src/mirage_kan/evaluation/quanta.py": "880582458fd95e978d9b1585d39710cf2c778b2c5ca26b9e33c9b732f5006b13",
+      "src/mirage_kan/executor/__init__.py": "d541cddfbeac49bddb3b3da88e9f651fa03d21b98140afa336dafccadad9463b",
+      "src/mirage_kan/executor/torch.py": "5ad675b6cce80a14641ac9aac30caa85c7e5835a2363b4d193bf81357978b752",
+      "src/mirage_kan/experiments/__init__.py": "491b688fbf46593a187c5853baccb176b6f7f1a2b00d32bde082b1fb8c74e2b2",
+      "src/mirage_kan/experiments/gate_a/__init__.py": "39bc621b5081daaf3674e51c97d800e39951309a398d1d118207e5ac6b400dd1",
+      "src/mirage_kan/experiments/gate_a/controls.py": "947040807be2753d13c976b6b6ac97a3d6c376c2337a105ab771c4b820c05dcd",
+      "src/mirage_kan/experiments/gate_a/data.py": "0a7b45a040c29d1fcee3949968b65b622cf046f453e708dee8420cd7f804dc3f",
+      "src/mirage_kan/experiments/gate_a/e5.py": "ba9501e059ce8c2c95e7580828f2dd1b046a52dca99e0564c5898159c075d292",
+      "src/mirage_kan/experiments/gate_a/e5_smoke.py": "54025f542cae5cef378fe1fceaa3914a9677edf87e2c1d1de2a2a6608ff5ed6e",
+      "src/mirage_kan/experiments/gate_a/matrix.py": "57426013246e63a857bdb1acb795b2c40cc5e68f3c4a710f56ab7ac352632782",
+      "src/mirage_kan/experiments/gate_a/metrics.py": "d060276ab8be1e02e2eaed18eb0e3bb51d84f7332df845e46fd3c22cade05703",
+      "src/mirage_kan/experiments/gate_a/models.py": "bb71833307484eb24837a98fe40695ea3c840b38569f0b1fc9985db52aa2a724",
+      "src/mirage_kan/experiments/gate_a/posthoc.py": "f35b55fa7d7fc5cacd989e27e019b02da9f789ec490662562f6919cd0721cef2",
+      "src/mirage_kan/experiments/gate_a/promotion.py": "b2384125ebe969c91526f7d45a37be9086cd0752a310c0fbc79c59559de065cb",
+      "src/mirage_kan/experiments/gate_a/smoke.py": "ec0c1302bd43458431e67f88d69855ffdd087f07e557995ed883c4080241df72",
+      "src/mirage_kan/experiments/gate_a/symbolic.py": "fba60a156a60c1980e9079726088479e3893eb76bc865b0c20e0c306414a4922",
+      "src/mirage_kan/experiments/gate_a/symbolic_smoke.py": "7c206d42758c788cfb549eaf9fffd02c76b72f6c25e743b1e9d7b92f8beb8072",
+      "src/mirage_kan/experiments/gate_a/training.py": "95ed407fe3903bc0af683e3640daf239485786d189c5ddb49725ea0f760b4600",
+      "src/mirage_kan/identities.py": "7916aaa4b410f8f9cf5174fcaa70ea780112c6615743d93fbe99344ce09b9ba7",
+      "src/mirage_kan/seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c"
+    }
+  },
+  "implementation_before": {
+    "aggregate_sha256": "5aef31e87932d373e24237a0c2aed354b998f3929fea2f7c22fd42e6d4bfd74f",
+    "files": {
+      "configs/experiments/s1_gate_a_matrix_runner_v0.json": "1f0f6343c81121309625bf20b97a29dd6b9089bb0b1e0bd995fdc87902f2f05e",
+      "configs/model_specs/s1_gate_a_capacity_v0.json": "5f44976edaf8a0e8f1d1034c23300b0cf193623d1390f8bb989a2311acf46195",
+      "configs/model_specs/s1_gate_a_e5_v0.json": "bf7da7fddfe49c75d2e7534d517b159625b986e55f94edaf25b52855d72c27e5",
+      "configs/model_specs/s1_gate_a_promotion_v0.json": "1ed556dd731bf1422090dc903d68807f32ccc2d618d21552c145a15c21cdb817",
+      "configs/model_specs/s1_gate_a_symbolic_v0.json": "5a969224bf4930849096e5b9da38867d18ae029235591efec4982b6555515280",
+      "pyproject.toml": "6a10cd02d771950d0ae673a9ebae42cf36006bc6e15340db3beac29f8099ee13",
+      "src/mirage_kan/__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+      "src/mirage_kan/artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+      "src/mirage_kan/artifacts/library.py": "949171ba95bdc54387ce4abce543145d6de7c8b20f194a57a365ac9e23447c97",
+      "src/mirage_kan/cli.py": "d85eaa650e3100beb887df8317b668b53e6673fba221f709df6df7b93c2c25f1",
+      "src/mirage_kan/data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+      "src/mirage_kan/data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+      "src/mirage_kan/dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+      "src/mirage_kan/dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+      "src/mirage_kan/evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+      "src/mirage_kan/evaluation/quanta.py": "880582458fd95e978d9b1585d39710cf2c778b2c5ca26b9e33c9b732f5006b13",
+      "src/mirage_kan/executor/__init__.py": "d541cddfbeac49bddb3b3da88e9f651fa03d21b98140afa336dafccadad9463b",
+      "src/mirage_kan/executor/torch.py": "5ad675b6cce80a14641ac9aac30caa85c7e5835a2363b4d193bf81357978b752",
+      "src/mirage_kan/experiments/__init__.py": "491b688fbf46593a187c5853baccb176b6f7f1a2b00d32bde082b1fb8c74e2b2",
+      "src/mirage_kan/experiments/gate_a/__init__.py": "39bc621b5081daaf3674e51c97d800e39951309a398d1d118207e5ac6b400dd1",
+      "src/mirage_kan/experiments/gate_a/controls.py": "947040807be2753d13c976b6b6ac97a3d6c376c2337a105ab771c4b820c05dcd",
+      "src/mirage_kan/experiments/gate_a/data.py": "0a7b45a040c29d1fcee3949968b65b622cf046f453e708dee8420cd7f804dc3f",
+      "src/mirage_kan/experiments/gate_a/e5.py": "ba9501e059ce8c2c95e7580828f2dd1b046a52dca99e0564c5898159c075d292",
+      "src/mirage_kan/experiments/gate_a/e5_smoke.py": "54025f542cae5cef378fe1fceaa3914a9677edf87e2c1d1de2a2a6608ff5ed6e",
+      "src/mirage_kan/experiments/gate_a/matrix.py": "57426013246e63a857bdb1acb795b2c40cc5e68f3c4a710f56ab7ac352632782",
+      "src/mirage_kan/experiments/gate_a/metrics.py": "d060276ab8be1e02e2eaed18eb0e3bb51d84f7332df845e46fd3c22cade05703",
+      "src/mirage_kan/experiments/gate_a/models.py": "bb71833307484eb24837a98fe40695ea3c840b38569f0b1fc9985db52aa2a724",
+      "src/mirage_kan/experiments/gate_a/posthoc.py": "f35b55fa7d7fc5cacd989e27e019b02da9f789ec490662562f6919cd0721cef2",
+      "src/mirage_kan/experiments/gate_a/promotion.py": "b2384125ebe969c91526f7d45a37be9086cd0752a310c0fbc79c59559de065cb",
+      "src/mirage_kan/experiments/gate_a/smoke.py": "ec0c1302bd43458431e67f88d69855ffdd087f07e557995ed883c4080241df72",
+      "src/mirage_kan/experiments/gate_a/symbolic.py": "fba60a156a60c1980e9079726088479e3893eb76bc865b0c20e0c306414a4922",
+      "src/mirage_kan/experiments/gate_a/symbolic_smoke.py": "7c206d42758c788cfb549eaf9fffd02c76b72f6c25e743b1e9d7b92f8beb8072",
+      "src/mirage_kan/experiments/gate_a/training.py": "95ed407fe3903bc0af683e3640daf239485786d189c5ddb49725ea0f760b4600",
+      "src/mirage_kan/identities.py": "7916aaa4b410f8f9cf5174fcaa70ea780112c6615743d93fbe99344ce09b9ba7",
+      "src/mirage_kan/seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c"
+    }
+  },
+  "implementation_lock": {
+    "path": "prereg/s1_gate_a_v1_implementation.lock.json",
+    "sha256": "1f68aab0b86c4416bfef7093ff519a8d442384732fd5fdee705abbcf37e654cc"
+  },
+  "implementation_unchanged": true,
+  "mode": "smoke",
+  "null_promotion_count": 0,
+  "promotion_status": "ineligible_residual_shapes",
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "real_arms": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "C6"
+  ],
+  "reports": [
+    "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/reports/smoke.json",
+    "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/reports/smoke.md"
+  ],
+  "run_id": "s1_gate_a_v1_auditfix_final_cpu_v1",
+  "schema_version": 1,
+  "scientific_evidence": false,
+  "seal_after": {
+    "config_matches": true,
+    "config_sha256": "3af2a7f4febb769c4e0ad3019f03708d5ce05e4e721f22592b79a418b385c11a",
+    "lock_path": "prereg/s1_gate_a_v1.lock.json",
+    "lock_sha256": "6be7a1676e79486f3b8b759f6363bd772d2352eca0a8b10babc6b41f808f4e4d",
+    "proposal_path": "KAN_Alpha_PR.md",
+    "proposal_sha256": "1880ccf174c3c691f4296eec52b3536d651421f0f0b81bc2d4031d6bc5cdc41a",
+    "protocol_matches": true,
+    "protocol_sha256": "a91f6b97ba6d7c172cc91b7313a83c069bdd79e88e04fc03dd2c2a960fcab97f"
+  },
+  "seal_before": {
+    "config_matches": true,
+    "config_sha256": "3af2a7f4febb769c4e0ad3019f03708d5ce05e4e721f22592b79a418b385c11a",
+    "lock_path": "prereg/s1_gate_a_v1.lock.json",
+    "lock_sha256": "6be7a1676e79486f3b8b759f6363bd772d2352eca0a8b10babc6b41f808f4e4d",
+    "proposal_path": "KAN_Alpha_PR.md",
+    "proposal_sha256": "1880ccf174c3c691f4296eec52b3536d651421f0f0b81bc2d4031d6bc5cdc41a",
+    "protocol_matches": true,
+    "protocol_sha256": "a91f6b97ba6d7c172cc91b7313a83c069bdd79e88e04fc03dd2c2a960fcab97f"
+  },
+  "seal_unchanged": true,
+  "seeds": [
+    8675701,
+    8675702
+  ]
+}

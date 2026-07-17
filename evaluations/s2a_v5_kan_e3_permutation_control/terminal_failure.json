@@ -1,0 +1,10 @@
+{
+  "error": "matched blackbox pairing differs from selected KAN lineage",
+  "failure_class": "s2a_v2_development_failure",
+  "partial_files": {},
+  "phase": "development",
+  "protocol_id": "s2a_kan_e3_vertical_v5",
+  "publication_state": "terminal_failure",
+  "topology_key": "evaluation:kan_e3_permutation_control",
+  "topology_sha256": "90f942e5dc4faf63384aa860f260239b44ce2e12480f5405f657524a29096aac"
+}

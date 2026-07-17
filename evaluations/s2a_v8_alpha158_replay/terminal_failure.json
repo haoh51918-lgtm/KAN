@@ -1,0 +1,18 @@
+{
+  "error": "implementation runtime identity mismatch",
+  "failure_class": "s2a_v2_decision_assembly_failure",
+  "partial_files": {
+    "alpha158_replay_backtest_metrics.json": "1218b3130ecad9e9603b69daaf6a29a4df3f3694ad82f709b8beed4fd18936f0",
+    "alpha158_replay_cumulative_excess.csv": "ef55288fc474a2f4d814ade29205790498d15412603fdbea523022afc93f52ad",
+    "batch_summary.json": "e648d13f499baf534c3bc4c54112a6fd086c081ab54063887ff69ad2f861c636",
+    "manifest.json": "f8a1ea5d8b4191207d2724a223d3d7cb09fd46abdffcd52063fd9afbd7324dd7",
+    "portfolio_daily.parquet": "502fc09a632565edd02c2fe9eb20587b6d15bbcef503fffd0836156ba8c81d3e",
+    "prediction_coverage.parquet": "4cd56d308d06f6826ce271266c4c9757291ae4f9de17684a950b824351f13014",
+    "qlib_report.parquet": "e6acf22417a241f8d88efe47cd0fa2395c49f559564d84e75d19aa855ac58f6d"
+  },
+  "phase": "development",
+  "protocol_id": "s2a_kan_e3_vertical_v8",
+  "publication_state": "terminal_failure",
+  "topology_key": "evaluation:alpha158_replay",
+  "topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535"
+}

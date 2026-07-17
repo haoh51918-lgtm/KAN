@@ -1,0 +1,166 @@
+{
+  "created_before_science": true,
+  "external_files": {
+    "baseline_metric": {
+      "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+      "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb",
+      "size_bytes": 557
+    },
+    "data_cache": {
+      "path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+      "sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+      "size_bytes": 45026402
+    }
+  },
+  "files": {
+    "KAN_Alpha_PR.md": "1ceb575843c02caa770e650f35d425013da3436583e5fe61685984e991ac5218",
+    "artifacts/s2a_kan_e3_mining_v2/terminal_failure.json": "afe8bc304d09fbf8534e92852dcc085e6f6ae75177f62d1129ec981a39ba97ef",
+    "configs/data/pit_cache.json": "5db3cef008cb26f8c287feb39560ab96809b2f8b743080751d177c8004359cc3",
+    "configs/evaluation/quanta_pinned.json": "57874840d49a4ba5e0bd71590776d4c5542960a15a02ddbe7d186cf095392d4f",
+    "configs/experiments/s2a_kan_e3_vertical_v3.yaml": "0b88d467c5c05489d4d18b7ef6adcfe83692e65d06671cbf6199e01323fb4919",
+    "controls/s2a_matched_blackbox_v2/terminal_failure.json": "e72b872f81c207d2af4f892b68b793bfaeef4622dc637dda3dfb7ec0764cbdd6",
+    "factor_libraries/s2a_kan_e3_permutation_control_v2/terminal_failure.json": "af7ea16cb402a91536838373834bdf8e146560daf29eab0b46463bd92c498d6f",
+    "factor_libraries/s2a_kan_e3_selected_v2/terminal_failure.json": "cd81ed7b30bbe3e24ece907ff5edf9eb11fa626dc5bf459b08935a40b77ca437",
+    "factor_libraries/s2a_typed_gp_sr_control_v2/terminal_failure.json": "9384dfd283dcabdad2f6da672c029c35c4ca23113218050fc96680747aa55cf0",
+    "governance/authority/s2a_kan_e3_vertical_v2/receipts/.00000000000000000001.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v2/receipts/00000000000000000001.json": "ae5c1b86031b64ada99d65d0432544f17a59d6d2db436fa1937bdb0ec7e33e19",
+    "governance/authority/s2a_kan_e3_vertical_v2/revalidation.jsonl": "0f3fa79b511960047176f67bf8bad0319cd50d23e4b580e2d80a42349b9a407c",
+    "governance/incidents/2026-07-17_s2a_v2_entitlement_serialization_failure.md": "800bcc967b44d2d7fef378742564a6740ecd53d08584c398f88ba1fda756ce12",
+    "governance/openings/s2a_kan_e3_vertical_v2_mining.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/openings/s2a_kan_e3_vertical_v2_mining_preclaim.json": "04d62cae982e5bfb02c72d8c8b6b3deb0dc420ebad8b8816266295875756f5d2",
+    "mechanism_cards/s2a_kan_e3_selected_v2/terminal_failure.json": "d06825e138668d33858852a3d288aa34f6246d645c0a543272b37aa3d77fc2a6",
+    "prereg/s2a_kan_e3_vertical_v2.lock.json": "65d00b5ea05336fd28c5277340aa3ff38f602f6c7d07952b1af6dd04fb504ae7",
+    "prereg/s2a_kan_e3_vertical_v2_implementation.lock.json": "f22e592379f8045aef0f690e770eee54d1dd27415404760ecd99d27f778863bd",
+    "prereg/s2a_kan_e3_vertical_v3.lock.json": "07faa9b04368ce757e032def7779a22e7fdf42cf30bf340f24900a4f94bb3567",
+    "prereg/s2a_kan_e3_vertical_v3.md": "703bdfeecebc7bb27ef10ebbf6346a68e1fa4447d157a45ecf7f311316201e00",
+    "pyproject.toml": "6a10cd02d771950d0ae673a9ebae42cf36006bc6e15340db3beac29f8099ee13",
+    "reviews/s2a_kan_e3_blind_v2/terminal_failure.json": "716a53ee94dcf4ef6e052e588e932529531383e2fc22f2b2966e082655eee731",
+    "uv.lock": "3d1481e7dd5ea6c4ed52f3e4eae10a61e92bb6fb0ff86369aeed44b6eab8b11d"
+  },
+  "protocol_id": "s2a_kan_e3_vertical_v3",
+  "qlib_provider": {
+    "file_count": 60168,
+    "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+    "stat_inventory_sha256": "17d210c4f3e0aa3631d93024cca1ff35ecad6ba4548506faf39ccb2cd4178a34",
+    "total_bytes": 632291118,
+    "tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1"
+  },
+  "quanta": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config": {
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/configs/backtest.yaml",
+      "sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832"
+    },
+    "configured_provider_uri": "~/.qlib/qlib_data/cn_data",
+    "repository": "/zju_0012/htq/aaai26_alpha/QuantaAlpha",
+    "runner": {
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+      "sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8"
+    }
+  },
+  "runtime": {
+    "determinism": {
+      "cublas_workspace_config": ":4096:8",
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms_enabled": true
+    },
+    "distributions": {
+      "PyYAML": "6.0.3",
+      "numpy": "2.3.5",
+      "pandas": "2.3.3",
+      "pyarrow": "23.0.1",
+      "scipy": "1.17.1",
+      "torch": "2.9.1+cu129"
+    },
+    "python": {
+      "executable": "/usr/bin/python3.12",
+      "implementation": "cpython",
+      "version": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]"
+    },
+    "torch": {
+      "cuda_available": true,
+      "cuda_version": "12.9",
+      "cudnn_version": 91600,
+      "device_count": 2,
+      "devices": [
+        {
+          "capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A800-SXM4-80GB"
+        },
+        {
+          "capability": [
+            8,
+            0
+          ],
+          "index": 1,
+          "name": "NVIDIA A800-SXM4-80GB"
+        }
+      ],
+      "version": "2.9.1+cu129"
+    }
+  },
+  "schema_version": "mirage_s2_implementation_lock_v2",
+  "scientific_results_observed": false,
+  "source_tree": {
+    "files": {
+      "__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+      "artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+      "artifacts/library.py": "4c7125dd696ac18b52381afb833fe61adece3ba351dc3f927ff6c5a41446cea3",
+      "artifacts/mechanism.py": "d6d9c32cec18c0d2c1299b01c501027a4c47456ae09aa171f1ced27bd2cd19a6",
+      "artifacts/topology.py": "8e05230af6e21867c2e23d60930446fbe6ab21aca629a877f32beb38ee6eeca1",
+      "artifacts/v2_bundle.py": "a94027ece36f7d8f33e40671a5ee7e7b1c8970d4f1f8b65024103219b3cb9b24",
+      "cli.py": "4e94f98d5a18a7d43eb08b6e512bba34d3cc61a9dd46c5fbc4d984bfac5e849a",
+      "data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+      "data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+      "dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+      "dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+      "evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+      "evaluation/quanta.py": "f17f2720363535ab1d8c0c4475a08bb12824710e4ceb166309abba0041c197d7",
+      "evaluation/s2a.py": "e2a98970028c3678a87979455921c190129048724adcd441ddf41ddc6dc6fed5",
+      "evaluation/s2a_v2_decision.py": "8b6a34e726fdc7076612a60a68aad327faffe052ed3f7ce922a79706ac2fbf44",
+      "evaluation/v2_decision_assembler.py": "ef737ab6173c9da7782cfa81be6463d8593267a0205574d0ed7171878f47f30e",
+      "evaluation/v2_pipeline.py": "44ea99ac7149dec4f1ed102fb957a5be274c04166f24a02a8deb5da327c1aa31",
+      "evaluation/v2_runner.py": "a9c108a56bd92cef63bb3e3e732fbc2d42ebeb762e74751cfb9a53417c248177",
+      "executor/__init__.py": "d541cddfbeac49bddb3b3da88e9f651fa03d21b98140afa336dafccadad9463b",
+      "executor/torch.py": "5ad675b6cce80a14641ac9aac30caa85c7e5835a2363b4d193bf81357978b752",
+      "experiments/__init__.py": "491b688fbf46593a187c5853baccb176b6f7f1a2b00d32bde082b1fb8c74e2b2",
+      "experiments/gate_a/__init__.py": "39bc621b5081daaf3674e51c97d800e39951309a398d1d118207e5ac6b400dd1",
+      "experiments/gate_a/controls.py": "947040807be2753d13c976b6b6ac97a3d6c376c2337a105ab771c4b820c05dcd",
+      "experiments/gate_a/data.py": "0a7b45a040c29d1fcee3949968b65b622cf046f453e708dee8420cd7f804dc3f",
+      "experiments/gate_a/e5.py": "364ad3ad475424893bb4ac3a7d13bf4970d348d1601efd5268a1f617f85deab4",
+      "experiments/gate_a/e5_smoke.py": "54025f542cae5cef378fe1fceaa3914a9677edf87e2c1d1de2a2a6608ff5ed6e",
+      "experiments/gate_a/matrix.py": "69b2e3ccd6f8def6bd301e6b6cbb69657505f9f6d277e19c4d807d81c2915c50",
+      "experiments/gate_a/metrics.py": "d060276ab8be1e02e2eaed18eb0e3bb51d84f7332df845e46fd3c22cade05703",
+      "experiments/gate_a/models.py": "bb71833307484eb24837a98fe40695ea3c840b38569f0b1fc9985db52aa2a724",
+      "experiments/gate_a/posthoc.py": "f35b55fa7d7fc5cacd989e27e019b02da9f789ec490662562f6919cd0721cef2",
+      "experiments/gate_a/promotion.py": "b2384125ebe969c91526f7d45a37be9086cd0752a310c0fbc79c59559de065cb",
+      "experiments/gate_a/smoke.py": "ec0c1302bd43458431e67f88d69855ffdd087f07e557995ed883c4080241df72",
+      "experiments/gate_a/symbolic.py": "fba60a156a60c1980e9079726088479e3893eb76bc865b0c20e0c306414a4922",
+      "experiments/gate_a/symbolic_smoke.py": "7c206d42758c788cfb549eaf9fffd02c76b72f6c25e743b1e9d7b92f8beb8072",
+      "experiments/gate_a/training.py": "95ed407fe3903bc0af683e3640daf239485786d189c5ddb49725ea0f760b4600",
+      "governance/__init__.py": "a7478a799e98f62c73e930f15a59da057e19f8100f214e648af57f108c56129a",
+      "governance/authority.py": "d638e80c97c66630c5a7b735a70cf97d0e5f8a56108c15336b6924b8bbae1b02",
+      "governance/implementation_lock.py": "c18deea369f9ef0d8d4494d45844ab51e70b81e36026c238d516e9795ecf005c",
+      "governance/openings.py": "4b724a763daa89ee539505781569549fc0219c3a547690d2e9e735f1d33710d2",
+      "identities.py": "b55d419786a6c9ad0cd4e3b240d00de426e0ca4d5ab8f376252704a419e59794",
+      "mining/__init__.py": "5298be17fbacc3318918b21811af63319f2642f64bc6832e23e26fa892541ebc",
+      "mining/core.py": "f5e877322700d200f3703146589b8538648b16174525eddbceb06d89eb773020",
+      "mining/e3.py": "ecb53e0ba75cc846374a4a55476b652ececb3287b0b70345772332b8e9ae4649",
+      "mining/e3_runner.py": "130979ce233ebb2b1d6f45afe343d8e4dbbc5b51b2eb16e43344851989f61f67",
+      "mining/gp_control.py": "6cb184970d9854d32031a0427527acba19bdc954ff4feb7924abd0bd7093df16",
+      "mining/mlp_control.py": "0e17026775e75dab2adedd55e3a8dc018a81c0996004aad74199bda96fa8eecc",
+      "mining/s2a.py": "6c6febf61e2a42dfabc90e2c5d0abf08d57563a20603268e82c01433eaa97668",
+      "mining/v2_pipeline.py": "e301560dc566df1c2d1367350c48863031478018e6ca214d976ab84561c7c6ec",
+      "mining/v2_scoring.py": "14238be3885f3ac9f973eb1af7986c73bfb7dcc14045ce38db70cdbef0ed0080",
+      "mining/v2_workflow.py": "31898cf3e24e6dbb846030d5519c299cf035307a57ee2c00c13541be5bdbe4d9",
+      "protocol.py": "ea7e9623478bced0ceb79bfaec03f7e4c7d60502df405111817956d716d66da4",
+      "seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c"
+    },
+    "tree_sha256": "fb737543f157dc1441f7e4b518ee04efe58096e988ef2450e5005415d05fb337"
+  }
+}

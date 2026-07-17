@@ -1,0 +1,66 @@
+{
+  "accounting": {
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 630714368,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 16,
+    "trainable_parameters": 115,
+    "wall_clock_seconds": 0.003384483978152275
+  },
+  "arm": "E1",
+  "device": "cpu",
+  "model_class": "FreeSplineKAN",
+  "model_initialization_seed": null,
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/checkpoints/E1/seed_8675502_main_e1/selected.pt",
+    "console_log": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/ledgers/training_logs/seed_8675502_main_e1/console.log",
+    "data_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/data/seed_8675502/manifest.json",
+    "manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/manifests/E1/seed_8675502_main_e1/manifest.json",
+    "test_metrics": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/metrics/E1/seed_8675502_main_e1/test.json"
+  },
+  "run_id": "seed_8675502_main_e1",
+  "schema_version": 1,
+  "selection": {
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_inference_temperature": null,
+    "selected_step": 1,
+    "selected_value": 0.988657241097636,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_trainable_parameter_count"
+  },
+  "settings": {
+    "batch_size": 16,
+    "dtype": "float64",
+    "early_stopping_patience_validations": 1,
+    "learning_rate": 0.003,
+    "max_steps": 1,
+    "seed": 8675502,
+    "validation_interval_steps": 1
+  },
+  "test_once": {
+    "evaluated": true,
+    "matrix_metrics": {
+      "clean_nrmse": 0.9918973800197061,
+      "clean_nrmse_bootstrap": {
+        "block_dates": 20,
+        "lower": 0.998456147061769,
+        "method": "circular_moving_date_block",
+        "point": 0.9918973800197061,
+        "replicates": 2,
+        "seed": 2460261334749026700,
+        "upper": 1.0005930233143256
+      },
+      "noisy_nrmse": 0.9911420673515737
+    },
+    "matrix_opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/predictions/seed_8675502",
+    "prediction_key": "E1_prediction"
+  },
+  "torch_version": "2.9.1+cu129",
+  "training_penalties": {
+    "enabled": false,
+    "model_metadata": null,
+    "selected_step_accounting": null,
+    "step_accounting": []
+  }
+}

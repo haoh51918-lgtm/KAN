@@ -1,0 +1,156 @@
+{
+  "arm": "E2",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          0.4290081621254479,
+          -4.453387259513023,
+          7.999999999025591,
+          7.999223191965662
+        ],
+        "edge": 0,
+        "primitive": "Tanh",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          1.1357267762885495,
+          -0.21665678038024147,
+          0.7110556121082414,
+          0.04954194770007951
+        ],
+        "edge": 1,
+        "primitive": "Tanh",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          1.0064697233248665,
+          -2.440441382885519,
+          0.029738310213562498,
+          0.029015101488124875
+        ],
+        "edge": 2,
+        "primitive": "Tanh",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          3.4188458963354464,
+          -5.927040610951604,
+          -0.006143569916080942,
+          -0.0022320590329498427
+        ],
+        "edge": 3,
+        "primitive": "Tanh",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          0.6770343543749502,
+          0.33469336289696267,
+          0.0010003841132568256,
+          -0.009079875718303062
+        ],
+        "edge": 4,
+        "primitive": "Clip(-1,1)",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          5.714138933626442,
+          0.1365088278418072,
+          0.0009894710276265198,
+          -0.008032585989696901
+        ],
+        "edge": 5,
+        "primitive": "Tanh",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": -0.009922265368673154,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "6ddb81892d27d4ec33a7bebd04fb6395c6a2d3067f4104ac90f59146698817c1",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1082
+  },
+  "metadata": {
+    "fit_manifest": {
+      "e1_or_target_retraining": false,
+      "fits_per_edge": 8,
+      "optimizer": "scipy.optimize.least_squares",
+      "scipy_version": "1.17.1",
+      "selection_data": "train_inputs_and_e1_edges_only",
+      "selection_metric": "train_edge_mse",
+      "settings": {
+        "initial_parameters": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "loss": "linear",
+        "lower_bound": -8.0,
+        "max_nfev": 500,
+        "method": "trf",
+        "upper_bound": 8.0
+      },
+      "tie_break": "primitive_dictionary_order",
+      "total_fits": 48
+    },
+    "test_once": false
+  },
+  "paths": {
+    "checkpoint": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E2/seed_2718/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Tanh",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Tanh",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Tanh",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "Tanh",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Clip(-1,1)",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "Tanh",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ]
+}

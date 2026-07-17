@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "decision_timing": "before_any_scientific_metric_after_v1_supersession_audit",
+  "scientific_mode": {
+    "sealed_config": "configs/experiments/s1_gate_a_v1.yaml",
+    "sealed_lock": "prereg/s1_gate_a_v1.lock.json",
+    "implementation_lock": "prereg/s1_gate_a_v1_implementation.lock.json",
+    "overrides": "forbidden",
+    "artifact_root": "artifacts/s1_gate_a_scientific/<matrix_id>",
+    "programmatic_artifact_root_override": "forbidden"
+  },
+  "governance": {
+    "incident_report": "governance/incidents/2026-07-16_frozen_seed_red_test_incident.md",
+    "custody_addendum": "governance/incidents/2026-07-16_frozen_seed_red_test_cleanup_addendum.md",
+    "temporary_artifact_reconstruction": "forbidden"
+  },
+  "smoke_mode": {
+    "frozen_seeds_forbidden": [1729, 2718, 31415],
+    "explicit_reduced_settings_required": true,
+    "artifact_root": "artifacts/s1_gate_a_matrix_smoke/<run_id>"
+  },
+  "null_control": {
+    "interpretation": "labels are circularly shifted by a nonzero whole-date block offset independently in train and validation; features and within-date cross-sections remain fixed",
+    "block_dates": 20,
+    "training_seed_offset": 70000,
+    "validation_seed_offset": 80000,
+    "selection_uses_permuted_validation_labels": true
+  },
+  "source_removed_control": {
+    "removed": "Return(Close,5)",
+    "remaining_source_order": "frozen_order_with_removed_source_deleted",
+    "feature_reconstruction": false
+  },
+  "shape_metric": {
+    "mechanism_grid": [-4.0, 4.0, 801],
+    "raw_return5": "0.03*x",
+    "standardized_return5": "(raw_return5-train_median_return5)/train_iqr_return5",
+    "other_standardized_features": 0.0,
+    "clean_g": "evaluator_only"
+  },
+  "bootstrap": {
+    "kind": "circular_moving_date_block",
+    "block_dates": 20,
+    "replicates": 1000,
+    "interval": [0.025, 0.975],
+    "rng": "numpy.Generator(PCG64)",
+    "seed_arm_offset": "first_8_bytes_sha256_of_arm_id_plus_90000"
+  },
+  "flops": {
+    "neural_training": "optimizer_steps_times_batch_rows_times_two_times_trainable_parameters",
+    "neural_inference": "rows_times_two_times_trainable_parameters",
+    "e2_fit": "sum_function_evaluations_times_grid_rows_times_16",
+    "e5_fit": "sum_recorded_least_squares_estimates",
+    "promotion_fit": "sum_function_evaluations_times_grid_rows_times_8"
+  },
+  "missing_metric": {
+    "json_value": "N/A",
+    "reason_field_required": true,
+    "no_numeric_sentinel": true
+  },
+  "test_once": {
+    "scope": "one_exclusive_claim_per_seed_matrix",
+    "opening": "all_frozen_arm_predictions_are_materialized_in_one_function_call",
+    "persistence": "row_aligned_npz_truth_prediction_date_instrument_plus_sha256",
+    "second_call": "fail"
+  },
+  "gate_aggregation": {
+    "summary": "median_and_full_seed_range",
+    "capacity_inconclusive": "condition_1_failure",
+    "scientific_failure": "capacity_passes_and_any_condition_2_through_7_fails",
+    "successful_seed": "exact_source_selected_and_member_of_eligible_residual_shape_subset",
+    "population_p_value": false
+  },
+  "publication": {
+    "subdirectories": ["data", "checkpoints", "models", "residual_shapes", "controls", "predictions", "metrics", "ledgers", "manifests", "reports"],
+    "seams": "exclusive_no_replace_manifest_last",
+    "failed_attempts": "new_run_id_never_overwrite",
+    "run_id_regex": "[A-Za-z0-9][A-Za-z0-9_-]{0,127}",
+    "top_artifact_index": "all_regular_files_recursive_excluding_matrix_manifest_self_hash_and_terminal_failure",
+    "artifact_index_record": ["root_relative_posix_path", "sha256", "bytes"],
+    "artifact_index_aggregate": "sha256_of_canonical_sorted_json_file_mapping"
+  }
+}

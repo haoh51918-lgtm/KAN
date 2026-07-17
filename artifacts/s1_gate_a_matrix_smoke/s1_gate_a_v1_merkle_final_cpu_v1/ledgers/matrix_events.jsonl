@@ -1,0 +1,8 @@
+{"device":"cpu","event":"matrix_started","mode":"smoke","run_id":"s1_gate_a_v1_merkle_final_cpu_v1","seeds":[8675901,8675902]}
+{"event":"seed_selection_frozen","seed":8675901}
+{"event":"seed_selection_frozen","seed":8675902}
+{"eligible_seeds":[],"event":"cross_seed_governance_frozen","null_promotion_count":0,"promotion_status":"ineligible_residual_shapes"}
+{"artifact_path":"/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/manifests/pretest_ready.json","event":"all_pretest_evidence_frozen"}
+{"arms":["C6","E1","E2","E3","E3_HARD","E4","E4_HARD_ANALYTICAL","E5"],"event":"unified_test_opening_completed","seed":8675901}
+{"arms":["C6","E1","E2","E3","E3_HARD","E4","E4_HARD_ANALYTICAL","E5"],"event":"unified_test_opening_completed","seed":8675902}
+{"event":"matrix_completed","implementation_unchanged":true,"seal_unchanged":true}

@@ -1,0 +1,8 @@
+run=s1_gate_a_c6_tiny_cuda_seeded arm=C6 device=cuda dtype=float64 parameters=361 max_steps=3
+step=1 train_mse=0.189917463018 validation_clean_nrmse=0.663613959341 selected=True
+step=2 train_mse=0.17277750516 validation_clean_nrmse=0.624658185302 selected=True
+step=3 train_mse=0.156963770514 validation_clean_nrmse=0.587508962976 selected=True
+selected_step=3 selected_validation_clean_nrmse=0.587508962976 manifest=artifacts/s1_gate_a_smoke/manifests/C6/s1_gate_a_c6_tiny_cuda_seeded/manifest.json
+test_once_evaluated=true metrics_path=artifacts/s1_gate_a_smoke/metrics/C6/s1_gate_a_c6_tiny_cuda_seeded/test.json
+smoke_complete=true arm=C6
+manifest=artifacts/s1_gate_a_smoke/manifests/C6/s1_gate_a_c6_tiny_cuda_seeded/manifest.json

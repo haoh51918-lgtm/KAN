@@ -1,0 +1,17 @@
+{
+  "config_sha256": "84cd14e31073deafed7efe57b322d5c03442fbc83aebca71031d6a81f81edcfc",
+  "phase": "development",
+  "protocol_id": "s2a_kan_e3_vertical_v4",
+  "publication_state": "preclaimed",
+  "schema_version": "mirage_topology_preclaim_v2",
+  "targets": {
+    "decision_artifact": "evaluations/s2a_kan_e3_vertical_v4_decision",
+    "evaluation:alpha158_replay": "evaluations/s2a_v4_alpha158_replay",
+    "evaluation:kan_e3_permutation_control": "evaluations/s2a_v4_kan_e3_permutation_control",
+    "evaluation:kan_e3_selected": "evaluations/s2a_v4_kan_e3_selected",
+    "evaluation:matched_blackbox_control": "evaluations/s2a_v4_matched_blackbox_control",
+    "evaluation:typed_gp_sr_control": "evaluations/s2a_v4_typed_gp_sr_control"
+  },
+  "top_key": "decision_artifact",
+  "topology_sha256": "4da2c26044b15d2588893e0fa2be12945c4b9b0bddf8b3f18a2040a127f93172"
+}

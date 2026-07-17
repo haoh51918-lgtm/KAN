@@ -1,0 +1,60 @@
+{
+  "arrays": {
+    "scaler": {
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/data/seed_8675402/arrays/scaler.npz",
+      "sha256": "4a494606d15f6df61854e3097a0077a12ebc5243ff127d6c4cd473e593e2edd2"
+    },
+    "test": {
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/data/seed_8675402/arrays/test.npz",
+      "sha256": "51b3722abb9cd961b8ec2aadfa0372f16fa21fb4ccfa8df2edd17a098692b4dc"
+    },
+    "train": {
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/data/seed_8675402/arrays/train.npz",
+      "sha256": "75b5aace976ed2e79c78fae41f5d0d64f1fc944cd2c2a22dacd296ba8eaffc78"
+    },
+    "validation": {
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/data/seed_8675402/arrays/validation.npz",
+      "sha256": "6e1c4ea2bed883b65fd2d2a1a639c2aaae8039bd960d8b423dccc29b7fa0f54a"
+    }
+  },
+  "content_sha256": "162b0bb5b2e4001db6db326f5f4b7077a738bb748afcea8b87d2233bcaed0c7c",
+  "feature_names": [
+    "Return(Close,2)",
+    "Return(Close,5)",
+    "Return(Close,10)",
+    "Return(Close,20)",
+    "SafeDiv(Sub(High,Low),Close)",
+    "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+  ],
+  "provenance": {
+    "candidate_ast_identities": [
+      "c4c6c3cef8f28f7714299de925c1246dd174a34a1694b19166e9d13a08d5712c",
+      "b79930ec3da1c8a499b6a4dc154ecc21f01dbe6561d0fe7cead38a5f4be9b385",
+      "60e3c2f8482dab63baf079ee371a0ff95cbbc9e78f0e46d59cdc2bde09e1bae0",
+      "20445d226aeabe5315cfad859c6833696257e3553b8840fe78c98964001e97db",
+      "82e5305c5a9878e74fb22b32adb38f60cc487c7d36e7dced8562c91527546589",
+      "b2a6d0f261106710ae6691e3927d625f72f763b434c61d1afe386e89c11664bf"
+    ],
+    "content_sha256": "162b0bb5b2e4001db6db326f5f4b7077a738bb748afcea8b87d2233bcaed0c7c",
+    "innovation_draw_order": [
+      "return",
+      "volatility",
+      "open",
+      "high",
+      "low",
+      "volume",
+      "target_noise"
+    ],
+    "numpy_version": "2.3.5",
+    "resolved_config_sha256": "8e7776c174ba44e829727f1aedcf8609db59613c3f3412993a354c19af33f063",
+    "rng": "numpy.random.Generator(PCG64)",
+    "schema_version": 1,
+    "seed": 8675402,
+    "split_seed_offsets": {
+      "test": 20000,
+      "train": 0,
+      "validation": 10000
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,84 @@
+{
+  "arm_claims": {
+    "C6": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/C6/seed_8675922_main_c6/manifest.json.test_once.claim",
+    "E1": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E1/seed_8675922_main_e1/manifest.json.test_once.claim",
+    "E2": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E2/seed_8675922/manifest.json.test_once.claim",
+    "E3": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E3/seed_8675922_main_e3/manifest.json.test_once.claim",
+    "E3_HARD": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E3_HARD/seed_8675922/manifest.json.test_once.claim",
+    "E4": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E4/seed_8675922_main_e4/manifest.json.test_once.claim",
+    "E4_HARD_ANALYTICAL": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675922/manifest.json.test_once.claim",
+    "E5": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E5/seed_8675922/manifest.json.test_once.claim"
+  },
+  "arms": [
+    "C6",
+    "E1",
+    "E2",
+    "E3",
+    "E3_HARD",
+    "E4",
+    "E4_HARD_ANALYTICAL",
+    "E5"
+  ],
+  "paths": {
+    "claim": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922.test_once.claim",
+    "metrics": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/metrics.json",
+    "predictions": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/row_aligned_predictions.npz"
+  },
+  "preflight": {
+    "arm_manifests": {
+      "C6": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/C6/seed_8675922_main_c6/manifest.json",
+        "sha256_before": "89666802ed4e8d8330c43929b0dffb8a391720e41cfc3b7b7f6da56b79ed0a87"
+      },
+      "E1": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E1/seed_8675922_main_e1/manifest.json",
+        "sha256_before": "b80e3ba3db12462dd8b3c59cf6b402d43ca08d02c3e508f13b5982e1b30c6614"
+      },
+      "E2": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E2/seed_8675922/manifest.json",
+        "sha256_before": "fceb9b79317d14a873de650a78a951a1a0850fc6941c38afb66af13e1e03201a"
+      },
+      "E3": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E3/seed_8675922_main_e3/manifest.json",
+        "sha256_before": "f0ab4692aa9ee3e55681660a97d09fe812b0a31894fe71b1df213bfe970a426f"
+      },
+      "E3_HARD": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E3_HARD/seed_8675922/manifest.json",
+        "sha256_before": "66f4b6d9b7cf93262b7b8e354c373ab707ce29cfe2c44e4d24293236c5bdc17a"
+      },
+      "E4": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E4/seed_8675922_main_e4/manifest.json",
+        "sha256_before": "fa125cc0c0bfdd6b6239bb9c15f71de7730baeda75f3e8c70f65d144e85959c6"
+      },
+      "E4_HARD_ANALYTICAL": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675922/manifest.json",
+        "sha256_before": "06bbfbecb9046aeaf1745cf33608da00db269920d3c608b8adb30c219be73ef2"
+      },
+      "E5": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E5/seed_8675922/manifest.json",
+        "sha256_before": "cb587bef445b327cd2c0347be9129185ea59ac089b339e6bc05cfa1bc8dad6f8"
+      }
+    }
+  },
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "receipts": {
+    "C6": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/C6.json",
+    "E1": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E1.json",
+    "E2": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E2.json",
+    "E3": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E3.json",
+    "E3_HARD": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E3_HARD.json",
+    "E4": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E4.json",
+    "E4_HARD_ANALYTICAL": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E4_HARD_ANALYTICAL.json",
+    "E5": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675922/receipts/E5.json"
+  },
+  "schema_version": 1,
+  "seed": 8675922,
+  "sha256": {
+    "metrics": "cdaaf5c60e99f4c8108060f2a2f61899115a20d4ba986461ac56cc14d8dcc7d5",
+    "predictions": "4a083ce3d332b678821de7c69541619de1877ec87d28379ed1786447d620afa7"
+  },
+  "single_opening": true
+}

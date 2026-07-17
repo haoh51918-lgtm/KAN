@@ -1,0 +1,30 @@
+{
+  "anonymous_mapping_sha256": "1bad74f134fc5b2373db2c62434b56f0f52469db68240941d67a27d053f8ad37",
+  "blind_item_count": 7,
+  "budget_counts": {
+    "blind_items": 7
+  },
+  "files": {
+    "blind_review_package.json": "d32631a4dd3215e4d5987957bdf1e067a1e42c20b9d8741b1c51f79ed481a695"
+  },
+  "hides": [
+    "method_name",
+    "pnl",
+    "return_metrics"
+  ],
+  "human_review_complete": false,
+  "identities": {
+    "authority_sha256": "5eff8f479ff80120c1923c8bf8f29d0229d39b8ce002b5476cfcd461cf62790b",
+    "implementation_sha256": "37d345c1ab5520d9e7c18d6137fad0a91109cdc9d20319162ddea170b5d95a41",
+    "protocol_sha256": "84cd14e31073deafed7efe57b322d5c03442fbc83aebca71031d6a81f81edcfc"
+  },
+  "kan_mined": false,
+  "output_kind": "blind_review_package",
+  "promotion_eligible": false,
+  "publication_state": "staged_unpublished",
+  "role": "human_blind_review_input",
+  "schema_version": "mirage_s2a_v2_staging_bundle_v1",
+  "topology_binding_required_before_publication": true,
+  "topology_key": "blind_review_package",
+  "topology_sha256": "635787451b2a9c3bc0e19898f25759885f58a9057038c35b63779bf5b3f1c8e4"
+}

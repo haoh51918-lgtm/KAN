@@ -1,0 +1,10 @@
+{
+  "arm": "matched_blackbox_control",
+  "base_lock_sha256": "aa36b6ae9cfae850284f3c8bbac83c401981787dbfb9c3b9f7e4acf362192983",
+  "boundary": "before_each_scientific_or_control_arm",
+  "protocol_id": "s2a_kan_e3_vertical_v5",
+  "receipt_sequence": 17,
+  "receipt_sha256": "b3b86b5b58aa7580fda34ae76024049ac46531dbd5b3cc4269fcf40114d670f4",
+  "schema_version": "mirage_s2a_arm_authority_consumption_v2",
+  "state": "consumed_before_arm_identity_or_adapter_access"
+}

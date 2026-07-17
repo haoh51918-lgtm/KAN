@@ -1,0 +1,8 @@
+{
+  "arm": "E4_HARD_ANALYTICAL",
+  "input_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675702/manifest.json",
+  "input_manifest_sha256": "4bf85eb67f08f7ed24b5609c8b5fa695f6ed80db18831370555ae06b2df64362",
+  "opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/predictions/seed_8675702",
+  "schema_version": 1,
+  "seed": 8675702
+}

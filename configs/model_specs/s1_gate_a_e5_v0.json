@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "arm": "E5",
+  "decision_timing": "before_any_e5_smoke_metric",
+  "scientific_scope": "S1_Gate_A_typed_symbolic_regression",
+  "grammar": {
+    "value_type": "finite_real",
+    "sources": [
+      "Return(Close,2)",
+      "Return(Close,5)",
+      "Return(Close,10)",
+      "Return(Close,20)",
+      "SafeDiv(Sub(High,Low),Close)",
+      "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+    ],
+    "unary_primitives": [
+      "Identity",
+      "Abs",
+      "Square",
+      "SignedLog1p",
+      "Tanh",
+      "Clip(-1,1)",
+      "PositiveHinge(0)",
+      "NegativeHinge(0)"
+    ],
+    "root": "Add(Constant(intercept), Mul(Constant(coefficient), Primitive(Input))+)",
+    "minimum_terms": 1,
+    "maximum_terms": 3,
+    "coefficient_scope": "one_output_coefficient_per_unary_term_plus_intercept",
+    "input_affine_parameters": false,
+    "spline_or_neural_paths": false
+  },
+  "forbidden": [
+    "Exp",
+    "AsymmetricSaturation",
+    "PiecewiseExponential",
+    "target_formula_or_family",
+    "spline",
+    "neural_proxy"
+  ],
+  "canonicalization": {
+    "source_order": "frozen_source_list_order",
+    "primitive_order": "frozen_primitive_list_order",
+    "add_is_commutative": true,
+    "term_order": "source_index_then_primitive_index",
+    "duplicate_unary_terms": "collapse_before_fit",
+    "identity_nodes": "retained_and_counted",
+    "fitted_zero_coefficients": "retained_and_counted_without_threshold_pruning",
+    "floating_serialization": "IEEE_754_float64_hex",
+    "structural_identity": "sha256_of_canonical_unfitted_structure_json"
+  },
+  "search": {
+    "kind": "deterministic_sparse_additive_beam",
+    "generation_order": [
+      "all_single_terms",
+      "all_two_distinct_term_combinations",
+      "three_term_extensions_of_validation_ranked_two_term_beam"
+    ],
+    "single_term_beam_size": 48,
+    "two_term_generation": "exhaustive_48_choose_2",
+    "two_term_parent_beam_size": 32,
+    "three_term_extension_order": "parent_rank_then_increasing_atom_index",
+    "randomness": "none",
+    "seed_use": "record_only_for_run_identity"
+  },
+  "continuous_fit": {
+    "data": "train_noisy_target_only",
+    "method": "numpy.linalg.lstsq",
+    "rcond": null,
+    "design": "executed_unary_terms_plus_intercept",
+    "validation_refit": false,
+    "coefficient_pruning": false
+  },
+  "selection": {
+    "data": "validation_clean_truth_only",
+    "metric": "nrmse",
+    "complexity_tolerance_nrmse": 0.005,
+    "within_tolerance_order": [
+      "ast_node_count",
+      "ast_depth",
+      "free_constants",
+      "utf8_description_length",
+      "validation_clean_nrmse",
+      "canonical_structural_identity"
+    ]
+  },
+  "invalid_domain": {
+    "input_policy": "reject_candidate_if_any_referenced_value_is_non_finite",
+    "output_policy": "reject_candidate_if_any_executed_or_fitted_value_is_non_finite",
+    "imputation": false,
+    "clipping": false,
+    "invalid_ast_and_invalid_execution_ledgers": "separate"
+  },
+  "budget": {
+    "max_distinct_valid_full_ast_evaluations": 12000,
+    "max_ast_depth": 5,
+    "max_ast_nodes": 15,
+    "duplicate_policy": "record_attempt_without_consuming_full_fit_evaluation",
+    "invalid_policy": "record_separately_without_consuming_valid_evaluation",
+    "budget_exhaustion_policy": "record_unfitted_unique_attempt_and_stop_automatic_generation"
+  },
+  "accounting": {
+    "ledger_statuses": [
+      "evaluated",
+      "duplicate",
+      "invalid_ast",
+      "invalid_execution",
+      "fit_failure",
+      "budget_exhausted"
+    ],
+    "required_totals": [
+      "attempted_candidates",
+      "distinct_valid_ast_evaluations",
+      "duplicate_attempts",
+      "invalid_ast_attempts",
+      "invalid_execution_attempts",
+      "fit_attempts",
+      "successful_fits",
+      "fit_failures",
+      "budget_exhausted_attempts",
+      "wall_clock_seconds"
+    ]
+  },
+  "persistence": {
+    "schema_version": 1,
+    "files": [
+      "ledger.jsonl",
+      "selected_model.json",
+      "manifest.json"
+    ],
+    "publication": "exclusive_directory_no_replace_manifest_last",
+    "integrity": "sha256_for_ledger_and_selected_model"
+  }
+}

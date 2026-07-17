@@ -1,0 +1,41 @@
+{
+  "label_parity": {
+    "fwd": {
+      "comparable_rows": 784283,
+      "exact": true,
+      "max_abs_difference": 0.0,
+      "missing_mask_interpretation": "recorded labels are dynamic-universe scoped; finite right-boundary labels may use Qlib dates beyond the raw cache end",
+      "recorded_finite_beyond_cache_recompute_rows": 595,
+      "recorded_finite_outside_universe_rows": 0,
+      "recorded_missing_but_raw_recomputable_rows": 748741
+    },
+    "fwd20": {
+      "comparable_rows": 773159,
+      "exact": true,
+      "max_abs_difference": 0.0,
+      "missing_mask_interpretation": "recorded labels are dynamic-universe scoped; finite right-boundary labels may use Qlib dates beyond the raw cache end",
+      "recorded_finite_beyond_cache_recompute_rows": 2366,
+      "recorded_finite_outside_universe_rows": 0,
+      "recorded_missing_but_raw_recomputable_rows": 736282
+    }
+  },
+  "pit": {
+    "date_max": "2025-12-26",
+    "date_min": "2015-01-05",
+    "dates": 2671,
+    "in_universe_all_raw_unobserved_rows": 15394,
+    "instruments": 653,
+    "observed_rows": {
+      "close": 1535881,
+      "high": 1535881,
+      "low": 1535881,
+      "open": 1535881,
+      "volume": 1535881
+    },
+    "rows": 1572483,
+    "source_path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+    "source_sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+    "tradability_present": false,
+    "universe_rows": 801001
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "baseline_link": {
+    "fixed_14_regime": false,
+    "observed_best_iteration": 14,
+    "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+    "reported_metrics": {
+      "AR_abs_close": 0.0042,
+      "AR_abs_open": 0.0151,
+      "AR_close": 0.0035,
+      "AR_open": 0.0144,
+      "IC": 0.01305,
+      "ICIR": 0.08211,
+      "IR_close": 0.0533,
+      "IR_open": 0.22,
+      "MDD_close": -0.1666,
+      "MDD_open": -0.1376,
+      "RankIC": 0.03311,
+      "RankICIR": 0.21239,
+      "SR_close": 0.0246,
+      "SR_open": 0.0878,
+      "best_iter": 14,
+      "route": "Alpha158+LGB native lgb.train (== qlib LGBModel internal call; mlflow logging bypassed), EXACT backtest.yaml:94-108 (feature_fraction_bynode=0.8, seed=42, num_boost_round=500, early_stop=50); early_stop@14; wall=135s"
+    },
+    "role": "provisional_historical_baseline_link",
+    "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb",
+    "training_regime": "500_round_cap_early_stopping_50"
+  },
+  "kan_mined": false,
+  "library_manifest_sha256": "6afd41c02302f3d989dfc328a42d8b3e493f157dcd02bd2bd65dbaaed74f7427",
+  "library_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/seed_ast_v1",
+  "library_role": "wiring_control",
+  "library_verification": {
+    "factor_count": 4,
+    "library_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/seed_ast_v1",
+    "panel_rows": 1572483,
+    "verified": true
+  },
+  "metrics": {
+    "IC": 0.042781365425007406,
+    "ICIR": 0.26162779777529277,
+    "Rank IC": 0.041030514062692806,
+    "Rank ICIR": 0.2549872272151581,
+    "annualized_return": 0.042857459277401956,
+    "calmar_ratio": 0.2747531339815186,
+    "information_ratio": 0.528702593195614,
+    "max_drawdown": -0.1559853336569576
+  },
+  "quanta_identity": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/configs/backtest.yaml",
+    "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+    "model_protocol": "LightGBM num_boost_round=500 early_stopping_round=50",
+    "portfolio_protocol": "TopkDropout topk=50 n_drop=5 cost-aware open-price",
+    "repository": "/zju_0012/htq/aaai26_alpha/QuantaAlpha",
+    "runner_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+    "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8",
+    "verified": true
+  },
+  "scientific_result": false,
+  "stage": "S0"
+}

@@ -1,0 +1,16 @@
+{
+  "applicable_distribution_count": 217,
+  "artifact_count": 223,
+  "bytes": 4884582030,
+  "checks": {
+    "exclusive_create_rejects_second_publish": true,
+    "final_hash_and_size_verification": true,
+    "safe_unique_artifact_filenames": true,
+    "unexpected_directory_rejected": true,
+    "unexpected_symlink_rejected": true
+  },
+  "passed": true,
+  "schema_version": "s2a_v4_wheelhouse_validation_v1",
+  "sdist_count": 1,
+  "wheel_count": 222
+}

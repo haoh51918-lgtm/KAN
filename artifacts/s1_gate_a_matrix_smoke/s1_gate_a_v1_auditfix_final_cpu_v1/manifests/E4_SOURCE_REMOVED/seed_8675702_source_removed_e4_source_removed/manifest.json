@@ -1,0 +1,85 @@
+{
+  "accounting": {
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 630845440,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 16,
+    "trainable_parameters": 301,
+    "wall_clock_seconds": 0.007306630723178387
+  },
+  "arm": "E4_SOURCE_REMOVED",
+  "device": "cpu",
+  "model_class": "SymbolicResidualKAN",
+  "model_initialization_seed": null,
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/checkpoints/E4_SOURCE_REMOVED/seed_8675702_source_removed_e4_source_removed/selected.pt",
+    "console_log": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/ledgers/training_logs/seed_8675702_source_removed_e4_source_removed/console.log",
+    "data_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/source_removed/seed_8675702/input_manifest.json",
+    "manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675702_source_removed_e4_source_removed/manifest.json",
+    "test_metrics": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/metrics/E4_SOURCE_REMOVED/seed_8675702_source_removed_e4_source_removed/test.json"
+  },
+  "run_id": "seed_8675702_source_removed_e4_source_removed",
+  "schema_version": 1,
+  "selection": {
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_inference_temperature": 0.10000000000000009,
+    "selected_step": 1,
+    "selected_value": 1.009646301409431,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_trainable_parameter_count"
+  },
+  "settings": {
+    "batch_size": 16,
+    "dtype": "float64",
+    "early_stopping_patience_validations": 1,
+    "learning_rate": 0.003,
+    "max_steps": 1,
+    "seed": 8675702,
+    "validation_interval_steps": 1
+  },
+  "sha256": {
+    "selected_checkpoint": "b8ac1311080d5fa9539c24e7969183d6c79db0001850f893d7527905958f973d"
+  },
+  "test_once": {
+    "evaluated": false
+  },
+  "torch_version": "2.9.1+cu129",
+  "training_penalties": {
+    "enabled": true,
+    "model_metadata": {
+      "gate_temperature_schedule": {
+        "final": 0.1,
+        "initial": 2.0,
+        "kind": "linear_by_optimizer_step"
+      },
+      "penalty_weights": {
+        "gate_entropy": 0.001,
+        "gate_sparsity": 0.001,
+        "spline_residual_ratio": 0.01
+      },
+      "unpenalized_accounting": [
+        "spline_residual_raw_energy"
+      ]
+    },
+    "selected_step_accounting": {
+      "gate_entropy": 1.0,
+      "gate_sparsity": 0.875,
+      "spline_residual_ratio": 0.0,
+      "spline_residual_raw_energy": 0.0,
+      "temperature": 0.10000000000000009,
+      "total": 0.001875
+    },
+    "step_accounting": [
+      {
+        "gate_entropy": 1.0,
+        "gate_sparsity": 0.875,
+        "spline_residual_ratio": 0.0,
+        "spline_residual_raw_energy": 0.0,
+        "step": 1,
+        "temperature": 0.10000000000000009,
+        "total": 0.001875
+      }
+    ]
+  }
+}

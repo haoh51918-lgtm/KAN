@@ -1,0 +1,34 @@
+{
+  "control": "exact_source_removed",
+  "future_access": false,
+  "hidden_reconstruction": false,
+  "input_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_final_cpu_v1/controls/source_removed/seed_8675601/input_manifest.json",
+  "input_manifest_sha256": "d17b5a2c031435b65317328e6991f0584c621c3bf757ffeaa3eb1e790cd9a0a9",
+  "mechanism_input_construction": "all_remaining_standardized_features_held_at_train_median_zero",
+  "mechanism_shape_nrmse_with_removed_coordinate_unavailable": 1.0074703983184896,
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "remaining_sources": [
+    "Return(Close,2)",
+    "Return(Close,10)",
+    "Return(Close,20)",
+    "SafeDiv(Sub(High,Low),Close)",
+    "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+  ],
+  "removed_source": "Return(Close,5)",
+  "residual_shape_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_final_cpu_v1/residual_shapes/source_removed/seed_8675601/manifest.json",
+  "schema_version": 1,
+  "seed": 8675601,
+  "selected_remaining_source": {
+    "edge": 1,
+    "primitive": "Identity",
+    "selected_input_mass": 0.5025590869092502,
+    "selection_status": "selected",
+    "source": "Return(Close,10)",
+    "window": 10
+  },
+  "test_access": false,
+  "validation_clean_nrmse": 1.1013538938816707
+}

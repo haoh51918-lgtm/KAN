@@ -1,0 +1,455 @@
+protocol_id: s2a_kan_e3_vertical_v4
+stage: S2a
+evidence_class: prospective_development_screen
+proposal_authority: KAN_Alpha_PR.md
+proposal_section: 25
+claim_boundary:
+  final_claim_allowed: false
+  graph_unlock_allowed: false
+  factor_library_value_promotion_allowed: false
+  developmental_library_label: computationally_transparent_candidate_library
+  formal_interpretable_release_requires_human_blind_review: true
+data:
+  train:
+  - 2016-01-01
+  - 2020-12-31
+  validation:
+  - 2021-01-01
+  - 2021-12-31
+  development_test:
+  - 2022-01-01
+  - 2025-12-26
+  labels:
+  - fwd
+  label_horizon_purge:
+    trading_dates: 2
+    boundaries:
+    - train_end
+    - validation_end
+    cross_split_labels_forbidden: true
+  feature_warmup:
+    trading_dates: 60
+    raw_only: true
+    labels_outside_objective_split_are_null: true
+  test_opening: once_after_all_production_and_control_artifacts_are_immutable
+  raw_miner_inputs:
+  - open
+  - high
+  - low
+  - close
+  - volume
+  externally_precomputed_alpha_inputs_forbidden: true
+search_space:
+  windows:
+  - 2
+  - 3
+  - 5
+  - 10
+  - 20
+  - 40
+  - 60
+  leaves:
+  - Open
+  - High
+  - Low
+  - Close
+  - Volume
+  output_type: dimensionless_ts
+  maximum_ast_depth: 6
+  maximum_ast_nodes: 20
+  spline_residual_allowed: false
+  formula_class: strict
+  terminal_combiner: Sub
+  atom_bank_order: canonical_hash_ascending_after_deduplication
+  edge_banks: positive_and_negative_use_the_same_profile_bank
+  atom_family_definitions:
+    return: Return(PriceField, window)
+    price_vs_mean: SafeDiv(Sub(PriceField, TsMean(PriceField, window)), TsMean(PriceField,
+      window))
+    mean_vs_price: SafeDiv(Sub(TsMean(PriceField, window), PriceField), PriceField)
+    lag_vs_price: SafeDiv(Sub(Delay(PriceField, window), PriceField), Delay(PriceField,
+      window))
+    volume_change: SafeDiv(Delta(Volume, window), Delay(Volume, window))
+    volume_vs_mean: SafeDiv(Sub(Volume, TsMean(Volume, window)), TsMean(Volume, window))
+  atom_family_leaf_rules:
+    PriceField:
+    - Open
+    - High
+    - Low
+    - Close
+    volume_families_ignore_profile_fields: true
+  profiles:
+    short_price:
+      windows:
+      - 2
+      - 3
+      - 5
+      - 10
+      fields:
+      - Open
+      - High
+      - Low
+      - Close
+      atom_families:
+      - return
+      - price_vs_mean
+    long_price:
+      windows:
+      - 10
+      - 20
+      - 40
+      - 60
+      fields:
+      - Open
+      - High
+      - Low
+      - Close
+      atom_families:
+      - return
+      - price_vs_mean
+    reversal:
+      windows:
+      - 2
+      - 3
+      - 5
+      - 10
+      - 20
+      fields:
+      - Open
+      - High
+      - Low
+      - Close
+      atom_families:
+      - mean_vs_price
+      - lag_vs_price
+    price_volume:
+      windows:
+      - 2
+      - 3
+      - 5
+      - 10
+      - 20
+      - 40
+      - 60
+      fields:
+      - Open
+      - High
+      - Low
+      - Close
+      - Volume
+      atom_families:
+      - return
+      - volume_change
+      - volume_vs_mean
+kan_e3:
+  miner_semantics: differentiable_categorical_kan_edges_over_internal_typed_temporal_atoms
+  miners_per_profile: 64
+  total_miner_attempts: 256
+  candidates_per_miner: 1
+  miner_seed_base: 730001
+  seed_derivation: miner_seed_base_plus_profile_index_times_1000_plus_miner_index
+  training:
+    optimizer: Adam
+    learning_rate: 0.03
+    steps: 300
+    dtype: float64
+    temperature_initial: 2.0
+    temperature_final: 0.1
+    hard_st_final_fraction: 0.25
+    entropy_coefficient: 0.001
+    edge_overlap_coefficient: 0.01
+    objective: negative_mean_daily_cross_sectional_pearson_ic
+    block_bootstrap_seed_base: 49979687
+    block_bootstrap_fraction: 0.8
+    block_length_trading_days: 20
+    block_bootstrap_sampling:
+      rng: numpy_pcg64
+      target_date_draws: ceil_fraction_times_available_train_dates
+      block_start_support: inclusive_zero_to_date_count_minus_block_length
+      sampling: block_starts_uniform_with_replacement
+      concatenation: chronological_within_each_drawn_block
+      final_block: truncate_to_exact_target_date_draws
+      repeated_dates: retained_as_objective_multiplicity_weights
+      wraparound: false
+  hardening:
+    inputs:
+    - checkpoint_gate_logits
+    - frozen_atom_manifest
+    - frozen_temperature
+    target_values_forbidden: true
+    validation_values_forbidden: true
+    tie_breaker: atom_canonical_hash_ascending
+    one_formula_per_miner: true
+    rejected_alternates_recorded: true
+  fidelity:
+    soft_hard_pearson_minimum: 0.98
+    soft_hard_nrmse_maximum: 0.1
+    gate_probability_margin_minimum: 0.05
+admission:
+  library_cap: 16
+  minimum_library_size: 6
+  minimum_miner_profiles: 3
+  minimum_per_profile: 1
+  minimum_coverage: 0.85
+  minimum_absolute_train_rank_ic: 0.005
+  minimum_absolute_validation_rank_ic: 0.005
+  require_train_validation_sign_agreement: true
+  maximum_absolute_validation_spearman: 0.8
+  tie_breakers:
+  - minimum_score_desc
+  - ast_nodes_asc
+  - canonical_hash_asc
+  padding_forbidden: true
+controls:
+  arms:
+  - alpha158_replay
+  - kan_e3_selected
+  - typed_gp_sr_control
+  - matched_blackbox_control
+  - kan_e3_permutation_control
+  typed_gp_sr:
+    role: method_control_never_production
+    generation_seed: 15485863
+    attempts_per_profile: 64
+    total_attempts: 256
+    same_dsl_and_admission_as_production: true
+    size_match_to_production_library: true
+    kan_mined: false
+    promotion_eligible: false
+    v1_membership_reuse_forbidden: true
+    terminal_formula_space_matches_kan: Sub_of_two_atoms_from_the_same_profile_bank
+    algorithm:
+      initial_population_per_profile: 16
+      initial_pair_sampling: uniform_with_replacement_then_reject_same_atom_without_retry
+      later_attempts_per_profile: 48
+      parent_selection: four_way_tournament_with_replacement
+      tournament_score: absolute_mean_daily_train_rank_ic_desc
+      tournament_ties:
+      - ast_nodes_asc
+      - canonical_hash_asc
+      variation_choice: uniform_mutation_or_crossover
+      mutation:
+        edge_choice: uniform_positive_or_negative
+        replacement: uniform_different_atom_from_profile_bank
+      crossover:
+        positive_edge: first_tournament_parent
+        negative_edge: second_tournament_parent
+      same_atom_cancellation: invalid_attempt_without_hidden_retry
+      duplicate_formula: duplicate_attempt_without_hidden_retry
+      validation_access_during_evolution: false
+      no_valid_parent_disposition: invalid_no_parent_without_hidden_retry
+  matched_blackbox:
+    role: falsification_control_never_production
+    model: one_hidden_layer_silu_mlp
+    hidden_width: 2
+    parameter_gap_from_paired_kan_maximum: 0.1
+    seed_base: 32452843
+    output_count_matches_production_library: true
+    pairing: one_mlp_per_selected_kan_factor_using_same_profile_and_bootstrap_weights
+    seed_derivation: seed_base_plus_selected_kan_global_attempt_index
+    input_atom_bank_matches_paired_kan_profile: true
+    training_budget_matches_kan: true
+    factor_library_publication_forbidden: true
+    promotion_eligible: false
+  label_permutation:
+    role: negative_control_never_production
+    permutation_seed: 86028121
+    permutation: within_date_cross_section
+    complete_kan_search_rerun: true
+    false_positive_ledger_uses_production_admission: true
+    size_matched_library:
+      require_type_causality_finite_and_coverage: true
+      require_efficacy_threshold: false
+      require_sign_agreement: false
+      ranking: minimum_absolute_permuted_train_validation_rank_ic_desc
+      same_profile_diversity_and_tie_break_rules: true
+      exact_size_match_to_production_library: true
+    kan_mined: false
+    promotion_eligible: false
+interpretability:
+  production_factor_formula_class_allowed:
+  - strict
+  spline_ratio_required: 0.0
+  canonical_ast_independent_replay_required: true
+  mechanism_card_required_for_every_factor: true
+  mechanism_evidence:
+    period: validation
+    support: point_in_time_membership_and_finite_baseline_and_intervened_values
+    selected_atom_contribution_ablation:
+      variable_groups: one_group_for_each_raw_variable_used_by_the_selected_ast
+      operation: replace_every_selected_edge_contribution_using_the_group_with_zero_and_hold_other_selected_edges_fixed
+      lag_bands_inclusive:
+        short:
+        - 2
+        - 5
+        medium:
+        - 10
+        - 20
+        long:
+        - 40
+        - 60
+      lag_operation: replace_every_selected_edge_contribution_whose_window_is_in_the_band_with_zero_and_hold_other_selected_edges_fixed
+      required_metrics:
+      - mean_absolute_factor_delta_divided_by_baseline_population_std
+      - baseline_intervened_pearson
+      zero_or_nonfinite_baseline_std: mechanism_evidence_failure
+    local_counterfactual:
+      unit: one_validation_population_std_of_the_selected_atom_output
+      perturbations:
+      - minus_one_unit
+      - plus_one_unit
+      operation: perturb_one_selected_atom_output_and_hold_the_other_selected_edge_fixed
+      required_outputs:
+      - mean_signed_factor_delta
+      - response_direction
+      terminal_sub_sign_applied: true
+      zero_or_nonfinite_atom_std: mechanism_evidence_failure
+    primitive_shape:
+      input_ratio_grid_inclusive:
+      - 0.5
+      - 1.5
+      grid_step: 0.01
+      exact_analytic_dsl_response: true
+      required_outputs:
+      - primitive_output
+      - signed_edge_contribution
+      - monotonic_direction
+      - saturation_intervals
+    blind_response_questions:
+      source: frozen_plus_one_unit_local_counterfactual_for_each_selected_edge
+      answers_hidden_from_blind_package: true
+      answer_key_source: mechanism_card_local_counterfactual_response
+      answer_key_and_questions_published_before_human_review: true
+  mechanism_card_fields:
+  - identity_and_canonical_ast
+  - raw_variables_windows_and_complexity
+  - edge_gate_and_shape_summary
+  - soft_hard_fidelity
+  - variable_and_lag_interventions
+  - local_counterfactual_response
+  - one_sentence_mechanism
+  - applicability_and_failure_conditions
+  - complete_kan_lineage_and_hardening_receipt
+  blinded_package_hides:
+  - method_name
+  - pnl
+  - return_metrics
+  human_blind_review:
+    reviewers_minimum: 2
+    mechanism_restatement_required: true
+    response_direction_accuracy_minimum: 0.8
+    inter_reviewer_agreement_reported: true
+    pending_review_label: computationally_transparent_not_yet_interpretable
+evaluation:
+  model_seed: 42
+  lightgbm_round_cap: 500
+  early_stopping_rounds: 50
+  strategy: TopkDropout
+  topk: 50
+  n_drop: 5
+  deal_price: open
+  open_cost: 0.0005
+  close_cost: 0.0015
+  minimum_cost: 5
+  primary_metric: paired_delta_information_ratio_block_bootstrap_lcb
+  historical_anchor:
+    information_ratio: 0.22
+    max_drawdown: -0.1376
+    rank_ic: 0.03311
+  replay_tolerances:
+    information_ratio_absolute: 0.03
+    max_drawdown_absolute: 0.02
+    rank_ic_absolute: 0.003
+  bootstrap:
+    seed: 67867967
+    block_length_trading_days: 20
+    replicates: 10000
+    confidence_level: 0.95
+    pairing: same_trading_dates
+    resampling:
+      rng: numpy_pcg64
+      block_starts_uniform_with_replacement: true
+      wraparound: false
+      concatenate_and_truncate_to_calendar_length: true
+    information_ratio:
+      annualization: sqrt_252
+      standard_deviation_ddof: 1
+      input: daily_net_benchmark_relative_return
+    lower_bound: empirical_quantile_0.05_of_paired_delta_ir
+    zero_or_nonfinite_resample_variance: infrastructure_failure_without_dropping_replicates
+diversity_metrics:
+  selected_library_effective_rank:
+    period: validation
+    row_support: joint_membership_and_finite_support_across_selected_factors
+    preprocessing: per_date_cross_sectional_population_zscore_per_factor
+    matrix: pooled_row_correlation
+    eigenvalue_floor: 0.0
+    definition: exp_of_negative_sum_p_log_p
+    p_normalization: nonnegative_eigenvalue_divided_by_eigenvalue_sum
+    minimum_joint_rows: 2
+s2a_decision:
+  performance_noninferiority:
+    kan_minus_alpha158_delta_ir_lcb_minimum: -0.022
+    delta_definition: 0.1_times_absolute_frozen_alpha158_anchor_ir
+    kan_minus_blackbox_delta_ir_lcb_minimum_formula: -0.1_times_absolute_blackbox_ir
+    kan_minus_alpha158_rank_ic_minimum: -0.003
+    kan_minus_alpha158_max_drawdown_minimum: -0.03
+    kan_to_alpha158_mean_turnover_ratio_maximum: 1.2
+    kan_to_alpha158_mean_cost_ratio_maximum: 1.2
+    calendar_years_not_worse_than_alpha158_minimum: 3
+  integrity:
+    production_library_size_minimum: 6
+    production_library_profiles_minimum: 3
+    production_factors_strict_fraction: 1.0
+    production_factors_with_mechanism_card_fraction: 1.0
+    permutation_false_positive_count_maximum: 0
+    alpha158_replay_must_match_anchor: true
+  method_falsification:
+    gp_sr_must_not_pareto_dominate_kan_on_all:
+    - development_delta_ir_lcb
+    - unique_admitted_factors_per_full_evaluation
+    - selected_library_effective_rank
+    pareto_reference_for_delta_ir_lcb: method_minus_alpha158
+    pareto_domination: gp_greater_or_equal_on_all_three_and_strictly_greater_on_at_least_one
+    numerical_tolerance:
+      delta_ir_lcb: 1.0e-12
+      effective_rank: 1.0e-12
+      admitted_rate: exact_integer_numerator_over_256
+  outcomes:
+    pass_with_human_review: advance_s2_formal
+    pass_pending_human_review: advance_s2_formal_pending_human_blind_review
+    performance_or_integrity_failure: s2a_screen_fail
+    authority_or_infrastructure_failure: s2a_inconclusive_infrastructure
+  formal_promotion_allowed: false
+authority_revalidation:
+  boundaries:
+  - before_first_label_access
+  - before_each_scientific_or_control_arm
+  - before_each_artifact_publication
+  - before_development_opening
+  - before_final_decision_publication
+  mismatch_outcome: superseded_authority
+  continued_publication_after_mismatch_forbidden: true
+artifact_paths:
+  mining_run: artifacts/s2a_kan_e3_mining_v4
+  mining_preclaim: governance/openings/s2a_kan_e3_vertical_v4_mining_preclaim.json
+  mining_entitlement: governance/openings/s2a_kan_e3_vertical_v4_mining.json
+  kan_library: factor_libraries/s2a_kan_e3_selected_v4
+  gp_control_library: factor_libraries/s2a_typed_gp_sr_control_v4
+  permutation_control_library: factor_libraries/s2a_kan_e3_permutation_control_v4
+  blackbox_control: controls/s2a_matched_blackbox_v4
+  mechanism_cards: mechanism_cards/s2a_kan_e3_selected_v4
+  blind_review_package: reviews/s2a_kan_e3_blind_v4
+  implementation_lock: prereg/s2a_kan_e3_vertical_v4_implementation.lock.json
+  development_preclaim: governance/openings/s2a_kan_e3_vertical_v4_development_preclaim.json
+  development_opening: governance/openings/s2a_kan_e3_vertical_v4_development.json
+  mining_recovery_receipt: governance/recoveries/s2a_kan_e3_vertical_v4_mining.json
+  development_recovery_receipt: governance/recoveries/s2a_kan_e3_vertical_v4_development.json
+  evaluations:
+    alpha158_replay: evaluations/s2a_v4_alpha158_replay
+    kan_e3_selected: evaluations/s2a_v4_kan_e3_selected
+    typed_gp_sr_control: evaluations/s2a_v4_typed_gp_sr_control
+    matched_blackbox_control: evaluations/s2a_v4_matched_blackbox_control
+    kan_e3_permutation_control: evaluations/s2a_v4_kan_e3_permutation_control
+  decision_artifact: evaluations/s2a_kan_e3_vertical_v4_decision
+  report: reports/s2a_kan_e3_vertical_v4_report.md

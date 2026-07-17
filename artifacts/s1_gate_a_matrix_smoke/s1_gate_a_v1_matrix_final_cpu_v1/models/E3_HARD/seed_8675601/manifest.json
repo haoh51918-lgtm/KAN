@@ -1,0 +1,149 @@
+{
+  "arm": "E3_HARD",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          1.0029698625981962,
+          -0.002999919115916525,
+          0.012999698625919657,
+          -0.002999999191137575
+        ],
+        "edge": 0,
+        "primitive": "Identity",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          1.0029699434287125,
+          -0.002999919115916525,
+          0.012999699434276563,
+          -0.002999999191137575
+        ],
+        "edge": 1,
+        "primitive": "Identity",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          1.002969834322449,
+          -0.002999919115916525,
+          0.012999698343133902,
+          -0.002999999191137575
+        ],
+        "edge": 2,
+        "primitive": "Identity",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          1.002969765474469,
+          -0.002999919115916525,
+          0.012999697654563167,
+          -0.002999999191137575
+        ],
+        "edge": 3,
+        "primitive": "Identity",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          1.002969531974012,
+          -0.0029998130865692687,
+          0.012999690638048907,
+          -0.002999999191137575
+        ],
+        "edge": 4,
+        "primitive": "Square",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          0.9969740031578712,
+          -0.002999919115916525,
+          0.006999740084532067,
+          -0.002999999191137575
+        ],
+        "edge": 5,
+        "primitive": "Identity",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": -0.002999999898892173,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "56a3b00b6fa01142c634bab9fa84031f1c260ed0256b15fb57a46e5c76ba16c4",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1120
+  },
+  "metadata": {},
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_final_cpu_v1/models/E3_HARD/seed_8675601/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Identity",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Identity",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Identity",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "Identity",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Square",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "Identity",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ],
+  "test_once": {
+    "evaluated": true,
+    "matrix_metrics": {
+      "clean_nrmse": 1.0033263292761094,
+      "clean_nrmse_bootstrap": {
+        "block_dates": 20,
+        "lower": 0.9395269854901184,
+        "method": "circular_moving_date_block",
+        "point": 1.0033263292761094,
+        "replicates": 2,
+        "seed": 8146670232989117053,
+        "upper": 1.0101438293189762
+      },
+      "noisy_nrmse": 1.0202452566554938
+    },
+    "matrix_opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_final_cpu_v1/predictions/seed_8675601",
+    "prediction_key": "E3_HARD_prediction"
+  }
+}

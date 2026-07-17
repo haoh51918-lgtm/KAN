@@ -1,0 +1,12 @@
+{
+  "attempt_budget": 256,
+  "library_destinations": {
+    "heterogeneous_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_heterogeneous_selected_v1",
+    "label_permutation_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_label_permutation_selected_v1",
+    "random_typed": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_random_typed_v1"
+  },
+  "protocol_id": "s2_plan_c_vertical_v1",
+  "run_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s2a_plan_c_mining_v1",
+  "schema_version": "mirage_s2a_mining_preclaim_v1",
+  "state": "consumed_before_run_claim"
+}

@@ -1,0 +1,28 @@
+{
+  "arm": "E4_HARD_ANALYTICAL",
+  "claim": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E4_HARD_ANALYTICAL/seed_1729/manifest.json.test_once.claim",
+  "claim_sha256": "d1c3b9841b96c30968b006561a78cd08dddcb0b5d97198d43adf5cfcd41bd830",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E4_HARD_ANALYTICAL/seed_1729/manifest.json",
+  "input_manifest_sha256_after": "b998fed1d8b58119ccfa0a53e8f50d2eaff530541a053b6de685bc889f0c9830",
+  "input_manifest_sha256_before": "b998fed1d8b58119ccfa0a53e8f50d2eaff530541a053b6de685bc889f0c9830",
+  "metrics": {
+    "clean_nrmse": 0.699015817069268,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.6884022784590413,
+      "method": "circular_moving_date_block",
+      "point": 0.699015817069268,
+      "replicates": 1000,
+      "seed": 1793592080190127042,
+      "upper": 0.709916454256136
+    },
+    "noisy_nrmse": 0.7075522564206593
+  },
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729",
+  "prediction_key": "E4_HARD_ANALYTICAL_prediction",
+  "publication": {
+    "no_replace": true
+  },
+  "schema_version": 1,
+  "seed": 1729
+}

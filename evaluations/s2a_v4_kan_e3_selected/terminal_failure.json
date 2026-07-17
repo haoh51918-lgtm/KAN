@@ -1,0 +1,10 @@
+{
+  "error": "prediction_coverage.parquet calendar differs from the exact development calendar",
+  "failure_class": "s2a_v2_development_failure",
+  "partial_files": {},
+  "phase": "development",
+  "protocol_id": "s2a_kan_e3_vertical_v4",
+  "publication_state": "terminal_failure",
+  "topology_key": "evaluation:kan_e3_selected",
+  "topology_sha256": "4da2c26044b15d2588893e0fa2be12945c4b9b0bddf8b3f18a2040a127f93172"
+}

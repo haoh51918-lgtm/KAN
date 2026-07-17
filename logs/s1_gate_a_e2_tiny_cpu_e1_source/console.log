@@ -1,0 +1,4 @@
+run=s1_gate_a_e2_tiny_cpu_e1_source arm=E1_for_E2 device=cpu dtype=float64 parameters=115 max_steps=2
+step=1 train_mse=0.272778859919 penalty_total=0 validation_clean_nrmse=0.990417882762 selected=True
+step=2 train_mse=0.265907987405 penalty_total=0 validation_clean_nrmse=0.978784024526 selected=True
+selected_step=2 selected_validation_clean_nrmse=0.978784024526 manifest=artifacts/s1_gate_a_symbolic_smoke/manifests/E1_for_E2/s1_gate_a_e2_tiny_cpu_e1_source/manifest.json

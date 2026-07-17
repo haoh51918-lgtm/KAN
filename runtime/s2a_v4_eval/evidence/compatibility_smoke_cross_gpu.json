@@ -1,0 +1,24 @@
+{
+  "ast": {
+    "candidate_ast_identities_equal": true,
+    "exact_public_ast_replay_equal": true,
+    "exact_public_support_replay_equal": true,
+    "final_logits_equal": true,
+    "trajectory_equal": true
+  },
+  "cuda0_evidence_sha256": "df90fe9a8860d14dccc81794ad25e12352d61a5bcfd974afa416a57204be0a7e",
+  "cuda1_evidence_sha256": "11c0c2c0678cf82c867ed79dafb795bb5f3f3cedd80aff78e6fbcfa47ec26da8",
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ],
+  "mlp": {
+    "exact_public_replay_equal": true,
+    "final_parameters_equal": true,
+    "gpu_training_vs_cpu_publication_diagnostic_equal": true,
+    "trajectory_equal": true
+  },
+  "passed": true,
+  "role": "compatibility_gate_not_scientific_evidence",
+  "schema_version": "s2a_v4_train_only_ast_mlp_cross_gpu_v2"
+}

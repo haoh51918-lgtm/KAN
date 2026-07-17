@@ -1,0 +1,218 @@
+protocol_id: s1b_identifiability_v1
+stage: S1b
+evidence_class: prospective_identifiability_repair
+proposal_authority: KAN_Alpha_PR.md
+proposal_sections: [15.8, 25.5, 25.6, 25.7]
+s2_blocking: false
+
+custody:
+  reopen_gate_a_v1: false
+  reuse_v1_checkpoints: false
+  reuse_v1_selected_hyperparameters: false
+  reuse_v1_promoted_parameters: false
+  retired_seeds: [1729, 2718, 31415]
+  scientific_seeds: [424243, 565657, 787789]
+  split_seed_offsets:
+    train: 0
+    validation: 10000
+    test: 20000
+  test_opening: one_atomic_opening_after_all_layers_arms_tasks_seeds_are_frozen
+  final_claim_allowed: false
+
+data_layers:
+  synthetic:
+    assets: 64
+    burn_in_dates: 60
+    split_dates:
+      train: 256
+      validation: 64
+      test: 128
+    noise_fraction_of_train_clean_std: 0.10
+    rng: numpy_pcg64
+  semireal_spike_in:
+    source: csi300_pit_raw_ohlcv
+    train: [2016-01-04, 2018-12-28]
+    validation: [2019-01-02, 2019-12-31]
+    test: [2020-01-02, 2021-12-31]
+    nuisance: per_asset_circular_block_shift_of_real_5d_future_return
+    nuisance_minimum_shift_trading_days: 60
+    nuisance_block_length_trading_days: 20
+    train_injected_to_nuisance_std_ratio: 1.0
+    validation_test_reuse_train_injection_scale: true
+    clean_component_is_evaluation_truth: true
+    observed_target_is_training_only: true
+    post_2021_data_access_forbidden: true
+  scaling:
+    feature_statistics: train_median_and_iqr_only
+    feature_clip: [-4.0, 4.0]
+    target_statistics: train_clean_mean_and_population_std_only
+    validation_test_refit_forbidden: true
+
+mechanism_battery:
+  mechanism_classes: 9
+  task_instances: 10
+  tasks:
+    M1_reversal5: -Return(Close,5)
+    M2_trend20: Return(Close,20)
+    M3_volume_confirmation_hump: Return(Close,20)*PositiveHinge(1-Abs(volume_surprise20-1))
+    M4_high_volatility_threshold: PositiveHinge(volatility20-1)
+    M5_asymmetric_downside: -Square(NegativeHinge(Return(Close,2)+0.5))
+    M6_regime_switch: w(volatility20)*Return(Close,20)+(1-w(volatility20))*(-Return(Close,5))
+    M7_noise_distractor: Return(Close,5)_plus_matched_independent_noise_feature
+    M8a_rank_equivalent_linear: Return(Close,10)
+    M8b_rank_equivalent_monotone: Tanh(2*Return(Close,10))
+    M9_out_of_dictionary:
+      input: Return(Close,10)
+      truth:
+        negative: -0.75*(1-exp(1.7*x))
+        nonnegative: 1.40*x/(1+0.55*x)
+      exact_truth_in_initial_dictionary_or_r4_family_forbidden: true
+  M6_gate: (1+Tanh(2*volatility20))/2
+  M8_class_rule: both_instances_must_succeed_in_the_same_seed
+  shared_decoys: [wrong_variable, wrong_window, redundant_structure]
+
+arms:
+  primary: [E4_mono_R1, E4_seq_R2, E4_shapeSR_R4]
+  ablation: [E4_orth_R3]
+  attribution_control: [E4_joint]
+  falsification_controls: [E3_symbolic, E5_typed_sr, C6_matched_mlp]
+  E4_mono_R1:
+    analytical_path: same_as_E4_joint
+    residual_basis: cubic_b_spline
+    monotonicity: coefficient_differences_via_softplus_cumsum
+    zero_anchor: exact
+    saturation: boundary_slope_penalty_and_frozen_limit
+    posthoc_projection_forbidden: true
+  E4_seq_R2:
+    phase_1: analytical_only_fit
+    phase_2: analytical_checkpoint_bitwise_frozen_residual_only_fit
+    phase_3: alternating_backfit_until_frozen_validation_rule
+    phase_4: one_joint_finetune_with_fixed_step_budget
+    freeze_receipts_required: true
+  E4_orth_R3:
+    projection_space: [selected_analytical_outputs, full_input_output_four_affine_closure]
+    projection_measure: full_train_empirical_measure
+    penalty: squared_projection_norm
+    minibatch_only_projection_forbidden: true
+  E4_shapeSR_R4:
+    learn_total_shape_first: true
+    decomposition_data: train_and_validation_shape_grid_only
+    family_set:
+      - monotone_piecewise_cubic_five_knots
+      - exponential_saturation
+      - rational_saturation
+      - single_hump_rbf
+      - tanh_regime_blend
+    family_set_is_global_and_mechanism_blind: true
+    objective: prediction_error_plus_mdl
+    test_or_truth_guided_family_selection_forbidden: true
+
+matrix:
+  synthetic_full_arms: [E4_mono_R1, E4_seq_R2, E4_shapeSR_R4, E4_joint, E3_symbolic, E5_typed_sr, C6_matched_mlp]
+  synthetic_ablation_arms: [E4_orth_R3]
+  semireal_full_arms: [E4_mono_R1, E4_seq_R2, E4_shapeSR_R4, E4_joint, E3_symbolic, E5_typed_sr, C6_matched_mlp]
+  scientific_cells:
+    synthetic_full: 210
+    synthetic_r3: 30
+    semireal_full: 210
+    total: 450
+
+training_budget:
+  optimizer_steps_maximum: 2000
+  trainable_parameters_maximum: 10000
+  e5_ast_evaluations_maximum: 12000
+  same_budget_within_paired_task_seed_layer: true
+
+negative_controls:
+  block_permutation:
+    block_length_dates: 20
+    train_and_validation_fresh_permutations: true
+    test_access: false
+    arms: [E4_mono_R1, E4_seq_R2, E4_shapeSR_R4, E4_joint, E4_orth_R3]
+  M9_additional:
+    - within_instrument_label_permutation
+    - within_date_cross_section_permutation
+    - future_return_sign_flip
+    - mechanism_free_noise_panel
+  null_promotions_maximum: 0
+
+cell_success:
+  variable_and_window_recovery_required: true
+  interaction_active_set_complete_required: true
+  clean_nrmse_maximum: 0.15
+  univariate_median_shape_nrmse_maximum: 0.12
+  univariate_successful_seed_shape_nrmse_maximum: 0.18
+  intervention_surface_nrmse_maximum: 0.18
+  soft_hard_pearson_minimum: 0.98
+  soft_hard_median_nrmse_maximum: 0.10
+  residual_cross_seed_pairwise_pearson_minimum: 0.95
+  M7_noise_contribution_energy_maximum: 0.05
+  free_unnamed_spline_after_hardening_forbidden: true
+  M8_evaluated_by_rank_equivalence_class: true
+
+mechanism_recovery:
+  minimum_successful_seeds_per_layer: 2
+  M8_both_instances_in_same_seed: true
+  arm_pass:
+    synthetic_mechanism_classes_minimum: 7
+    semireal_mechanism_classes_minimum: 6
+    M9_successful_seeds_each_layer_minimum: 2
+    r5_reuse_compression_required: true
+    null_promotions_maximum: 0
+  s1b_pass: any_primary_arm_passes
+  repair_superiority_claim:
+    M9_successful_seed_layer_cells_gain_over_E4_joint_minimum: 2
+    macro_mechanism_count_must_not_decrease: true
+
+r5_reuse_compression:
+  reuse_tasks:
+    - Return(Close,2)
+    - Return(Close,10)
+    - Return(Close,20)
+    - volume_surprise
+    - intraday_range_div_close
+    - volatility20
+  candidate_internal_shape_parameters_fit_on_origin_only: true
+  per_task_internal_shape_refit_forbidden: true
+  per_task_input_output_affine_refit_allowed: true
+  primitive_definition_mdl_charged_once_and_amortized: true
+  minimum_tasks_improved: 5
+  amortized_corpus_mdl_relative_reduction_minimum: 0.10
+  median_validation_ast_evaluations_relative_reduction_minimum: 0.20
+  spline_fallback_rate_absolute_reduction_minimum: 0.3333333333333333
+  validation_clean_nrmse_worsening_maximum: 0.01
+  numerical_equivalence_reject_nrmse_maximum: 1.0e-8
+  legacy_shape_nondup_thresholds_are_diagnostic_only: true
+
+winner_selection:
+  eligible: primary_arms_that_pass
+  tie_break_order:
+    - common_mechanism_classes_across_both_layers_desc
+    - M9_successful_seed_layer_cells_desc
+    - hard_clean_nrmse_median_asc
+    - amortized_corpus_mdl_asc
+    - fixed_arm_order
+  fixed_arm_order: [E4_mono_R1, E4_seq_R2, E4_shapeSR_R4]
+
+test_opening:
+  atomic_across_all_arms_tasks_seeds_and_layers: true
+  prerequisites:
+    - all_training_complete
+    - all_validation_selection_frozen
+    - all_hard_programs_frozen
+    - M9_candidate_primitive_frozen
+    - r5_promotion_decision_frozen
+    - complete_attempt_accounting
+    - source_config_and_data_locks_verified
+  exclusive_claim: true
+  per_arm_input_manifest_before_after_sha_required: true
+  recovery_after_opening: forbidden
+  terminal_manifest_last: true
+
+artifact_paths:
+  base_lock: prereg/s1b_identifiability_v1.lock.json
+  implementation_lock: prereg/s1b_identifiability_v1_implementation.lock.json
+  test_opening: governance/openings/s1b_identifiability_v1_test.json
+  run: artifacts/s1b_identifiability_v1
+  report: reports/s1b_identifiability_v1_report.md
+

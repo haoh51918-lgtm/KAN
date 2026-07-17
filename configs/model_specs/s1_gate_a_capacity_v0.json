@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "decision_timing": "prospective_before_any_capacity_smoke_metric",
+  "prereg_underspecification_filled": true,
+  "input_count": 6,
+  "output_count": 1,
+  "spline_degree": 3,
+  "spline_grid_intervals": 16,
+  "spline_grid_range": [-6.0, 6.0],
+  "e1": {
+    "architecture": "single_layer_additive_free_bspline_kan",
+    "trainable_parameters": 115
+  },
+  "e3_e4_shared": {
+    "architecture": "single_layer_additive_symbolic_residual_kan",
+    "analytical_primitives_per_edge": 8,
+    "affine_parameters_per_primitive": 4,
+    "gate_parameters_per_edge": 8,
+    "residual_scale_parameters_per_edge": 1,
+    "e4_declared_trainable_parameters": 361
+  },
+  "c6": {
+    "activation": "SiLU",
+    "hidden_layers": 1,
+    "hidden_width": 45,
+    "trainable_parameters": 361,
+    "relative_parameter_gap_to_e4": 0.0
+  }
+}

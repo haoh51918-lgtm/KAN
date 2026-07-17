@@ -1,0 +1,131 @@
+{
+  "arm": "E4_HARD_ANALYTICAL",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          0.9529484763465605,
+          0.0866538734250549,
+          0.001052766176382888,
+          -0.05417500553789599
+        ],
+        "edge": 0,
+        "primitive": "Tanh",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          2.0290071794474303,
+          -0.15781177565442983,
+          -0.47235552030732736,
+          0.12504650913954948
+        ],
+        "edge": 1,
+        "primitive": "NegativeHinge(0)",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          0.9542286155582692,
+          0.033381738006340506,
+          -0.0002904480366170915,
+          -0.05385599730691217
+        ],
+        "edge": 2,
+        "primitive": "Tanh",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          0.9325005766471971,
+          0.011093851458430165,
+          0.0010972393690151495,
+          -0.058412578921617345
+        ],
+        "edge": 3,
+        "primitive": "SignedLog1p",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          0.08565919135904798,
+          -0.023852525121118375,
+          -0.001700388744260087,
+          -0.0765756424358728
+        ],
+        "edge": 4,
+        "primitive": "Identity",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          0.0566738825277034,
+          -0.01604648394745921,
+          0.004429237107044281,
+          -0.08275460273930721
+        ],
+        "edge": 5,
+        "primitive": "Identity",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": -0.040346144177090225,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "e6615026b406a46b460ef8efcdd50a05d1a86edf17e8982a1a66f25be7b204b2",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1118
+  },
+  "metadata": {},
+  "paths": {
+    "checkpoint": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E4_HARD_ANALYTICAL/seed_2718/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Tanh",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "NegativeHinge(0)",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Tanh",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "SignedLog1p",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Identity",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "Identity",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ]
+}

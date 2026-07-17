@@ -1,0 +1,10 @@
+{
+  "arm": "alpha158_replay",
+  "base_lock_sha256": "a90c84f2d59b147686169824903016ac2b1f3c68056bc37fd06027e20d4b51d3",
+  "boundary": "before_each_scientific_or_control_arm",
+  "protocol_id": "s2a_kan_e3_vertical_v4",
+  "receipt_sequence": 14,
+  "receipt_sha256": "f5ed11182b1cdaa3328a78c8b3ed12b9589c564d7cb9afc6f674bac7b41605b9",
+  "schema_version": "mirage_s2a_arm_authority_consumption_v2",
+  "state": "consumed_before_arm_identity_or_adapter_access"
+}

@@ -1,0 +1,84 @@
+{
+  "arm_claims": {
+    "C6": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/C6/seed_8675912_main_c6/manifest.json.test_once.claim",
+    "E1": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/E1/seed_8675912_main_e1/manifest.json.test_once.claim",
+    "E2": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E2/seed_8675912/manifest.json.test_once.claim",
+    "E3": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/E3/seed_8675912_main_e3/manifest.json.test_once.claim",
+    "E3_HARD": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E3_HARD/seed_8675912/manifest.json.test_once.claim",
+    "E4": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/E4/seed_8675912_main_e4/manifest.json.test_once.claim",
+    "E4_HARD_ANALYTICAL": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675912/manifest.json.test_once.claim",
+    "E5": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E5/seed_8675912/manifest.json.test_once.claim"
+  },
+  "arms": [
+    "C6",
+    "E1",
+    "E2",
+    "E3",
+    "E3_HARD",
+    "E4",
+    "E4_HARD_ANALYTICAL",
+    "E5"
+  ],
+  "paths": {
+    "claim": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912.test_once.claim",
+    "metrics": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/metrics.json",
+    "predictions": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/row_aligned_predictions.npz"
+  },
+  "preflight": {
+    "arm_manifests": {
+      "C6": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/C6/seed_8675912_main_c6/manifest.json",
+        "sha256_before": "0a113d4aed4393f82fdfea411eca2433e7d79603beb610a7606e881c29daa1ab"
+      },
+      "E1": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/E1/seed_8675912_main_e1/manifest.json",
+        "sha256_before": "a94945be7c2628bc79f9b29fad29246a4cfabadc367e9038269b45dbce4f6279"
+      },
+      "E2": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E2/seed_8675912/manifest.json",
+        "sha256_before": "15647375d245393ba2734f69f9f02fe1ea756e2ee506cb1370b5d70fb5351a72"
+      },
+      "E3": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/E3/seed_8675912_main_e3/manifest.json",
+        "sha256_before": "ba838fcc2632b83f4d255b8c05aa6d92185ad9e7f441c66d558d45d31aa35da3"
+      },
+      "E3_HARD": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E3_HARD/seed_8675912/manifest.json",
+        "sha256_before": "fef87ea7ee70433281f0cbf0657b19d180e64bb387186713d8f631591136e7db"
+      },
+      "E4": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/manifests/E4/seed_8675912_main_e4/manifest.json",
+        "sha256_before": "9d9b99cd7711dba13473650b34497e65218f644f20b1218c8dfb5659fcfe40c5"
+      },
+      "E4_HARD_ANALYTICAL": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675912/manifest.json",
+        "sha256_before": "faaf0cbe37831aaef185a9224868c05fe9d35f4a3b296614f285b8991717ac2b"
+      },
+      "E5": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/models/E5/seed_8675912/manifest.json",
+        "sha256_before": "70bd4432ba343bb29ebf1f4aa5c41c1ccd6d3de3f14849d2da7f0d73688a7677"
+      }
+    }
+  },
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "receipts": {
+    "C6": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/C6.json",
+    "E1": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E1.json",
+    "E2": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E2.json",
+    "E3": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E3.json",
+    "E3_HARD": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E3_HARD.json",
+    "E4": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E4.json",
+    "E4_HARD_ANALYTICAL": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E4_HARD_ANALYTICAL.json",
+    "E5": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/predictions/seed_8675912/receipts/E5.json"
+  },
+  "schema_version": 1,
+  "seed": 8675912,
+  "sha256": {
+    "metrics": "99c5db1ec971a8e1028ed7f5c8738d60eb80ee65de969e7b4e7a958be7169c18",
+    "predictions": "0a94bfead34cb2378666e5d4975693ab07846f6927f61c568776112c0054ae13"
+  },
+  "single_opening": true
+}

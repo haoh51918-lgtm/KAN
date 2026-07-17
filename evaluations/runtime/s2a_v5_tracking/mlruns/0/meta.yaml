@@ -1,0 +1,9 @@
+artifact_location: file:///zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v5_tracking/mlruns/0
+creation_time: 1784291808602
+effective_trace_archival_retention: null
+experiment_id: '0'
+last_update_time: 1784291808602
+lifecycle_stage: active
+name: Default
+trace_location: null
+workspace: default

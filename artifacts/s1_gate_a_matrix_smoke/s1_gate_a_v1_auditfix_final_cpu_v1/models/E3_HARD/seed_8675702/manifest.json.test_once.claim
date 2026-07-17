@@ -1,0 +1,8 @@
+{
+  "arm": "E3_HARD",
+  "input_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/E3_HARD/seed_8675702/manifest.json",
+  "input_manifest_sha256": "31f39b42cdba7f4d2e1bec77051d0c459e25417da3cce9a9bbeaf5b5dcd97541",
+  "opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/predictions/seed_8675702",
+  "schema_version": 1,
+  "seed": 8675702
+}

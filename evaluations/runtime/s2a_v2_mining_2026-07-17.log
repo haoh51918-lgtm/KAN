@@ -1,0 +1,32 @@
+{"cublas_workspace_config": ":4096:8", "deterministic_algorithms": true, "devices": ["cuda:0", "cuda:1"], "event": "s2a_v2_mining_start", "implementation_lock_sha256": "f22e592379f8045aef0f690e770eee54d1dd27415404760ecd99d27f778863bd"}
+Traceback (most recent call last):
+  File "<stdin>", line 18, in <module>
+  File "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/mining/v2_pipeline.py", line 837, in run_s2a_v2_mining
+    entitlement = consume_mining_entitlement(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/governance/openings.py", line 138, in consume_mining_entitlement
+    _write_exclusive(_control_path(context, "mining_entitlement"), record)
+  File "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/governance/openings.py", line 74, in _write_exclusive
+    view = memoryview(_canonical_bytes(payload))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/governance/openings.py", line 68, in _canonical_bytes
+    return (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode("utf-8")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type date is not JSON serializable

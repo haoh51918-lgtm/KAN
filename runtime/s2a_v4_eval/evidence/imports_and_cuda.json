@@ -1,0 +1,144 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/zju_0012/htq/aaai26_alpha/aaai27_evosci/src runtime/s2a_v4_eval/.venv/bin/python runtime/s2a_v4_eval/tools/import_audit.py",
+  "cuda": {
+    "available": true,
+    "cudnn": 91002,
+    "device_count": 2,
+    "devices": [
+      "NVIDIA A800-SXM4-80GB",
+      "NVIDIA A800-SXM4-80GB"
+    ],
+    "runtime": "12.9"
+  },
+  "imported_modules": {
+    "mirage_kan.artifacts.v2_bundle": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/artifacts/v2_bundle.py",
+      "sha256": "2c0014aff49a9d4a1c2fb01d8737d23b1dd62b476155edfb4ee5a28bd5e2d55d",
+      "size": 70158
+    },
+    "mirage_kan.evaluation.quanta": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/evaluation/quanta.py",
+      "sha256": "f17f2720363535ab1d8c0c4475a08bb12824710e4ceb166309abba0041c197d7",
+      "size": 15977
+    },
+    "mirage_kan.evaluation.v2_decision_assembler": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/evaluation/v2_decision_assembler.py",
+      "sha256": "36baab42fe337e68f86cd1ca27a8104ea18c4709ece493eb36397494b3db0e58",
+      "size": 40155
+    },
+    "mirage_kan.evaluation.v2_pipeline": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/evaluation/v2_pipeline.py",
+      "sha256": "5ffad61707eed5be0c89465bdef48c991f9151d5644d6b5c44ce4dea502b7836",
+      "size": 24188
+    },
+    "mirage_kan.evaluation.v2_runner": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/evaluation/v2_runner.py",
+      "sha256": "d427f487ccd0bc07bad4f133cdd2703575c51ccb0fb0d49780bd7273ca97be65",
+      "size": 69913
+    },
+    "mirage_kan.mining.e3": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/mining/e3.py",
+      "sha256": "ecb53e0ba75cc846374a4a55476b652ececb3287b0b70345772332b8e9ae4649",
+      "size": 20821
+    },
+    "mirage_kan.mining.e3_runner": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/mining/e3_runner.py",
+      "sha256": "130979ce233ebb2b1d6f45afe343d8e4dbbc5b51b2eb16e43344851989f61f67",
+      "size": 24422
+    },
+    "mirage_kan.mining.mlp_control": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/mining/mlp_control.py",
+      "sha256": "9b215120fa76601532e0a04d3c85796c369086eef993f2c6e66c6b2f82cb7b26",
+      "size": 21791
+    },
+    "mirage_kan.mining.v2_pipeline": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src/mirage_kan/mining/v2_pipeline.py",
+      "sha256": "d28fb04d417fefd96549d6a73221dfe2efbbf25ee9926472d0b90f3b1d9ba0ba",
+      "size": 35559
+    },
+    "quantaalpha.backtest.runner": {
+      "class_available": true,
+      "file": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+      "import_mode": "isolated_file_spec",
+      "sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8",
+      "size": 35458
+    }
+  },
+  "isolation": {
+    "external_pth_paths": [],
+    "inherited_site_package_entries": [],
+    "only_v4_site_packages": true,
+    "pth_files": [
+      {
+        "path": "lib/python3.12/site-packages/_virtualenv.pth",
+        "sha256": "69ac3d8f27e679c81b94ab30b3b56e9cd138219b1ba94a1fa3606d5a76a1433d",
+        "size": 18
+      },
+      {
+        "path": "lib/python3.12/site-packages/distutils-precedence.pth",
+        "sha256": "2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224",
+        "size": 151
+      }
+    ],
+    "python_dont_write_bytecode": "1",
+    "pythonpath": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src",
+    "user_site_enabled": false
+  },
+  "passed": true,
+  "python": {
+    "base_prefix": "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu",
+    "executable": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/bin/python",
+    "prefix": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv",
+    "sys_path": [
+      "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/tools",
+      "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src",
+      "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/lib/python312.zip",
+      "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/lib/python3.12",
+      "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/lib/python3.12/lib-dynload",
+      "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages"
+    ],
+    "version": "3.12.3 (main, Apr 15 2024, 18:25:56) [Clang 17.0.6 ]"
+  },
+  "qlib_provider_initialized": false,
+  "real_quanta_label_access": false,
+  "schema_version": "s2a_v4_import_closure_v1",
+  "script_sha256": "d06d51eb4ff0543d13a4180741d885568fca7822c02080057aaeead0c3b8b4d1",
+  "versions": {
+    "lightgbm": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/lightgbm/__init__.py",
+      "version": "4.6.0"
+    },
+    "mlflow": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/mlflow/__init__.py",
+      "version": "3.14.0"
+    },
+    "numpy": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/numpy/__init__.py",
+      "version": "2.3.5"
+    },
+    "pandas": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/pandas/__init__.py",
+      "version": "2.3.3"
+    },
+    "pyarrow": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/pyarrow/__init__.py",
+      "version": "23.0.1"
+    },
+    "qlib": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/qlib/__init__.py",
+      "version": "0.9.7"
+    },
+    "scipy": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/scipy/__init__.py",
+      "version": "1.17.1"
+    },
+    "torch": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/torch/__init__.py",
+      "version": "2.9.1+cu129"
+    },
+    "yaml": {
+      "file": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages/yaml/__init__.py",
+      "version": "6.0.3"
+    }
+  }
+}

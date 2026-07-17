@@ -1,0 +1,10 @@
+{
+  "array_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/residual_shapes/null/seed_1729/residual_shape.npz",
+  "array_sha256": "b85bcaf7b672d245888fcdc94d0baca149e86ed8b04c2d99a88c86672e633841",
+  "centered_contribution_mass": 0.4916243603204936,
+  "schema_version": 1,
+  "seed": 1729,
+  "selection_data": "train_plus_validation_features_only",
+  "source": "Return(Close,2)",
+  "test_access": false
+}

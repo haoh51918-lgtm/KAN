@@ -1,0 +1,125 @@
+{
+  "arm": "matched_blackbox_control",
+  "authority_receipt": {
+    "arm": "matched_blackbox_control",
+    "authority_sha256": "0e577828473909b53b72c680e64efdb2cf94c33206b4d83d3e8e2686e3a02ada",
+    "base_lock_sha256": "d5e17ebea34653f09bb4d8ee7046fc4afc819afab7d1c51cef1b137b4dc55472",
+    "boundary": "before_each_scientific_or_control_arm",
+    "consumption_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/governance/authority/s2a_kan_e3_vertical_v8/arm_consumptions/matched_blackbox_control.json",
+    "consumption_sha256": "b5fb2396528c0dd3064215fb48e09520c47962e97032fc95d1f9ff811195d68c",
+    "receipt_sha256": "6179ac8010023398a421dc90aab4b1b2bda86e6637c35777a410ae7f866f6e50",
+    "sequence": 5
+  },
+  "development_opening": {
+    "authority_receipt_sha256": "e92b12dcc2f10b2fd1a81225e92667826ad67646053c723a73d85523e2facee9",
+    "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/governance/openings/s2a_kan_e3_vertical_v8_development.json",
+    "sha256": "6b520a40bafe764b00cbf365ed12e58ef1f1964303232e5f3da2bd342e920b57",
+    "topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535"
+  },
+  "diagnostic_files": {
+    "portfolio_daily.parquet": "4c2dd967e0fa0d27d2069f407203bc5f0a18408ca8cd920ab49b1cf4ffbb32df",
+    "prediction_coverage.parquet": "335f03271005ebcd57842c1db9463f81d371cba90924f8284d242f31c406e830",
+    "qlib_report.parquet": "e7a3e624777a2e2263e70d53260bec956efcc052da49bb8d640bd6e43532b227"
+  },
+  "evidence_class": "corrective_adaptive_repeated_development_screen",
+  "files": {
+    "matched_blackbox_control_cumulative_excess.csv": {
+      "bytes": 51214,
+      "sha256": "39a910184b74a3cde5acf6e5ef4403e889b478ffe9d86cd15fad5676ec773036"
+    },
+    "portfolio_daily.parquet": {
+      "bytes": 38581,
+      "sha256": "4c2dd967e0fa0d27d2069f407203bc5f0a18408ca8cd920ab49b1cf4ffbb32df"
+    },
+    "prediction_coverage.parquet": {
+      "bytes": 12334,
+      "sha256": "335f03271005ebcd57842c1db9463f81d371cba90924f8284d242f31c406e830"
+    },
+    "qlib_report.parquet": {
+      "bytes": 91541,
+      "sha256": "e7a3e624777a2e2263e70d53260bec956efcc052da49bb8d640bd6e43532b227"
+    }
+  },
+  "final_claim_allowed": false,
+  "formal_promotion_allowed": false,
+  "identity_pins": {
+    "base_lock_sha256": "d5e17ebea34653f09bb4d8ee7046fc4afc819afab7d1c51cef1b137b4dc55472",
+    "development_opening_sha256": "6b520a40bafe764b00cbf365ed12e58ef1f1964303232e5f3da2bd342e920b57",
+    "development_topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535",
+    "implementation_lock_sha256": "cd558a954e65475e45975330882d4e2bff6cad27ed18bf095c6b4dd98f29a6c0",
+    "mining_manifest_sha256": "b02b71436bad1cb1d8872d3ea6299bbd8925f768be2df2e9c9ecd35399f1d4af",
+    "mining_rebind_receipt_sha256": "4354f1bb6ad35fd162099b0c1ecfd832244cb2f373045ec9c60db0ea6b4cbe59",
+    "provider_identity": {
+      "file_count": 60168,
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+      "stat_inventory_sha256": "17d210c4f3e0aa3631d93024cca1ff35ecad6ba4548506faf39ccb2cd4178a34",
+      "total_bytes": 632291118,
+      "tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1"
+    }
+  },
+  "input": {
+    "artifact_panel_end": "2021-12-31T00:00:00",
+    "artifact_panel_rows": 868920,
+    "control_count": 7,
+    "development_values_source": "independent_mlp_final_parameter_replay",
+    "factor_library": false,
+    "kind": "computed_factor_control",
+    "manifest_sha256": "c81ac971b2beae3ca1859e4d0015cc00160d8d9d874ff2078f0b5d2b926c2123",
+    "mining_rebind_receipt_sha256": "4354f1bb6ad35fd162099b0c1ecfd832244cb2f373045ec9c60db0ea6b4cbe59",
+    "output_kind": "control_panel_not_factor_library",
+    "paired_kan_global_attempt_indices": [
+      20,
+      215,
+      188,
+      244,
+      222,
+      236,
+      251
+    ],
+    "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/controls/s2a_matched_blackbox_v6",
+    "promotion_eligible": false,
+    "role": "falsification_control_never_production",
+    "selected_kan_factor_ids": [
+      "kan_short_price_020",
+      "kan_price_volume_023",
+      "kan_reversal_060",
+      "kan_price_volume_052",
+      "kan_price_volume_030",
+      "kan_price_volume_044",
+      "kan_price_volume_059"
+    ],
+    "source_protocol_id": "s2a_kan_e3_vertical_v6"
+  },
+  "metrics": {
+    "IC": 0.013511586014291734,
+    "ICIR": 0.08828355946583745,
+    "Rank IC": 0.013676907349899571,
+    "Rank ICIR": 0.08890614540664737,
+    "annualized_return": 0.01259813882760931,
+    "calmar_ratio": 0.10115846085189727,
+    "information_ratio": 0.19068816048864348,
+    "max_drawdown": -0.12453865669282795
+  },
+  "protocol_id": "s2a_kan_e3_vertical_v8",
+  "quanta_identity": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/configs/backtest.yaml",
+    "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+    "effective_qlib_provider": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+    "execution_closure_clean": true,
+    "imported_runner_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+    "model_protocol": "LightGBM num_boost_round=500 early_stopping_round=50",
+    "package_tree_object": "8ea3865d81db92a2efbf0537cac1f5d15a2d149e",
+    "portfolio_protocol": "TopkDropout topk=50 n_drop=5 cost-aware open-price",
+    "qlib_provider_tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1",
+    "repository": "/zju_0012/htq/aaai26_alpha/QuantaAlpha",
+    "runner_path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+    "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8",
+    "verified": true
+  },
+  "schema_version": "mirage_s2a_quanta_evaluation_v2",
+  "scientific_result": false,
+  "stage": "S2a",
+  "topology_key": "evaluation:matched_blackbox_control",
+  "topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535"
+}

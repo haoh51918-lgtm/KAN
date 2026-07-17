@@ -1,0 +1,174 @@
+{
+  "arm": "E2",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          2.1019367167212097,
+          -0.7877219322527689,
+          0.003060012161140419,
+          -5.9982923309244515e-06
+        ],
+        "edge": 0,
+        "primitive": "Tanh",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          2.078200842963627,
+          -0.7867517153601449,
+          0.0030833031540519803,
+          7.748224074665021e-06
+        ],
+        "edge": 1,
+        "primitive": "Tanh",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          2.072949343498495,
+          -0.7874080182026555,
+          0.003099604685134322,
+          1.4717724594872103e-05
+        ],
+        "edge": 2,
+        "primitive": "Tanh",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          2.0789889957727956,
+          -0.7775002560671062,
+          0.003059441015574309,
+          -1.7385694569126794e-06
+        ],
+        "edge": 3,
+        "primitive": "Tanh",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          2.390012183335414,
+          -1.040365628016807,
+          0.0022899386810247327,
+          0.00030564421446033864
+        ],
+        "edge": 4,
+        "primitive": "Clip(-1,1)",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          1.9032401690857543,
+          -0.5904637597263435,
+          0.0026548367731896116,
+          -0.00030209797191401626
+        ],
+        "edge": 5,
+        "primitive": "Clip(-1,1)",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": -0.0029999998587079686,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "14425d1994b82f8fe1f2aff05d4399103e90963c88d224d2f74b540fd948b6de",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1108
+  },
+  "metadata": {
+    "fit_manifest": {
+      "e1_or_target_retraining": false,
+      "fits_per_edge": 8,
+      "optimizer": "scipy.optimize.least_squares",
+      "scipy_version": "1.17.1",
+      "selection_data": "train_inputs_and_e1_edges_only",
+      "selection_metric": "train_edge_mse",
+      "settings": {
+        "initial_parameters": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "loss": "linear",
+        "lower_bound": -8.0,
+        "max_nfev": 500,
+        "method": "trf",
+        "upper_bound": 8.0
+      },
+      "tie_break": "primitive_dictionary_order",
+      "total_fits": 48
+    },
+    "test_once": false
+  },
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/models/E2/seed_8675402/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Tanh",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Tanh",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Tanh",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "Tanh",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Clip(-1,1)",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "Clip(-1,1)",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ],
+  "test_once": {
+    "evaluated": true,
+    "matrix_metrics": {
+      "clean_nrmse": 0.9990343186168489,
+      "clean_nrmse_bootstrap": {
+        "block_dates": 20,
+        "lower": 0.9926600482184995,
+        "method": "circular_moving_date_block",
+        "point": 0.9990343186168489,
+        "replicates": 2,
+        "seed": 8158934498519976002,
+        "upper": 1.0220137621483232
+      },
+      "noisy_nrmse": 0.9819445371779046
+    },
+    "matrix_opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/predictions/seed_8675402",
+    "prediction_key": "E2_prediction"
+  }
+}

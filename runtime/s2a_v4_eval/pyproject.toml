@@ -1,0 +1,33 @@
+[project]
+name = "s2a-v4-eval-runtime"
+version = "0.1.0"
+description = "Isolated, hash-locked evaluation runtime for S2a v4"
+requires-python = "==3.12.3"
+dependencies = [
+    "lightgbm==4.6.0",
+    "mlflow==3.14.0",
+    "numpy==2.3.5",
+    "pandas==2.3.3",
+    "pyarrow==23.0.1",
+    "pyqlib==0.9.7",
+    "pyyaml==6.0.3",
+    "scipy==1.17.1",
+    "torch==2.9.1+cu129",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.3",
+    "ruff==0.14.9",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu129" }
+
+[[tool.uv.index]]
+name = "pytorch-cu129"
+url = "https://download.pytorch.org/whl/cu129"
+explicit = true

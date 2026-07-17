@@ -1,0 +1,97 @@
+protocol_id: s2_plan_c_vertical_v1
+stage: S2a
+evidence_class: prospective_development_screen
+proposal_authority: KAN_Alpha_PR.md
+
+data:
+  train: [2016-01-01, 2020-12-31]
+  validation: [2021-01-01, 2021-12-31]
+  development_test: [2022-01-01, 2025-12-26]
+  label: fwd
+  test_opening: once_after_all_libraries_are_immutable
+  final_claim_allowed: false
+
+search:
+  generation_seed: 104729
+  random_control_seed: 8675309
+  permutation_seed: 314159
+  miner_profiles:
+    - trend
+    - mean_reversion
+    - price_volume
+    - typed_composition
+  attempts_per_profile: 64
+  total_attempts: 256
+  full_development_evaluations: 256
+  max_ast_depth: 6
+  max_ast_nodes: 20
+  windows: [2, 3, 5, 10, 20, 40, 60]
+
+admission:
+  library_cap: 16
+  minimum_library_size: 8
+  minimum_miner_profiles: 3
+  minimum_per_profile: 1
+  minimum_coverage: 0.85
+  minimum_absolute_train_rank_ic: 0.005
+  minimum_absolute_validation_rank_ic: 0.005
+  require_train_validation_sign_agreement: true
+  maximum_absolute_validation_spearman: 0.80
+  tie_breakers: [minimum_score_desc, ast_nodes_asc, canonical_hash_asc]
+  padding_forbidden: true
+
+controls:
+  arms:
+    - alpha158_replay
+    - heterogeneous_selected
+    - random_typed
+    - label_permutation_selected
+  random_typed_is_label_free: true
+  random_typed_matches_library_cap: true
+  permutation_repeats_selection: true
+
+evaluation:
+  model_seed: 42
+  lightgbm_round_cap: 500
+  early_stopping_rounds: 50
+  strategy: TopkDropout
+  topk: 50
+  n_drop: 5
+  deal_price: open
+  open_cost: 0.0005
+  close_cost: 0.0015
+  minimum_cost: 5
+  primary_metric: information_ratio
+  historical_anchor:
+    information_ratio: 0.22
+    max_drawdown: -0.1376
+    rank_ic: 0.03311
+  replay_tolerances:
+    information_ratio_absolute: 0.03
+    max_drawdown_absolute: 0.02
+    rank_ic_absolute: 0.003
+
+s2a_decision:
+  advance_only_if_all_hold:
+    selected_information_ratio_minimum: 0.32
+    selected_minus_replay_information_ratio_minimum: 0.10
+    selected_minus_random_information_ratio_minimum: 0.05
+    selected_minus_permutation_information_ratio_minimum: 0.05
+    selected_minus_replay_max_drawdown_minimum: -0.03
+    selected_minus_replay_rank_ic_minimum: -0.003
+    selected_to_replay_mean_turnover_ratio_maximum: 1.20
+    selected_to_replay_mean_cost_ratio_maximum: 1.20
+    selected_calendar_years_not_worse_than_replay_minimum: 3
+  outcomes:
+    pass: advance_s2_formal
+    scientific_failure: s2a_screen_fail
+    infrastructure_failure: s2a_inconclusive_infrastructure
+  promote_library_value_allowed: false
+
+formal_escalation_if_passed:
+  model_seeds: [42, 1042, 2042, 3042, 4042]
+  rolling_candidate_folds: 3
+  full_process_label_permutations: 19
+  block_bootstrap_length_days: 20
+  block_bootstrap_replicates: 10000
+  paired_primary_test: one_sided_95_percent_lower_delta_ir_above_zero

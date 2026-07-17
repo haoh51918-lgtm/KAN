@@ -1,0 +1,13 @@
+{
+  "label_mode": "within_date_permutation",
+  "label_sha256": "9ce8a430d5a067fb0588480d0803ae812adedfff24b69f7d764b8c296bb3b59b",
+  "scoring_run_id": "3bcde26881c5586def88a9ea3450df6933949edd77168d3067a5a62406dae57b",
+  "train": [
+    "2016-01-01",
+    "2020-12-31"
+  ],
+  "validation": [
+    "2021-01-01",
+    "2021-12-31"
+  ]
+}

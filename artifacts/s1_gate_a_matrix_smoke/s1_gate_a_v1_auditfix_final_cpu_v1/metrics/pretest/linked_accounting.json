@@ -1,0 +1,114 @@
+{
+  "controls": {
+    "null": {
+      "aggregate": {
+        "peak_memory_bytes_max": 630837248,
+        "sample_presentations": 32,
+        "steps": 2,
+        "training_search_flops": 23104,
+        "wall_clock_seconds": 0.016221598722040653
+      },
+      "per_seed": {
+        "8675701": {
+          "accounting": {
+            "peak_memory_bytes": 630034432,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 11552,
+            "wall_clock_seconds": 0.007727975957095623
+          },
+          "control_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/null/seed_8675701/manifest.json",
+            "sha256": "729a43b03f08a9f40860940a32f91b2291a5ef7161422eadf8abb43f78817180"
+          },
+          "training_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/E4_NULL/seed_8675701_null_e4_null/manifest.json",
+            "sha256": "18b45ac2784c9565deee594d405cd7d2d8f5656df35a73206157520848af316e"
+          }
+        },
+        "8675702": {
+          "accounting": {
+            "peak_memory_bytes": 630837248,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 11552,
+            "wall_clock_seconds": 0.00849362276494503
+          },
+          "control_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/null/seed_8675702/manifest.json",
+            "sha256": "6b7444aee83081ff0c5ab72ed1f9d097e874aa6a9658fa9fc2bc69db5c8aecc0"
+          },
+          "training_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/E4_NULL/seed_8675702_null_e4_null/manifest.json",
+            "sha256": "e251e6fef000d481765fd8177cd80e9889c6c4ce756f7b052cedde757e5fa2ed"
+          }
+        }
+      }
+    },
+    "source_removed": {
+      "aggregate": {
+        "peak_memory_bytes_max": 630845440,
+        "sample_presentations": 32,
+        "steps": 2,
+        "training_search_flops": 19264,
+        "wall_clock_seconds": 0.015086568892002106
+      },
+      "per_seed": {
+        "8675701": {
+          "accounting": {
+            "peak_memory_bytes": 630038528,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 9632,
+            "wall_clock_seconds": 0.007779938168823719
+          },
+          "control_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/source_removed/seed_8675701/manifest.json",
+            "sha256": "4bfbbb34fc5441592c2087b2848cdf5680bae966fcdde047be259e7273d13811"
+          },
+          "training_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675701_source_removed_e4_source_removed/manifest.json",
+            "sha256": "941874b92ea11d4369ebd6cb1ebb4e33111bef55e010a37d313a89dc4f45014c"
+          }
+        },
+        "8675702": {
+          "accounting": {
+            "peak_memory_bytes": 630845440,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 9632,
+            "wall_clock_seconds": 0.007306630723178387
+          },
+          "control_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/controls/source_removed/seed_8675702/manifest.json",
+            "sha256": "d7288cae25141e325c1b4d4beb38a42ecbccfc3c64f4b2747b18d5a89987ac9b"
+          },
+          "training_manifest": {
+            "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675702_source_removed_e4_source_removed/manifest.json",
+            "sha256": "a14a822c4d8fe978a5537433f2c70a5c3d2cc3fd179a061385625add80fd9431"
+          }
+        }
+      }
+    }
+  },
+  "promotion": {
+    "null_promotion": {
+      "accounting": {
+        "family_fit_flops": 0,
+        "nondup_audit_flops": 0,
+        "total_estimated_flops": 0
+      },
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/null_promotion/manifest.json",
+      "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+    },
+    "promotion": {
+      "accounting": {
+        "family_fit_flops": 0,
+        "nondup_audit_flops": 0,
+        "total_estimated_flops": 0
+      },
+      "path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/promotion/manifest.json",
+      "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+    }
+  }
+}

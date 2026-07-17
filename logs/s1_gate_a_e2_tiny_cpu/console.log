@@ -1,0 +1,2 @@
+run=s1_gate_a_e2_tiny_cpu arm=E2 scope=train_validation_only
+fit_count=48 validation_fidelity={'pearson': 0.996043858673382, 'nrmse': 0.08999252386833644, 'max_absolute_error': 0.005420261739145307}

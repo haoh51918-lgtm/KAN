@@ -1,0 +1,595 @@
+{
+  "budget_counts": {
+    "factor_count": 7
+  },
+  "factor_count": 7,
+  "factor_library_publication_allowed": true,
+  "factors": {
+    "gp_price_volume_047": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 5
+            }
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 2
+            }
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":5}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":2}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "25547716ed6045d576e3f8e07374b85399e8e6cbe7c73bb74077d66a913b4cd5",
+      "causal": true,
+      "effective_membership_support_rows": 441634,
+      "expression_support_hash": "60485945fcc1823b5c8b9e61e0e29f470bff8d72b3e3ca3336ddd40cdc6e695f",
+      "expression_support_rows": 835750,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 6
+    },
+    "gp_reversal_022": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Low",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 20
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":20}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "46f3c8e28b6c8eddb72c8e583ed40a1f1738c5174d639f98270d85e7a97e1746",
+      "causal": true,
+      "effective_membership_support_rows": 431629,
+      "expression_support_hash": "202ab2196ac90e8097d9bee67c0727783cee9b6a965218fbae58c54d89151e15",
+      "expression_support_rows": 813778,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 20
+    },
+    "gp_reversal_035": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 5
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Low",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":5}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "2f25a9a3b017a56a262574d4ee8b96a799f35c34608d03eaef55616468ae7ba0",
+      "causal": true,
+      "effective_membership_support_rows": 442059,
+      "expression_support_hash": "d34f758f2d58a58ac01c5732e1c6d49ccfe572cef2b511ed444a86244bfc3be9",
+      "expression_support_rows": 836615,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 5
+    },
+    "gp_reversal_061": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 10
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "High",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "Delay",
+                    "params": {
+                      "window": 5
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 5
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}},{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":5}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":5}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "196df62738bfce306e96831941de13daace529c7f4911c0b87961db4d829d1b9",
+      "causal": true,
+      "effective_membership_support_rows": 438553,
+      "expression_support_hash": "b08431744862c2a6e1c394f5ec8b6030261e814f46dd3252e5823a7f7aae52ed",
+      "expression_support_rows": 828902,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 10
+    },
+    "gp_short_price_002": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 10
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 10
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Open",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Open",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 3
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Open",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 3
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Open\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "6dfd9edeac4a6ca65a14c354160bd7f1cb2526cec6c442fb1cccb20f25387a64",
+      "causal": true,
+      "effective_membership_support_rows": 438553,
+      "expression_support_hash": "b08431744862c2a6e1c394f5ec8b6030261e814f46dd3252e5823a7f7aae52ed",
+      "expression_support_rows": 828902,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 10
+    },
+    "gp_short_price_021": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 2
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 5
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 5
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":5}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":5}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "a98e096803f54254655034a9ded7be11c7d7116dbc1926be730d4d47e02518eb",
+      "causal": true,
+      "effective_membership_support_rows": 442059,
+      "expression_support_hash": "d34f758f2d58a58ac01c5732e1c6d49ccfe572cef2b511ed444a86244bfc3be9",
+      "expression_support_rows": 836615,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 5
+    },
+    "gp_short_price_055": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Open",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 2
+            }
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 5
+            }
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":2}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":5}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "64391dc57293881f65c2b7d4fb8730889cc9fe4183b1e8527909847c4cf4cc82",
+      "causal": true,
+      "effective_membership_support_rows": 441634,
+      "expression_support_hash": "60485945fcc1823b5c8b9e61e0e29f470bff8d72b3e3ca3336ddd40cdc6e695f",
+      "expression_support_rows": 835750,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 6
+    }
+  },
+  "files": {
+    "expression_support.parquet": "b9b4db4fb0d5792a6020b85e3bf07e1c321fcecdfe5555cb2eadb5fc640de07e",
+    "factor_panel.parquet": "ae008ff81f02645c280efb64d7737d8903e17fc4ed1891c144672b09e2daa031"
+  },
+  "identities": {
+    "authority_sha256": "5eff8f479ff80120c1923c8bf8f29d0229d39b8ce002b5476cfcd461cf62790b",
+    "implementation_sha256": "37d345c1ab5520d9e7c18d6137fad0a91109cdc9d20319162ddea170b5d95a41",
+    "protocol_sha256": "84cd14e31073deafed7efe57b322d5c03442fbc83aebca71031d6a81f81edcfc"
+  },
+  "index_names": [
+    "datetime",
+    "instrument"
+  ],
+  "kan_mined": false,
+  "library_role": "typed_gp_sr_control",
+  "mask_semantics": {
+    "expression_support": "operator support before universe filtering",
+    "finite_output": "required on expression support and membership",
+    "membership": "dynamic-universe membership applied to factor values",
+    "raw_observed": "per-field finite raw observation; never imputed",
+    "tradability": "separate from factor-value publication"
+  },
+  "output_kind": "factor_library",
+  "panel_rows": 868920,
+  "promotion_eligible": false,
+  "publication_state": "staged_unpublished",
+  "role": "typed_gp_sr_control",
+  "schema_version": "mirage_factor_library_v1",
+  "scientific_result": false,
+  "topology_binding_required_before_publication": true,
+  "topology_key": "gp_control_library",
+  "topology_sha256": "635787451b2a9c3bc0e19898f25759885f58a9057038c35b63779bf5b3f1c8e4"
+}

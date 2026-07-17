@@ -1,0 +1,8 @@
+{
+  "arm": "E2",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E2/seed_1729/manifest.json",
+  "input_manifest_sha256": "4ac54be45047fd33feac14b08f7d0c5c5f62e0c2fa876e3a6e764a18d514e570",
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729",
+  "schema_version": 1,
+  "seed": 1729
+}

@@ -1,0 +1,38 @@
+{
+  "arms": [
+    "C6",
+    "E1",
+    "E2",
+    "E3",
+    "E3_HARD",
+    "E4",
+    "E4_HARD_ANALYTICAL",
+    "E5"
+  ],
+  "paths": {
+    "claim": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/predictions/seed_8675501.test_once.claim",
+    "metrics": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/predictions/seed_8675501/metrics.json",
+    "predictions": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/predictions/seed_8675501/row_aligned_predictions.npz"
+  },
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "schema_version": 1,
+  "seed": 8675501,
+  "sha256": {
+    "metrics": "0ac063dfd07dd41bf49a3436de0f3870d22bd05223fd22b54839acffa5726b15",
+    "predictions": "cdd6a338cab3bae3cf1d8efae4a18dba7a19661a8ca1fad22b4107c979f456b5"
+  },
+  "single_opening": true,
+  "updated_arm_manifests": {
+    "C6": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/manifests/C6/seed_8675501_main_c6/manifest.json",
+    "E1": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/manifests/E1/seed_8675501_main_e1/manifest.json",
+    "E2": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/models/E2/seed_8675501/manifest.json",
+    "E3": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/manifests/E3/seed_8675501_main_e3/manifest.json",
+    "E3_HARD": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/models/E3_HARD/seed_8675501/manifest.json",
+    "E4": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/manifests/E4/seed_8675501_main_e4/manifest.json",
+    "E4_HARD_ANALYTICAL": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675501/manifest.json",
+    "E5": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/models/E5/seed_8675501/manifest.json"
+  }
+}

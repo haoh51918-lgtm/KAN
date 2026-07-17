@@ -1,0 +1,8 @@
+{
+  "cache_path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+  "cache_sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+  "market": "csi300",
+  "raw_fields": ["open", "high", "low", "close", "volume"],
+  "label_1d": "Ref($close, -2) / Ref($close, -1) - 1",
+  "label_20d": "Ref($close, -21) / Ref($close, -1) - 1"
+}

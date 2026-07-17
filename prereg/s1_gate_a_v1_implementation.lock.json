@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-07-16T22:34:00.839126+00:00",
+  "created_before_science": true,
+  "scientific_results_observed": false,
+  "max_locked_file_mtime_ns": 1784241182773563000,
+  "max_locked_file_mtime_utc": "2026-07-16T22:33:02.773563+00:00",
+  "known_preformal_incidents": [
+    {
+      "report_path": "governance/incidents/2026-07-16_frozen_seed_red_test_incident.md",
+      "report_sha256": "511a790147017debe68f8ea71cc82c2368f1b2bf0160a7fdef96016f294c0d2a",
+      "classification": "pre-test partial scientific attempt, invalidated",
+      "test_opened": false,
+      "eligible_for_clean_rerun": true
+    }
+  ],
+  "governance_addenda": [
+    {
+      "path": "governance/incidents/2026-07-16_frozen_seed_red_test_cleanup_addendum.md",
+      "sha256": "0cfd341f81bf990a5ea9576d1fb42d42d6128864ab04a3eaac8a3f5f0ec8e689",
+      "relation": "custody update to known_preformal_incidents[0]"
+    }
+  ],
+  "model_specs": {
+    "configs/model_specs/s1_gate_a_capacity_v0.json": "5f44976edaf8a0e8f1d1034c23300b0cf193623d1390f8bb989a2311acf46195",
+    "configs/model_specs/s1_gate_a_e5_v0.json": "bf7da7fddfe49c75d2e7534d517b159625b986e55f94edaf25b52855d72c27e5",
+    "configs/model_specs/s1_gate_a_promotion_v0.json": "1ed556dd731bf1422090dc903d68807f32ccc2d618d21552c145a15c21cdb817",
+    "configs/model_specs/s1_gate_a_symbolic_v0.json": "5a969224bf4930849096e5b9da38867d18ae029235591efec4982b6555515280"
+  },
+  "matrix_spec": {
+    "path": "configs/experiments/s1_gate_a_matrix_runner_v0.json",
+    "sha256": "bdaa4841dc93123a8c24033140bbdbcf5aa6e7cc57b5df83a7d02f8cfb3c48a8"
+  },
+  "snapshot": {
+    "aggregate_sha256": "d0e06454e449d8bde7784398b5ea65a77d97361e09628b40384ce764612a74b8",
+    "files": {
+      "configs/experiments/s1_gate_a_matrix_runner_v0.json": "bdaa4841dc93123a8c24033140bbdbcf5aa6e7cc57b5df83a7d02f8cfb3c48a8",
+      "configs/model_specs/s1_gate_a_capacity_v0.json": "5f44976edaf8a0e8f1d1034c23300b0cf193623d1390f8bb989a2311acf46195",
+      "configs/model_specs/s1_gate_a_e5_v0.json": "bf7da7fddfe49c75d2e7534d517b159625b986e55f94edaf25b52855d72c27e5",
+      "configs/model_specs/s1_gate_a_promotion_v0.json": "1ed556dd731bf1422090dc903d68807f32ccc2d618d21552c145a15c21cdb817",
+      "configs/model_specs/s1_gate_a_symbolic_v0.json": "5a969224bf4930849096e5b9da38867d18ae029235591efec4982b6555515280",
+      "pyproject.toml": "6a10cd02d771950d0ae673a9ebae42cf36006bc6e15340db3beac29f8099ee13",
+      "src/mirage_kan/__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+      "src/mirage_kan/artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+      "src/mirage_kan/artifacts/library.py": "949171ba95bdc54387ce4abce543145d6de7c8b20f194a57a365ac9e23447c97",
+      "src/mirage_kan/cli.py": "d85eaa650e3100beb887df8317b668b53e6673fba221f709df6df7b93c2c25f1",
+      "src/mirage_kan/data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+      "src/mirage_kan/data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+      "src/mirage_kan/dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+      "src/mirage_kan/dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+      "src/mirage_kan/evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+      "src/mirage_kan/evaluation/quanta.py": "880582458fd95e978d9b1585d39710cf2c778b2c5ca26b9e33c9b732f5006b13",
+      "src/mirage_kan/executor/__init__.py": "d541cddfbeac49bddb3b3da88e9f651fa03d21b98140afa336dafccadad9463b",
+      "src/mirage_kan/executor/torch.py": "5ad675b6cce80a14641ac9aac30caa85c7e5835a2363b4d193bf81357978b752",
+      "src/mirage_kan/experiments/__init__.py": "491b688fbf46593a187c5853baccb176b6f7f1a2b00d32bde082b1fb8c74e2b2",
+      "src/mirage_kan/experiments/gate_a/__init__.py": "39bc621b5081daaf3674e51c97d800e39951309a398d1d118207e5ac6b400dd1",
+      "src/mirage_kan/experiments/gate_a/controls.py": "947040807be2753d13c976b6b6ac97a3d6c376c2337a105ab771c4b820c05dcd",
+      "src/mirage_kan/experiments/gate_a/data.py": "0a7b45a040c29d1fcee3949968b65b622cf046f453e708dee8420cd7f804dc3f",
+      "src/mirage_kan/experiments/gate_a/e5.py": "364ad3ad475424893bb4ac3a7d13bf4970d348d1601efd5268a1f617f85deab4",
+      "src/mirage_kan/experiments/gate_a/e5_smoke.py": "54025f542cae5cef378fe1fceaa3914a9677edf87e2c1d1de2a2a6608ff5ed6e",
+      "src/mirage_kan/experiments/gate_a/matrix.py": "69b2e3ccd6f8def6bd301e6b6cbb69657505f9f6d277e19c4d807d81c2915c50",
+      "src/mirage_kan/experiments/gate_a/metrics.py": "d060276ab8be1e02e2eaed18eb0e3bb51d84f7332df845e46fd3c22cade05703",
+      "src/mirage_kan/experiments/gate_a/models.py": "bb71833307484eb24837a98fe40695ea3c840b38569f0b1fc9985db52aa2a724",
+      "src/mirage_kan/experiments/gate_a/posthoc.py": "f35b55fa7d7fc5cacd989e27e019b02da9f789ec490662562f6919cd0721cef2",
+      "src/mirage_kan/experiments/gate_a/promotion.py": "b2384125ebe969c91526f7d45a37be9086cd0752a310c0fbc79c59559de065cb",
+      "src/mirage_kan/experiments/gate_a/smoke.py": "ec0c1302bd43458431e67f88d69855ffdd087f07e557995ed883c4080241df72",
+      "src/mirage_kan/experiments/gate_a/symbolic.py": "fba60a156a60c1980e9079726088479e3893eb76bc865b0c20e0c306414a4922",
+      "src/mirage_kan/experiments/gate_a/symbolic_smoke.py": "7c206d42758c788cfb549eaf9fffd02c76b72f6c25e743b1e9d7b92f8beb8072",
+      "src/mirage_kan/experiments/gate_a/training.py": "95ed407fe3903bc0af683e3640daf239485786d189c5ddb49725ea0f760b4600",
+      "src/mirage_kan/identities.py": "7916aaa4b410f8f9cf5174fcaa70ea780112c6615743d93fbe99344ce09b9ba7",
+      "src/mirage_kan/seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c"
+    }
+  }
+}

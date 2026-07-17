@@ -1,0 +1,22 @@
+{
+  "array_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/controls/source_removed/seed_8675922/features.npz",
+  "array_sha256": "d86260470635c760353bb78cf62c862c94b1670bac36ee5eab74135b56a6e163",
+  "control": "exact_source_removed",
+  "future_access": false,
+  "hidden_reconstruction": false,
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "remaining_sources": [
+    "Return(Close,2)",
+    "Return(Close,10)",
+    "Return(Close,20)",
+    "SafeDiv(Sub(High,Low),Close)",
+    "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+  ],
+  "removed_source": "Return(Close,5)",
+  "schema_version": 1,
+  "seed": 8675922,
+  "test_access": false
+}

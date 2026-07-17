@@ -1,0 +1,35 @@
+{
+  "anonymous_mapping_sha256": "1bad74f134fc5b2373db2c62434b56f0f52469db68240941d67a27d053f8ad37",
+  "budget_counts": {
+    "mechanism_cards": 7
+  },
+  "card_count": 7,
+  "files": {
+    "blind_anonymous_mapping.json": "1bad74f134fc5b2373db2c62434b56f0f52469db68240941d67a27d053f8ad37",
+    "mechanism_cards.jsonl": "d70fd9d214212006c964205da48fe2777f8a75956748ea2e611ed44fea660964"
+  },
+  "human_review_complete": false,
+  "identities": {
+    "authority_sha256": "e700873667bf780d50fbf1a6014b0c7418fdadbc662eadf0013ca9eb74102805",
+    "implementation_sha256": "03dfd21c545feb0cddfd0599bbed8ec51903f852389b4c7642386860fdedc394",
+    "protocol_sha256": "cf2ed15dc5802d00e4bdc9c122b1cba6af84ac522569abe1b020e6611e534c7a"
+  },
+  "kan_mined": true,
+  "output_kind": "mechanism_cards",
+  "promotion_eligible": false,
+  "publication_state": "staged_unpublished",
+  "role": "kan_mechanism_evidence_pending_human_review",
+  "schema_version": "mirage_s2a_v2_staging_bundle_v1",
+  "selected_factor_ids": [
+    "kan_price_volume_023",
+    "kan_price_volume_030",
+    "kan_price_volume_044",
+    "kan_price_volume_052",
+    "kan_price_volume_059",
+    "kan_reversal_060",
+    "kan_short_price_020"
+  ],
+  "topology_binding_required_before_publication": true,
+  "topology_key": "mechanism_cards",
+  "topology_sha256": "c23f1578d7c11f72a2ccd9ee139b6b9c5640975c0ae1f75b5b5cf879f0358969"
+}

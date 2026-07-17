@@ -1,0 +1,10 @@
+{
+  "array_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_lockfinal_cpu_v1/residual_shapes/source_removed/seed_8675911/residual_shape.npz",
+  "array_sha256": "8058bf6eff7200c5c68c64bcd6357fb7213dfe5301ffca89798db459efd1e5bd",
+  "centered_contribution_mass": 0.6062173415841704,
+  "schema_version": 1,
+  "seed": 8675911,
+  "selection_data": "train_plus_validation_features_only",
+  "source": "Return(Close,20)",
+  "test_access": false
+}

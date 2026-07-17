@@ -1,0 +1,28 @@
+{
+  "arm": "C6",
+  "claim": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/C6/seed_8675701_main_c6/manifest.json.test_once.claim",
+  "claim_sha256": "422afbc31a55a003b160863f747679349517184040a7cb6a286b6446dd08f758",
+  "input_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/C6/seed_8675701_main_c6/manifest.json",
+  "input_manifest_sha256_after": "f7010e9460790b04212abc9dbe8cecd7af670dd20656298c938e8f196767b5d9",
+  "input_manifest_sha256_before": "f7010e9460790b04212abc9dbe8cecd7af670dd20656298c938e8f196767b5d9",
+  "metrics": {
+    "clean_nrmse": 0.8406705491721108,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.7900120492177111,
+      "method": "circular_moving_date_block",
+      "point": 0.8406705491721108,
+      "replicates": 2,
+      "seed": 1224107446713648597,
+      "upper": 0.9022218161611536
+    },
+    "noisy_nrmse": 0.8343764067517553
+  },
+  "opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/predictions/seed_8675701",
+  "prediction_key": "C6_prediction",
+  "publication": {
+    "no_replace": true
+  },
+  "schema_version": 1,
+  "seed": 8675701
+}

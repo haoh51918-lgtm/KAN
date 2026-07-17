@@ -1,0 +1,216 @@
+{
+  "factor_count": 4,
+  "factors": {
+    "close_open": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Open",
+                "params": {}
+              }
+            ],
+            "op": "Sub",
+            "params": {}
+          },
+          {
+            "children": [],
+            "op": "Open",
+            "params": {}
+          }
+        ],
+        "op": "SafeDiv",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}},{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}}",
+      "canonical_hash": "08ec6b51e37e5423454e8f6e645399469bc82cbe399cb94caf8a180e195b6827",
+      "causal": true,
+      "effective_membership_support_rows": 785607,
+      "expression_support_hash": "3368ca8f792b1d324e6993ce282e30f66f2260fcf5ee8b673643e67835a918b0",
+      "expression_support_rows": 1535881,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 1
+    },
+    "range_close": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "High",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Low",
+                "params": {}
+              }
+            ],
+            "op": "Sub",
+            "params": {}
+          },
+          {
+            "children": [],
+            "op": "Close",
+            "params": {}
+          }
+        ],
+        "op": "SafeDiv",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}}",
+      "canonical_hash": "82e5305c5a9878e74fb22b32adb38f60cc487c7d36e7dced8562c91527546589",
+      "causal": true,
+      "effective_membership_support_rows": 785607,
+      "expression_support_hash": "3368ca8f792b1d324e6993ce282e30f66f2260fcf5ee8b673643e67835a918b0",
+      "expression_support_rows": 1535881,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 1
+    },
+    "return_5": {
+      "ast": {
+        "children": [
+          {
+            "children": [],
+            "op": "Close",
+            "params": {}
+          }
+        ],
+        "op": "Return",
+        "params": {
+          "window": 5
+        }
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":5}}",
+      "canonical_hash": "b79930ec3da1c8a499b6a4dc154ecc21f01dbe6561d0fe7cead38a5f4be9b385",
+      "causal": true,
+      "effective_membership_support_rows": 781427,
+      "expression_support_hash": "567f29656c55b10f2ad7f4f996df0e52c228e377a61d75db30cbd7482b37aafe",
+      "expression_support_rows": 1526653,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 6
+    },
+    "volume_mean_20": {
+      "ast": {
+        "children": [
+          {
+            "children": [],
+            "op": "Volume",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Volume",
+                "params": {}
+              }
+            ],
+            "op": "TsMean",
+            "params": {
+              "window": 20
+            }
+          }
+        ],
+        "op": "SafeDiv",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":20}}],\"op\":\"SafeDiv\",\"params\":{}}",
+      "canonical_hash": "a45bdfbb93ceafb69f93fe6c91cf12a4bcb3f16f6e815cde327e272a0cbcab23",
+      "causal": true,
+      "effective_membership_support_rows": 767207,
+      "expression_support_hash": "b5a7152fcc91cce9352362ec4ed36ac9cbeda95af59999f6cf445216b79b93e9",
+      "expression_support_rows": 1494825,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 20
+    }
+  },
+  "files": {
+    "expression_support.parquet": "9c0d8cf4cba75f7aefa8655247413d0377c2c5ae2fdf58bb84a7e06ddeae9cb4",
+    "factor_panel.parquet": "3a551c60c330abd730e44a70cc26f071e9805bc7b5cb5c8f611e931584353fd9"
+  },
+  "identities": {
+    "baseline": {
+      "fixed_14_regime": false,
+      "observed_best_iteration": 14,
+      "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+      "reported_metrics": {
+        "AR_abs_close": 0.0042,
+        "AR_abs_open": 0.0151,
+        "AR_close": 0.0035,
+        "AR_open": 0.0144,
+        "IC": 0.01305,
+        "ICIR": 0.08211,
+        "IR_close": 0.0533,
+        "IR_open": 0.22,
+        "MDD_close": -0.1666,
+        "MDD_open": -0.1376,
+        "RankIC": 0.03311,
+        "RankICIR": 0.21239,
+        "SR_close": 0.0246,
+        "SR_open": 0.0878,
+        "best_iter": 14,
+        "route": "Alpha158+LGB native lgb.train (== qlib LGBModel internal call; mlflow logging bypassed), EXACT backtest.yaml:94-108 (feature_fraction_bynode=0.8, seed=42, num_boost_round=500, early_stop=50); early_stop@14; wall=135s"
+      },
+      "role": "provisional_historical_baseline_link",
+      "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb",
+      "training_regime": "500_round_cap_early_stopping_50"
+    },
+    "code": {
+      "files": {
+        "__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+        "artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+        "artifacts/library.py": "949171ba95bdc54387ce4abce543145d6de7c8b20f194a57a365ac9e23447c97",
+        "cli.py": "d85eaa650e3100beb887df8317b668b53e6673fba221f709df6df7b93c2c25f1",
+        "data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+        "data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+        "dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+        "dsl/core.py": "4efa0eec79e8c3df42eeb57a0588d486cf8096329d0c5ef1ec184b4ca12cea4c",
+        "evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+        "evaluation/quanta.py": "880582458fd95e978d9b1585d39710cf2c778b2c5ca26b9e33c9b732f5006b13",
+        "identities.py": "7916aaa4b410f8f9cf5174fcaa70ea780112c6615743d93fbe99344ce09b9ba7",
+        "seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c"
+      },
+      "tree_sha256": "e34e7243e7c72d4d2b55a7dc9530c3c84c001d48eeeba8545512fda8dc9310b3"
+    },
+    "pit_cache": {
+      "path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+      "sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69"
+    },
+    "proposal": {
+      "authority": "sole_proposal_authority",
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/KAN_Alpha_PR.md",
+      "sha256": "1880ccf174c3c691f4296eec52b3536d651421f0f0b81bc2d4031d6bc5cdc41a"
+    },
+    "quanta": {
+      "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+      "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+      "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8"
+    }
+  },
+  "index_names": [
+    "datetime",
+    "instrument"
+  ],
+  "kan_mined": false,
+  "library_role": "wiring_control",
+  "mask_semantics": {
+    "expression_support": "operator-contract support before universe filtering",
+    "finite_output": "required on expression support and membership",
+    "membership": "dynamic-universe membership applied to published factor values",
+    "raw_observed": "per-field finite raw observation; never imputed",
+    "tradability": "separate and not applied in this wiring-control publication"
+  },
+  "panel_rows": 1572483,
+  "publication_mode": "GPFS_EXCLUSIVE_MKDIR_OEXCL_MANIFEST_LAST_FSYNC_V1",
+  "schema_version": "mirage_factor_library_v1",
+  "scientific_result": false
+}

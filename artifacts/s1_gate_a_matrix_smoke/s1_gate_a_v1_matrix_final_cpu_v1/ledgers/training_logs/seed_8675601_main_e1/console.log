@@ -1,0 +1,3 @@
+run=seed_8675601_main_e1 arm=E1 device=cpu dtype=float64 parameters=115 max_steps=1
+step=1 train_mse=0.148568802456 penalty_total=0 validation_clean_nrmse=1.16395537711 selected=True
+selected_step=1 selected_validation_clean_nrmse=1.16395537711 manifest=artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_final_cpu_v1/manifests/E1/seed_8675601_main_e1/manifest.json

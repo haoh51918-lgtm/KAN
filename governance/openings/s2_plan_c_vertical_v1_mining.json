@@ -1,0 +1,15 @@
+{
+  "attempt_budget": 256,
+  "implementation_lock_sha256": "297624791e2d3766557540c8545bcc4d0cc110c7bee5069b17e716eb7df9b40c",
+  "library_destinations": {
+    "heterogeneous_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_heterogeneous_selected_v1",
+    "label_permutation_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_label_permutation_selected_v1",
+    "random_typed": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_random_typed_v1"
+  },
+  "preclaim_sha256": "518e6cde5b22ee14b20deba024c436d0e1fc6b72aea720d5fb129183fb9220e4",
+  "preregistration_lock_sha256": "7d1345713b49a9e146a733444cb7cf92758c441b41436984f2c17afbd3496b3d",
+  "protocol_id": "s2_plan_c_vertical_v1",
+  "run_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s2a_plan_c_mining_v1",
+  "schema_version": "mirage_s2a_mining_entitlement_v1",
+  "state": "consumed_before_attempt_generation"
+}

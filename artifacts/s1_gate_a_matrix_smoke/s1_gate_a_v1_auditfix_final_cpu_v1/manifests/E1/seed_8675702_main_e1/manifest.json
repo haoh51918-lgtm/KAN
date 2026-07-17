@@ -1,0 +1,54 @@
+{
+  "accounting": {
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 630571008,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 16,
+    "trainable_parameters": 115,
+    "wall_clock_seconds": 0.003451111726462841
+  },
+  "arm": "E1",
+  "device": "cpu",
+  "model_class": "FreeSplineKAN",
+  "model_initialization_seed": null,
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/checkpoints/E1/seed_8675702_main_e1/selected.pt",
+    "console_log": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/ledgers/training_logs/seed_8675702_main_e1/console.log",
+    "data_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/data/seed_8675702/manifest.json",
+    "manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/E1/seed_8675702_main_e1/manifest.json",
+    "test_metrics": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/metrics/E1/seed_8675702_main_e1/test.json"
+  },
+  "run_id": "seed_8675702_main_e1",
+  "schema_version": 1,
+  "selection": {
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_inference_temperature": null,
+    "selected_step": 1,
+    "selected_value": 1.0043132850963727,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_trainable_parameter_count"
+  },
+  "settings": {
+    "batch_size": 16,
+    "dtype": "float64",
+    "early_stopping_patience_validations": 1,
+    "learning_rate": 0.003,
+    "max_steps": 1,
+    "seed": 8675702,
+    "validation_interval_steps": 1
+  },
+  "sha256": {
+    "selected_checkpoint": "b403865f6cd80c9ba01d4541acbfa7992aab09e2cfbb6cba7f9e4f476450fbe1"
+  },
+  "test_once": {
+    "evaluated": false
+  },
+  "torch_version": "2.9.1+cu129",
+  "training_penalties": {
+    "enabled": false,
+    "model_metadata": null,
+    "selected_step_accounting": null,
+    "step_accounting": []
+  }
+}

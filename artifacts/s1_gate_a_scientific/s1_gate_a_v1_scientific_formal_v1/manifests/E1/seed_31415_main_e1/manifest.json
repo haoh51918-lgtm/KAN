@@ -1,0 +1,54 @@
+{
+  "accounting": {
+    "optimizer_steps": 2000,
+    "peak_memory_bytes": 40104960,
+    "peak_memory_kind": "torch_cuda_max_memory_allocated",
+    "sample_presentations": 4096000,
+    "trainable_parameters": 115,
+    "wall_clock_seconds": 2.700385892763734
+  },
+  "arm": "E1",
+  "device": "cuda:0",
+  "model_class": "FreeSplineKAN",
+  "model_initialization_seed": null,
+  "paths": {
+    "checkpoint": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/checkpoints/E1/seed_31415_main_e1/selected.pt",
+    "console_log": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/ledgers/training_logs/seed_31415_main_e1/console.log",
+    "data_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/data/seed_31415/manifest.json",
+    "manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E1/seed_31415_main_e1/manifest.json",
+    "test_metrics": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/metrics/E1/seed_31415_main_e1/test.json"
+  },
+  "run_id": "seed_31415_main_e1",
+  "schema_version": 1,
+  "selection": {
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_inference_temperature": null,
+    "selected_step": 980,
+    "selected_value": 0.0825670353677865,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_trainable_parameter_count"
+  },
+  "settings": {
+    "batch_size": 2048,
+    "dtype": "float64",
+    "early_stopping_patience_validations": 200,
+    "learning_rate": 0.003,
+    "max_steps": 2000,
+    "seed": 31415,
+    "validation_interval_steps": 20
+  },
+  "sha256": {
+    "selected_checkpoint": "7f6b2253f3689e23d9622ada5dad0c7fdc769cbdd8f5ce5ed19daaff3b3d712e"
+  },
+  "test_once": {
+    "evaluated": false
+  },
+  "torch_version": "2.9.1+cu129",
+  "training_penalties": {
+    "enabled": false,
+    "model_metadata": null,
+    "selected_step_accounting": null,
+    "step_accounting": []
+  }
+}

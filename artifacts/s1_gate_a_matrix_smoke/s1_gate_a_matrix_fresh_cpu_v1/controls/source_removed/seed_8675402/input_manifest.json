@@ -1,0 +1,22 @@
+{
+  "array_path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_matrix_fresh_cpu_v1/controls/source_removed/seed_8675402/features.npz",
+  "array_sha256": "d1c88af7901ea63a0c20405560e0ff55fc1f66c1c4700c8e93ca690688f22e5c",
+  "control": "exact_source_removed",
+  "future_access": false,
+  "hidden_reconstruction": false,
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "remaining_sources": [
+    "Return(Close,2)",
+    "Return(Close,10)",
+    "Return(Close,20)",
+    "SafeDiv(Sub(High,Low),Close)",
+    "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)"
+  ],
+  "removed_source": "Return(Close,5)",
+  "schema_version": 1,
+  "seed": 8675402,
+  "test_access": false
+}

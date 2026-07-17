@@ -1,0 +1,147 @@
+{
+  "arm": "E3",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          1.0029699459616486,
+          0.0029996877344727205,
+          0.012999699459606849,
+          0.0029999968770229118
+        ],
+        "edge": 0,
+        "primitive": "Identity",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          1.0029699696041459,
+          0.0029996877344727205,
+          0.012999699696038411,
+          0.0029999968770229118
+        ],
+        "edge": 1,
+        "primitive": "Identity",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          1.0029699541848973,
+          0.0029996877344727205,
+          0.012999699541842047,
+          0.0029999968770229118
+        ],
+        "edge": 2,
+        "primitive": "Identity",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          1.0029699313360594,
+          0.0029996877344727205,
+          0.012999699313345034,
+          0.0029999968770229118
+        ],
+        "edge": 3,
+        "primitive": "Identity",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          1.002969894101347,
+          0.0029998164546253497,
+          0.012999697881953667,
+          0.0029999968770229118
+        ],
+        "edge": 4,
+        "primitive": "Square",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          1.0029690967971019,
+          -0.0029997617908308306,
+          0.012999690965278157,
+          0.0029999968770229118
+        ],
+        "edge": 5,
+        "primitive": "NegativeHinge(0)",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": 0.0029999996096275084,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "0f39ff740802a33b5adf24437ba0ae9ffe7bce8cc881ea097bc095b13d68cfa7",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1130
+  },
+  "metadata": {
+    "residual_energy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "smoke_scope": "train_validation_only",
+    "source_run_manifest": "artifacts/s1_gate_a_symbolic_smoke/manifests/E3/s1_gate_a_e3_tiny_cpu/manifest.json",
+    "validation_fidelity": {
+      "max_absolute_error": 0.10451662401157302,
+      "nrmse": 3.017103570127658,
+      "pearson": 0.5421471660406427
+    }
+  },
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_symbolic_smoke/symbolic_exports/E3/s1_gate_a_e3_tiny_cpu/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Identity",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Identity",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Identity",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "Identity",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Square",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "NegativeHinge(0)",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ]
+}

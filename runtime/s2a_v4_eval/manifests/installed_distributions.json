@@ -1,0 +1,1532 @@
+{
+  "distribution_count": 217,
+  "distributions": [
+    {
+      "distribution": "aiohappyeyeballs",
+      "record_path": "lib/python3.12/site-packages/aiohappyeyeballs-2.7.1.dist-info/RECORD",
+      "record_sha256": "14263431f101aad85e690b74756640a356c3f311654f0db92305c7fd5fcfa75c",
+      "record_size": 1026,
+      "version": "2.7.1"
+    },
+    {
+      "distribution": "aiohttp",
+      "record_path": "lib/python3.12/site-packages/aiohttp-3.14.1.dist-info/RECORD",
+      "record_sha256": "1f6d518b02061e1c23c2c067c04a107b2780d98f87166d936eee7964216f70d4",
+      "record_size": 7001,
+      "version": "3.14.1"
+    },
+    {
+      "distribution": "aiosignal",
+      "record_path": "lib/python3.12/site-packages/aiosignal-1.4.0.dist-info/RECORD",
+      "record_sha256": "b9a6cd07dac78298d856613e8140b7da26b20506ed07747802bd513bf9b3ea35",
+      "record_size": 734,
+      "version": "1.4.0"
+    },
+    {
+      "distribution": "alembic",
+      "record_path": "lib/python3.12/site-packages/alembic-1.18.5.dist-info/RECORD",
+      "record_sha256": "ede69734658f79dee50cbaeb194d785f6f06a6135bd62735122260ca08bb44eb",
+      "record_size": 9062,
+      "version": "1.18.5"
+    },
+    {
+      "distribution": "annotated-doc",
+      "record_path": "lib/python3.12/site-packages/annotated_doc-0.0.4.dist-info/RECORD",
+      "record_sha256": "1d924fb80688852ae450acc786e6fcd63a752dd045e2f1e4ec7341367fac06a8",
+      "record_size": 848,
+      "version": "0.0.4"
+    },
+    {
+      "distribution": "annotated-types",
+      "record_path": "lib/python3.12/site-packages/annotated_types-0.7.0.dist-info/RECORD",
+      "record_sha256": "5bb4f1ca72420634ebd566dafd9d5fbce3051b0c1c1d13980f6ceeb5c4dbb843",
+      "record_size": 775,
+      "version": "0.7.0"
+    },
+    {
+      "distribution": "anyio",
+      "record_path": "lib/python3.12/site-packages/anyio-4.14.2.dist-info/RECORD",
+      "record_sha256": "722d3bb1432c0f34f49dca8ac66fa132db1e4a2151f7104ee66a8cd44222c0b6",
+      "record_size": 4368,
+      "version": "4.14.2"
+    },
+    {
+      "distribution": "argon2-cffi",
+      "record_path": "lib/python3.12/site-packages/argon2_cffi-25.1.0.dist-info/RECORD",
+      "record_sha256": "8377684d785a60355da086bcb4443a473dde7b79ad81f17133580c20dc018c4b",
+      "record_size": 1184,
+      "version": "25.1.0"
+    },
+    {
+      "distribution": "argon2-cffi-bindings",
+      "record_path": "lib/python3.12/site-packages/argon2_cffi_bindings-25.1.0.dist-info/RECORD",
+      "record_sha256": "88ad4282811daf0f53c070b33219b55956e774917c43683f4d2d59633bbf5333",
+      "record_size": 941,
+      "version": "25.1.0"
+    },
+    {
+      "distribution": "arrow",
+      "record_path": "lib/python3.12/site-packages/arrow-1.4.0.dist-info/RECORD",
+      "record_sha256": "887d9d15d6c5ee5ffe2d8a690c69e2bea1b5b0f913f2ccefe5001950e1aad143",
+      "record_size": 1262,
+      "version": "1.4.0"
+    },
+    {
+      "distribution": "asttokens",
+      "record_path": "lib/python3.12/site-packages/asttokens-3.0.2.dist-info/RECORD",
+      "record_sha256": "7f0b4dabfd410366c48fb66b1af7671f17ab499310c80c3103855a7893694314",
+      "record_size": 1409,
+      "version": "3.0.2"
+    },
+    {
+      "distribution": "async-lru",
+      "record_path": "lib/python3.12/site-packages/async_lru-2.3.0.dist-info/RECORD",
+      "record_sha256": "2cb0f89bc69e325b3907f5ba4ea1f7e19b86852b46455fc7ca0dfa73721d1771",
+      "record_size": 734,
+      "version": "2.3.0"
+    },
+    {
+      "distribution": "attrs",
+      "record_path": "lib/python3.12/site-packages/attrs-26.1.0.dist-info/RECORD",
+      "record_sha256": "6b0b326d4b4ee0fac27909ac7cbb066fc4bdf8e93d87031e27e770db059e5a04",
+      "record_size": 2742,
+      "version": "26.1.0"
+    },
+    {
+      "distribution": "babel",
+      "record_path": "lib/python3.12/site-packages/babel-2.18.0.dist-info/RECORD",
+      "record_sha256": "7e15bb54992a81b04f24e0a6865e321e8cdb4ace2454fc4504aa799b0e7c776e",
+      "record_size": 93988,
+      "version": "2.18.0"
+    },
+    {
+      "distribution": "beautifulsoup4",
+      "record_path": "lib/python3.12/site-packages/beautifulsoup4-4.15.0.dist-info/RECORD",
+      "record_sha256": "d66734c0b7a8e4d1077ad38ba04541c15514f2a3ac92e39b3907483ced024c6f",
+      "record_size": 1816,
+      "version": "4.15.0"
+    },
+    {
+      "distribution": "bleach",
+      "record_path": "lib/python3.12/site-packages/bleach-6.4.0.dist-info/RECORD",
+      "record_sha256": "c70700c636e385e620e642a04a4090945c159c4a7c730fde24cd0f68a7f2c87e",
+      "record_size": 5923,
+      "version": "6.4.0"
+    },
+    {
+      "distribution": "blinker",
+      "record_path": "lib/python3.12/site-packages/blinker-1.9.0.dist-info/RECORD",
+      "record_sha256": "b7152f1474f715b54131cc64bb4c1e5fea3acf74ee3bc611e0e5a3100ab3b2c0",
+      "record_size": 768,
+      "version": "1.9.0"
+    },
+    {
+      "distribution": "cachetools",
+      "record_path": "lib/python3.12/site-packages/cachetools-7.1.4.dist-info/RECORD",
+      "record_sha256": "644ab2b773f4a71b509c0e53b3bb1335946e83f7d40c1b4192f63e42058a6905",
+      "record_size": 1287,
+      "version": "7.1.4"
+    },
+    {
+      "distribution": "certifi",
+      "record_path": "lib/python3.12/site-packages/certifi-2026.6.17.dist-info/RECORD",
+      "record_sha256": "f010bf8e6401172bf2ac5eb50c0a44e60d4f5917b88a8f95ac05e37633a1803b",
+      "record_size": 963,
+      "version": "2026.6.17"
+    },
+    {
+      "distribution": "cffi",
+      "record_path": "lib/python3.12/site-packages/cffi-2.1.0.dist-info/RECORD",
+      "record_sha256": "22aeece896948197f480246f13e3e7e4de776cd89c2001db941d13e6561bcf28",
+      "record_size": 2631,
+      "version": "2.1.0"
+    },
+    {
+      "distribution": "charset-normalizer",
+      "record_path": "lib/python3.12/site-packages/charset_normalizer-3.4.9.dist-info/RECORD",
+      "record_sha256": "f73d735c337bef408b65ae74b719aefa45c987671d01cb09b9c65019d50f3745",
+      "record_size": 2285,
+      "version": "3.4.9"
+    },
+    {
+      "distribution": "clarabel",
+      "record_path": "lib/python3.12/site-packages/clarabel-0.11.1.dist-info/RECORD",
+      "record_sha256": "e3a2e4d34e97eb19cca3fdfc6c80cd7a916315aad5e988aa1224f8626b109c21",
+      "record_size": 655,
+      "version": "0.11.1"
+    },
+    {
+      "distribution": "click",
+      "record_path": "lib/python3.12/site-packages/click-8.4.2.dist-info/RECORD",
+      "record_sha256": "f14e3990f101ef4a1dd09903eb3f859f233ec1d9bd9a00e4470f207568804d12",
+      "record_size": 1810,
+      "version": "8.4.2"
+    },
+    {
+      "distribution": "cloudpickle",
+      "record_path": "lib/python3.12/site-packages/cloudpickle-3.1.2.dist-info/RECORD",
+      "record_sha256": "a24820e3d3ea3f0fb210f58b84abb5450a94cc649e573a9a0a69354afc6fa1de",
+      "record_size": 751,
+      "version": "3.1.2"
+    },
+    {
+      "distribution": "comm",
+      "record_path": "lib/python3.12/site-packages/comm-0.2.3.dist-info/RECORD",
+      "record_sha256": "d4854a07c72d25313dfa1c7322a12a09455a57adbf66939d785aeb8f07b79ee5",
+      "record_size": 674,
+      "version": "0.2.3"
+    },
+    {
+      "distribution": "contourpy",
+      "record_path": "lib/python3.12/site-packages/contourpy-1.3.3.dist-info/RECORD",
+      "record_sha256": "b0fd23e6bceaf821a5069943a104623c591ea0c4ce69fcfd6f975f102e02cc74",
+      "record_size": 2116,
+      "version": "1.3.3"
+    },
+    {
+      "distribution": "cryptography",
+      "record_path": "lib/python3.12/site-packages/cryptography-48.0.1.dist-info/RECORD",
+      "record_sha256": "88de7261c2fda348481c68044cf98f021b181b830b4cac74d6bc7e51c5980ca7",
+      "record_size": 11979,
+      "version": "48.0.1"
+    },
+    {
+      "distribution": "cvxpy",
+      "record_path": "lib/python3.12/site-packages/cvxpy-1.9.2.dist-info/RECORD",
+      "record_sha256": "fd266c6232614576758aaf049eab74fe8878947ddde351ef59621b07e55518c6",
+      "record_size": 51384,
+      "version": "1.9.2"
+    },
+    {
+      "distribution": "cycler",
+      "record_path": "lib/python3.12/site-packages/cycler-0.12.1.dist-info/RECORD",
+      "record_sha256": "cbcbee5f18d75bd4935199b135aa33c3ed62df14991110a35c428883798d7979",
+      "record_size": 704,
+      "version": "0.12.1"
+    },
+    {
+      "distribution": "databricks-sdk",
+      "record_path": "lib/python3.12/site-packages/databricks_sdk-0.120.0.dist-info/RECORD",
+      "record_sha256": "557bdeee516d3baa2b65eac94e7f1f050d11e093f8f4137522bcfcd5eb1b5516",
+      "record_size": 8788,
+      "version": "0.120.0"
+    },
+    {
+      "distribution": "debugpy",
+      "record_path": "lib/python3.12/site-packages/debugpy-1.8.21.dist-info/RECORD",
+      "record_sha256": "1a0a124b47074bc704a1a181be93d9b20cfee85f36903cce3ac37633126f2cbf",
+      "record_size": 34520,
+      "version": "1.8.21"
+    },
+    {
+      "distribution": "decorator",
+      "record_path": "lib/python3.12/site-packages/decorator-5.3.1.dist-info/RECORD",
+      "record_sha256": "7c490ad9278bafef19a0455a7ec324a1c1bf31c3c6eb946afc0d6f30423502db",
+      "record_size": 817,
+      "version": "5.3.1"
+    },
+    {
+      "distribution": "defusedxml",
+      "record_path": "lib/python3.12/site-packages/defusedxml-0.7.1.dist-info/RECORD",
+      "record_sha256": "8d83b6f0c94380f24506bd6d01e9a3a8858aac7a9118bc9e7dee21e6b566d13c",
+      "record_size": 1451,
+      "version": "0.7.1"
+    },
+    {
+      "distribution": "dill",
+      "record_path": "lib/python3.12/site-packages/dill-0.4.1.dist-info/RECORD",
+      "record_sha256": "380d3afe9e846c5a5dff07e5aa718efa9a660e3bad2de9d2d0635c0bc1d5197a",
+      "record_size": 4441,
+      "version": "0.4.1"
+    },
+    {
+      "distribution": "dnspython",
+      "record_path": "lib/python3.12/site-packages/dnspython-2.8.0.dist-info/RECORD",
+      "record_sha256": "835d7f4fdc1c7488000c15b9296e76053aacb4eba2692e5b4bada924f21172c7",
+      "record_size": 11965,
+      "version": "2.8.0"
+    },
+    {
+      "distribution": "docker",
+      "record_path": "lib/python3.12/site-packages/docker-7.2.0.dist-info/RECORD",
+      "record_sha256": "04c235365512527c855e398c2ff49b132df7ee2c4d00672e8a64e7d2da0bed8a",
+      "record_size": 5827,
+      "version": "7.2.0"
+    },
+    {
+      "distribution": "executing",
+      "record_path": "lib/python3.12/site-packages/executing-2.2.1.dist-info/RECORD",
+      "record_sha256": "483767c8f250006b2655250353b993e605b581fd6f5f41a5b7e2accb9bf3a414",
+      "record_size": 1213,
+      "version": "2.2.1"
+    },
+    {
+      "distribution": "fastapi",
+      "record_path": "lib/python3.12/site-packages/fastapi-0.139.2.dist-info/RECORD",
+      "record_sha256": "e7f977079a5443a5275c112c5c970718592a02bd06864e6ddf9456240984ad9f",
+      "record_size": 5378,
+      "version": "0.139.2"
+    },
+    {
+      "distribution": "fastjsonschema",
+      "record_path": "lib/python3.12/site-packages/fastjsonschema-2.21.2.dist-info/RECORD",
+      "record_sha256": "0fa28948d196d934697f92676d9282ceedf3346de5f7d044103ed2010bc9e96d",
+      "record_size": 1559,
+      "version": "2.21.2"
+    },
+    {
+      "distribution": "filelock",
+      "record_path": "lib/python3.12/site-packages/filelock-3.30.2.dist-info/RECORD",
+      "record_sha256": "203ea87786a35a310de7b4c8603e5430d91c3bb9126c8fce0e8afeabc95b6309",
+      "record_size": 2204,
+      "version": "3.30.2"
+    },
+    {
+      "distribution": "fire",
+      "record_path": "lib/python3.12/site-packages/fire-0.7.1.dist-info/RECORD",
+      "record_sha256": "0dfbf86d5d44af1a6577c0f91ab496dcc0947284d2fb1526df6a66912aa41a8d",
+      "record_size": 4247,
+      "version": "0.7.1"
+    },
+    {
+      "distribution": "flask",
+      "record_path": "lib/python3.12/site-packages/flask-3.1.3.dist-info/RECORD",
+      "record_sha256": "2f205b20f8abe825259cad09d572b31edd0b12a5f7cc52fd87c1b4544eb2786d",
+      "record_size": 2574,
+      "version": "3.1.3"
+    },
+    {
+      "distribution": "flask-cors",
+      "record_path": "lib/python3.12/site-packages/flask_cors-6.0.5.dist-info/RECORD",
+      "record_sha256": "de25ba8433f15c35d0a8f14afe93f5ae876d2dcc4dbd4b88c80b87fdbe63300f",
+      "record_size": 877,
+      "version": "6.0.5"
+    },
+    {
+      "distribution": "fonttools",
+      "record_path": "lib/python3.12/site-packages/fonttools-4.63.0.dist-info/RECORD",
+      "record_sha256": "2320a1777af56bebe9087b48500061bf68b72a6e796fb09b157b8c88b1b8696c",
+      "record_size": 31980,
+      "version": "4.63.0"
+    },
+    {
+      "distribution": "fqdn",
+      "record_path": "lib/python3.12/site-packages/fqdn-1.5.1.dist-info/RECORD",
+      "record_sha256": "e1fb33e8981c69db356797fcafb101a57336de04a26842ce5c484aeb382a4f53",
+      "record_size": 766,
+      "version": "1.5.1"
+    },
+    {
+      "distribution": "frozenlist",
+      "record_path": "lib/python3.12/site-packages/frozenlist-1.8.0.dist-info/RECORD",
+      "record_sha256": "8f934b7c96c7ba14179d87da9876b436b260e2b97200915756ed8ab880f807fe",
+      "record_size": 1021,
+      "version": "1.8.0"
+    },
+    {
+      "distribution": "fsspec",
+      "record_path": "lib/python3.12/site-packages/fsspec-2026.6.0.dist-info/RECORD",
+      "record_sha256": "49d74c7ad21b7267b1843b7e95c11bc559cf91a9790f14eaa62071304e137e9a",
+      "record_size": 5230,
+      "version": "2026.6.0"
+    },
+    {
+      "distribution": "gitdb",
+      "record_path": "lib/python3.12/site-packages/gitdb-4.0.12.dist-info/RECORD",
+      "record_sha256": "43a905544c66c64b47d683d76eb347afb791001674e5a774d51e673f7945f834",
+      "record_size": 2496,
+      "version": "4.0.12"
+    },
+    {
+      "distribution": "gitpython",
+      "record_path": "lib/python3.12/site-packages/gitpython-3.1.52.dist-info/RECORD",
+      "record_sha256": "f1d9eb5c8b8ab2c0180e10d75b3fca0a81bb45b559f0719a693d84d107073a5c",
+      "record_size": 3535,
+      "version": "3.1.52"
+    },
+    {
+      "distribution": "google-auth",
+      "record_path": "lib/python3.12/site-packages/google_auth-2.56.0.dist-info/RECORD",
+      "record_sha256": "b573f28e085b6ee7679db3de8a29bd9d11da36227d41010c610480a7cb5cc597",
+      "record_size": 7585,
+      "version": "2.56.0"
+    },
+    {
+      "distribution": "graphene",
+      "record_path": "lib/python3.12/site-packages/graphene-3.4.3.dist-info/RECORD",
+      "record_sha256": "59fdbf4b736edff8c0c9c8c920e441a23b4710d729b94f29b3d5d10a1689a7cc",
+      "record_size": 11327,
+      "version": "3.4.3"
+    },
+    {
+      "distribution": "graphql-core",
+      "record_path": "lib/python3.12/site-packages/graphql_core-3.2.11.dist-info/RECORD",
+      "record_sha256": "e3bc88e5369dca144dec244e54ecd0184bcb9c103efbc5a6408024b8e8855e9b",
+      "record_size": 12785,
+      "version": "3.2.11"
+    },
+    {
+      "distribution": "graphql-relay",
+      "record_path": "lib/python3.12/site-packages/graphql_relay-3.2.0.dist-info/RECORD",
+      "record_sha256": "6a2bf241fa5646c61b2b8ec2e888281424acb3fd2748687d0bbedbb669807c1e",
+      "record_size": 1833,
+      "version": "3.2.0"
+    },
+    {
+      "distribution": "greenlet",
+      "record_path": "lib/python3.12/site-packages/greenlet-3.5.3.dist-info/RECORD",
+      "record_sha256": "fe0684e39bef88060923adbbbd6cf6235c5606856c73d8aed46dabd08878a5d2",
+      "record_size": 8868,
+      "version": "3.5.3"
+    },
+    {
+      "distribution": "gunicorn",
+      "record_path": "lib/python3.12/site-packages/gunicorn-26.0.0.dist-info/RECORD",
+      "record_sha256": "51842f8041fce821e062a63cc8861d80063f103a591a7c11eb37c4fe26e284d1",
+      "record_size": 6169,
+      "version": "26.0.0"
+    },
+    {
+      "distribution": "gym",
+      "record_path": "lib/python3.12/site-packages/gym-0.26.2.dist-info/RECORD",
+      "record_sha256": "2156d0872875a78017904df3962f0c7a32f3fabca9c703fe850f1c3e81eebbee",
+      "record_size": 18866,
+      "version": "0.26.2"
+    },
+    {
+      "distribution": "gym-notices",
+      "record_path": "lib/python3.12/site-packages/gym_notices-0.1.0.dist-info/RECORD",
+      "record_sha256": "aa2a55bf2d9b683126cbcfb00543e8cc44415aec60f31a92e3ccaaf9faa8baa1",
+      "record_size": 757,
+      "version": "0.1.0"
+    },
+    {
+      "distribution": "h11",
+      "record_path": "lib/python3.12/site-packages/h11-0.16.0.dist-info/RECORD",
+      "record_sha256": "3779e13c17d8e21c769ed9ee8780af123cc3f8656185f5f8d3af258ff5639b3e",
+      "record_size": 1412,
+      "version": "0.16.0"
+    },
+    {
+      "distribution": "highspy",
+      "record_path": "lib/python3.12/site-packages/highspy-1.15.1.dist-info/RECORD",
+      "record_sha256": "1039426c38a16e44966d53f9135eb9203a605f4ed3b47a5e40bf9d98a602d00c",
+      "record_size": 1426,
+      "version": "1.15.1"
+    },
+    {
+      "distribution": "httpcore",
+      "record_path": "lib/python3.12/site-packages/httpcore-1.0.9.dist-info/RECORD",
+      "record_sha256": "67cb4644d84fef1df8c5a0862c57c3380eff058a153bac7a4ba2722779982554",
+      "record_size": 3123,
+      "version": "1.0.9"
+    },
+    {
+      "distribution": "httpx",
+      "record_path": "lib/python3.12/site-packages/httpx-0.28.1.dist-info/RECORD",
+      "record_sha256": "c42d4a3d1ab6303df213bbc11261b5c15e82eb5b056e21318c00ea7f8161cdd3",
+      "record_size": 2469,
+      "version": "0.28.1"
+    },
+    {
+      "distribution": "huey",
+      "record_path": "lib/python3.12/site-packages/huey-3.2.1.dist-info/RECORD",
+      "record_sha256": "4a0ce76b20c45f29671d10c1ddd8904c75cd82dbdf79255ccfddb086bf7f6e62",
+      "record_size": 6262,
+      "version": "3.2.1"
+    },
+    {
+      "distribution": "idna",
+      "record_path": "lib/python3.12/site-packages/idna-3.18.dist-info/RECORD",
+      "record_sha256": "55c5f4ea6952a75604afd03ce3ea43d65a647bb226cd9490000e09db58cebfbc",
+      "record_size": 1408,
+      "version": "3.18"
+    },
+    {
+      "distribution": "importlib-metadata",
+      "record_path": "lib/python3.12/site-packages/importlib_metadata-9.0.0.dist-info/RECORD",
+      "record_sha256": "98a2a9bd181c2a626639810f857d03243c2beb641160afee9edf971883309595",
+      "record_size": 1780,
+      "version": "9.0.0"
+    },
+    {
+      "distribution": "iniconfig",
+      "record_path": "lib/python3.12/site-packages/iniconfig-2.3.0.dist-info/RECORD",
+      "record_sha256": "4b560f65489a4dc0f32d8403da676d2e6338c371fe844160934b3fe469785185",
+      "record_size": 965,
+      "version": "2.3.0"
+    },
+    {
+      "distribution": "ipykernel",
+      "record_path": "lib/python3.12/site-packages/ipykernel-7.3.0.dist-info/RECORD",
+      "record_sha256": "89e45c5760ecead74f86f5b7bb2d8d151d2e9b0cd5227143727a33bf1ab77d0c",
+      "record_size": 4991,
+      "version": "7.3.0"
+    },
+    {
+      "distribution": "ipython",
+      "record_path": "lib/python3.12/site-packages/ipython-9.15.0.dist-info/RECORD",
+      "record_sha256": "e58c031089430247010ee92aadef106db7266af532a5c379497f4b905dca08bc",
+      "record_size": 16430,
+      "version": "9.15.0"
+    },
+    {
+      "distribution": "ipython-pygments-lexers",
+      "record_path": "lib/python3.12/site-packages/ipython_pygments_lexers-1.1.1.dist-info/RECORD",
+      "record_sha256": "a601c87e87a63f4e126ce5e320367930d30129be677cb4a4980332f61b8aff31",
+      "record_size": 760,
+      "version": "1.1.1"
+    },
+    {
+      "distribution": "ipywidgets",
+      "record_path": "lib/python3.12/site-packages/ipywidgets-8.1.8.dist-info/RECORD",
+      "record_sha256": "a17aae4c4dfc6343951dca6773c0b97df87a6352d43eac73995dcb6b567efb85",
+      "record_size": 6601,
+      "version": "8.1.8"
+    },
+    {
+      "distribution": "isoduration",
+      "record_path": "lib/python3.12/site-packages/isoduration-20.11.0.dist-info/RECORD",
+      "record_sha256": "c2a21cb103ef192102e42a9a0a9617c580df3bf3135be3db928c22260c097acf",
+      "record_size": 1718,
+      "version": "20.11.0"
+    },
+    {
+      "distribution": "itsdangerous",
+      "record_path": "lib/python3.12/site-packages/itsdangerous-2.2.0.dist-info/RECORD",
+      "record_sha256": "80583f52df848dbd699dbf2c9b8ed9bb3cc5c1fa81ca5c737b97563feeab729d",
+      "record_size": 1214,
+      "version": "2.2.0"
+    },
+    {
+      "distribution": "jedi",
+      "record_path": "lib/python3.12/site-packages/jedi-0.20.0.dist-info/RECORD",
+      "record_sha256": "8aee5a15141dd898d3356eca862cd70ad85f382c676ced7d51041f98d32e63d9",
+      "record_size": 695031,
+      "version": "0.20.0"
+    },
+    {
+      "distribution": "jinja2",
+      "record_path": "lib/python3.12/site-packages/jinja2-3.1.6.dist-info/RECORD",
+      "record_sha256": "4551b3fb657b85a9f01e961c0f8a235da65d758149b619400211964b3ac02bdc",
+      "record_size": 2512,
+      "version": "3.1.6"
+    },
+    {
+      "distribution": "joblib",
+      "record_path": "lib/python3.12/site-packages/joblib-1.5.3.dist-info/RECORD",
+      "record_sha256": "de09a1190b65801ed7ada8395671b94da2278e33d15356223b2b2d3201180e76",
+      "record_size": 14398,
+      "version": "1.5.3"
+    },
+    {
+      "distribution": "json5",
+      "record_path": "lib/python3.12/site-packages/json5-0.15.0.dist-info/RECORD",
+      "record_sha256": "676bb16bb761610610e0d4d20a3d1fdfad5be219bc7bc6569ded49288154dd4b",
+      "record_size": 1302,
+      "version": "0.15.0"
+    },
+    {
+      "distribution": "jsonpointer",
+      "record_path": "lib/python3.12/site-packages/jsonpointer-3.1.1.dist-info/RECORD",
+      "record_sha256": "e660b846d5e889745230fd76fcf51f03119213f6549548979c7643ca00d7152e",
+      "record_size": 854,
+      "version": "3.1.1"
+    },
+    {
+      "distribution": "jsonschema",
+      "record_path": "lib/python3.12/site-packages/jsonschema-4.26.0.dist-info/RECORD",
+      "record_sha256": "099ed2d08a5e0c354de52f1d09a630adf45a9dcff8376d830e7e295abe90fa9f",
+      "record_size": 4088,
+      "version": "4.26.0"
+    },
+    {
+      "distribution": "jsonschema-specifications",
+      "record_path": "lib/python3.12/site-packages/jsonschema_specifications-2025.9.1.dist-info/RECORD",
+      "record_sha256": "0b1047ee6c7d5d7c242b642d689820f4572860ecf7886b2074f821ed85cbe7b6",
+      "record_size": 3440,
+      "version": "2025.9.1"
+    },
+    {
+      "distribution": "jupyter",
+      "record_path": "lib/python3.12/site-packages/jupyter-1.1.1.dist-info/RECORD",
+      "record_sha256": "ae7878d0ae55bda65ad10ff3049e3ca57bb95ab9a13f35f87ba0e712549cfb4c",
+      "record_size": 560,
+      "version": "1.1.1"
+    },
+    {
+      "distribution": "jupyter-builder",
+      "record_path": "lib/python3.12/site-packages/jupyter_builder-1.1.0.dist-info/RECORD",
+      "record_sha256": "7d2fade880d5226d8280045c0c0d73cc286c923aa967bf133caec7e1821e4ed3",
+      "record_size": 2616,
+      "version": "1.1.0"
+    },
+    {
+      "distribution": "jupyter-client",
+      "record_path": "lib/python3.12/site-packages/jupyter_client-8.9.1.dist-info/RECORD",
+      "record_sha256": "601ad27bece6456553d2d44a68b89493ae0804cda2e131c456ae515b5d6b35e3",
+      "record_size": 4273,
+      "version": "8.9.1"
+    },
+    {
+      "distribution": "jupyter-console",
+      "record_path": "lib/python3.12/site-packages/jupyter_console-6.6.3.dist-info/RECORD",
+      "record_sha256": "42d72373896ff0bb1fff19bf988205e520e1cfa5f6363173d444d75a3d3852c4",
+      "record_size": 1835,
+      "version": "6.6.3"
+    },
+    {
+      "distribution": "jupyter-core",
+      "record_path": "lib/python3.12/site-packages/jupyter_core-5.9.1.dist-info/RECORD",
+      "record_sha256": "62b2cb9e917cfd16c85b825e504d43e01aca49e58dbb8f5be59bbf9f8b8275e0",
+      "record_size": 1733,
+      "version": "5.9.1"
+    },
+    {
+      "distribution": "jupyter-events",
+      "record_path": "lib/python3.12/site-packages/jupyter_events-0.12.1.dist-info/RECORD",
+      "record_sha256": "1739f3527df191d53bd22c06cdc237587ae17f39b82223bcadbab7a7226c5e00",
+      "record_size": 1996,
+      "version": "0.12.1"
+    },
+    {
+      "distribution": "jupyter-lsp",
+      "record_path": "lib/python3.12/site-packages/jupyter_lsp-2.3.1.dist-info/RECORD",
+      "record_sha256": "c933242485de405eb236f24a755d875b993f9b805d506db2d54c9eb5615cfdc1",
+      "record_size": 6833,
+      "version": "2.3.1"
+    },
+    {
+      "distribution": "jupyter-server",
+      "record_path": "lib/python3.12/site-packages/jupyter_server-2.20.0.dist-info/RECORD",
+      "record_sha256": "af94e8cd49b4fd8a44a2e2b94896135d5991556d8ab4a53b72929aef51560dbe",
+      "record_size": 12378,
+      "version": "2.20.0"
+    },
+    {
+      "distribution": "jupyter-server-terminals",
+      "record_path": "lib/python3.12/site-packages/jupyter_server_terminals-0.5.4.dist-info/RECORD",
+      "record_sha256": "d9b56dc219782f271411704a7d326537d70edba8a2b3fad459bc4b7da6f96bc7",
+      "record_size": 1538,
+      "version": "0.5.4"
+    },
+    {
+      "distribution": "jupyterlab",
+      "record_path": "lib/python3.12/site-packages/jupyterlab-4.6.1.dist-info/RECORD",
+      "record_sha256": "79d03a009113e81ac88f34f1059c6e2a6461a9c962d2a30a904ec5e61dfec86e",
+      "record_size": 117455,
+      "version": "4.6.1"
+    },
+    {
+      "distribution": "jupyterlab-pygments",
+      "record_path": "lib/python3.12/site-packages/jupyterlab_pygments-0.3.0.dist-info/RECORD",
+      "record_sha256": "32f7609870d46f2fec2c1cdf53ef5c03f0249a9432a649b706016b307782f885",
+      "record_size": 1784,
+      "version": "0.3.0"
+    },
+    {
+      "distribution": "jupyterlab-server",
+      "record_path": "lib/python3.12/site-packages/jupyterlab_server-2.28.0.dist-info/RECORD",
+      "record_sha256": "a8c3aa08c8c40b5724ac3c66dd8f55c1c9a6187d9993dbb2eb6bc1f295f54c80",
+      "record_size": 4133,
+      "version": "2.28.0"
+    },
+    {
+      "distribution": "jupyterlab-widgets",
+      "record_path": "lib/python3.12/site-packages/jupyterlab_widgets-3.0.16.dist-info/RECORD",
+      "record_sha256": "70170029c2f03b205cca1a0b3db38e08d756ecaf173c8cba4ae3c5c832b2013d",
+      "record_size": 6787,
+      "version": "3.0.16"
+    },
+    {
+      "distribution": "kiwisolver",
+      "record_path": "lib/python3.12/site-packages/kiwisolver-1.5.0.dist-info/RECORD",
+      "record_sha256": "eff0b04e1528659d8bc580684a58de8131282ddf67afda48304dd9b36cb1020f",
+      "record_size": 1009,
+      "version": "1.5.0"
+    },
+    {
+      "distribution": "lark",
+      "record_path": "lib/python3.12/site-packages/lark-1.3.1.dist-info/RECORD",
+      "record_sha256": "fbadc9926a1c5d8283a2602c94baf94ace2be62bd26bf65a1facfa2453f33623",
+      "record_size": 3803,
+      "version": "1.3.1"
+    },
+    {
+      "distribution": "lightgbm",
+      "record_path": "lib/python3.12/site-packages/lightgbm-4.6.0.dist-info/RECORD",
+      "record_sha256": "197b7298059cb0828c1db0b74c9ea1b19c684c9483db5d27551e14291efc3951",
+      "record_size": 1407,
+      "version": "4.6.0"
+    },
+    {
+      "distribution": "loguru",
+      "record_path": "lib/python3.12/site-packages/loguru-0.7.3.dist-info/RECORD",
+      "record_sha256": "f561bf516e2dacc992d6041c129f33d6c98d63794d424e6738389eb031a40177",
+      "record_size": 2013,
+      "version": "0.7.3"
+    },
+    {
+      "distribution": "mako",
+      "record_path": "lib/python3.12/site-packages/mako-1.3.12.dist-info/RECORD",
+      "record_sha256": "eb7d01c6bba850ef62d70fa027f80c684e39f90b39a2f10e32f86b63e248ea6b",
+      "record_size": 3229,
+      "version": "1.3.12"
+    },
+    {
+      "distribution": "markupsafe",
+      "record_path": "lib/python3.12/site-packages/markupsafe-3.0.3.dist-info/RECORD",
+      "record_sha256": "3e96bcf1c73245c4ff9be34b7df22f705b615b7980b7b984fd2feba5032127b6",
+      "record_size": 1093,
+      "version": "3.0.3"
+    },
+    {
+      "distribution": "matplotlib",
+      "record_path": "lib/python3.12/site-packages/matplotlib-3.11.0.dist-info/RECORD",
+      "record_sha256": "1b3a621cee730960c1c785e2db91bd90c5e6ce15630b1e4b977c192c1e2228b2",
+      "record_size": 56264,
+      "version": "3.11.0"
+    },
+    {
+      "distribution": "matplotlib-inline",
+      "record_path": "lib/python3.12/site-packages/matplotlib_inline-0.2.2.dist-info/RECORD",
+      "record_sha256": "9e3fca031d79eb520bebf44c820c831d604ddb76157308c28e9f7813f71268fe",
+      "record_size": 984,
+      "version": "0.2.2"
+    },
+    {
+      "distribution": "mistune",
+      "record_path": "lib/python3.12/site-packages/mistune-3.3.3.dist-info/RECORD",
+      "record_sha256": "ad0812fd320f75843aef1b455762e703fb16102a9ec908b2a3d2b2b1705b10bc",
+      "record_size": 3657,
+      "version": "3.3.3"
+    },
+    {
+      "distribution": "mlflow",
+      "record_path": "lib/python3.12/site-packages/mlflow-3.14.0.dist-info/RECORD",
+      "record_sha256": "7c81812551db59286dee2e1b78386793763c9195a83aa33826b4d295e4a44e45",
+      "record_size": 170938,
+      "version": "3.14.0"
+    },
+    {
+      "distribution": "mlflow-skinny",
+      "record_path": "lib/python3.12/site-packages/mlflow_skinny-3.14.0.dist-info/RECORD",
+      "record_sha256": "4fc4f2df37c5b7939ccf939847753750e68b17877dfda8516b8819664de13aef",
+      "record_size": 116939,
+      "version": "3.14.0"
+    },
+    {
+      "distribution": "mlflow-tracing",
+      "record_path": "lib/python3.12/site-packages/mlflow_tracing-3.14.0.dist-info/RECORD",
+      "record_sha256": "4286743a230f3f489ea12fdcd9b876858441c6086de52069ec680056be622218",
+      "record_size": 60272,
+      "version": "3.14.0"
+    },
+    {
+      "distribution": "mpmath",
+      "record_path": "lib/python3.12/site-packages/mpmath-1.3.0.dist-info/RECORD",
+      "record_sha256": "09cbd04e87d0c5ab64aab08291b31883e4ea27e8d2c640710e0beb1995e86b9b",
+      "record_size": 7849,
+      "version": "1.3.0"
+    },
+    {
+      "distribution": "multidict",
+      "record_path": "lib/python3.12/site-packages/multidict-6.7.1.dist-info/RECORD",
+      "record_sha256": "00df5867e4b6ddcb88675199117a50f3784270ec62e22efc964cd091c65a2edf",
+      "record_size": 1079,
+      "version": "6.7.1"
+    },
+    {
+      "distribution": "narwhals",
+      "record_path": "lib/python3.12/site-packages/narwhals-2.24.0.dist-info/RECORD",
+      "record_sha256": "84b81901888fba4975b695f2ebdab261d0d9652ddb6520616022844e80f0879a",
+      "record_size": 14153,
+      "version": "2.24.0"
+    },
+    {
+      "distribution": "nbclient",
+      "record_path": "lib/python3.12/site-packages/nbclient-0.11.0.dist-info/RECORD",
+      "record_sha256": "f2c83722206c37a6b3668a89919f0f8ee6dd89b33eef310a5f4a5963ffab279b",
+      "record_size": 1351,
+      "version": "0.11.0"
+    },
+    {
+      "distribution": "nbconvert",
+      "record_path": "lib/python3.12/site-packages/nbconvert-7.17.1.dist-info/RECORD",
+      "record_sha256": "f957584405b6b4fb60682109f98e6e10740aa718915ce4666305ca8776ee6f43",
+      "record_size": 13400,
+      "version": "7.17.1"
+    },
+    {
+      "distribution": "nbformat",
+      "record_path": "lib/python3.12/site-packages/nbformat-5.10.4.dist-info/RECORD",
+      "record_sha256": "22ba2cda9def28b08ceabae34cd27b384b72f9f05d6d683693d3c9d45a5697c4",
+      "record_size": 4633,
+      "version": "5.10.4"
+    },
+    {
+      "distribution": "nest-asyncio2",
+      "record_path": "lib/python3.12/site-packages/nest_asyncio2-1.7.2.dist-info/RECORD",
+      "record_sha256": "af6b77cc381a9ad01e9dceaec38b899daa30449faf75ea7e3777a71805f7a76f",
+      "record_size": 685,
+      "version": "1.7.2"
+    },
+    {
+      "distribution": "networkx",
+      "record_path": "lib/python3.12/site-packages/networkx-3.6.1.dist-info/RECORD",
+      "record_sha256": "f6833bb525b720a7809dd6280817601af3dbd78efef02d9e55d4b887ec1f52da",
+      "record_size": 60311,
+      "version": "3.6.1"
+    },
+    {
+      "distribution": "notebook",
+      "record_path": "lib/python3.12/site-packages/notebook-7.6.0.dist-info/RECORD",
+      "record_sha256": "ec6876a3681915088f145f41019e137554b8c7de2c08ed33f2a680acc67a624c",
+      "record_size": 35278,
+      "version": "7.6.0"
+    },
+    {
+      "distribution": "notebook-shim",
+      "record_path": "lib/python3.12/site-packages/notebook_shim-0.2.4.dist-info/RECORD",
+      "record_sha256": "14b268fcf8337704e9090dd2483768672f46d4ce1ccab1263e14b2a8a9b2b75e",
+      "record_size": 1623,
+      "version": "0.2.4"
+    },
+    {
+      "distribution": "numpy",
+      "record_path": "lib/python3.12/site-packages/numpy-2.3.5.dist-info/RECORD",
+      "record_sha256": "48ab4525a160ade7009212dc87da105cea618c3c5fd773e9410ddf836ee794c6",
+      "record_size": 83202,
+      "version": "2.3.5"
+    },
+    {
+      "distribution": "nvidia-cublas-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cublas_cu12-12.9.1.4.dist-info/RECORD",
+      "record_sha256": "fed69f94a7605c6810d43e23c178c32e5934625c1d460d50e582ead541654d06",
+      "record_size": 1497,
+      "version": "12.9.1.4"
+    },
+    {
+      "distribution": "nvidia-cuda-cupti-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cuda_cupti_cu12-12.9.79.dist-info/RECORD",
+      "record_sha256": "d4e5028d9b45eeb14b39d3e44a7f1c6d649d889a1b38d47a15f6bd1ad3689cfa",
+      "record_size": 5014,
+      "version": "12.9.79"
+    },
+    {
+      "distribution": "nvidia-cuda-nvrtc-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cuda_nvrtc_cu12-12.9.86.dist-info/RECORD",
+      "record_sha256": "5f0f55db846b51d7cd220725afc049c05823cd4e4668f56ba6b807d7e1798ecc",
+      "record_size": 1202,
+      "version": "12.9.86"
+    },
+    {
+      "distribution": "nvidia-cuda-runtime-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cuda_runtime_cu12-12.9.79.dist-info/RECORD",
+      "record_sha256": "02233c722c04360ad7115d236647f8bde21c4ae04ba32eea557ccf91166897b5",
+      "record_size": 11204,
+      "version": "12.9.79"
+    },
+    {
+      "distribution": "nvidia-cudnn-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cudnn_cu12-9.10.2.21.dist-info/RECORD",
+      "record_sha256": "2c8f8aabcd98a443b831d245c9d171e2ff2b1ba5e26f8747223b299a5b8a49f5",
+      "record_size": 2759,
+      "version": "9.10.2.21"
+    },
+    {
+      "distribution": "nvidia-cufft-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cufft_cu12-11.4.1.4.dist-info/RECORD",
+      "record_sha256": "3c539e4e2d64d4293164fb7623fe42f645a2f541793691f19625bb64e5a2d232",
+      "record_size": 1200,
+      "version": "11.4.1.4"
+    },
+    {
+      "distribution": "nvidia-cufile-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cufile_cu12-1.14.1.1.dist-info/RECORD",
+      "record_sha256": "6b9e8420eed1d9ae9e22163e9ee4e5d57e7251519fceac605b762ec06585459b",
+      "record_size": 947,
+      "version": "1.14.1.1"
+    },
+    {
+      "distribution": "nvidia-curand-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_curand_cu12-10.3.10.19.dist-info/RECORD",
+      "record_sha256": "64dcf6e22cbeff9de338285f350576071ed65d99f3de04d231774390bad5fdf4",
+      "record_size": 2749,
+      "version": "10.3.10.19"
+    },
+    {
+      "distribution": "nvidia-cusolver-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cusolver_cu12-11.7.5.82.dist-info/RECORD",
+      "record_sha256": "3c2cacced4d8bd5e663ba2489aabae8c7f9e6d26002c4168732c414c94351dc1",
+      "record_size": 1479,
+      "version": "11.7.5.82"
+    },
+    {
+      "distribution": "nvidia-cusparse-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cusparse_cu12-12.5.10.65.dist-info/RECORD",
+      "record_sha256": "798dd0b2fc94b065e1581fc16d2b072b45d34ed5b6558d3b8b0816c79c5da286",
+      "record_size": 986,
+      "version": "12.5.10.65"
+    },
+    {
+      "distribution": "nvidia-cusparselt-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_cusparselt_cu12-0.7.1.dist-info/RECORD",
+      "record_sha256": "a0d0794ea5e6fbf009a350cd345b93b49c5ce40a57270eecbf0c96233bac8ee0",
+      "record_size": 848,
+      "version": "0.7.1"
+    },
+    {
+      "distribution": "nvidia-nccl-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_nccl_cu12-2.27.5.dist-info/RECORD",
+      "record_sha256": "11536e10ae6812b21398f820cb8db26cc9ebf08fa73e97f353fc53c50ebf7440",
+      "record_size": 817,
+      "version": "2.27.5"
+    },
+    {
+      "distribution": "nvidia-nvjitlink-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_nvjitlink_cu12-12.9.86.dist-info/RECORD",
+      "record_sha256": "e449586fe4b5ac3edd418ecb49375dd9fd83135b9d33ad7fd398fd1a64ff473d",
+      "record_size": 880,
+      "version": "12.9.86"
+    },
+    {
+      "distribution": "nvidia-nvshmem-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_nvshmem_cu12-3.3.20.dist-info/RECORD",
+      "record_sha256": "b6c29e6c6a3ec1bb5e51f2f793bce9f021df26c86b7fd096e2676cb70867abc4",
+      "record_size": 7216,
+      "version": "3.3.20"
+    },
+    {
+      "distribution": "nvidia-nvtx-cu12",
+      "record_path": "lib/python3.12/site-packages/nvidia_nvtx_cu12-12.9.79.dist-info/RECORD",
+      "record_sha256": "29400bdd4784fda6d46a51898242b0ccf0a0103a5a33a34bc5eb1a7d4cd380dc",
+      "record_size": 2536,
+      "version": "12.9.79"
+    },
+    {
+      "distribution": "opentelemetry-api",
+      "record_path": "lib/python3.12/site-packages/opentelemetry_api-1.44.0.dist-info/RECORD",
+      "record_sha256": "8fc686374999a083eb0efe08cee273ba623863153834268ed6233eca624d92f3",
+      "record_size": 4472,
+      "version": "1.44.0"
+    },
+    {
+      "distribution": "opentelemetry-proto",
+      "record_path": "lib/python3.12/site-packages/opentelemetry_proto-1.44.0.dist-info/RECORD",
+      "record_sha256": "8334e10bbce6e51c7353e17545088f5cf8b3a9c4a38d06bbde8491c191cf7a22",
+      "record_size": 4793,
+      "version": "1.44.0"
+    },
+    {
+      "distribution": "opentelemetry-sdk",
+      "record_path": "lib/python3.12/site-packages/opentelemetry_sdk-1.44.0.dist-info/RECORD",
+      "record_sha256": "4390feafc90b106e7e0e8add55c48e6e179c537ee8b6b563b91fa9d4c56a2588",
+      "record_size": 7788,
+      "version": "1.44.0"
+    },
+    {
+      "distribution": "opentelemetry-semantic-conventions",
+      "record_path": "lib/python3.12/site-packages/opentelemetry_semantic_conventions-0.65b0.dist-info/RECORD",
+      "record_sha256": "a088d61bbfaa3279adb9aabd56a51d5d61a9d040e69d03f10e5cbd9325073cee",
+      "record_size": 15619,
+      "version": "0.65b0"
+    },
+    {
+      "distribution": "osqp",
+      "record_path": "lib/python3.12/site-packages/osqp-1.1.3.dist-info/RECORD",
+      "record_sha256": "2733698a65281d31487864dd27a0a331d80c9c9d0864c223835412ac60ce7849",
+      "record_size": 9232,
+      "version": "1.1.3"
+    },
+    {
+      "distribution": "packaging",
+      "record_path": "lib/python3.12/site-packages/packaging-26.2.dist-info/RECORD",
+      "record_sha256": "34a791dcc687723f1d7601aa68319f6d51aa00e44d85818995dd33a1b7c5a49c",
+      "record_size": 2358,
+      "version": "26.2"
+    },
+    {
+      "distribution": "pandas",
+      "record_path": "lib/python3.12/site-packages/pandas-2.3.3.dist-info/RECORD",
+      "record_sha256": "463fbfdd9c961005ef1f069c04a006858f829a981edfad1313b886e418a7e887",
+      "record_size": 145998,
+      "version": "2.3.3"
+    },
+    {
+      "distribution": "pandocfilters",
+      "record_path": "lib/python3.12/site-packages/pandocfilters-1.5.1.dist-info/RECORD",
+      "record_sha256": "afdfd1e629a5f4f664e8aa1f59fe69710581b91bf254ec03d86ce54d4a15cb50",
+      "record_size": 676,
+      "version": "1.5.1"
+    },
+    {
+      "distribution": "parso",
+      "record_path": "lib/python3.12/site-packages/parso-0.8.7.dist-info/RECORD",
+      "record_sha256": "f12d7035431df6048bd4ed5e00a3ff1b3e5821c6201e269ac0ad7f1e643cd9b7",
+      "record_size": 3076,
+      "version": "0.8.7"
+    },
+    {
+      "distribution": "pexpect",
+      "record_path": "lib/python3.12/site-packages/pexpect-4.9.0.dist-info/RECORD",
+      "record_sha256": "18d1ff314a7a49821e1907a870b096a1aa90c0e726f99858d0da77043343a3ac",
+      "record_size": 2008,
+      "version": "4.9.0"
+    },
+    {
+      "distribution": "pillow",
+      "record_path": "lib/python3.12/site-packages/pillow-12.3.0.dist-info/RECORD",
+      "record_sha256": "e29a8853b254fcc14a7b13ab9df938bcdea09e57c5e345ad9819c611a62ac46f",
+      "record_size": 11523,
+      "version": "12.3.0"
+    },
+    {
+      "distribution": "platformdirs",
+      "record_path": "lib/python3.12/site-packages/platformdirs-4.10.0.dist-info/RECORD",
+      "record_sha256": "a0808e6f6e3f772ae227ceede94ddd97fd4dce499901c5bea859dd865d6cee4e",
+      "record_size": 1302,
+      "version": "4.10.0"
+    },
+    {
+      "distribution": "pluggy",
+      "record_path": "lib/python3.12/site-packages/pluggy-1.6.0.dist-info/RECORD",
+      "record_sha256": "a42a63bcba12ddb7e7db19158c8d05d8fc41d51f48686b411ad3a0213fbd7721",
+      "record_size": 1227,
+      "version": "1.6.0"
+    },
+    {
+      "distribution": "prettytable",
+      "record_path": "lib/python3.12/site-packages/prettytable-3.18.0.dist-info/RECORD",
+      "record_sha256": "9e51e62cb4cb1642be005ad88f5e16eb1a1a748cfb4def7382335fbce7979872",
+      "record_size": 988,
+      "version": "3.18.0"
+    },
+    {
+      "distribution": "prometheus-client",
+      "record_path": "lib/python3.12/site-packages/prometheus_client-0.25.0.dist-info/RECORD",
+      "record_sha256": "e1715b2e4ba71d1df7e91051f533712f9f2f44f3a6bc68d71ed4f0e11b52b766",
+      "record_size": 3536,
+      "version": "0.25.0"
+    },
+    {
+      "distribution": "prompt-toolkit",
+      "record_path": "lib/python3.12/site-packages/prompt_toolkit-3.0.52.dist-info/RECORD",
+      "record_sha256": "d9763ce59edf45150a60528745aec92b9c608eb7422df445ae8c1a6f5cf2aec0",
+      "record_size": 14337,
+      "version": "3.0.52"
+    },
+    {
+      "distribution": "propcache",
+      "record_path": "lib/python3.12/site-packages/propcache-0.5.2.dist-info/RECORD",
+      "record_sha256": "5b47b5249186957cc332c6bc948cae117846f92e3561d6a8835888d6da3ba392",
+      "record_size": 1256,
+      "version": "0.5.2"
+    },
+    {
+      "distribution": "protobuf",
+      "record_path": "lib/python3.12/site-packages/protobuf-6.33.6.dist-info/RECORD",
+      "record_sha256": "eec74a7da0f936d6cc8b5a98671c627a9a75e0f2775f6318a7dcec6338347fd9",
+      "record_size": 5482,
+      "version": "6.33.6"
+    },
+    {
+      "distribution": "psutil",
+      "record_path": "lib/python3.12/site-packages/psutil-7.2.2.dist-info/RECORD",
+      "record_sha256": "2af7e87b12ad6542c1eaaf20a299c109fa09b9dc5d69faf745219bd61e8cfca6",
+      "record_size": 1396,
+      "version": "7.2.2"
+    },
+    {
+      "distribution": "ptyprocess",
+      "record_path": "lib/python3.12/site-packages/ptyprocess-0.7.0.dist-info/RECORD",
+      "record_sha256": "c4033a1a5bbd4f0aabc0b7f57aae33d735a97680c439581546f0a952654f1947",
+      "record_size": 800,
+      "version": "0.7.0"
+    },
+    {
+      "distribution": "pure-eval",
+      "record_path": "lib/python3.12/site-packages/pure_eval-0.2.3.dist-info/RECORD",
+      "record_sha256": "284435bdb66a1dc88959559e214b8ae0d1fbbf1c6c92622624f33a9327ad7c51",
+      "record_size": 1040,
+      "version": "0.2.3"
+    },
+    {
+      "distribution": "pyarrow",
+      "record_path": "lib/python3.12/site-packages/pyarrow-23.0.1.dist-info/RECORD",
+      "record_sha256": "57daa8088bf6251d73eb17a4329e2d4a203dfc1c680ebd73f110c29c8467e1b9",
+      "record_size": 71113,
+      "version": "23.0.1"
+    },
+    {
+      "distribution": "pyasn1",
+      "record_path": "lib/python3.12/site-packages/pyasn1-0.6.4.dist-info/RECORD",
+      "record_sha256": "a090dfffb5eba2e22eaf9fa9368748a431669c88ae5eb8043afd5fb16b398fa3",
+      "record_size": 3224,
+      "version": "0.6.4"
+    },
+    {
+      "distribution": "pyasn1-modules",
+      "record_path": "lib/python3.12/site-packages/pyasn1_modules-0.4.2.dist-info/RECORD",
+      "record_sha256": "6645737688eada1bc4448276028ef35d5a1132cf61f292667af044f0d8703b24",
+      "record_size": 11535,
+      "version": "0.4.2"
+    },
+    {
+      "distribution": "pycparser",
+      "record_path": "lib/python3.12/site-packages/pycparser-3.0.dist-info/RECORD",
+      "record_sha256": "e752c5c64ce06f508a80e0edeef0c165df849587b829cb9a7b7bb22ac43b0c7e",
+      "record_size": 1202,
+      "version": "3.0"
+    },
+    {
+      "distribution": "pydantic",
+      "record_path": "lib/python3.12/site-packages/pydantic-2.13.4.dist-info/RECORD",
+      "record_sha256": "d0cbe0f34b294885175920bc8f2ece0b3ed6d9874347dc9cfb2caf4931329272",
+      "record_size": 9517,
+      "version": "2.13.4"
+    },
+    {
+      "distribution": "pydantic-core",
+      "record_path": "lib/python3.12/site-packages/pydantic_core-2.46.4.dist-info/RECORD",
+      "record_sha256": "3e55a95c4577dcb5dfd08cb8740db06dad7117273dd4885c090413888e606fc0",
+      "record_size": 1099,
+      "version": "2.46.4"
+    },
+    {
+      "distribution": "pydantic-settings",
+      "record_path": "lib/python3.12/site-packages/pydantic_settings-2.14.2.dist-info/RECORD",
+      "record_sha256": "cbb65a16388ac8010e749031b892cbc0f73d6859d43234dcfde95eadcbd1b941",
+      "record_size": 2735,
+      "version": "2.14.2"
+    },
+    {
+      "distribution": "pygments",
+      "record_path": "lib/python3.12/site-packages/pygments-2.20.0.dist-info/RECORD",
+      "record_sha256": "533b6d442c72cce7253199568105554de4ca7e6d7315fb2631bed606cd225842",
+      "record_size": 28834,
+      "version": "2.20.0"
+    },
+    {
+      "distribution": "pymongo",
+      "record_path": "lib/python3.12/site-packages/pymongo-4.17.0.dist-info/RECORD",
+      "record_sha256": "70f0c68064c61cb56c61044e68b1a276e6e72e493545eafc715448a86a9cf854",
+      "record_size": 14065,
+      "version": "4.17.0"
+    },
+    {
+      "distribution": "pyparsing",
+      "record_path": "lib/python3.12/site-packages/pyparsing-3.3.2.dist-info/RECORD",
+      "record_sha256": "239325f438cc3542c4d936b77d4539132f7db3b83d55bf9b811db76cce83f0ee",
+      "record_size": 2045,
+      "version": "3.3.2"
+    },
+    {
+      "distribution": "pyqlib",
+      "record_path": "lib/python3.12/site-packages/pyqlib-0.9.7.dist-info/RECORD",
+      "record_sha256": "329186331b4723c98402d36ed67e3724642b8027bdf6e78fc7756e02c6ac35b5",
+      "record_size": 21127,
+      "version": "0.9.7"
+    },
+    {
+      "distribution": "pytest",
+      "record_path": "lib/python3.12/site-packages/pytest-9.0.3.dist-info/RECORD",
+      "record_sha256": "e44618fe18d44ba8323caa6aa4802f989c20d77f4b62dd8e93810a5027a577bb",
+      "record_size": 6760,
+      "version": "9.0.3"
+    },
+    {
+      "distribution": "python-dateutil",
+      "record_path": "lib/python3.12/site-packages/python_dateutil-2.9.0.post0.dist-info/RECORD",
+      "record_sha256": "e15e868a50b9c4e71df17b31369843617780146ac5adb1bbfdcced0ebe501824",
+      "record_size": 2282,
+      "version": "2.9.0.post0"
+    },
+    {
+      "distribution": "python-dotenv",
+      "record_path": "lib/python3.12/site-packages/python_dotenv-1.2.2.dist-info/RECORD",
+      "record_sha256": "e5b4901ae269bffd422d1dca77bee1766556d37b2f8821b1d09bead03e5a6644",
+      "record_size": 1443,
+      "version": "1.2.2"
+    },
+    {
+      "distribution": "python-json-logger",
+      "record_path": "lib/python3.12/site-packages/python_json_logger-4.1.0.dist-info/RECORD",
+      "record_sha256": "a635b68ada7ff0a7025b56fe6c46bb6c106dc7a45416888ad61b2b8110ba2e75",
+      "record_size": 1478,
+      "version": "4.1.0"
+    },
+    {
+      "distribution": "python-redis-lock",
+      "record_path": "lib/python3.12/site-packages/python_redis_lock-4.0.1.dist-info/RECORD",
+      "record_sha256": "71516fcb66a62f6fd2bed5f11d73b7888657ac7f5d70af0814417e4d25084240",
+      "record_size": 803,
+      "version": "4.0.1"
+    },
+    {
+      "distribution": "pytz",
+      "record_path": "lib/python3.12/site-packages/pytz-2026.2.dist-info/RECORD",
+      "record_sha256": "adc676b9082d897c0133402d9e9bd5f1b73b12d49ea750dfccee3ca2365d10ca",
+      "record_size": 52215,
+      "version": "2026.2"
+    },
+    {
+      "distribution": "pyyaml",
+      "record_path": "lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/RECORD",
+      "record_sha256": "7d0856221a182f5b25fde9bb976af79b4883090f54680d86a42b35fc8d6735a2",
+      "record_size": 1971,
+      "version": "6.0.3"
+    },
+    {
+      "distribution": "pyzmq",
+      "record_path": "lib/python3.12/site-packages/pyzmq-27.1.0.dist-info/RECORD",
+      "record_sha256": "5d6335bd4cb60ac1bee8883bdaf7fa6217eb09eb98bf4158a685fe304c3338b4",
+      "record_size": 7885,
+      "version": "27.1.0"
+    },
+    {
+      "distribution": "qdldl",
+      "record_path": "lib/python3.12/site-packages/qdldl-0.1.9.post1.dist-info/RECORD",
+      "record_sha256": "f6ecd19acff3aa23326af08f12d8ea024dda9797250fd74842dd3cdf16c4783b",
+      "record_size": 695,
+      "version": "0.1.9.post1"
+    },
+    {
+      "distribution": "redis",
+      "record_path": "lib/python3.12/site-packages/redis-8.0.1.dist-info/RECORD",
+      "record_sha256": "f81f7bc22fab67f877a59fb91b2bddc296156a09350160982cfce57671e4a8ca",
+      "record_size": 10324,
+      "version": "8.0.1"
+    },
+    {
+      "distribution": "referencing",
+      "record_path": "lib/python3.12/site-packages/referencing-0.37.0.dist-info/RECORD",
+      "record_sha256": "d7ecf9906a4a4ea4837d16e324e344f9f00b328570cf695a96a8de46b8766982",
+      "record_size": 1766,
+      "version": "0.37.0"
+    },
+    {
+      "distribution": "requests",
+      "record_path": "lib/python3.12/site-packages/requests-2.34.2.dist-info/RECORD",
+      "record_sha256": "fc8c5216d0e865d815bd04cc240b5adc5d56f6c3dbe9aef3b4ea3b83d735bdfe",
+      "record_size": 2205,
+      "version": "2.34.2"
+    },
+    {
+      "distribution": "rfc3339-validator",
+      "record_path": "lib/python3.12/site-packages/rfc3339_validator-0.1.4.dist-info/RECORD",
+      "record_sha256": "f1af86ba48d8731f1ec42c92be12bd591cfa2b7504ee245893fc34a8462964b6",
+      "record_size": 809,
+      "version": "0.1.4"
+    },
+    {
+      "distribution": "rfc3986-validator",
+      "record_path": "lib/python3.12/site-packages/rfc3986_validator-0.1.1.dist-info/RECORD",
+      "record_sha256": "8ed859cee09002e904307c508a744efe18db9f80b9693d4c101103d9a480bb41",
+      "record_size": 809,
+      "version": "0.1.1"
+    },
+    {
+      "distribution": "rfc3987-syntax",
+      "record_path": "lib/python3.12/site-packages/rfc3987_syntax-1.1.0.dist-info/RECORD",
+      "record_sha256": "9e4193c47e0b1b009023a33d7cda57b493043c9c1d6688eb3c20eb9fbf847c20",
+      "record_size": 943,
+      "version": "1.1.0"
+    },
+    {
+      "distribution": "rpds-py",
+      "record_path": "lib/python3.12/site-packages/rpds_py-2026.6.3.dist-info/RECORD",
+      "record_sha256": "8e825dd83fbb7bdc9ff8941296bc53b6c0e07d0420ae28efa150830d6cf178fe",
+      "record_size": 921,
+      "version": "2026.6.3"
+    },
+    {
+      "distribution": "ruamel-yaml",
+      "record_path": "lib/python3.12/site-packages/ruamel_yaml-0.19.1.dist-info/RECORD",
+      "record_sha256": "a6c5029dfc9e421e9c078c8ca35f1f89fb71a3eef3dbcebbd1c5b2eb6a7ef616",
+      "record_size": 3317,
+      "version": "0.19.1"
+    },
+    {
+      "distribution": "ruff",
+      "record_path": "lib/python3.12/site-packages/ruff-0.14.9.dist-info/RECORD",
+      "record_sha256": "a1d694d0e2f5b39422fefe1ddc6150c6b80418927377bd76d70c4a5f973aefb5",
+      "record_size": 689,
+      "version": "0.14.9"
+    },
+    {
+      "distribution": "scikit-learn",
+      "record_path": "lib/python3.12/site-packages/scikit_learn-1.9.0.dist-info/RECORD",
+      "record_sha256": "fac3c0f4316df9daaa78eb2c768b24365b6325934da11732a75c2abfedf10128",
+      "record_size": 99113,
+      "version": "1.9.0"
+    },
+    {
+      "distribution": "scipy",
+      "record_path": "lib/python3.12/site-packages/scipy-1.17.1.dist-info/RECORD",
+      "record_sha256": "bebd5a00dcf3d8fd96b1f5d18d985564b891d893de7584d65ccea6902888a7a8",
+      "record_size": 136085,
+      "version": "1.17.1"
+    },
+    {
+      "distribution": "scs",
+      "record_path": "lib/python3.12/site-packages/scs-3.2.11.dist-info/RECORD",
+      "record_sha256": "2ec78fd1c7ddecf72a7363a117270ca3dfad5ae00e1e90be09fd92960b13b5a0",
+      "record_size": 1136,
+      "version": "3.2.11"
+    },
+    {
+      "distribution": "send2trash",
+      "record_path": "lib/python3.12/site-packages/send2trash-2.1.0.dist-info/RECORD",
+      "record_sha256": "e06aa64d1245f88cbda95142f541d7b33801d19fbfdcd413df2235ccf0babc5e",
+      "record_size": 1825,
+      "version": "2.1.0"
+    },
+    {
+      "distribution": "setuptools",
+      "record_path": "lib/python3.12/site-packages/setuptools-83.0.0.dist-info/RECORD",
+      "record_sha256": "2fe8f339e0ea1a1762bd8b21edcc2609e36aebaf13d993f6ce9e236a0fd2ebd1",
+      "record_size": 43186,
+      "version": "83.0.0"
+    },
+    {
+      "distribution": "six",
+      "record_path": "lib/python3.12/site-packages/six-1.17.0.dist-info/RECORD",
+      "record_sha256": "d16e50f347969b1e1919fb0c88bac4b9c644f5305bcfcfb00f72b646dbd4065d",
+      "record_size": 603,
+      "version": "1.17.0"
+    },
+    {
+      "distribution": "skops",
+      "record_path": "lib/python3.12/site-packages/skops-0.14.0.dist-info/RECORD",
+      "record_sha256": "954fc145f9ab42c6383ff6b4f3e1ffc1115ca167e6b006729ba326395a940c98",
+      "record_size": 5459,
+      "version": "0.14.0"
+    },
+    {
+      "distribution": "smmap",
+      "record_path": "lib/python3.12/site-packages/smmap-5.0.3.dist-info/RECORD",
+      "record_sha256": "e0be5b36472d7e88192f32c26612bf97eb4162bb1e7f76fc7feb8cc671817358",
+      "record_size": 1395,
+      "version": "5.0.3"
+    },
+    {
+      "distribution": "soupsieve",
+      "record_path": "lib/python3.12/site-packages/soupsieve-2.8.4.dist-info/RECORD",
+      "record_sha256": "f55cbea6a1db79120b193c8ae711dc04ff357300b3443aa5b01433e78ef23c96",
+      "record_size": 1111,
+      "version": "2.8.4"
+    },
+    {
+      "distribution": "sparsediffpy",
+      "record_path": "lib/python3.12/site-packages/sparsediffpy-0.3.0.dist-info/RECORD",
+      "record_sha256": "8c636ed474932822426bcebdd720981634a5d3e50310b091ab772c94cd54d798",
+      "record_size": 6755,
+      "version": "0.3.0"
+    },
+    {
+      "distribution": "sqlalchemy",
+      "record_path": "lib/python3.12/site-packages/sqlalchemy-2.0.51.dist-info/RECORD",
+      "record_sha256": "c186cb6fff7c8add5aeca0cef12312a48d8279a1a791eec31bd10794d5673959",
+      "record_size": 24780,
+      "version": "2.0.51"
+    },
+    {
+      "distribution": "sqlparse",
+      "record_path": "lib/python3.12/site-packages/sqlparse-0.5.5.dist-info/RECORD",
+      "record_sha256": "dbbdd9e364cdb135e0c91ac79c2208528f89f908a5c5f0792947d3a6abe6f8b4",
+      "record_size": 2530,
+      "version": "0.5.5"
+    },
+    {
+      "distribution": "stack-data",
+      "record_path": "lib/python3.12/site-packages/stack_data-0.6.3.dist-info/RECORD",
+      "record_sha256": "522b69b3fb8bc2aba2e176a824f62b51cda7c3c30e78abbf9ebf90ce5e3cb615",
+      "record_size": 1129,
+      "version": "0.6.3"
+    },
+    {
+      "distribution": "starlette",
+      "record_path": "lib/python3.12/site-packages/starlette-1.3.1.dist-info/RECORD",
+      "record_sha256": "798ee94d43c1be08a0c60745972eac69ae9c8fd249cf741df98d432218d3416d",
+      "record_size": 3377,
+      "version": "1.3.1"
+    },
+    {
+      "distribution": "sympy",
+      "record_path": "lib/python3.12/site-packages/sympy-1.14.0.dist-info/RECORD",
+      "record_sha256": "d2540ab218c3c924a1c90e03bdf3dcd8a63582fffcfbf337b05ffca0c50cc813",
+      "record_size": 145612,
+      "version": "1.14.0"
+    },
+    {
+      "distribution": "termcolor",
+      "record_path": "lib/python3.12/site-packages/termcolor-3.3.0.dist-info/RECORD",
+      "record_sha256": "37e14730fcdfd0c6b874f854ca5d0e086fb0b0fba96068ee80ab01d2269b30f0",
+      "record_size": 799,
+      "version": "3.3.0"
+    },
+    {
+      "distribution": "terminado",
+      "record_path": "lib/python3.12/site-packages/terminado-0.18.1.dist-info/RECORD",
+      "record_sha256": "234bfc694bb98042dc74b16ce8a5c3bac77a62c86f7e4abec718262471d9d69f",
+      "record_size": 1125,
+      "version": "0.18.1"
+    },
+    {
+      "distribution": "threadpoolctl",
+      "record_path": "lib/python3.12/site-packages/threadpoolctl-3.6.0.dist-info/RECORD",
+      "record_sha256": "21fd60a7b59ad0785db0d87b7f45a58b9c6961097749168c577efa5b1619e95e",
+      "record_size": 588,
+      "version": "3.6.0"
+    },
+    {
+      "distribution": "tinycss2",
+      "record_path": "lib/python3.12/site-packages/tinycss2-1.5.1.dist-info/RECORD",
+      "record_sha256": "6207761ce025bef201d6326bc82eedba4658dd2d680a2a35040b50e29b92a3b4",
+      "record_size": 1239,
+      "version": "1.5.1"
+    },
+    {
+      "distribution": "torch",
+      "record_path": "lib/python3.12/site-packages/torch-2.9.1+cu129.dist-info/RECORD",
+      "record_sha256": "850f6587d467fc698a9d889259d6bd0906ef8d90810f1d30c65adefcf6042883",
+      "record_size": 1225232,
+      "version": "2.9.1+cu129"
+    },
+    {
+      "distribution": "tornado",
+      "record_path": "lib/python3.12/site-packages/tornado-6.5.7.dist-info/RECORD",
+      "record_sha256": "e267ef345a7aad29e83211a50f45fd55fe498338e031d41d34f21e15a09c0ec6",
+      "record_size": 8223,
+      "version": "6.5.7"
+    },
+    {
+      "distribution": "tqdm",
+      "record_path": "lib/python3.12/site-packages/tqdm-4.68.4.dist-info/RECORD",
+      "record_sha256": "f876614a1135bf686d9fcafaa40e6c5b72f0d9be007e2782a954508e175d50d3",
+      "record_size": 3494,
+      "version": "4.68.4"
+    },
+    {
+      "distribution": "traitlets",
+      "record_path": "lib/python3.12/site-packages/traitlets-5.15.1.dist-info/RECORD",
+      "record_sha256": "6ed5692039740148b0145c8171d3ca7016249a2943cfda7a6406663b36fa7b81",
+      "record_size": 2588,
+      "version": "5.15.1"
+    },
+    {
+      "distribution": "triton",
+      "record_path": "lib/python3.12/site-packages/triton-3.5.1.dist-info/RECORD",
+      "record_sha256": "f78e93d38571aaf403801c0278088ed7059f89bf315a0021bd53db4554e5704b",
+      "record_size": 40569,
+      "version": "3.5.1"
+    },
+    {
+      "distribution": "typing-extensions",
+      "record_path": "lib/python3.12/site-packages/typing_extensions-4.16.0.dist-info/RECORD",
+      "record_sha256": "9e07fea845cac76293d927afa7157a14ecba39b318bc8af236b8de530b7656c1",
+      "record_size": 623,
+      "version": "4.16.0"
+    },
+    {
+      "distribution": "typing-inspection",
+      "record_path": "lib/python3.12/site-packages/typing_inspection-0.4.2.dist-info/RECORD",
+      "record_sha256": "96edfd27f64244b308dd9b63a60613ad2a04e5012066fdbd1aeebe85b348ba29",
+      "record_size": 978,
+      "version": "0.4.2"
+    },
+    {
+      "distribution": "tzdata",
+      "record_path": "lib/python3.12/site-packages/tzdata-2026.3.dist-info/RECORD",
+      "record_sha256": "031878bab19ea0c4ce5d227eaa31da6573fb1b3764b1b906c4a7f7e5aae085e0",
+      "record_size": 54876,
+      "version": "2026.3"
+    },
+    {
+      "distribution": "uri-template",
+      "record_path": "lib/python3.12/site-packages/uri_template-1.3.0.dist-info/RECORD",
+      "record_sha256": "e2b2ec1d4a766630c1f4877f77ac33d88014b620ace99cc3e614c95df3c215aa",
+      "record_size": 1079,
+      "version": "1.3.0"
+    },
+    {
+      "distribution": "urllib3",
+      "record_path": "lib/python3.12/site-packages/urllib3-2.7.0.dist-info/RECORD",
+      "record_sha256": "4869c7ca2082c964b4e2bb8244deda15cfa069d93e4543d3a16eca6a63cbb81f",
+      "record_size": 3624,
+      "version": "2.7.0"
+    },
+    {
+      "distribution": "uvicorn",
+      "record_path": "lib/python3.12/site-packages/uvicorn-0.51.0.dist-info/RECORD",
+      "record_sha256": "70a10b7e46646377aef2195acb885c71a88e821357cd31a8ddb70b02a1807aa2",
+      "record_size": 4202,
+      "version": "0.51.0"
+    },
+    {
+      "distribution": "wcwidth",
+      "record_path": "lib/python3.12/site-packages/wcwidth-0.8.2.dist-info/RECORD",
+      "record_sha256": "c499601de55ec3c1f42503caea51cc30d5e66d88072b8da1bd120accc644cb8a",
+      "record_size": 4867,
+      "version": "0.8.2"
+    },
+    {
+      "distribution": "webcolors",
+      "record_path": "lib/python3.12/site-packages/webcolors-25.10.0.dist-info/RECORD",
+      "record_sha256": "705fde2617424e75ba088962d7b1adb89c5860fb58745bd1f163a1102e561ad9",
+      "record_size": 1079,
+      "version": "25.10.0"
+    },
+    {
+      "distribution": "webencodings",
+      "record_path": "lib/python3.12/site-packages/webencodings-0.5.1.dist-info/RECORD",
+      "record_sha256": "a08b718df958d1a8334ab84db4117c07d756a0bbadb1435a851336b13bc9ce14",
+      "record_size": 1110,
+      "version": "0.5.1"
+    },
+    {
+      "distribution": "websocket-client",
+      "record_path": "lib/python3.12/site-packages/websocket_client-1.9.0.dist-info/RECORD",
+      "record_sha256": "1958665f9948c17394c1f922c233a75e7dab21ee281c3fb668a4ed16330e4b51",
+      "record_size": 3751,
+      "version": "1.9.0"
+    },
+    {
+      "distribution": "werkzeug",
+      "record_path": "lib/python3.12/site-packages/werkzeug-3.1.8.dist-info/RECORD",
+      "record_sha256": "0022a422ab84e4efee96e3033a3218c0695199662f29d10ea28b52267fad8961",
+      "record_size": 5452,
+      "version": "3.1.8"
+    },
+    {
+      "distribution": "widgetsnbextension",
+      "record_path": "lib/python3.12/site-packages/widgetsnbextension-4.0.15.dist-info/RECORD",
+      "record_sha256": "0b234a42f18e9a22f07b4baf654a370b690a23582a732159725f511bf2fe3a22",
+      "record_size": 1641,
+      "version": "4.0.15"
+    },
+    {
+      "distribution": "yarl",
+      "record_path": "lib/python3.12/site-packages/yarl-1.24.2.dist-info/RECORD",
+      "record_sha256": "4242c6a226f35f999167cfad9c51aa11ac548b8bbcf9ee36b93b42ed232c91a7",
+      "record_size": 1476,
+      "version": "1.24.2"
+    },
+    {
+      "distribution": "zipp",
+      "record_path": "lib/python3.12/site-packages/zipp-4.1.0.dist-info/RECORD",
+      "record_sha256": "09471a1e570a024020ae32570ac57c6e906d76a4840b93b92801ea1b6eec71a1",
+      "record_size": 1071,
+      "version": "4.1.0"
+    }
+  ],
+  "python": {
+    "logical_executable": ".venv/bin/python",
+    "resolved_executable": "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/bin/python3.12",
+    "resolved_executable_sha256": "4933b6c4a8521fb3aa93856701e30b3ac2626d3c47ceb22965a3b0b422e85b44",
+    "resolved_executable_size": 4206512,
+    "version": "3.12.3"
+  },
+  "schema_version": "s2a_v4_installed_distributions_v1"
+}

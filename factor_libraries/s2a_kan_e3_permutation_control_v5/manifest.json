@@ -1,0 +1,709 @@
+{
+  "budget_counts": {
+    "factor_count": 7
+  },
+  "factor_count": 7,
+  "factor_library_publication_allowed": true,
+  "factors": {
+    "kan_long_price_050": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 60
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 60
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "High",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 60
+            }
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":60}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":60}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":60}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "976eb16e55d5bc3c0e9e044082dc1f5224eeb7df4a42ca5f13f89f9fffa3744e",
+      "causal": true,
+      "effective_membership_support_rows": 405193,
+      "expression_support_hash": "9a43689f3b5febaf28ba1901730da8e78ad4f031836aac0b2052f83a4fbfd366",
+      "expression_support_rows": 756632,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 61
+    },
+    "kan_reversal_007": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 10
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "High",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "Delay",
+                    "params": {
+                      "window": 5
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 5
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}},{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":5}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":5}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "196df62738bfce306e96831941de13daace529c7f4911c0b87961db4d829d1b9",
+      "causal": true,
+      "effective_membership_support_rows": 438553,
+      "expression_support_hash": "b08431744862c2a6e1c394f5ec8b6030261e814f46dd3252e5823a7f7aae52ed",
+      "expression_support_rows": 828902,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 10
+    },
+    "kan_reversal_059": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Low",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "Delay",
+                    "params": {
+                      "window": 2
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 2
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":2}},{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":2}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "5ce6b6a11fdbbf10701b837db3596a7e050055da221ecdf5b74098f367cda39c",
+      "causal": true,
+      "effective_membership_support_rows": 443472,
+      "expression_support_hash": "f76370c08556bc3ca718d280ec885971a0750a4111409f51282fe12ef31a9298",
+      "expression_support_rows": 839733,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 3
+    },
+    "kan_short_price_016": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 3
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 3
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 2
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "eca7c5fb973f520839844c5e12f0dd3310ff19c3ed00b6fdd1de88248b3b93f7",
+      "causal": true,
+      "effective_membership_support_rows": 443472,
+      "expression_support_hash": "f76370c08556bc3ca718d280ec885971a0750a4111409f51282fe12ef31a9298",
+      "expression_support_rows": 839733,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 3
+    },
+    "kan_short_price_025": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 5
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 5
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 3
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 3
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":5}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":5}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "0f657ce6c06a4fcab1edfe794793a421c9057f4b1d907894a1db88772886dfd4",
+      "causal": true,
+      "effective_membership_support_rows": 442059,
+      "expression_support_hash": "d34f758f2d58a58ac01c5732e1c6d49ccfe572cef2b511ed444a86244bfc3be9",
+      "expression_support_rows": 836615,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 5
+    },
+    "kan_short_price_032": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Low",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 3
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Low",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 3
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "High",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "High",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 2
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":3}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"High\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "a9a1fc7ab2ad809693c515cf51da2a25edd7bb7d94f4ccaa542a3b0f80cf8071",
+      "causal": true,
+      "effective_membership_support_rows": 443472,
+      "expression_support_hash": "f76370c08556bc3ca718d280ec885971a0750a4111409f51282fe12ef31a9298",
+      "expression_support_rows": 839733,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 3
+    },
+    "kan_short_price_051": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 10
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 10
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 2
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "2347108b06024488a176a20ef71206dae6df23096c236bf9eab6f4b2f9ac2b01",
+      "causal": true,
+      "effective_membership_support_rows": 438553,
+      "expression_support_hash": "b08431744862c2a6e1c394f5ec8b6030261e814f46dd3252e5823a7f7aae52ed",
+      "expression_support_rows": 828902,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 10
+    }
+  },
+  "files": {
+    "expression_support.parquet": "87fce44fc94da7ba8cd84b53d214d691ec566666028cc5acd3aee54998478da4",
+    "factor_panel.parquet": "568b31e33cd4a96fb4a9d6792ddd11492e33eeccd7eaee7109736717add41c97"
+  },
+  "identities": {
+    "authority_sha256": "e700873667bf780d50fbf1a6014b0c7418fdadbc662eadf0013ca9eb74102805",
+    "implementation_sha256": "03dfd21c545feb0cddfd0599bbed8ec51903f852389b4c7642386860fdedc394",
+    "protocol_sha256": "cf2ed15dc5802d00e4bdc9c122b1cba6af84ac522569abe1b020e6611e534c7a"
+  },
+  "index_names": [
+    "datetime",
+    "instrument"
+  ],
+  "kan_mined": false,
+  "library_role": "kan_e3_permutation_control",
+  "mask_semantics": {
+    "expression_support": "operator support before universe filtering",
+    "finite_output": "required on expression support and membership",
+    "membership": "dynamic-universe membership applied to factor values",
+    "raw_observed": "per-field finite raw observation; never imputed",
+    "tradability": "separate from factor-value publication"
+  },
+  "output_kind": "factor_library",
+  "panel_rows": 868920,
+  "promotion_eligible": false,
+  "publication_state": "staged_unpublished",
+  "role": "kan_e3_permutation_control",
+  "schema_version": "mirage_factor_library_v1",
+  "scientific_result": false,
+  "topology_binding_required_before_publication": true,
+  "topology_key": "permutation_control_library",
+  "topology_sha256": "c23f1578d7c11f72a2ccd9ee139b6b9c5640975c0ae1f75b5b5cf879f0358969"
+}

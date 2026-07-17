@@ -1,0 +1,54 @@
+{
+  "adapter_identity_segments": {
+    "test": [
+      "2022-01-01",
+      "2025-12-26"
+    ],
+    "train": [
+      "2016-01-01",
+      "2020-12-31"
+    ],
+    "valid": [
+      "2021-01-01",
+      "2021-12-31"
+    ]
+  },
+  "config_restored": true,
+  "original_segments": {
+    "test": [
+      "2022-01-01",
+      "2025-12-26"
+    ],
+    "train": [
+      "2016-01-01",
+      "2020-12-31"
+    ],
+    "valid": [
+      "2021-01-01",
+      "2021-12-31"
+    ]
+  },
+  "passed": true,
+  "prepared_dates": {
+    "test": [
+      "2023-01-03T00:00:00"
+    ],
+    "train": [
+      "2019-01-02T00:00:00"
+    ],
+    "valid": [
+      "2021-06-01T00:00:00"
+    ]
+  },
+  "qlib_loaded_before_smoke": false,
+  "qlib_provider_initialized": false,
+  "qlib_version": "0.9.7",
+  "quanta": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+    "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8"
+  },
+  "real_label_access": false,
+  "schema_version": "s2a_v5_segment_compatibility_smoke_v1",
+  "synthetic_only": true
+}

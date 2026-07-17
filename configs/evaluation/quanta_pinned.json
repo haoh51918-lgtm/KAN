@@ -1,0 +1,8 @@
+{
+  "repository": "/zju_0012/htq/aaai26_alpha/QuantaAlpha",
+  "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+  "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+  "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8",
+  "baseline_metric": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+  "baseline_metric_sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb"
+}

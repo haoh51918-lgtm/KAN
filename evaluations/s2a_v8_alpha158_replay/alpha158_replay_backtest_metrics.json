@@ -1,0 +1,23 @@
+{
+  "experiment_name": "mirage_kan_s2a_kan_e3_vertical_v8_alpha158_replay",
+  "factor_source": "alpha158",
+  "num_factors": 158,
+  "metrics": {
+    "IC": 0.01305397960235499,
+    "ICIR": 0.08210642826875184,
+    "Rank IC": 0.033109631113692355,
+    "Rank ICIR": 0.21239426182508328,
+    "annualized_return": 0.014382569080946433,
+    "information_ratio": 0.21957114899768607,
+    "max_drawdown": -0.1377059277869333,
+    "calmar_ratio": 0.10444408103622081
+  },
+  "config": {
+    "data_range": "2016-01-01 ~ 2025-12-26",
+    "test_range": "2022-01-01 ~ 2025-12-26",
+    "backtest_range": "2022-01-01 ~ 2025-12-26",
+    "market": "csi300",
+    "benchmark": "SH000300"
+  },
+  "elapsed_seconds": 139.25103569030762
+}

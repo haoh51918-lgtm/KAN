@@ -1,0 +1,63 @@
+{
+  "authority_receipt": {
+    "authority_sha256": "e700873667bf780d50fbf1a6014b0c7418fdadbc662eadf0013ca9eb74102805",
+    "base_lock_sha256": "aa36b6ae9cfae850284f3c8bbac83c401981787dbfb9c3b9f7e4acf362192983",
+    "boundary": "before_development_opening",
+    "capability_sha256": "7132263152a5e418959440703f8e1dbcc44396297014ef9632bd6e355c04b7cd",
+    "receipt_sha256": "61286b899b4000ab463f7544773c9ad164928a9f5ad195cad186f2d9c5301d60",
+    "sequence": 13
+  },
+  "baseline_identity": {
+    "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+    "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb"
+  },
+  "data_identity": {
+    "cache_path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+    "cache_sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+    "config_path": "configs/data/pit_cache.json",
+    "config_sha256": "5db3cef008cb26f8c287feb39560ab96809b2f8b743080751d177c8004359cc3"
+  },
+  "development_calendar_count": 966,
+  "development_calendar_end": "2025-12-26T00:00:00",
+  "development_calendar_sha256": "7f734856d7c11283d7facf92c764e32d4e9bb3d7a79ccd30acc0e0892b251cc7",
+  "development_calendar_start": "2022-01-04T00:00:00",
+  "development_period": [
+    "2022-01-01",
+    "2025-12-26"
+  ],
+  "development_preclaim_sha256": "453cc16fec6e1213abe80217af7c6d051defe7ec5a9427b9374c3a8ccd1f0d74",
+  "evaluation_paths": {
+    "alpha158_replay": "evaluations/s2a_v5_alpha158_replay",
+    "kan_e3_permutation_control": "evaluations/s2a_v5_kan_e3_permutation_control",
+    "kan_e3_selected": "evaluations/s2a_v5_kan_e3_selected",
+    "matched_blackbox_control": "evaluations/s2a_v5_matched_blackbox_control",
+    "typed_gp_sr_control": "evaluations/s2a_v5_typed_gp_sr_control"
+  },
+  "identity_pins": {
+    "base_lock_sha256": "aa36b6ae9cfae850284f3c8bbac83c401981787dbfb9c3b9f7e4acf362192983",
+    "implementation_lock_sha256": "03dfd21c545feb0cddfd0599bbed8ec51903f852389b4c7642386860fdedc394",
+    "mining_manifest_sha256": "b0e3b0894b5e909af8ce1158cce6c54014d5a6db90df72ab3e1ef41c9f5a56dd",
+    "provider_identity": {
+      "file_count": 60168,
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+      "stat_inventory_sha256": "17d210c4f3e0aa3631d93024cca1ff35ecad6ba4548506faf39ccb2cd4178a34",
+      "total_bytes": 632291118,
+      "tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1"
+    }
+  },
+  "mining_entitlement_sha256": "9566e6274132b75997b933967b22116b7c83cf567679787f15bcf9693b7a620f",
+  "mining_manifests": {
+    "blackbox_control": "389579dd3164c17c67c51be4e52c22ecf5b7f5bab22bbb67d1ba0339d0d6dabd",
+    "blind_review_package": "f59423fbd28e9babb48be4d68a91d89d8f047994873cdd2a8a1effe840224eb4",
+    "gp_control_library": "b0b164a041e5c4b3b54eadb7c51cc27320b882ac83aa7ea47cc15a997e21adf6",
+    "kan_library": "6245f2ba91649ba6274dda1e28c4752e6fc16229a38cb1daefe7b106e48b7361",
+    "mechanism_cards": "d32621b2834478ec593890d69a8975551e1475733fb7f84872a3b5cb1983de85",
+    "mining_run": "b0e3b0894b5e909af8ce1158cce6c54014d5a6db90df72ab3e1ef41c9f5a56dd",
+    "permutation_control_library": "abe83f4ebd3867434bb68640c6bc6dee7118f90f51c86abfb67bf895df2abfab"
+  },
+  "mining_topology_sha256": "c23f1578d7c11f72a2ccd9ee139b6b9c5640975c0ae1f75b5b5cf879f0358969",
+  "protocol_id": "s2a_kan_e3_vertical_v5",
+  "schema_version": "mirage_s2a_development_opening_v2",
+  "state": "consumed_before_first_development_access",
+  "topology_sha256": "90f942e5dc4faf63384aa860f260239b44ce2e12480f5405f657524a29096aac"
+}

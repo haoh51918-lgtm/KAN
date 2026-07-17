@@ -1,0 +1,16 @@
+{
+  "accounting": {
+    "family_fit_flops": 0,
+    "nondup_audit_flops": 0,
+    "total_estimated_flops": 0
+  },
+  "candidate_audits": [],
+  "gate_a_executable_promotion": false,
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "reason": "ineligible_residual_shapes",
+  "schema_version": 1,
+  "status": "semi_symbolic_no_promotion"
+}

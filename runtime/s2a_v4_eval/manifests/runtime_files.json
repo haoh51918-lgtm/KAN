@@ -1,0 +1,126 @@
+{
+  "file_count": 20,
+  "files": [
+    {
+      "category": "frozen_root",
+      "path": ".python-version",
+      "sha256": "fa682ae9d943f5c8076e68335c9ba3ab4d063ad035c07ac6928653dd4ac50af7",
+      "size": 7
+    },
+    {
+      "category": "frozen_root",
+      "path": "README.md",
+      "sha256": "1656a693afa571c464690c198b93b85b21f9833310a126c9cfe864491ae9d7f7",
+      "size": 2462
+    },
+    {
+      "category": "frozen_root",
+      "path": "pyproject.toml",
+      "sha256": "1613cf80185ab756eefb8d17ec016b5191d525d7539abd38913c2b1b864a3db3",
+      "size": 630
+    },
+    {
+      "category": "frozen_root",
+      "path": "requirements.lock",
+      "sha256": "d4abd9e6a7a9269d58cb1581219d9e106ce8bef077ac9cf0a5e471e152e37ad2",
+      "size": 86122
+    },
+    {
+      "category": "frozen_root",
+      "path": "uv.lock",
+      "sha256": "7beb31f335a25e846f50b2583fbf03f7b56680a4ea93b151478b13a20a636b3f",
+      "size": 303910
+    },
+    {
+      "category": "closure_tool",
+      "path": "tools/build_manifests.py",
+      "sha256": "792775e5ded5392f69efcee25e8d2eb01c33bcb28bd3fdfce8d958d41eb13762",
+      "size": 9391
+    },
+    {
+      "category": "closure_tool",
+      "path": "tools/compatibility_smoke.py",
+      "sha256": "07a73d34642feddacc0c356b766be7dbbf7454d73955c6eab68c4e3079ad3200",
+      "size": 15862
+    },
+    {
+      "category": "closure_tool",
+      "path": "tools/fetch_wheelhouse.py",
+      "sha256": "b5edeae396ff74236ba5558646edd535ff2c694dc1033150013831a286464336",
+      "size": 10488
+    },
+    {
+      "category": "closure_tool",
+      "path": "tools/import_audit.py",
+      "sha256": "d06d51eb4ff0543d13a4180741d885568fca7822c02080057aaeead0c3b8b4d1",
+      "size": 6656
+    },
+    {
+      "category": "closure_tool",
+      "path": "tools/runtime_launcher.py",
+      "sha256": "1e76742a2eb640639427a888b1a5fc65b12f1bdb4e448bdd6bc0f88524950358",
+      "size": 8340
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/compatibility_smoke_cross_gpu.json",
+      "sha256": "d063a12bb4274f7d87f038fbf537db3efbdedf52348a5f7a72ea4e9ae5d9eaaf",
+      "size": 769
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/compatibility_smoke_cuda0.json",
+      "sha256": "df90fe9a8860d14dccc81794ad25e12352d61a5bcfd974afa416a57204be0a7e",
+      "size": 4604
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/compatibility_smoke_cuda1.json",
+      "sha256": "11c0c2c0678cf82c867ed79dafb795bb5f3f3cedd80aff78e6fbcfa47ec26da8",
+      "size": 4604
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/dependency_check.txt",
+      "sha256": "db80442ae25a0569159a5468311b33e7a547e9533a666e3a25c1f21105cc91c8",
+      "size": 128
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/gpu_inventory.txt",
+      "sha256": "c676215a08893ad2ed8b839e1f587360e348ca0ae2f380c222755663080b1a61",
+      "size": 180
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/imports_and_cuda.json",
+      "sha256": "26e5b6eaddab584115779e932198f69d0759d3eb5f4952d7b1f31a27d28890fb",
+      "size": 6355
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/offline_rebuild.json",
+      "sha256": "6813f625f1c4926c5d42f4a15ffbe6d163f8a3098a7f03ec3b4a79bec9857e34",
+      "size": 1074
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/regression.json",
+      "sha256": "575a4c987723d705b6a02e654b9c331009ff0d322761c2a8fd7f02af494d9503",
+      "size": 1180
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/tracking_preimport_receipt.json",
+      "sha256": "ae9afee97ec66f1de6a489206319f7932fa22f526a27e3b85702513ed87bb5de",
+      "size": 1453
+    },
+    {
+      "category": "evidence",
+      "path": "evidence/wheelhouse_validation.json",
+      "sha256": "3ac695388f079faf3e79837d2e110a35ee8b7ef853ec32f146d262892267cfca",
+      "size": 451
+    }
+  ],
+  "schema_version": "s2a_v4_runtime_files_v1"
+}

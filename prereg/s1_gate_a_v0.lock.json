@@ -1,0 +1,10 @@
+{
+  "config_path": "configs/experiments/s1_gate_a_v0.yaml",
+  "config_sha256": "fd3da6c18194099b35856eedd44ac0a221dfe3874aba981d3f4951110bdaaec9",
+  "frozen_at_utc": "2026-07-16T19:34:30Z",
+  "proposal_authority": "KAN_Alpha_PR.md",
+  "protocol_path": "prereg/s1_gate_a_v0.md",
+  "protocol_sha256": "ece291561a280e2c979def960eedeb7e0ad51c9e467d64382fda7ffa8164c1ed",
+  "results_observed_before_freeze": false,
+  "schema_version": 1
+}

@@ -1,0 +1,8 @@
+{
+  "arm": "C6",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/C6/seed_8675921_main_c6/manifest.json",
+  "input_manifest_sha256": "31248cf2010e13f4f5e44664c929b0e89ea6395664289d2b36db9e08350839aa",
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675921",
+  "schema_version": 1,
+  "seed": 8675921
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "decision_timing": "before_any_e2_e3_e4_smoke_metric",
+  "proposal_authority": "KAN_Alpha_PR.md",
+  "initial_primitives": [
+    "Identity",
+    "Abs",
+    "Square",
+    "SignedLog1p",
+    "Tanh",
+    "Clip(-1,1)",
+    "PositiveHinge(0)",
+    "NegativeHinge(0)"
+  ],
+  "gate_temperature": {
+    "schedule": "linear_by_optimizer_step",
+    "initial": 2.0,
+    "final": 0.1
+  },
+  "penalties": {
+    "gate_entropy_weight": 0.001,
+    "gate_sparsity_weight": 0.001,
+    "spline_residual_energy_weight": 0.01
+  },
+  "initialization": {
+    "gate_logits": "zeros",
+    "primitive_input_scale": 1.0,
+    "primitive_input_bias": 0.0,
+    "primitive_output_scale": 0.01,
+    "primitive_output_bias": 0.0,
+    "spline_coefficients": 0.0,
+    "residual_scale": 0.01,
+    "output_bias": 0.0
+  },
+  "hardening": {
+    "selection": "maximum_gate_probability",
+    "tie_break": "primitive_dictionary_order",
+    "retain": "selected_primitive_and_its_four_affine_parameters_only"
+  },
+  "e2_fit": {
+    "optimizer": "scipy.optimize.least_squares",
+    "method": "trf",
+    "loss": "linear",
+    "max_nfev": 500,
+    "fits_per_edge": 8,
+    "initial_parameters": [1.0, 0.0, 1.0, 0.0],
+    "lower_bounds": [-8.0, -8.0, -8.0, -8.0],
+    "upper_bounds": [8.0, 8.0, 8.0, 8.0],
+    "selection_metric": "train_edge_mse",
+    "tie_break": "primitive_dictionary_order"
+  },
+  "promotion": {
+    "fit_allowed_only_after": "cross_seed_residual_eligibility",
+    "candidate_families": [
+      {
+        "id": "asymmetric_exponential_saturation_v1",
+        "shape": "continuous_monotone_two_sided_exponential_saturation",
+        "free_shape_constants": 4,
+        "base_ast_nodes": 11
+      },
+      {
+        "id": "asymmetric_rational_saturation_v1",
+        "shape": "continuous_monotone_two_sided_rational_saturation",
+        "free_shape_constants": 4,
+        "base_ast_nodes": 13
+      },
+      {
+        "id": "two_sided_tanh_v1",
+        "shape": "continuous_monotone_two_sided_tanh",
+        "free_shape_constants": 4,
+        "base_ast_nodes": 11
+      }
+    ],
+    "description_length_rule": {
+      "unit": "bits",
+      "formula": "8*base_ast_nodes + 32*free_constants + utf8_bytes(primitive_id)*8",
+      "family_tie_break": "lower_description_length_then_candidate_order"
+    }
+  }
+}

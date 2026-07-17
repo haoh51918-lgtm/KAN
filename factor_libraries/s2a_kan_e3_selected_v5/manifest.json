@@ -1,0 +1,571 @@
+{
+  "budget_counts": {
+    "factor_count": 7
+  },
+  "factor_count": 7,
+  "factor_library_publication_allowed": true,
+  "factors": {
+    "kan_price_volume_023": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Low",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 2
+            }
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delta",
+                "params": {
+                  "window": 60
+                }
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 60
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":2}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delta\",\"params\":{\"window\":60}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":60}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "baef05dbca0e00f4253db3d6a811fee207fe4c07313d8765da186e60b070c84c",
+      "causal": true,
+      "effective_membership_support_rows": 420657,
+      "expression_support_hash": "e7300e7a4c6d09dcb302f09616c048b7620af9ebead73c6bb4a51354a71926c9",
+      "expression_support_rows": 790820,
+      "global_attempt_index": 215,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 61
+    },
+    "kan_price_volume_030": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Open",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 10
+            }
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delta",
+                "params": {
+                  "window": 40
+                }
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 40
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":10}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delta\",\"params\":{\"window\":40}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":40}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "ee273d95d38e15748ac41f32f9b9fda68a8af32ce8601c261002f7f332b64dd3",
+      "causal": true,
+      "effective_membership_support_rows": 426478,
+      "expression_support_hash": "125ce151016079221a086959cbdffeff4fbeb15f43f5b67aadfd54a864363767",
+      "expression_support_rows": 803365,
+      "global_attempt_index": 222,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 41
+    },
+    "kan_price_volume_044": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Volume",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 60
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 60
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delta",
+                "params": {
+                  "window": 60
+                }
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 60
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":60}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":60}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delta\",\"params\":{\"window\":60}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":60}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "9d83e6d043c71c22896e85474cf6de68f591b1bd965686bf033d81cfe21563e0",
+      "causal": true,
+      "effective_membership_support_rows": 405193,
+      "expression_support_hash": "9a43689f3b5febaf28ba1901730da8e78ad4f031836aac0b2052f83a4fbfd366",
+      "expression_support_rows": 756632,
+      "global_attempt_index": 236,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 61
+    },
+    "kan_price_volume_052": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delta",
+                "params": {
+                  "window": 3
+                }
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 3
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delta",
+                "params": {
+                  "window": 60
+                }
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "Delay",
+                "params": {
+                  "window": 60
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delta\",\"params\":{\"window\":3}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":3}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delta\",\"params\":{\"window\":60}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"Delay\",\"params\":{\"window\":60}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "b33ebbedf3b2d7702557cbdcacffcecabe19f3de09213d3c7cc11e07773aa8b9",
+      "causal": true,
+      "effective_membership_support_rows": 420455,
+      "expression_support_hash": "59c15f2e72885a21d90684d51b5a89e43459799896dc047431cc88294f3ad603",
+      "expression_support_rows": 790386,
+      "global_attempt_index": 244,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 61
+    },
+    "kan_price_volume_059": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Volume",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 10
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Volume",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 10
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Open",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 3
+            }
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Volume\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Open\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":3}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "e64a78272d679dcf1f06754bbf03888ef596fef56d51a3e5a5e4915c6e8edbb4",
+      "causal": true,
+      "effective_membership_support_rows": 438553,
+      "expression_support_hash": "b08431744862c2a6e1c394f5ec8b6030261e814f46dd3252e5823a7f7aae52ed",
+      "expression_support_rows": 828902,
+      "global_attempt_index": 251,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 10
+    },
+    "kan_reversal_060": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 20
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 2
+                    }
+                  },
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [],
+                "op": "Close",
+                "params": {}
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":20}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":2}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "55071dcf081e521a98ec25767489d0fbccfcf9cc2009ff5b793c2dc0a37d674d",
+      "causal": true,
+      "effective_membership_support_rows": 431629,
+      "expression_support_hash": "202ab2196ac90e8097d9bee67c0727783cee9b6a965218fbae58c54d89151e15",
+      "expression_support_rows": 813778,
+      "global_attempt_index": 188,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 20
+    },
+    "kan_short_price_020": {
+      "ast": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "op": "Low",
+                "params": {}
+              }
+            ],
+            "op": "Return",
+            "params": {
+              "window": 2
+            }
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "op": "Close",
+                        "params": {}
+                      }
+                    ],
+                    "op": "TsMean",
+                    "params": {
+                      "window": 10
+                    }
+                  }
+                ],
+                "op": "Sub",
+                "params": {}
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "op": "Close",
+                    "params": {}
+                  }
+                ],
+                "op": "TsMean",
+                "params": {
+                  "window": 10
+                }
+              }
+            ],
+            "op": "SafeDiv",
+            "params": {}
+          }
+        ],
+        "op": "Sub",
+        "params": {}
+      },
+      "canonical_ast": "{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Low\",\"params\":{}}],\"op\":\"Return\",\"params\":{\"window\":2}},{\"children\":[{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"Sub\",\"params\":{}},{\"children\":[{\"children\":[],\"op\":\"Close\",\"params\":{}}],\"op\":\"TsMean\",\"params\":{\"window\":10}}],\"op\":\"SafeDiv\",\"params\":{}}],\"op\":\"Sub\",\"params\":{}}",
+      "canonical_hash": "e2924360873fcdc01ee916c9e094e819756c655dbce99d9190e16efbf5737355",
+      "causal": true,
+      "effective_membership_support_rows": 438553,
+      "expression_support_hash": "b08431744862c2a6e1c394f5ec8b6030261e814f46dd3252e5823a7f7aae52ed",
+      "expression_support_rows": 828902,
+      "global_attempt_index": 20,
+      "output_type": "dimensionless_ts",
+      "required_lookback": 10
+    }
+  },
+  "files": {
+    "expression_support.parquet": "49ec129736dedaa0df627e61446902627eb92e5b7b80c1dde33568a7c0f78d5d",
+    "factor_panel.parquet": "2dac38c27f1eca022038ecc6a184ac83eea3f39c7b2ec770739167002ee31386"
+  },
+  "identities": {
+    "authority_sha256": "e700873667bf780d50fbf1a6014b0c7418fdadbc662eadf0013ca9eb74102805",
+    "implementation_sha256": "03dfd21c545feb0cddfd0599bbed8ec51903f852389b4c7642386860fdedc394",
+    "protocol_sha256": "cf2ed15dc5802d00e4bdc9c122b1cba6af84ac522569abe1b020e6611e534c7a"
+  },
+  "index_names": [
+    "datetime",
+    "instrument"
+  ],
+  "kan_mined": true,
+  "library_role": "kan_e3_selected",
+  "mask_semantics": {
+    "expression_support": "operator support before universe filtering",
+    "finite_output": "required on expression support and membership",
+    "membership": "dynamic-universe membership applied to factor values",
+    "raw_observed": "per-field finite raw observation; never imputed",
+    "tradability": "separate from factor-value publication"
+  },
+  "output_kind": "factor_library",
+  "panel_rows": 868920,
+  "promotion_eligible": true,
+  "publication_state": "staged_unpublished",
+  "role": "kan_e3_selected",
+  "schema_version": "mirage_factor_library_v1",
+  "scientific_result": false,
+  "topology_binding_required_before_publication": true,
+  "topology_key": "kan_library",
+  "topology_sha256": "c23f1578d7c11f72a2ccd9ee139b6b9c5640975c0ae1f75b5b5cf879f0358969"
+}

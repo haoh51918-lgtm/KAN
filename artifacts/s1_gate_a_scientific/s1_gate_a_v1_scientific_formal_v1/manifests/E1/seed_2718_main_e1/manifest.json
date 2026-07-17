@@ -1,0 +1,54 @@
+{
+  "accounting": {
+    "optimizer_steps": 2000,
+    "peak_memory_bytes": 40061952,
+    "peak_memory_kind": "torch_cuda_max_memory_allocated",
+    "sample_presentations": 4096000,
+    "trainable_parameters": 115,
+    "wall_clock_seconds": 2.58123083692044
+  },
+  "arm": "E1",
+  "device": "cuda:0",
+  "model_class": "FreeSplineKAN",
+  "model_initialization_seed": null,
+  "paths": {
+    "checkpoint": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/checkpoints/E1/seed_2718_main_e1/selected.pt",
+    "console_log": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/ledgers/training_logs/seed_2718_main_e1/console.log",
+    "data_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/data/seed_2718/manifest.json",
+    "manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E1/seed_2718_main_e1/manifest.json",
+    "test_metrics": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/metrics/E1/seed_2718_main_e1/test.json"
+  },
+  "run_id": "seed_2718_main_e1",
+  "schema_version": 1,
+  "selection": {
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_inference_temperature": null,
+    "selected_step": 1000,
+    "selected_value": 0.08028071341567697,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_trainable_parameter_count"
+  },
+  "settings": {
+    "batch_size": 2048,
+    "dtype": "float64",
+    "early_stopping_patience_validations": 200,
+    "learning_rate": 0.003,
+    "max_steps": 2000,
+    "seed": 2718,
+    "validation_interval_steps": 20
+  },
+  "sha256": {
+    "selected_checkpoint": "18730d289f7d64e7ecae557df11c97b2a2cd2edddd27f32ad266a593231ca10b"
+  },
+  "test_once": {
+    "evaluated": false
+  },
+  "torch_version": "2.9.1+cu129",
+  "training_penalties": {
+    "enabled": false,
+    "model_metadata": null,
+    "selected_step_accounting": null,
+    "step_accounting": []
+  }
+}

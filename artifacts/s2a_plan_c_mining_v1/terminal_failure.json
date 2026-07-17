@@ -1,0 +1,159 @@
+{
+  "actual_evaluated_attempt_count": 256,
+  "attempt_count": 256,
+  "error": "S2a permutation admission is below the frozen minimum",
+  "error_type": "ValueError",
+  "files": {
+    "attempts.jsonl": "a7865e40573eaed49d099ec773a0525420135e37a1e0f72d55422f4a90b899ab",
+    "candidate_table_observed.jsonl": "af87eb9febc9356aeaec156d680f46e7d706abbdd3b5b3c5266f3e34172a28ed",
+    "candidate_table_permutation.jsonl": "a67e487ced38df20ab8813985dd8fe3c9b83e66c63ac263c06e2f5d35a4c9b2e",
+    "data_access_ledger.jsonl": "5ad260902e28115e6696cdfe9b4e5adae23067ca3ea42e03e98511f64694f260",
+    "random_control.jsonl": "9c346745769ef352c3a3dfa2c6b29e8da56a65d6a93bed2cdc01812c900f1646"
+  },
+  "final_claim_allowed": false,
+  "identities": {
+    "baseline_metric": {
+      "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+      "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb"
+    },
+    "code": {
+      "files": {
+        "__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+        "artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+        "artifacts/library.py": "4c7125dd696ac18b52381afb833fe61adece3ba351dc3f927ff6c5a41446cea3",
+        "cli.py": "4e94f98d5a18a7d43eb08b6e512bba34d3cc61a9dd46c5fbc4d984bfac5e849a",
+        "data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+        "data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+        "dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+        "dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+        "evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+        "evaluation/quanta.py": "1aa9b5d775d364fb4884ac8adb88b1115590bea9e56ca5d794ed365ef6901cef",
+        "evaluation/s2a.py": "e2a98970028c3678a87979455921c190129048724adcd441ddf41ddc6dc6fed5",
+        "executor/__init__.py": "d541cddfbeac49bddb3b3da88e9f651fa03d21b98140afa336dafccadad9463b",
+        "executor/torch.py": "5ad675b6cce80a14641ac9aac30caa85c7e5835a2363b4d193bf81357978b752",
+        "experiments/__init__.py": "491b688fbf46593a187c5853baccb176b6f7f1a2b00d32bde082b1fb8c74e2b2",
+        "experiments/gate_a/__init__.py": "39bc621b5081daaf3674e51c97d800e39951309a398d1d118207e5ac6b400dd1",
+        "experiments/gate_a/controls.py": "947040807be2753d13c976b6b6ac97a3d6c376c2337a105ab771c4b820c05dcd",
+        "experiments/gate_a/data.py": "0a7b45a040c29d1fcee3949968b65b622cf046f453e708dee8420cd7f804dc3f",
+        "experiments/gate_a/e5.py": "364ad3ad475424893bb4ac3a7d13bf4970d348d1601efd5268a1f617f85deab4",
+        "experiments/gate_a/e5_smoke.py": "54025f542cae5cef378fe1fceaa3914a9677edf87e2c1d1de2a2a6608ff5ed6e",
+        "experiments/gate_a/matrix.py": "69b2e3ccd6f8def6bd301e6b6cbb69657505f9f6d277e19c4d807d81c2915c50",
+        "experiments/gate_a/metrics.py": "d060276ab8be1e02e2eaed18eb0e3bb51d84f7332df845e46fd3c22cade05703",
+        "experiments/gate_a/models.py": "bb71833307484eb24837a98fe40695ea3c840b38569f0b1fc9985db52aa2a724",
+        "experiments/gate_a/posthoc.py": "f35b55fa7d7fc5cacd989e27e019b02da9f789ec490662562f6919cd0721cef2",
+        "experiments/gate_a/promotion.py": "b2384125ebe969c91526f7d45a37be9086cd0752a310c0fbc79c59559de065cb",
+        "experiments/gate_a/smoke.py": "ec0c1302bd43458431e67f88d69855ffdd087f07e557995ed883c4080241df72",
+        "experiments/gate_a/symbolic.py": "fba60a156a60c1980e9079726088479e3893eb76bc865b0c20e0c306414a4922",
+        "experiments/gate_a/symbolic_smoke.py": "7c206d42758c788cfb549eaf9fffd02c76b72f6c25e743b1e9d7b92f8beb8072",
+        "experiments/gate_a/training.py": "95ed407fe3903bc0af683e3640daf239485786d189c5ddb49725ea0f760b4600",
+        "identities.py": "b55d419786a6c9ad0cd4e3b240d00de426e0ca4d5ab8f376252704a419e59794",
+        "mining/__init__.py": "5298be17fbacc3318918b21811af63319f2642f64bc6832e23e26fa892541ebc",
+        "mining/core.py": "f5e877322700d200f3703146589b8538648b16174525eddbceb06d89eb773020",
+        "mining/s2a.py": "6c6febf61e2a42dfabc90e2c5d0abf08d57563a20603268e82c01433eaa97668",
+        "seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c"
+      },
+      "tree_sha256": "3724bb33571161c96fca4794a9388250e2cbac2630fcb4be644df8b5d209d72b"
+    },
+    "config": {
+      "path": "configs/experiments/s2_plan_c_vertical_v1.yaml",
+      "protocol_id": "s2_plan_c_vertical_v1",
+      "sha256": "fa11938cf900818ab860e97d0cf84ee79c8f00d184a0fa42f7a29ff802358db8"
+    },
+    "data": {
+      "cache_path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+      "cache_sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+      "config_path": "configs/data/pit_cache.json",
+      "config_sha256": "5db3cef008cb26f8c287feb39560ab96809b2f8b743080751d177c8004359cc3"
+    },
+    "implementation_lock": {
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/prereg/s2_plan_c_vertical_v1_implementation.lock.json",
+      "protocol_id": "s2_plan_c_vertical_v1",
+      "sha256": "297624791e2d3766557540c8545bcc4d0cc110c7bee5069b17e716eb7df9b40c"
+    },
+    "mining_entitlement": {
+      "attempt_budget": 256,
+      "implementation_lock_sha256": "297624791e2d3766557540c8545bcc4d0cc110c7bee5069b17e716eb7df9b40c",
+      "library_destinations": {
+        "heterogeneous_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_heterogeneous_selected_v1",
+        "label_permutation_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_label_permutation_selected_v1",
+        "random_typed": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_random_typed_v1"
+      },
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/governance/openings/s2_plan_c_vertical_v1_mining.json",
+      "preclaim_sha256": "518e6cde5b22ee14b20deba024c436d0e1fc6b72aea720d5fb129183fb9220e4",
+      "preregistration_lock_sha256": "7d1345713b49a9e146a733444cb7cf92758c441b41436984f2c17afbd3496b3d",
+      "protocol_id": "s2_plan_c_vertical_v1",
+      "run_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s2a_plan_c_mining_v1",
+      "schema_version": "mirage_s2a_mining_entitlement_v1",
+      "sha256": "04d712fa8f8706dca5dbadf27bbbeaf0425a3451f0a690e380c2450b2cf966f0",
+      "state": "consumed_before_attempt_generation"
+    },
+    "mining_preclaim": {
+      "attempt_budget": 256,
+      "library_destinations": {
+        "heterogeneous_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_heterogeneous_selected_v1",
+        "label_permutation_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_label_permutation_selected_v1",
+        "random_typed": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_random_typed_v1"
+      },
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/governance/openings/s2_plan_c_vertical_v1_mining_preclaim.json",
+      "protocol_id": "s2_plan_c_vertical_v1",
+      "run_path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s2a_plan_c_mining_v1",
+      "schema_version": "mirage_s2a_mining_preclaim_v1",
+      "sha256": "518e6cde5b22ee14b20deba024c436d0e1fc6b72aea720d5fb129183fb9220e4",
+      "state": "consumed_before_run_claim"
+    },
+    "preregistration": {
+      "path": "prereg/s2_plan_c_vertical_v1.md",
+      "sha256": "04930c361f350cbf9536e3e78bfd151949c0860a59c5a9e989ee6fd842636ff3"
+    },
+    "preregistration_lock": {
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/prereg/s2_plan_c_vertical_v1.lock.json",
+      "sha256": "7d1345713b49a9e146a733444cb7cf92758c441b41436984f2c17afbd3496b3d"
+    },
+    "proposal": {
+      "authority": "sole_proposal_authority",
+      "path": "KAN_Alpha_PR.md",
+      "sha256": "1880ccf174c3c691f4296eec52b3536d651421f0f0b81bc2d4031d6bc5cdc41a"
+    },
+    "qlib_provider": {
+      "file_count": 60168,
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+      "stat_inventory_sha256": "17d210c4f3e0aa3631d93024cca1ff35ecad6ba4548506faf39ccb2cd4178a34",
+      "total_bytes": 632291118,
+      "tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1"
+    },
+    "quanta": {
+      "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+      "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+      "pinned_config_path": "configs/evaluation/quanta_pinned.json",
+      "pinned_config_sha256": "57874840d49a4ba5e0bd71590776d4c5542960a15a02ddbe7d186cf095392d4f",
+      "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8"
+    }
+  },
+  "kan_mined": false,
+  "library_terminal_states": {
+    "heterogeneous_selected": {
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_heterogeneous_selected_v1",
+      "state": "terminal_failure",
+      "terminal_sha256": "e9fff5afcd4f36f70d1a0ec676e050059ef04cbbb41afd3cb6468ac5869c8a15"
+    },
+    "label_permutation_selected": {
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_label_permutation_selected_v1",
+      "state": "terminal_failure",
+      "terminal_sha256": "6e884defec24f97ef855f7121cfdc4cdc81dd9381e7fa27f8ad4c6b7b1f70062"
+    },
+    "random_typed": {
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_random_typed_v1",
+      "state": "terminal_failure",
+      "terminal_sha256": "1ca090e5dc49683de89d949bbefc15d3e9aa8a93ca5c41c60e7c7a431ced8d6b"
+    }
+  },
+  "publication_state": "terminal_failure",
+  "published_libraries": {
+    "heterogeneous_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_heterogeneous_selected_v1",
+    "label_permutation_selected": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_label_permutation_selected_v1",
+    "random_typed": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_random_typed_v1"
+  },
+  "schema_version": "mirage_s2a_mining_run_v1",
+  "scientific_result": false,
+  "stage": "S2a"
+}

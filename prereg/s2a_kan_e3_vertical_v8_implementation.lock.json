@@ -1,0 +1,1578 @@
+{
+  "created_before_science": true,
+  "external_files": {
+    "baseline_metric": {
+      "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+      "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb",
+      "size_bytes": 557
+    },
+    "data_cache": {
+      "path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+      "sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+      "size_bytes": 45026402
+    }
+  },
+  "files": {
+    "KAN_Alpha_PR.md": "1ceb575843c02caa770e650f35d425013da3436583e5fe61685984e991ac5218",
+    "Review-from-claude.md": "f154bbc6dbbc1817943b21342f034a0e5d7806dfefbc8b092d7d0550232eb600",
+    "artifacts/s2a_kan_e3_mining_v6/children.json": "6f9483b7f6b648f1d6c7612c0c1cf415763877f332c445c270b49905b8a58fbb",
+    "artifacts/s2a_kan_e3_mining_v6/gp_generation.jsonl": "8d4d28715d24c4b35b33dbfd67d0fe60a1b69b1d4554b36d15e04162564e7a95",
+    "artifacts/s2a_kan_e3_mining_v6/gp_scoring.jsonl": "263c10804cbbc473e8636a87919130da433e2ebaf99c8d6a24f626931a7837e7",
+    "artifacts/s2a_kan_e3_mining_v6/gp_scoring_metadata.json": "374e9b9c7ef8198975a398609592a9a52e1766121719cb334ba7fde4171160f3",
+    "artifacts/s2a_kan_e3_mining_v6/gp_selection.json": "f6bfed5f007e3246a6de380ee85cf73f898dca2611c9d6a445450f024c6347b0",
+    "artifacts/s2a_kan_e3_mining_v6/kan_permutation_false_positive_ledger.jsonl": "1b95f57029a1ef069f9ef3ce453befc02e6f2189ac561a591d337570d8374100",
+    "artifacts/s2a_kan_e3_mining_v6/kan_permutation_profile_runs.jsonl": "f3501f5346c0544aff48441154d5d3fe624d17965bcd0c4defd87eb2da99b773",
+    "artifacts/s2a_kan_e3_mining_v6/kan_permutation_scoring.jsonl": "6f84581039b55111bbbf0a7fa8561165f785f82157ca75d5c8b7efbab5022d10",
+    "artifacts/s2a_kan_e3_mining_v6/kan_permutation_scoring_metadata.json": "8ab7693985c55eafe36ccac0a057f7431b4db79873fc72c2700d63b2e0355284",
+    "artifacts/s2a_kan_e3_mining_v6/kan_permutation_selection.json": "9cf48b03ad5948fec432f44194f2c8a8b95fa831d15e278643c07fd40516ed7b",
+    "artifacts/s2a_kan_e3_mining_v6/kan_profile_runs.jsonl": "8e4c1a7819bbb92b1ac389f7c59392452097498232e7c164b55b00620c393dab",
+    "artifacts/s2a_kan_e3_mining_v6/kan_real_scoring.jsonl": "d058a21355de9d189e7167d77fc55265dfd5d9a52eaeaf9881ca8e68744f4c08",
+    "artifacts/s2a_kan_e3_mining_v6/kan_real_scoring_metadata.json": "3ca7d11f8f916573f3b7e74e60d56610cacec7215581e65625a0e3faa90c31cb",
+    "artifacts/s2a_kan_e3_mining_v6/kan_real_selection.json": "f67f5e30d4483d9f26a2bc1589e25c4a6b3927812117bb1e551e63144ae5af50",
+    "artifacts/s2a_kan_e3_mining_v6/kan_tensor_evidence.zlib": "1cf68e2648f866802b3468950dd104e7271bdf53f4cd4e9cec2265a6eb8bebda",
+    "artifacts/s2a_kan_e3_mining_v6/manifest.json": "b02b71436bad1cb1d8872d3ea6299bbd8925f768be2df2e9c9ecd35399f1d4af",
+    "configs/data/pit_cache.json": "5db3cef008cb26f8c287feb39560ab96809b2f8b743080751d177c8004359cc3",
+    "configs/evaluation/quanta_pinned.json": "57874840d49a4ba5e0bd71590776d4c5542960a15a02ddbe7d186cf095392d4f",
+    "configs/experiments/s2a_kan_e3_vertical_v6.yaml": "d9c9768038500c3a2eaeafe7a9d151854f6eb7f2694aa6331453e210039cdd61",
+    "configs/experiments/s2a_kan_e3_vertical_v7.yaml": "c5ffd4ac6844e98fa37daff0e86937641c89544c79f27e86a11d54989c43e896",
+    "configs/experiments/s2a_kan_e3_vertical_v8.yaml": "f30498e9d6044cf137ddce6d958987f2f71fb42eb41bdc845dc464b270e32a05",
+    "controls/s2a_matched_blackbox_v6/control_receipts.jsonl": "50be03b76ecd86ffbe49d79952a5800da11c4ea3c786a4ccedc1841e5ac9f886",
+    "controls/s2a_matched_blackbox_v6/control_trajectories.jsonl": "d16c06d89949f66289d73cf31ee4e47a33e38b705424e560682a6534405037fa",
+    "controls/s2a_matched_blackbox_v6/manifest.json": "c81ac971b2beae3ca1859e4d0015cc00160d8d9d874ff2078f0b5d2b926c2123",
+    "controls/s2a_matched_blackbox_v6/prediction_panel.parquet": "a6fc3da7a8847748b51a5615767a010a493927b69428dbaa745839ed2f40b204",
+    "controls/s2a_matched_blackbox_v6/tensor_evidence.zlib": "df68e79f501c5d95cd0b3ea3079c911e8de8a98341c889dc1ecb12a53c77e0f7",
+    "docs/research/MIRAGE_KAN_LIVING_MANUAL.md": "a185d02f526b2d18ca43496992ab0ee8ac4686ab2d0ee488cdd550ac883b760e",
+    "evaluations/runtime/s2a_v8_tracking/README.md": "32c49ffefe878153c6da493fdca43c1e0af6e5a022f79cd7264f82e5d759d615",
+    "factor_libraries/s2a_kan_e3_permutation_control_v6/expression_support.parquet": "87fce44fc94da7ba8cd84b53d214d691ec566666028cc5acd3aee54998478da4",
+    "factor_libraries/s2a_kan_e3_permutation_control_v6/factor_panel.parquet": "568b31e33cd4a96fb4a9d6792ddd11492e33eeccd7eaee7109736717add41c97",
+    "factor_libraries/s2a_kan_e3_permutation_control_v6/manifest.json": "38eeecb3530351dc103a1eddd41b8138496d4187d23aed07443da791c884ddd4",
+    "factor_libraries/s2a_kan_e3_selected_v6/expression_support.parquet": "49ec129736dedaa0df627e61446902627eb92e5b7b80c1dde33568a7c0f78d5d",
+    "factor_libraries/s2a_kan_e3_selected_v6/factor_panel.parquet": "2dac38c27f1eca022038ecc6a184ac83eea3f39c7b2ec770739167002ee31386",
+    "factor_libraries/s2a_kan_e3_selected_v6/manifest.json": "117496297ae14127975ecea0070b29f5b373b2b27668265ad9e87e1b4ffdca74",
+    "factor_libraries/s2a_typed_gp_sr_control_v6/expression_support.parquet": "b9b4db4fb0d5792a6020b85e3bf07e1c321fcecdfe5555cb2eadb5fc640de07e",
+    "factor_libraries/s2a_typed_gp_sr_control_v6/factor_panel.parquet": "ae008ff81f02645c280efb64d7737d8903e17fc4ed1891c144672b09e2daa031",
+    "factor_libraries/s2a_typed_gp_sr_control_v6/manifest.json": "8ee0c1634bcc9e31127897a317b003c12c90ee8b9a581ebd7431e7ff9e804e73",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000001.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000002.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000003.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000004.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000005.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000006.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000007.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000008.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000009.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000010.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000011.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/.00000000000000000012.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000001.json": "ce49424a82f95d51328272b76ad2508207c2478968c5c681584c54e41ad7671a",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000002.json": "3f09a7fe2f67ed7a478fdc2c68e6765792965def6db60a208c2211b8acb0b2af",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000003.json": "06ce22d7fe42ae5d57b028086b4c894aba96c74a2ca0e0321e66ccf735c999ae",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000004.json": "7bf4d72daa98de8a373c83cd0bdf3d6fcc8bc4bd79b452475e1414212145bafc",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000005.json": "92db28cbaf8ff9ab24109dcc5f92f03f6eb41bcb9bd21c896e675d28958db26a",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000006.json": "5924902023be1791ed752d0eec122c72a869ccef00739b0f2cd8e7e19eadf4f9",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000007.json": "93c238c284a65551a04c64b1fe2ffbf16032e432270b704bb353d1fa9407f620",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000008.json": "bd173324ad25dbc67da9c7e703535d99958a517df1be615ac3304983d94b59a2",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000009.json": "c861361419e538f6a6d9c14be305f1bc4e6af231fdfcf4903bd37d84d40bb5da",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000010.json": "4dbb218fb592861085e73ab009918ba2a3bb0d5a345a9fed78f86b233f7e9d69",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000011.json": "c051e724000cfa68911bf23c363af74db8da96a0d7934e3e2e98d97d8c5a22d2",
+    "governance/authority/s2a_kan_e3_vertical_v6/receipts/00000000000000000012.json": "ef6e1a1ce6b26a1f11c42e8cf29167871b6bdd5fcd9cd95281761ea5afd789e2",
+    "governance/authority/s2a_kan_e3_vertical_v6/revalidation.jsonl": "0573eebd565074e3882cdff4cb0b208fd47db3c72b820f41d0c11e32f0b933a8",
+    "governance/decisions/2026-07-17_graph_core_unlock.md": "ad8cbb2fba97b6e05c8c64a9f979816625685572439aa891d90fd394e1f81bf1",
+    "governance/decisions/2026-07-17_review_adoption_and_living_manual.md": "10ec9d30b77951868cd6ee14521a5eb35fd1cf3b890e201cc7697ba5e80524f4",
+    "governance/feedback/2026-07-17_review_from_claude_1_triage.md": "69f03c16c52fe030f845d3692af99a728bcb8edc2d5e1137589ddd50e0ecf472",
+    "governance/incidents/2026-07-17_s2a_v6_lineage_corrective_successor.md": "c72db17d4b4de414062b878911bd23bfb4ef6e25cc8e2edb48b52bfa62a608d4",
+    "governance/incidents/2026-07-17_s2a_v7_preopening_rebind_successor.md": "4afdbe91fb08b8cafbadf7a3b4b9f80aa83f0929ae0077b741f71983ed90bd09",
+    "governance/openings/s2a_kan_e3_vertical_v6_mining.json": "88f6d440513fbaf4ff2d1c0ac086fd1147f0b1bbdb8d2d8d26ff7ff4d54ec5f8",
+    "governance/openings/s2a_kan_e3_vertical_v6_mining_preclaim.json": "6a481bf6a8fe6682efcc861e8c62981df225ee6822e76520dac712459b9d9164",
+    "mechanism_cards/s2a_kan_e3_selected_v6/blind_anonymous_mapping.json": "1bad74f134fc5b2373db2c62434b56f0f52469db68240941d67a27d053f8ad37",
+    "mechanism_cards/s2a_kan_e3_selected_v6/manifest.json": "e20fee40f4bde3e6469518b8fa41904c4606d4f0cb9b05e1e94aa4c515e7ddbf",
+    "mechanism_cards/s2a_kan_e3_selected_v6/mechanism_cards.jsonl": "d70fd9d214212006c964205da48fe2777f8a75956748ea2e611ed44fea660964",
+    "prereg/s2a_kan_e3_vertical_v6.lock.json": "6937ca80885f2dda8467360a45e4d38a664dbd3d5e4588526f5cdd7ba6b74114",
+    "prereg/s2a_kan_e3_vertical_v6.md": "41d0d18e42e04228937796d3ae812874df6345f4e87cbdf021b883260079acb0",
+    "prereg/s2a_kan_e3_vertical_v6_implementation.lock.json": "05fc2f7ea02d98966cbd2e665322a911505fbadd2702d67183d72bcd6558ef2d",
+    "prereg/s2a_kan_e3_vertical_v7.lock.json": "40228cc67a6f5d2e31796293fe7a5fac5914098be98515066fe4a4263952d511",
+    "prereg/s2a_kan_e3_vertical_v7.md": "2f7379584b19cbe12064419f4b6d594d3d20cff69f55b122b9bbc5d5278e1706",
+    "prereg/s2a_kan_e3_vertical_v7_implementation.lock.json": "1fc402e313f628a46d928260ab31e9a593a179965c1564e6921f2e1321acfc1c",
+    "prereg/s2a_kan_e3_vertical_v8.lock.json": "d5e17ebea34653f09bb4d8ee7046fc4afc819afab7d1c51cef1b137b4dc55472",
+    "prereg/s2a_kan_e3_vertical_v8.md": "41feff99b7eb5455dde9304d8370a08035f99d759fd3052951df73d880b099d4",
+    "pyproject.toml": "6a10cd02d771950d0ae673a9ebae42cf36006bc6e15340db3beac29f8099ee13",
+    "reports/s2a_v6_implementation_lock_checkpoint.md": "02a6478daa28332b39b20cf3e1caadc8608e1d335f31e1475b42020410b12f49",
+    "reports/s2a_v6_mining_and_preopening_rehearsal.md": "2cf32563520466066e9711eb65f82cb2b044cc89f47bc83c99b412bba9a677c1",
+    "reviews/s2a_kan_e3_blind_v6/blind_review_package.json": "d32631a4dd3215e4d5987957bdf1e067a1e42c20b9d8741b1c51f79ed481a695",
+    "reviews/s2a_kan_e3_blind_v6/manifest.json": "07c92b6f529576f2f09ac6e6eec5fa125ef34d13f4d039157429fe2d1afb7d09",
+    "runtime/s2a_v8_eval/tools/build_v8_base_lock.py": "c3fba185ca79f4d5bb811cdd670b49fbd157c849842e306d288219ab45bba1e6",
+    "runtime/s2a_v8_eval/tools/build_v8_config.py": "23af726fa3776738832757c6372b7e2b26e9c7053e22d157c3f380e872231c2f",
+    "uv.lock": "3d1481e7dd5ea6c4ed52f3e4eae10a61e92bb6fb0ff86369aeed44b6eab8b11d"
+  },
+  "protocol_id": "s2a_kan_e3_vertical_v8",
+  "qlib_provider": {
+    "file_count": 60168,
+    "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data",
+    "stat_inventory_sha256": "17d210c4f3e0aa3631d93024cca1ff35ecad6ba4548506faf39ccb2cd4178a34",
+    "total_bytes": 632291118,
+    "tree_sha256": "1babf2a6ac4643df141c46f410ce3bb1f3b51ea6570b4ebe4d02658f01bcdca1"
+  },
+  "quanta": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config": {
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/configs/backtest.yaml",
+      "sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832"
+    },
+    "configured_provider_uri": "~/.qlib/qlib_data/cn_data",
+    "repository": "/zju_0012/htq/aaai26_alpha/QuantaAlpha",
+    "runner": {
+      "path": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/quantaalpha/backtest/runner.py",
+      "sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8"
+    }
+  },
+  "runtime": {
+    "determinism": {
+      "cublas_workspace_config": ":4096:8",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms_enabled": true
+    },
+    "distributions": [
+      {
+        "canonical_name": "aiohappyeyeballs",
+        "declared_name": "aiohappyeyeballs",
+        "record_sha256": "14263431f101aad85e690b74756640a356c3f311654f0db92305c7fd5fcfa75c",
+        "version": "2.7.1"
+      },
+      {
+        "canonical_name": "aiohttp",
+        "declared_name": "aiohttp",
+        "record_sha256": "1f6d518b02061e1c23c2c067c04a107b2780d98f87166d936eee7964216f70d4",
+        "version": "3.14.1"
+      },
+      {
+        "canonical_name": "aiosignal",
+        "declared_name": "aiosignal",
+        "record_sha256": "b9a6cd07dac78298d856613e8140b7da26b20506ed07747802bd513bf9b3ea35",
+        "version": "1.4.0"
+      },
+      {
+        "canonical_name": "alembic",
+        "declared_name": "alembic",
+        "record_sha256": "ede69734658f79dee50cbaeb194d785f6f06a6135bd62735122260ca08bb44eb",
+        "version": "1.18.5"
+      },
+      {
+        "canonical_name": "annotated-doc",
+        "declared_name": "annotated-doc",
+        "record_sha256": "1d924fb80688852ae450acc786e6fcd63a752dd045e2f1e4ec7341367fac06a8",
+        "version": "0.0.4"
+      },
+      {
+        "canonical_name": "annotated-types",
+        "declared_name": "annotated-types",
+        "record_sha256": "5bb4f1ca72420634ebd566dafd9d5fbce3051b0c1c1d13980f6ceeb5c4dbb843",
+        "version": "0.7.0"
+      },
+      {
+        "canonical_name": "anyio",
+        "declared_name": "anyio",
+        "record_sha256": "722d3bb1432c0f34f49dca8ac66fa132db1e4a2151f7104ee66a8cd44222c0b6",
+        "version": "4.14.2"
+      },
+      {
+        "canonical_name": "argon2-cffi",
+        "declared_name": "argon2-cffi",
+        "record_sha256": "8377684d785a60355da086bcb4443a473dde7b79ad81f17133580c20dc018c4b",
+        "version": "25.1.0"
+      },
+      {
+        "canonical_name": "argon2-cffi-bindings",
+        "declared_name": "argon2-cffi-bindings",
+        "record_sha256": "88ad4282811daf0f53c070b33219b55956e774917c43683f4d2d59633bbf5333",
+        "version": "25.1.0"
+      },
+      {
+        "canonical_name": "arrow",
+        "declared_name": "arrow",
+        "record_sha256": "887d9d15d6c5ee5ffe2d8a690c69e2bea1b5b0f913f2ccefe5001950e1aad143",
+        "version": "1.4.0"
+      },
+      {
+        "canonical_name": "asttokens",
+        "declared_name": "asttokens",
+        "record_sha256": "7f0b4dabfd410366c48fb66b1af7671f17ab499310c80c3103855a7893694314",
+        "version": "3.0.2"
+      },
+      {
+        "canonical_name": "async-lru",
+        "declared_name": "async-lru",
+        "record_sha256": "2cb0f89bc69e325b3907f5ba4ea1f7e19b86852b46455fc7ca0dfa73721d1771",
+        "version": "2.3.0"
+      },
+      {
+        "canonical_name": "attrs",
+        "declared_name": "attrs",
+        "record_sha256": "6b0b326d4b4ee0fac27909ac7cbb066fc4bdf8e93d87031e27e770db059e5a04",
+        "version": "26.1.0"
+      },
+      {
+        "canonical_name": "babel",
+        "declared_name": "babel",
+        "record_sha256": "7e15bb54992a81b04f24e0a6865e321e8cdb4ace2454fc4504aa799b0e7c776e",
+        "version": "2.18.0"
+      },
+      {
+        "canonical_name": "beautifulsoup4",
+        "declared_name": "beautifulsoup4",
+        "record_sha256": "d66734c0b7a8e4d1077ad38ba04541c15514f2a3ac92e39b3907483ced024c6f",
+        "version": "4.15.0"
+      },
+      {
+        "canonical_name": "bleach",
+        "declared_name": "bleach",
+        "record_sha256": "c70700c636e385e620e642a04a4090945c159c4a7c730fde24cd0f68a7f2c87e",
+        "version": "6.4.0"
+      },
+      {
+        "canonical_name": "blinker",
+        "declared_name": "blinker",
+        "record_sha256": "b7152f1474f715b54131cc64bb4c1e5fea3acf74ee3bc611e0e5a3100ab3b2c0",
+        "version": "1.9.0"
+      },
+      {
+        "canonical_name": "cachetools",
+        "declared_name": "cachetools",
+        "record_sha256": "644ab2b773f4a71b509c0e53b3bb1335946e83f7d40c1b4192f63e42058a6905",
+        "version": "7.1.4"
+      },
+      {
+        "canonical_name": "certifi",
+        "declared_name": "certifi",
+        "record_sha256": "f010bf8e6401172bf2ac5eb50c0a44e60d4f5917b88a8f95ac05e37633a1803b",
+        "version": "2026.6.17"
+      },
+      {
+        "canonical_name": "cffi",
+        "declared_name": "cffi",
+        "record_sha256": "22aeece896948197f480246f13e3e7e4de776cd89c2001db941d13e6561bcf28",
+        "version": "2.1.0"
+      },
+      {
+        "canonical_name": "charset-normalizer",
+        "declared_name": "charset-normalizer",
+        "record_sha256": "f73d735c337bef408b65ae74b719aefa45c987671d01cb09b9c65019d50f3745",
+        "version": "3.4.9"
+      },
+      {
+        "canonical_name": "clarabel",
+        "declared_name": "clarabel",
+        "record_sha256": "e3a2e4d34e97eb19cca3fdfc6c80cd7a916315aad5e988aa1224f8626b109c21",
+        "version": "0.11.1"
+      },
+      {
+        "canonical_name": "click",
+        "declared_name": "click",
+        "record_sha256": "f14e3990f101ef4a1dd09903eb3f859f233ec1d9bd9a00e4470f207568804d12",
+        "version": "8.4.2"
+      },
+      {
+        "canonical_name": "cloudpickle",
+        "declared_name": "cloudpickle",
+        "record_sha256": "a24820e3d3ea3f0fb210f58b84abb5450a94cc649e573a9a0a69354afc6fa1de",
+        "version": "3.1.2"
+      },
+      {
+        "canonical_name": "comm",
+        "declared_name": "comm",
+        "record_sha256": "d4854a07c72d25313dfa1c7322a12a09455a57adbf66939d785aeb8f07b79ee5",
+        "version": "0.2.3"
+      },
+      {
+        "canonical_name": "contourpy",
+        "declared_name": "contourpy",
+        "record_sha256": "b0fd23e6bceaf821a5069943a104623c591ea0c4ce69fcfd6f975f102e02cc74",
+        "version": "1.3.3"
+      },
+      {
+        "canonical_name": "cryptography",
+        "declared_name": "cryptography",
+        "record_sha256": "88de7261c2fda348481c68044cf98f021b181b830b4cac74d6bc7e51c5980ca7",
+        "version": "48.0.1"
+      },
+      {
+        "canonical_name": "cvxpy",
+        "declared_name": "cvxpy",
+        "record_sha256": "fd266c6232614576758aaf049eab74fe8878947ddde351ef59621b07e55518c6",
+        "version": "1.9.2"
+      },
+      {
+        "canonical_name": "cycler",
+        "declared_name": "cycler",
+        "record_sha256": "cbcbee5f18d75bd4935199b135aa33c3ed62df14991110a35c428883798d7979",
+        "version": "0.12.1"
+      },
+      {
+        "canonical_name": "databricks-sdk",
+        "declared_name": "databricks-sdk",
+        "record_sha256": "557bdeee516d3baa2b65eac94e7f1f050d11e093f8f4137522bcfcd5eb1b5516",
+        "version": "0.120.0"
+      },
+      {
+        "canonical_name": "debugpy",
+        "declared_name": "debugpy",
+        "record_sha256": "1a0a124b47074bc704a1a181be93d9b20cfee85f36903cce3ac37633126f2cbf",
+        "version": "1.8.21"
+      },
+      {
+        "canonical_name": "decorator",
+        "declared_name": "decorator",
+        "record_sha256": "7c490ad9278bafef19a0455a7ec324a1c1bf31c3c6eb946afc0d6f30423502db",
+        "version": "5.3.1"
+      },
+      {
+        "canonical_name": "defusedxml",
+        "declared_name": "defusedxml",
+        "record_sha256": "8d83b6f0c94380f24506bd6d01e9a3a8858aac7a9118bc9e7dee21e6b566d13c",
+        "version": "0.7.1"
+      },
+      {
+        "canonical_name": "dill",
+        "declared_name": "dill",
+        "record_sha256": "380d3afe9e846c5a5dff07e5aa718efa9a660e3bad2de9d2d0635c0bc1d5197a",
+        "version": "0.4.1"
+      },
+      {
+        "canonical_name": "dnspython",
+        "declared_name": "dnspython",
+        "record_sha256": "835d7f4fdc1c7488000c15b9296e76053aacb4eba2692e5b4bada924f21172c7",
+        "version": "2.8.0"
+      },
+      {
+        "canonical_name": "docker",
+        "declared_name": "docker",
+        "record_sha256": "04c235365512527c855e398c2ff49b132df7ee2c4d00672e8a64e7d2da0bed8a",
+        "version": "7.2.0"
+      },
+      {
+        "canonical_name": "executing",
+        "declared_name": "executing",
+        "record_sha256": "483767c8f250006b2655250353b993e605b581fd6f5f41a5b7e2accb9bf3a414",
+        "version": "2.2.1"
+      },
+      {
+        "canonical_name": "fastapi",
+        "declared_name": "fastapi",
+        "record_sha256": "e7f977079a5443a5275c112c5c970718592a02bd06864e6ddf9456240984ad9f",
+        "version": "0.139.2"
+      },
+      {
+        "canonical_name": "fastjsonschema",
+        "declared_name": "fastjsonschema",
+        "record_sha256": "0fa28948d196d934697f92676d9282ceedf3346de5f7d044103ed2010bc9e96d",
+        "version": "2.21.2"
+      },
+      {
+        "canonical_name": "filelock",
+        "declared_name": "filelock",
+        "record_sha256": "203ea87786a35a310de7b4c8603e5430d91c3bb9126c8fce0e8afeabc95b6309",
+        "version": "3.30.2"
+      },
+      {
+        "canonical_name": "fire",
+        "declared_name": "fire",
+        "record_sha256": "0dfbf86d5d44af1a6577c0f91ab496dcc0947284d2fb1526df6a66912aa41a8d",
+        "version": "0.7.1"
+      },
+      {
+        "canonical_name": "flask",
+        "declared_name": "Flask",
+        "record_sha256": "2f205b20f8abe825259cad09d572b31edd0b12a5f7cc52fd87c1b4544eb2786d",
+        "version": "3.1.3"
+      },
+      {
+        "canonical_name": "flask-cors",
+        "declared_name": "flask-cors",
+        "record_sha256": "de25ba8433f15c35d0a8f14afe93f5ae876d2dcc4dbd4b88c80b87fdbe63300f",
+        "version": "6.0.5"
+      },
+      {
+        "canonical_name": "fonttools",
+        "declared_name": "fonttools",
+        "record_sha256": "2320a1777af56bebe9087b48500061bf68b72a6e796fb09b157b8c88b1b8696c",
+        "version": "4.63.0"
+      },
+      {
+        "canonical_name": "fqdn",
+        "declared_name": "fqdn",
+        "record_sha256": "e1fb33e8981c69db356797fcafb101a57336de04a26842ce5c484aeb382a4f53",
+        "version": "1.5.1"
+      },
+      {
+        "canonical_name": "frozenlist",
+        "declared_name": "frozenlist",
+        "record_sha256": "8f934b7c96c7ba14179d87da9876b436b260e2b97200915756ed8ab880f807fe",
+        "version": "1.8.0"
+      },
+      {
+        "canonical_name": "fsspec",
+        "declared_name": "fsspec",
+        "record_sha256": "49d74c7ad21b7267b1843b7e95c11bc559cf91a9790f14eaa62071304e137e9a",
+        "version": "2026.6.0"
+      },
+      {
+        "canonical_name": "gitdb",
+        "declared_name": "gitdb",
+        "record_sha256": "43a905544c66c64b47d683d76eb347afb791001674e5a774d51e673f7945f834",
+        "version": "4.0.12"
+      },
+      {
+        "canonical_name": "gitpython",
+        "declared_name": "GitPython",
+        "record_sha256": "f1d9eb5c8b8ab2c0180e10d75b3fca0a81bb45b559f0719a693d84d107073a5c",
+        "version": "3.1.52"
+      },
+      {
+        "canonical_name": "google-auth",
+        "declared_name": "google-auth",
+        "record_sha256": "b573f28e085b6ee7679db3de8a29bd9d11da36227d41010c610480a7cb5cc597",
+        "version": "2.56.0"
+      },
+      {
+        "canonical_name": "graphene",
+        "declared_name": "graphene",
+        "record_sha256": "59fdbf4b736edff8c0c9c8c920e441a23b4710d729b94f29b3d5d10a1689a7cc",
+        "version": "3.4.3"
+      },
+      {
+        "canonical_name": "graphql-core",
+        "declared_name": "graphql-core",
+        "record_sha256": "e3bc88e5369dca144dec244e54ecd0184bcb9c103efbc5a6408024b8e8855e9b",
+        "version": "3.2.11"
+      },
+      {
+        "canonical_name": "graphql-relay",
+        "declared_name": "graphql-relay",
+        "record_sha256": "6a2bf241fa5646c61b2b8ec2e888281424acb3fd2748687d0bbedbb669807c1e",
+        "version": "3.2.0"
+      },
+      {
+        "canonical_name": "greenlet",
+        "declared_name": "greenlet",
+        "record_sha256": "fe0684e39bef88060923adbbbd6cf6235c5606856c73d8aed46dabd08878a5d2",
+        "version": "3.5.3"
+      },
+      {
+        "canonical_name": "gunicorn",
+        "declared_name": "gunicorn",
+        "record_sha256": "51842f8041fce821e062a63cc8861d80063f103a591a7c11eb37c4fe26e284d1",
+        "version": "26.0.0"
+      },
+      {
+        "canonical_name": "gym",
+        "declared_name": "gym",
+        "record_sha256": "2156d0872875a78017904df3962f0c7a32f3fabca9c703fe850f1c3e81eebbee",
+        "version": "0.26.2"
+      },
+      {
+        "canonical_name": "gym-notices",
+        "declared_name": "gym-notices",
+        "record_sha256": "aa2a55bf2d9b683126cbcfb00543e8cc44415aec60f31a92e3ccaaf9faa8baa1",
+        "version": "0.1.0"
+      },
+      {
+        "canonical_name": "h11",
+        "declared_name": "h11",
+        "record_sha256": "3779e13c17d8e21c769ed9ee8780af123cc3f8656185f5f8d3af258ff5639b3e",
+        "version": "0.16.0"
+      },
+      {
+        "canonical_name": "highspy",
+        "declared_name": "highspy",
+        "record_sha256": "1039426c38a16e44966d53f9135eb9203a605f4ed3b47a5e40bf9d98a602d00c",
+        "version": "1.15.1"
+      },
+      {
+        "canonical_name": "httpcore",
+        "declared_name": "httpcore",
+        "record_sha256": "67cb4644d84fef1df8c5a0862c57c3380eff058a153bac7a4ba2722779982554",
+        "version": "1.0.9"
+      },
+      {
+        "canonical_name": "httpx",
+        "declared_name": "httpx",
+        "record_sha256": "c42d4a3d1ab6303df213bbc11261b5c15e82eb5b056e21318c00ea7f8161cdd3",
+        "version": "0.28.1"
+      },
+      {
+        "canonical_name": "huey",
+        "declared_name": "huey",
+        "record_sha256": "4a0ce76b20c45f29671d10c1ddd8904c75cd82dbdf79255ccfddb086bf7f6e62",
+        "version": "3.2.1"
+      },
+      {
+        "canonical_name": "idna",
+        "declared_name": "idna",
+        "record_sha256": "55c5f4ea6952a75604afd03ce3ea43d65a647bb226cd9490000e09db58cebfbc",
+        "version": "3.18"
+      },
+      {
+        "canonical_name": "importlib-metadata",
+        "declared_name": "importlib_metadata",
+        "record_sha256": "98a2a9bd181c2a626639810f857d03243c2beb641160afee9edf971883309595",
+        "version": "9.0.0"
+      },
+      {
+        "canonical_name": "iniconfig",
+        "declared_name": "iniconfig",
+        "record_sha256": "4b560f65489a4dc0f32d8403da676d2e6338c371fe844160934b3fe469785185",
+        "version": "2.3.0"
+      },
+      {
+        "canonical_name": "ipykernel",
+        "declared_name": "ipykernel",
+        "record_sha256": "89e45c5760ecead74f86f5b7bb2d8d151d2e9b0cd5227143727a33bf1ab77d0c",
+        "version": "7.3.0"
+      },
+      {
+        "canonical_name": "ipython",
+        "declared_name": "ipython",
+        "record_sha256": "e58c031089430247010ee92aadef106db7266af532a5c379497f4b905dca08bc",
+        "version": "9.15.0"
+      },
+      {
+        "canonical_name": "ipython-pygments-lexers",
+        "declared_name": "ipython_pygments_lexers",
+        "record_sha256": "a601c87e87a63f4e126ce5e320367930d30129be677cb4a4980332f61b8aff31",
+        "version": "1.1.1"
+      },
+      {
+        "canonical_name": "ipywidgets",
+        "declared_name": "ipywidgets",
+        "record_sha256": "a17aae4c4dfc6343951dca6773c0b97df87a6352d43eac73995dcb6b567efb85",
+        "version": "8.1.8"
+      },
+      {
+        "canonical_name": "isoduration",
+        "declared_name": "isoduration",
+        "record_sha256": "c2a21cb103ef192102e42a9a0a9617c580df3bf3135be3db928c22260c097acf",
+        "version": "20.11.0"
+      },
+      {
+        "canonical_name": "itsdangerous",
+        "declared_name": "itsdangerous",
+        "record_sha256": "80583f52df848dbd699dbf2c9b8ed9bb3cc5c1fa81ca5c737b97563feeab729d",
+        "version": "2.2.0"
+      },
+      {
+        "canonical_name": "jedi",
+        "declared_name": "jedi",
+        "record_sha256": "8aee5a15141dd898d3356eca862cd70ad85f382c676ced7d51041f98d32e63d9",
+        "version": "0.20.0"
+      },
+      {
+        "canonical_name": "jinja2",
+        "declared_name": "Jinja2",
+        "record_sha256": "4551b3fb657b85a9f01e961c0f8a235da65d758149b619400211964b3ac02bdc",
+        "version": "3.1.6"
+      },
+      {
+        "canonical_name": "joblib",
+        "declared_name": "joblib",
+        "record_sha256": "de09a1190b65801ed7ada8395671b94da2278e33d15356223b2b2d3201180e76",
+        "version": "1.5.3"
+      },
+      {
+        "canonical_name": "json5",
+        "declared_name": "json5",
+        "record_sha256": "676bb16bb761610610e0d4d20a3d1fdfad5be219bc7bc6569ded49288154dd4b",
+        "version": "0.15.0"
+      },
+      {
+        "canonical_name": "jsonpointer",
+        "declared_name": "jsonpointer",
+        "record_sha256": "e660b846d5e889745230fd76fcf51f03119213f6549548979c7643ca00d7152e",
+        "version": "3.1.1"
+      },
+      {
+        "canonical_name": "jsonschema",
+        "declared_name": "jsonschema",
+        "record_sha256": "099ed2d08a5e0c354de52f1d09a630adf45a9dcff8376d830e7e295abe90fa9f",
+        "version": "4.26.0"
+      },
+      {
+        "canonical_name": "jsonschema-specifications",
+        "declared_name": "jsonschema-specifications",
+        "record_sha256": "0b1047ee6c7d5d7c242b642d689820f4572860ecf7886b2074f821ed85cbe7b6",
+        "version": "2025.9.1"
+      },
+      {
+        "canonical_name": "jupyter",
+        "declared_name": "jupyter",
+        "record_sha256": "ae7878d0ae55bda65ad10ff3049e3ca57bb95ab9a13f35f87ba0e712549cfb4c",
+        "version": "1.1.1"
+      },
+      {
+        "canonical_name": "jupyter-builder",
+        "declared_name": "jupyter_builder",
+        "record_sha256": "7d2fade880d5226d8280045c0c0d73cc286c923aa967bf133caec7e1821e4ed3",
+        "version": "1.1.0"
+      },
+      {
+        "canonical_name": "jupyter-client",
+        "declared_name": "jupyter_client",
+        "record_sha256": "601ad27bece6456553d2d44a68b89493ae0804cda2e131c456ae515b5d6b35e3",
+        "version": "8.9.1"
+      },
+      {
+        "canonical_name": "jupyter-console",
+        "declared_name": "jupyter-console",
+        "record_sha256": "42d72373896ff0bb1fff19bf988205e520e1cfa5f6363173d444d75a3d3852c4",
+        "version": "6.6.3"
+      },
+      {
+        "canonical_name": "jupyter-core",
+        "declared_name": "jupyter_core",
+        "record_sha256": "62b2cb9e917cfd16c85b825e504d43e01aca49e58dbb8f5be59bbf9f8b8275e0",
+        "version": "5.9.1"
+      },
+      {
+        "canonical_name": "jupyter-events",
+        "declared_name": "jupyter-events",
+        "record_sha256": "1739f3527df191d53bd22c06cdc237587ae17f39b82223bcadbab7a7226c5e00",
+        "version": "0.12.1"
+      },
+      {
+        "canonical_name": "jupyter-lsp",
+        "declared_name": "jupyter-lsp",
+        "record_sha256": "c933242485de405eb236f24a755d875b993f9b805d506db2d54c9eb5615cfdc1",
+        "version": "2.3.1"
+      },
+      {
+        "canonical_name": "jupyter-server",
+        "declared_name": "jupyter_server",
+        "record_sha256": "af94e8cd49b4fd8a44a2e2b94896135d5991556d8ab4a53b72929aef51560dbe",
+        "version": "2.20.0"
+      },
+      {
+        "canonical_name": "jupyter-server-terminals",
+        "declared_name": "jupyter_server_terminals",
+        "record_sha256": "d9b56dc219782f271411704a7d326537d70edba8a2b3fad459bc4b7da6f96bc7",
+        "version": "0.5.4"
+      },
+      {
+        "canonical_name": "jupyterlab",
+        "declared_name": "jupyterlab",
+        "record_sha256": "79d03a009113e81ac88f34f1059c6e2a6461a9c962d2a30a904ec5e61dfec86e",
+        "version": "4.6.1"
+      },
+      {
+        "canonical_name": "jupyterlab-pygments",
+        "declared_name": "jupyterlab_pygments",
+        "record_sha256": "32f7609870d46f2fec2c1cdf53ef5c03f0249a9432a649b706016b307782f885",
+        "version": "0.3.0"
+      },
+      {
+        "canonical_name": "jupyterlab-server",
+        "declared_name": "jupyterlab_server",
+        "record_sha256": "a8c3aa08c8c40b5724ac3c66dd8f55c1c9a6187d9993dbb2eb6bc1f295f54c80",
+        "version": "2.28.0"
+      },
+      {
+        "canonical_name": "jupyterlab-widgets",
+        "declared_name": "jupyterlab_widgets",
+        "record_sha256": "70170029c2f03b205cca1a0b3db38e08d756ecaf173c8cba4ae3c5c832b2013d",
+        "version": "3.0.16"
+      },
+      {
+        "canonical_name": "kiwisolver",
+        "declared_name": "kiwisolver",
+        "record_sha256": "eff0b04e1528659d8bc580684a58de8131282ddf67afda48304dd9b36cb1020f",
+        "version": "1.5.0"
+      },
+      {
+        "canonical_name": "lark",
+        "declared_name": "lark",
+        "record_sha256": "fbadc9926a1c5d8283a2602c94baf94ace2be62bd26bf65a1facfa2453f33623",
+        "version": "1.3.1"
+      },
+      {
+        "canonical_name": "lightgbm",
+        "declared_name": "lightgbm",
+        "record_sha256": "197b7298059cb0828c1db0b74c9ea1b19c684c9483db5d27551e14291efc3951",
+        "version": "4.6.0"
+      },
+      {
+        "canonical_name": "loguru",
+        "declared_name": "loguru",
+        "record_sha256": "f561bf516e2dacc992d6041c129f33d6c98d63794d424e6738389eb031a40177",
+        "version": "0.7.3"
+      },
+      {
+        "canonical_name": "mako",
+        "declared_name": "Mako",
+        "record_sha256": "eb7d01c6bba850ef62d70fa027f80c684e39f90b39a2f10e32f86b63e248ea6b",
+        "version": "1.3.12"
+      },
+      {
+        "canonical_name": "markupsafe",
+        "declared_name": "MarkupSafe",
+        "record_sha256": "3e96bcf1c73245c4ff9be34b7df22f705b615b7980b7b984fd2feba5032127b6",
+        "version": "3.0.3"
+      },
+      {
+        "canonical_name": "matplotlib",
+        "declared_name": "matplotlib",
+        "record_sha256": "1b3a621cee730960c1c785e2db91bd90c5e6ce15630b1e4b977c192c1e2228b2",
+        "version": "3.11.0"
+      },
+      {
+        "canonical_name": "matplotlib-inline",
+        "declared_name": "matplotlib-inline",
+        "record_sha256": "9e3fca031d79eb520bebf44c820c831d604ddb76157308c28e9f7813f71268fe",
+        "version": "0.2.2"
+      },
+      {
+        "canonical_name": "mistune",
+        "declared_name": "mistune",
+        "record_sha256": "ad0812fd320f75843aef1b455762e703fb16102a9ec908b2a3d2b2b1705b10bc",
+        "version": "3.3.3"
+      },
+      {
+        "canonical_name": "mlflow",
+        "declared_name": "mlflow",
+        "record_sha256": "7c81812551db59286dee2e1b78386793763c9195a83aa33826b4d295e4a44e45",
+        "version": "3.14.0"
+      },
+      {
+        "canonical_name": "mlflow-skinny",
+        "declared_name": "mlflow-skinny",
+        "record_sha256": "4fc4f2df37c5b7939ccf939847753750e68b17877dfda8516b8819664de13aef",
+        "version": "3.14.0"
+      },
+      {
+        "canonical_name": "mlflow-tracing",
+        "declared_name": "mlflow-tracing",
+        "record_sha256": "4286743a230f3f489ea12fdcd9b876858441c6086de52069ec680056be622218",
+        "version": "3.14.0"
+      },
+      {
+        "canonical_name": "mpmath",
+        "declared_name": "mpmath",
+        "record_sha256": "09cbd04e87d0c5ab64aab08291b31883e4ea27e8d2c640710e0beb1995e86b9b",
+        "version": "1.3.0"
+      },
+      {
+        "canonical_name": "multidict",
+        "declared_name": "multidict",
+        "record_sha256": "00df5867e4b6ddcb88675199117a50f3784270ec62e22efc964cd091c65a2edf",
+        "version": "6.7.1"
+      },
+      {
+        "canonical_name": "narwhals",
+        "declared_name": "narwhals",
+        "record_sha256": "84b81901888fba4975b695f2ebdab261d0d9652ddb6520616022844e80f0879a",
+        "version": "2.24.0"
+      },
+      {
+        "canonical_name": "nbclient",
+        "declared_name": "nbclient",
+        "record_sha256": "f2c83722206c37a6b3668a89919f0f8ee6dd89b33eef310a5f4a5963ffab279b",
+        "version": "0.11.0"
+      },
+      {
+        "canonical_name": "nbconvert",
+        "declared_name": "nbconvert",
+        "record_sha256": "f957584405b6b4fb60682109f98e6e10740aa718915ce4666305ca8776ee6f43",
+        "version": "7.17.1"
+      },
+      {
+        "canonical_name": "nbformat",
+        "declared_name": "nbformat",
+        "record_sha256": "22ba2cda9def28b08ceabae34cd27b384b72f9f05d6d683693d3c9d45a5697c4",
+        "version": "5.10.4"
+      },
+      {
+        "canonical_name": "nest-asyncio2",
+        "declared_name": "nest-asyncio2",
+        "record_sha256": "af6b77cc381a9ad01e9dceaec38b899daa30449faf75ea7e3777a71805f7a76f",
+        "version": "1.7.2"
+      },
+      {
+        "canonical_name": "networkx",
+        "declared_name": "networkx",
+        "record_sha256": "f6833bb525b720a7809dd6280817601af3dbd78efef02d9e55d4b887ec1f52da",
+        "version": "3.6.1"
+      },
+      {
+        "canonical_name": "notebook",
+        "declared_name": "notebook",
+        "record_sha256": "ec6876a3681915088f145f41019e137554b8c7de2c08ed33f2a680acc67a624c",
+        "version": "7.6.0"
+      },
+      {
+        "canonical_name": "notebook-shim",
+        "declared_name": "notebook_shim",
+        "record_sha256": "14b268fcf8337704e9090dd2483768672f46d4ce1ccab1263e14b2a8a9b2b75e",
+        "version": "0.2.4"
+      },
+      {
+        "canonical_name": "numpy",
+        "declared_name": "numpy",
+        "record_sha256": "48ab4525a160ade7009212dc87da105cea618c3c5fd773e9410ddf836ee794c6",
+        "version": "2.3.5"
+      },
+      {
+        "canonical_name": "nvidia-cublas-cu12",
+        "declared_name": "nvidia-cublas-cu12",
+        "record_sha256": "fed69f94a7605c6810d43e23c178c32e5934625c1d460d50e582ead541654d06",
+        "version": "12.9.1.4"
+      },
+      {
+        "canonical_name": "nvidia-cuda-cupti-cu12",
+        "declared_name": "nvidia-cuda-cupti-cu12",
+        "record_sha256": "d4e5028d9b45eeb14b39d3e44a7f1c6d649d889a1b38d47a15f6bd1ad3689cfa",
+        "version": "12.9.79"
+      },
+      {
+        "canonical_name": "nvidia-cuda-nvrtc-cu12",
+        "declared_name": "nvidia-cuda-nvrtc-cu12",
+        "record_sha256": "5f0f55db846b51d7cd220725afc049c05823cd4e4668f56ba6b807d7e1798ecc",
+        "version": "12.9.86"
+      },
+      {
+        "canonical_name": "nvidia-cuda-runtime-cu12",
+        "declared_name": "nvidia-cuda-runtime-cu12",
+        "record_sha256": "02233c722c04360ad7115d236647f8bde21c4ae04ba32eea557ccf91166897b5",
+        "version": "12.9.79"
+      },
+      {
+        "canonical_name": "nvidia-cudnn-cu12",
+        "declared_name": "nvidia-cudnn-cu12",
+        "record_sha256": "2c8f8aabcd98a443b831d245c9d171e2ff2b1ba5e26f8747223b299a5b8a49f5",
+        "version": "9.10.2.21"
+      },
+      {
+        "canonical_name": "nvidia-cufft-cu12",
+        "declared_name": "nvidia-cufft-cu12",
+        "record_sha256": "3c539e4e2d64d4293164fb7623fe42f645a2f541793691f19625bb64e5a2d232",
+        "version": "11.4.1.4"
+      },
+      {
+        "canonical_name": "nvidia-cufile-cu12",
+        "declared_name": "nvidia-cufile-cu12",
+        "record_sha256": "6b9e8420eed1d9ae9e22163e9ee4e5d57e7251519fceac605b762ec06585459b",
+        "version": "1.14.1.1"
+      },
+      {
+        "canonical_name": "nvidia-curand-cu12",
+        "declared_name": "nvidia-curand-cu12",
+        "record_sha256": "64dcf6e22cbeff9de338285f350576071ed65d99f3de04d231774390bad5fdf4",
+        "version": "10.3.10.19"
+      },
+      {
+        "canonical_name": "nvidia-cusolver-cu12",
+        "declared_name": "nvidia-cusolver-cu12",
+        "record_sha256": "3c2cacced4d8bd5e663ba2489aabae8c7f9e6d26002c4168732c414c94351dc1",
+        "version": "11.7.5.82"
+      },
+      {
+        "canonical_name": "nvidia-cusparse-cu12",
+        "declared_name": "nvidia-cusparse-cu12",
+        "record_sha256": "798dd0b2fc94b065e1581fc16d2b072b45d34ed5b6558d3b8b0816c79c5da286",
+        "version": "12.5.10.65"
+      },
+      {
+        "canonical_name": "nvidia-cusparselt-cu12",
+        "declared_name": "nvidia-cusparselt-cu12",
+        "record_sha256": "a0d0794ea5e6fbf009a350cd345b93b49c5ce40a57270eecbf0c96233bac8ee0",
+        "version": "0.7.1"
+      },
+      {
+        "canonical_name": "nvidia-nccl-cu12",
+        "declared_name": "nvidia-nccl-cu12",
+        "record_sha256": "11536e10ae6812b21398f820cb8db26cc9ebf08fa73e97f353fc53c50ebf7440",
+        "version": "2.27.5"
+      },
+      {
+        "canonical_name": "nvidia-nvjitlink-cu12",
+        "declared_name": "nvidia-nvjitlink-cu12",
+        "record_sha256": "e449586fe4b5ac3edd418ecb49375dd9fd83135b9d33ad7fd398fd1a64ff473d",
+        "version": "12.9.86"
+      },
+      {
+        "canonical_name": "nvidia-nvshmem-cu12",
+        "declared_name": "nvidia-nvshmem-cu12",
+        "record_sha256": "b6c29e6c6a3ec1bb5e51f2f793bce9f021df26c86b7fd096e2676cb70867abc4",
+        "version": "3.3.20"
+      },
+      {
+        "canonical_name": "nvidia-nvtx-cu12",
+        "declared_name": "nvidia-nvtx-cu12",
+        "record_sha256": "29400bdd4784fda6d46a51898242b0ccf0a0103a5a33a34bc5eb1a7d4cd380dc",
+        "version": "12.9.79"
+      },
+      {
+        "canonical_name": "opentelemetry-api",
+        "declared_name": "opentelemetry-api",
+        "record_sha256": "8fc686374999a083eb0efe08cee273ba623863153834268ed6233eca624d92f3",
+        "version": "1.44.0"
+      },
+      {
+        "canonical_name": "opentelemetry-proto",
+        "declared_name": "opentelemetry-proto",
+        "record_sha256": "8334e10bbce6e51c7353e17545088f5cf8b3a9c4a38d06bbde8491c191cf7a22",
+        "version": "1.44.0"
+      },
+      {
+        "canonical_name": "opentelemetry-sdk",
+        "declared_name": "opentelemetry-sdk",
+        "record_sha256": "4390feafc90b106e7e0e8add55c48e6e179c537ee8b6b563b91fa9d4c56a2588",
+        "version": "1.44.0"
+      },
+      {
+        "canonical_name": "opentelemetry-semantic-conventions",
+        "declared_name": "opentelemetry-semantic-conventions",
+        "record_sha256": "a088d61bbfaa3279adb9aabd56a51d5d61a9d040e69d03f10e5cbd9325073cee",
+        "version": "0.65b0"
+      },
+      {
+        "canonical_name": "osqp",
+        "declared_name": "osqp",
+        "record_sha256": "2733698a65281d31487864dd27a0a331d80c9c9d0864c223835412ac60ce7849",
+        "version": "1.1.3"
+      },
+      {
+        "canonical_name": "packaging",
+        "declared_name": "packaging",
+        "record_sha256": "34a791dcc687723f1d7601aa68319f6d51aa00e44d85818995dd33a1b7c5a49c",
+        "version": "26.2"
+      },
+      {
+        "canonical_name": "pandas",
+        "declared_name": "pandas",
+        "record_sha256": "463fbfdd9c961005ef1f069c04a006858f829a981edfad1313b886e418a7e887",
+        "version": "2.3.3"
+      },
+      {
+        "canonical_name": "pandocfilters",
+        "declared_name": "pandocfilters",
+        "record_sha256": "afdfd1e629a5f4f664e8aa1f59fe69710581b91bf254ec03d86ce54d4a15cb50",
+        "version": "1.5.1"
+      },
+      {
+        "canonical_name": "parso",
+        "declared_name": "parso",
+        "record_sha256": "f12d7035431df6048bd4ed5e00a3ff1b3e5821c6201e269ac0ad7f1e643cd9b7",
+        "version": "0.8.7"
+      },
+      {
+        "canonical_name": "pexpect",
+        "declared_name": "pexpect",
+        "record_sha256": "18d1ff314a7a49821e1907a870b096a1aa90c0e726f99858d0da77043343a3ac",
+        "version": "4.9.0"
+      },
+      {
+        "canonical_name": "pillow",
+        "declared_name": "pillow",
+        "record_sha256": "e29a8853b254fcc14a7b13ab9df938bcdea09e57c5e345ad9819c611a62ac46f",
+        "version": "12.3.0"
+      },
+      {
+        "canonical_name": "platformdirs",
+        "declared_name": "platformdirs",
+        "record_sha256": "a0808e6f6e3f772ae227ceede94ddd97fd4dce499901c5bea859dd865d6cee4e",
+        "version": "4.10.0"
+      },
+      {
+        "canonical_name": "pluggy",
+        "declared_name": "pluggy",
+        "record_sha256": "a42a63bcba12ddb7e7db19158c8d05d8fc41d51f48686b411ad3a0213fbd7721",
+        "version": "1.6.0"
+      },
+      {
+        "canonical_name": "prettytable",
+        "declared_name": "prettytable",
+        "record_sha256": "9e51e62cb4cb1642be005ad88f5e16eb1a1a748cfb4def7382335fbce7979872",
+        "version": "3.18.0"
+      },
+      {
+        "canonical_name": "prometheus-client",
+        "declared_name": "prometheus_client",
+        "record_sha256": "e1715b2e4ba71d1df7e91051f533712f9f2f44f3a6bc68d71ed4f0e11b52b766",
+        "version": "0.25.0"
+      },
+      {
+        "canonical_name": "prompt-toolkit",
+        "declared_name": "prompt_toolkit",
+        "record_sha256": "d9763ce59edf45150a60528745aec92b9c608eb7422df445ae8c1a6f5cf2aec0",
+        "version": "3.0.52"
+      },
+      {
+        "canonical_name": "propcache",
+        "declared_name": "propcache",
+        "record_sha256": "5b47b5249186957cc332c6bc948cae117846f92e3561d6a8835888d6da3ba392",
+        "version": "0.5.2"
+      },
+      {
+        "canonical_name": "protobuf",
+        "declared_name": "protobuf",
+        "record_sha256": "eec74a7da0f936d6cc8b5a98671c627a9a75e0f2775f6318a7dcec6338347fd9",
+        "version": "6.33.6"
+      },
+      {
+        "canonical_name": "psutil",
+        "declared_name": "psutil",
+        "record_sha256": "2af7e87b12ad6542c1eaaf20a299c109fa09b9dc5d69faf745219bd61e8cfca6",
+        "version": "7.2.2"
+      },
+      {
+        "canonical_name": "ptyprocess",
+        "declared_name": "ptyprocess",
+        "record_sha256": "c4033a1a5bbd4f0aabc0b7f57aae33d735a97680c439581546f0a952654f1947",
+        "version": "0.7.0"
+      },
+      {
+        "canonical_name": "pure-eval",
+        "declared_name": "pure_eval",
+        "record_sha256": "284435bdb66a1dc88959559e214b8ae0d1fbbf1c6c92622624f33a9327ad7c51",
+        "version": "0.2.3"
+      },
+      {
+        "canonical_name": "pyarrow",
+        "declared_name": "pyarrow",
+        "record_sha256": "57daa8088bf6251d73eb17a4329e2d4a203dfc1c680ebd73f110c29c8467e1b9",
+        "version": "23.0.1"
+      },
+      {
+        "canonical_name": "pyasn1",
+        "declared_name": "pyasn1",
+        "record_sha256": "a090dfffb5eba2e22eaf9fa9368748a431669c88ae5eb8043afd5fb16b398fa3",
+        "version": "0.6.4"
+      },
+      {
+        "canonical_name": "pyasn1-modules",
+        "declared_name": "pyasn1_modules",
+        "record_sha256": "6645737688eada1bc4448276028ef35d5a1132cf61f292667af044f0d8703b24",
+        "version": "0.4.2"
+      },
+      {
+        "canonical_name": "pycparser",
+        "declared_name": "pycparser",
+        "record_sha256": "e752c5c64ce06f508a80e0edeef0c165df849587b829cb9a7b7bb22ac43b0c7e",
+        "version": "3.0"
+      },
+      {
+        "canonical_name": "pydantic",
+        "declared_name": "pydantic",
+        "record_sha256": "d0cbe0f34b294885175920bc8f2ece0b3ed6d9874347dc9cfb2caf4931329272",
+        "version": "2.13.4"
+      },
+      {
+        "canonical_name": "pydantic-core",
+        "declared_name": "pydantic_core",
+        "record_sha256": "3e55a95c4577dcb5dfd08cb8740db06dad7117273dd4885c090413888e606fc0",
+        "version": "2.46.4"
+      },
+      {
+        "canonical_name": "pydantic-settings",
+        "declared_name": "pydantic-settings",
+        "record_sha256": "cbb65a16388ac8010e749031b892cbc0f73d6859d43234dcfde95eadcbd1b941",
+        "version": "2.14.2"
+      },
+      {
+        "canonical_name": "pygments",
+        "declared_name": "Pygments",
+        "record_sha256": "533b6d442c72cce7253199568105554de4ca7e6d7315fb2631bed606cd225842",
+        "version": "2.20.0"
+      },
+      {
+        "canonical_name": "pymongo",
+        "declared_name": "pymongo",
+        "record_sha256": "70f0c68064c61cb56c61044e68b1a276e6e72e493545eafc715448a86a9cf854",
+        "version": "4.17.0"
+      },
+      {
+        "canonical_name": "pyparsing",
+        "declared_name": "pyparsing",
+        "record_sha256": "239325f438cc3542c4d936b77d4539132f7db3b83d55bf9b811db76cce83f0ee",
+        "version": "3.3.2"
+      },
+      {
+        "canonical_name": "pyqlib",
+        "declared_name": "pyqlib",
+        "record_sha256": "329186331b4723c98402d36ed67e3724642b8027bdf6e78fc7756e02c6ac35b5",
+        "version": "0.9.7"
+      },
+      {
+        "canonical_name": "pytest",
+        "declared_name": "pytest",
+        "record_sha256": "e44618fe18d44ba8323caa6aa4802f989c20d77f4b62dd8e93810a5027a577bb",
+        "version": "9.0.3"
+      },
+      {
+        "canonical_name": "python-dateutil",
+        "declared_name": "python-dateutil",
+        "record_sha256": "e15e868a50b9c4e71df17b31369843617780146ac5adb1bbfdcced0ebe501824",
+        "version": "2.9.0.post0"
+      },
+      {
+        "canonical_name": "python-dotenv",
+        "declared_name": "python-dotenv",
+        "record_sha256": "e5b4901ae269bffd422d1dca77bee1766556d37b2f8821b1d09bead03e5a6644",
+        "version": "1.2.2"
+      },
+      {
+        "canonical_name": "python-json-logger",
+        "declared_name": "python-json-logger",
+        "record_sha256": "a635b68ada7ff0a7025b56fe6c46bb6c106dc7a45416888ad61b2b8110ba2e75",
+        "version": "4.1.0"
+      },
+      {
+        "canonical_name": "python-redis-lock",
+        "declared_name": "python-redis-lock",
+        "record_sha256": "71516fcb66a62f6fd2bed5f11d73b7888657ac7f5d70af0814417e4d25084240",
+        "version": "4.0.1"
+      },
+      {
+        "canonical_name": "pytz",
+        "declared_name": "pytz",
+        "record_sha256": "adc676b9082d897c0133402d9e9bd5f1b73b12d49ea750dfccee3ca2365d10ca",
+        "version": "2026.2"
+      },
+      {
+        "canonical_name": "pyyaml",
+        "declared_name": "PyYAML",
+        "record_sha256": "7d0856221a182f5b25fde9bb976af79b4883090f54680d86a42b35fc8d6735a2",
+        "version": "6.0.3"
+      },
+      {
+        "canonical_name": "pyzmq",
+        "declared_name": "pyzmq",
+        "record_sha256": "5d6335bd4cb60ac1bee8883bdaf7fa6217eb09eb98bf4158a685fe304c3338b4",
+        "version": "27.1.0"
+      },
+      {
+        "canonical_name": "qdldl",
+        "declared_name": "qdldl",
+        "record_sha256": "f6ecd19acff3aa23326af08f12d8ea024dda9797250fd74842dd3cdf16c4783b",
+        "version": "0.1.9.post1"
+      },
+      {
+        "canonical_name": "redis",
+        "declared_name": "redis",
+        "record_sha256": "f81f7bc22fab67f877a59fb91b2bddc296156a09350160982cfce57671e4a8ca",
+        "version": "8.0.1"
+      },
+      {
+        "canonical_name": "referencing",
+        "declared_name": "referencing",
+        "record_sha256": "d7ecf9906a4a4ea4837d16e324e344f9f00b328570cf695a96a8de46b8766982",
+        "version": "0.37.0"
+      },
+      {
+        "canonical_name": "requests",
+        "declared_name": "requests",
+        "record_sha256": "fc8c5216d0e865d815bd04cc240b5adc5d56f6c3dbe9aef3b4ea3b83d735bdfe",
+        "version": "2.34.2"
+      },
+      {
+        "canonical_name": "rfc3339-validator",
+        "declared_name": "rfc3339-validator",
+        "record_sha256": "f1af86ba48d8731f1ec42c92be12bd591cfa2b7504ee245893fc34a8462964b6",
+        "version": "0.1.4"
+      },
+      {
+        "canonical_name": "rfc3986-validator",
+        "declared_name": "rfc3986-validator",
+        "record_sha256": "8ed859cee09002e904307c508a744efe18db9f80b9693d4c101103d9a480bb41",
+        "version": "0.1.1"
+      },
+      {
+        "canonical_name": "rfc3987-syntax",
+        "declared_name": "rfc3987-syntax",
+        "record_sha256": "9e4193c47e0b1b009023a33d7cda57b493043c9c1d6688eb3c20eb9fbf847c20",
+        "version": "1.1.0"
+      },
+      {
+        "canonical_name": "rpds-py",
+        "declared_name": "rpds-py",
+        "record_sha256": "8e825dd83fbb7bdc9ff8941296bc53b6c0e07d0420ae28efa150830d6cf178fe",
+        "version": "2026.6.3"
+      },
+      {
+        "canonical_name": "ruamel-yaml",
+        "declared_name": "ruamel.yaml",
+        "record_sha256": "a6c5029dfc9e421e9c078c8ca35f1f89fb71a3eef3dbcebbd1c5b2eb6a7ef616",
+        "version": "0.19.1"
+      },
+      {
+        "canonical_name": "ruff",
+        "declared_name": "ruff",
+        "record_sha256": "a1d694d0e2f5b39422fefe1ddc6150c6b80418927377bd76d70c4a5f973aefb5",
+        "version": "0.14.9"
+      },
+      {
+        "canonical_name": "scikit-learn",
+        "declared_name": "scikit-learn",
+        "record_sha256": "fac3c0f4316df9daaa78eb2c768b24365b6325934da11732a75c2abfedf10128",
+        "version": "1.9.0"
+      },
+      {
+        "canonical_name": "scipy",
+        "declared_name": "scipy",
+        "record_sha256": "bebd5a00dcf3d8fd96b1f5d18d985564b891d893de7584d65ccea6902888a7a8",
+        "version": "1.17.1"
+      },
+      {
+        "canonical_name": "scs",
+        "declared_name": "scs",
+        "record_sha256": "2ec78fd1c7ddecf72a7363a117270ca3dfad5ae00e1e90be09fd92960b13b5a0",
+        "version": "3.2.11"
+      },
+      {
+        "canonical_name": "send2trash",
+        "declared_name": "Send2Trash",
+        "record_sha256": "e06aa64d1245f88cbda95142f541d7b33801d19fbfdcd413df2235ccf0babc5e",
+        "version": "2.1.0"
+      },
+      {
+        "canonical_name": "setuptools",
+        "declared_name": "setuptools",
+        "record_sha256": "2fe8f339e0ea1a1762bd8b21edcc2609e36aebaf13d993f6ce9e236a0fd2ebd1",
+        "version": "83.0.0"
+      },
+      {
+        "canonical_name": "six",
+        "declared_name": "six",
+        "record_sha256": "d16e50f347969b1e1919fb0c88bac4b9c644f5305bcfcfb00f72b646dbd4065d",
+        "version": "1.17.0"
+      },
+      {
+        "canonical_name": "skops",
+        "declared_name": "skops",
+        "record_sha256": "954fc145f9ab42c6383ff6b4f3e1ffc1115ca167e6b006729ba326395a940c98",
+        "version": "0.14.0"
+      },
+      {
+        "canonical_name": "smmap",
+        "declared_name": "smmap",
+        "record_sha256": "e0be5b36472d7e88192f32c26612bf97eb4162bb1e7f76fc7feb8cc671817358",
+        "version": "5.0.3"
+      },
+      {
+        "canonical_name": "soupsieve",
+        "declared_name": "soupsieve",
+        "record_sha256": "f55cbea6a1db79120b193c8ae711dc04ff357300b3443aa5b01433e78ef23c96",
+        "version": "2.8.4"
+      },
+      {
+        "canonical_name": "sparsediffpy",
+        "declared_name": "sparsediffpy",
+        "record_sha256": "8c636ed474932822426bcebdd720981634a5d3e50310b091ab772c94cd54d798",
+        "version": "0.3.0"
+      },
+      {
+        "canonical_name": "sqlalchemy",
+        "declared_name": "SQLAlchemy",
+        "record_sha256": "c186cb6fff7c8add5aeca0cef12312a48d8279a1a791eec31bd10794d5673959",
+        "version": "2.0.51"
+      },
+      {
+        "canonical_name": "sqlparse",
+        "declared_name": "sqlparse",
+        "record_sha256": "dbbdd9e364cdb135e0c91ac79c2208528f89f908a5c5f0792947d3a6abe6f8b4",
+        "version": "0.5.5"
+      },
+      {
+        "canonical_name": "stack-data",
+        "declared_name": "stack-data",
+        "record_sha256": "522b69b3fb8bc2aba2e176a824f62b51cda7c3c30e78abbf9ebf90ce5e3cb615",
+        "version": "0.6.3"
+      },
+      {
+        "canonical_name": "starlette",
+        "declared_name": "starlette",
+        "record_sha256": "798ee94d43c1be08a0c60745972eac69ae9c8fd249cf741df98d432218d3416d",
+        "version": "1.3.1"
+      },
+      {
+        "canonical_name": "sympy",
+        "declared_name": "sympy",
+        "record_sha256": "d2540ab218c3c924a1c90e03bdf3dcd8a63582fffcfbf337b05ffca0c50cc813",
+        "version": "1.14.0"
+      },
+      {
+        "canonical_name": "termcolor",
+        "declared_name": "termcolor",
+        "record_sha256": "37e14730fcdfd0c6b874f854ca5d0e086fb0b0fba96068ee80ab01d2269b30f0",
+        "version": "3.3.0"
+      },
+      {
+        "canonical_name": "terminado",
+        "declared_name": "terminado",
+        "record_sha256": "234bfc694bb98042dc74b16ce8a5c3bac77a62c86f7e4abec718262471d9d69f",
+        "version": "0.18.1"
+      },
+      {
+        "canonical_name": "threadpoolctl",
+        "declared_name": "threadpoolctl",
+        "record_sha256": "21fd60a7b59ad0785db0d87b7f45a58b9c6961097749168c577efa5b1619e95e",
+        "version": "3.6.0"
+      },
+      {
+        "canonical_name": "tinycss2",
+        "declared_name": "tinycss2",
+        "record_sha256": "6207761ce025bef201d6326bc82eedba4658dd2d680a2a35040b50e29b92a3b4",
+        "version": "1.5.1"
+      },
+      {
+        "canonical_name": "torch",
+        "declared_name": "torch",
+        "record_sha256": "850f6587d467fc698a9d889259d6bd0906ef8d90810f1d30c65adefcf6042883",
+        "version": "2.9.1+cu129"
+      },
+      {
+        "canonical_name": "tornado",
+        "declared_name": "tornado",
+        "record_sha256": "e267ef345a7aad29e83211a50f45fd55fe498338e031d41d34f21e15a09c0ec6",
+        "version": "6.5.7"
+      },
+      {
+        "canonical_name": "tqdm",
+        "declared_name": "tqdm",
+        "record_sha256": "f876614a1135bf686d9fcafaa40e6c5b72f0d9be007e2782a954508e175d50d3",
+        "version": "4.68.4"
+      },
+      {
+        "canonical_name": "traitlets",
+        "declared_name": "traitlets",
+        "record_sha256": "6ed5692039740148b0145c8171d3ca7016249a2943cfda7a6406663b36fa7b81",
+        "version": "5.15.1"
+      },
+      {
+        "canonical_name": "triton",
+        "declared_name": "triton",
+        "record_sha256": "f78e93d38571aaf403801c0278088ed7059f89bf315a0021bd53db4554e5704b",
+        "version": "3.5.1"
+      },
+      {
+        "canonical_name": "typing-extensions",
+        "declared_name": "typing_extensions",
+        "record_sha256": "9e07fea845cac76293d927afa7157a14ecba39b318bc8af236b8de530b7656c1",
+        "version": "4.16.0"
+      },
+      {
+        "canonical_name": "typing-inspection",
+        "declared_name": "typing-inspection",
+        "record_sha256": "96edfd27f64244b308dd9b63a60613ad2a04e5012066fdbd1aeebe85b348ba29",
+        "version": "0.4.2"
+      },
+      {
+        "canonical_name": "tzdata",
+        "declared_name": "tzdata",
+        "record_sha256": "031878bab19ea0c4ce5d227eaa31da6573fb1b3764b1b906c4a7f7e5aae085e0",
+        "version": "2026.3"
+      },
+      {
+        "canonical_name": "uri-template",
+        "declared_name": "uri-template",
+        "record_sha256": "e2b2ec1d4a766630c1f4877f77ac33d88014b620ace99cc3e614c95df3c215aa",
+        "version": "1.3.0"
+      },
+      {
+        "canonical_name": "urllib3",
+        "declared_name": "urllib3",
+        "record_sha256": "4869c7ca2082c964b4e2bb8244deda15cfa069d93e4543d3a16eca6a63cbb81f",
+        "version": "2.7.0"
+      },
+      {
+        "canonical_name": "uvicorn",
+        "declared_name": "uvicorn",
+        "record_sha256": "70a10b7e46646377aef2195acb885c71a88e821357cd31a8ddb70b02a1807aa2",
+        "version": "0.51.0"
+      },
+      {
+        "canonical_name": "wcwidth",
+        "declared_name": "wcwidth",
+        "record_sha256": "c499601de55ec3c1f42503caea51cc30d5e66d88072b8da1bd120accc644cb8a",
+        "version": "0.8.2"
+      },
+      {
+        "canonical_name": "webcolors",
+        "declared_name": "webcolors",
+        "record_sha256": "705fde2617424e75ba088962d7b1adb89c5860fb58745bd1f163a1102e561ad9",
+        "version": "25.10.0"
+      },
+      {
+        "canonical_name": "webencodings",
+        "declared_name": "webencodings",
+        "record_sha256": "a08b718df958d1a8334ab84db4117c07d756a0bbadb1435a851336b13bc9ce14",
+        "version": "0.5.1"
+      },
+      {
+        "canonical_name": "websocket-client",
+        "declared_name": "websocket-client",
+        "record_sha256": "1958665f9948c17394c1f922c233a75e7dab21ee281c3fb668a4ed16330e4b51",
+        "version": "1.9.0"
+      },
+      {
+        "canonical_name": "werkzeug",
+        "declared_name": "Werkzeug",
+        "record_sha256": "0022a422ab84e4efee96e3033a3218c0695199662f29d10ea28b52267fad8961",
+        "version": "3.1.8"
+      },
+      {
+        "canonical_name": "widgetsnbextension",
+        "declared_name": "widgetsnbextension",
+        "record_sha256": "0b234a42f18e9a22f07b4baf654a370b690a23582a732159725f511bf2fe3a22",
+        "version": "4.0.15"
+      },
+      {
+        "canonical_name": "yarl",
+        "declared_name": "yarl",
+        "record_sha256": "4242c6a226f35f999167cfad9c51aa11ac548b8bbcf9ee36b93b42ed232c91a7",
+        "version": "1.24.2"
+      },
+      {
+        "canonical_name": "zipp",
+        "declared_name": "zipp",
+        "record_sha256": "09471a1e570a024020ae32570ac57c6e906d76a4840b93b92801ea1b6eec71a1",
+        "version": "4.1.0"
+      }
+    ],
+    "environment": {
+      "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+      "MLFLOW_ALLOW_FILE_STORE": "true",
+      "MLFLOW_TRACKING_URI": null,
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "PYTHONPATH": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src",
+      "QLIB_DATA_DIR": "/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data"
+    },
+    "python": {
+      "base_prefix": "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu",
+      "enable_user_site": false,
+      "executable": "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/bin/python3.12",
+      "executable_sha256": "4933b6c4a8521fb3aa93856701e30b3ac2626d3c47ceb22965a3b0b422e85b44",
+      "implementation": "cpython",
+      "prefix": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv",
+      "pth_files": [
+        {
+          "path": "lib/python3.12/site-packages/_virtualenv.pth",
+          "sha256": "69ac3d8f27e679c81b94ab30b3b56e9cd138219b1ba94a1fa3606d5a76a1433d",
+          "size_bytes": 18
+        },
+        {
+          "path": "lib/python3.12/site-packages/distutils-precedence.pth",
+          "sha256": "2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224",
+          "size_bytes": 151
+        }
+      ],
+      "pyvenv_config": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/pyvenv.cfg",
+        "sha256": "fb7e421d61e00edb22fb1aa8f12c4e367b6f9c93c1e784f7a4d07c475e81c868",
+        "size_bytes": 197
+      },
+      "site_packages_roots": [
+        "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages"
+      ],
+      "sys_path": [
+        "/zju_0012/htq/aaai26_alpha/aaai27_evosci",
+        "/zju_0012/htq/aaai26_alpha/aaai27_evosci/src",
+        "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/lib/python312.zip",
+        "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/lib/python3.12",
+        "/root/.local/share/uv/python/cpython-3.12.3-linux-x86_64-gnu/lib/python3.12/lib-dynload",
+        "/zju_0012/htq/aaai26_alpha/aaai27_evosci/runtime/s2a_v4_eval/.venv/lib/python3.12/site-packages"
+      ],
+      "version": "3.12.3 (main, Apr 15 2024, 18:25:56) [Clang 17.0.6 ]"
+    },
+    "torch": {
+      "cuda_available": true,
+      "cuda_version": "12.9",
+      "cudnn_version": 91002,
+      "device_count": 2,
+      "devices": [
+        {
+          "capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A800-SXM4-80GB",
+          "total_memory": 85167243264,
+          "uuid": "f862ab85-e659-9623-d986-7939c0a1068b"
+        },
+        {
+          "capability": [
+            8,
+            0
+          ],
+          "index": 1,
+          "name": "NVIDIA A800-SXM4-80GB",
+          "total_memory": 85167243264,
+          "uuid": "5122eb2f-c804-d94b-5c1a-d76b0cd7a25c"
+        }
+      ],
+      "version": "2.9.1+cu129"
+    }
+  },
+  "schema_version": "mirage_s2_implementation_lock_v2",
+  "scientific_results_observed": false,
+  "source_tree": {
+    "files": {
+      "__init__.py": "0be01549dc07da02f757e2c0c5b2c2bf5c746d7e920b315e62bdaf658ae7d746",
+      "artifacts/__init__.py": "f9689001038d99ec0f1ee39f9291025a8ce57fba474f0dde089aa9526a5f4605",
+      "artifacts/library.py": "4c7125dd696ac18b52381afb833fe61adece3ba351dc3f927ff6c5a41446cea3",
+      "artifacts/mechanism.py": "d6d9c32cec18c0d2c1299b01c501027a4c47456ae09aa171f1ced27bd2cd19a6",
+      "artifacts/topology.py": "8e05230af6e21867c2e23d60930446fbe6ab21aca629a877f32beb38ee6eeca1",
+      "artifacts/v2_bundle.py": "a64019ed1a58cac6cea312ac018927a80d8eb8f8c5c828177a24214307cfa124",
+      "cli.py": "4e94f98d5a18a7d43eb08b6e512bba34d3cc61a9dd46c5fbc4d984bfac5e849a",
+      "data/__init__.py": "ee9ec69124cc9c37ab1442566080a5c81c2bf4b2aae351419eb3fac70e575e47",
+      "data/pit.py": "d56f6b2f68fded8be924bcbfe90929f68db346539b1886712aee9a6a6013b727",
+      "dsl/__init__.py": "3b85ba31174c8486b4eb2a231190d56ae0f54866cf228b357fb6cb1f854172ae",
+      "dsl/core.py": "bb03aba3eed34cad295102cbff50704695bc26eaff9e92aaa0218ab8d880a3e4",
+      "evaluation/__init__.py": "d4aed211e105bbaf7631382a8bb1337a585d80b25a74193c482ac5e0a7d35f1e",
+      "evaluation/quanta.py": "3cad78093d1554a661983d7d2ff2cb23552936cd0632e28ab63d03f11c2c6f91",
+      "evaluation/s2a.py": "e2a98970028c3678a87979455921c190129048724adcd441ddf41ddc6dc6fed5",
+      "evaluation/s2a_v2_decision.py": "15f9aaa51c3f29d971b070b83bdaefdcb19daff453ac814774ac87e082bdd49f",
+      "evaluation/v2_decision_assembler.py": "46a5becd584e4e9f3a8bfccf254881dbc16b25899ca306372ac9dea33fb7bc20",
+      "evaluation/v2_pipeline.py": "11b4535a069b033660315c997b4468ba0060d52ccdc682a0c14ce6d1763ae6f9",
+      "evaluation/v2_runner.py": "8718b8be72db6f5fc91aaaf42e4040d6417175109c9fa13ed7844e8d4d7242a9",
+      "executor/__init__.py": "d541cddfbeac49bddb3b3da88e9f651fa03d21b98140afa336dafccadad9463b",
+      "executor/torch.py": "5ad675b6cce80a14641ac9aac30caa85c7e5835a2363b4d193bf81357978b752",
+      "experiments/__init__.py": "491b688fbf46593a187c5853baccb176b6f7f1a2b00d32bde082b1fb8c74e2b2",
+      "experiments/gate_a/__init__.py": "39bc621b5081daaf3674e51c97d800e39951309a398d1d118207e5ac6b400dd1",
+      "experiments/gate_a/controls.py": "947040807be2753d13c976b6b6ac97a3d6c376c2337a105ab771c4b820c05dcd",
+      "experiments/gate_a/data.py": "0a7b45a040c29d1fcee3949968b65b622cf046f453e708dee8420cd7f804dc3f",
+      "experiments/gate_a/e5.py": "364ad3ad475424893bb4ac3a7d13bf4970d348d1601efd5268a1f617f85deab4",
+      "experiments/gate_a/e5_smoke.py": "54025f542cae5cef378fe1fceaa3914a9677edf87e2c1d1de2a2a6608ff5ed6e",
+      "experiments/gate_a/matrix.py": "69b2e3ccd6f8def6bd301e6b6cbb69657505f9f6d277e19c4d807d81c2915c50",
+      "experiments/gate_a/metrics.py": "d060276ab8be1e02e2eaed18eb0e3bb51d84f7332df845e46fd3c22cade05703",
+      "experiments/gate_a/models.py": "bb71833307484eb24837a98fe40695ea3c840b38569f0b1fc9985db52aa2a724",
+      "experiments/gate_a/posthoc.py": "f35b55fa7d7fc5cacd989e27e019b02da9f789ec490662562f6919cd0721cef2",
+      "experiments/gate_a/promotion.py": "b2384125ebe969c91526f7d45a37be9086cd0752a310c0fbc79c59559de065cb",
+      "experiments/gate_a/smoke.py": "ec0c1302bd43458431e67f88d69855ffdd087f07e557995ed883c4080241df72",
+      "experiments/gate_a/symbolic.py": "fba60a156a60c1980e9079726088479e3893eb76bc865b0c20e0c306414a4922",
+      "experiments/gate_a/symbolic_smoke.py": "7c206d42758c788cfb549eaf9fffd02c76b72f6c25e743b1e9d7b92f8beb8072",
+      "experiments/gate_a/training.py": "95ed407fe3903bc0af683e3640daf239485786d189c5ddb49725ea0f760b4600",
+      "governance/__init__.py": "a7478a799e98f62c73e930f15a59da057e19f8100f214e648af57f108c56129a",
+      "governance/authority.py": "51052eff4ed66064d9199f2e9fa6a84ee379c99f4665ab4b3213871c85fbbdfe",
+      "governance/implementation_lock.py": "1333a821b6c68c7db461005207216921c4300be337ff0ec1334b1e2fac761912",
+      "governance/mining_rebind.py": "473afbe8614a07f80f1fd2a7c82fbea8cdbc7f6c2bfcd8031f9b5cdd89b55fbb",
+      "governance/openings.py": "a57771a8bac3a84c1b6a7920ccbe275ddfd18b258c06816cf24313a2d5eefabd",
+      "identities.py": "b55d419786a6c9ad0cd4e3b240d00de426e0ca4d5ab8f376252704a419e59794",
+      "mining/__init__.py": "5298be17fbacc3318918b21811af63319f2642f64bc6832e23e26fa892541ebc",
+      "mining/core.py": "f5e877322700d200f3703146589b8538648b16174525eddbceb06d89eb773020",
+      "mining/e3.py": "ecb53e0ba75cc846374a4a55476b652ececb3287b0b70345772332b8e9ae4649",
+      "mining/e3_runner.py": "130979ce233ebb2b1d6f45afe343d8e4dbbc5b51b2eb16e43344851989f61f67",
+      "mining/gp_control.py": "6cb184970d9854d32031a0427527acba19bdc954ff4feb7924abd0bd7093df16",
+      "mining/mlp_control.py": "9b215120fa76601532e0a04d3c85796c369086eef993f2c6e66c6b2f82cb7b26",
+      "mining/s2a.py": "6c6febf61e2a42dfabc90e2c5d0abf08d57563a20603268e82c01433eaa97668",
+      "mining/v2_pipeline.py": "a1176dba94dc9ba475114a38651c0bd5e5cabf12ce3edc5b7951cf42514e4341",
+      "mining/v2_scoring.py": "ddce96fee98bdbdd0169e1dfddeb99f02d66b81a17e74e93e98004393452bb7e",
+      "mining/v2_workflow.py": "31898cf3e24e6dbb846030d5519c299cf035307a57ee2c00c13541be5bdbe4d9",
+      "protocol.py": "bd9c4ba2c2d992b515af2474f2f6423f1562239e905e888ed5cf088ee641b510",
+      "seed.py": "d6d347d5d050d6074a990c49587c1fb8cb1d7d16a0f76375ab0a5b82e2c58e1c",
+      "v8_runtime_launcher.py": "951998e617da63f28a3eac7914962a90a0729974af9c15470d174607f462cd4d"
+    },
+    "tree_sha256": "50d4985c5da3860e8fc0b183769237eb3e837554bce42b5ab6c69a406a25c1b2"
+  }
+}

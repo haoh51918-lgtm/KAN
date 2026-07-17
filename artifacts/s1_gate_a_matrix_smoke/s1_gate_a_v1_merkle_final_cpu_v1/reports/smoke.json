@@ -1,0 +1,1962 @@
+{
+  "alpha_profitability_claim": false,
+  "arm_metric_aggregation": {
+    "C6": {
+      "candidate_evaluations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "clean_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.2195445193975403,
+          1.623609873636734
+        ],
+        "median": 1.421577196517137,
+        "missing_seeds": []
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.complexity_ast_depth has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.complexity_ast_depth has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.complexity_ast_nodes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.complexity_ast_nodes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_free_constants": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.complexity_free_constants has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.complexity_free_constants has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.complexity_serialized_length has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.complexity_serialized_length has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.fidelity_max_absolute_error has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.fidelity_max_absolute_error has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.fidelity_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.fidelity_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_pearson": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.fidelity_pearson has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.fidelity_pearson has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "noisy_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.2255723489173078,
+          1.6454314162605035
+        ],
+        "median": 1.4355018825889057,
+        "missing_seeds": []
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          625278976.0,
+          632647680.0
+        ],
+        "median": 628963328.0,
+        "missing_seeds": []
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.residual_spline_energy_ratio has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.residual_spline_energy_ratio has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "sample_presentations": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          16.0,
+          16.0
+        ],
+        "median": 16.0,
+        "missing_seeds": []
+      },
+      "shape_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.1328006705427012,
+          1.2004183462757871
+        ],
+        "median": 1.1666095084092443,
+        "missing_seeds": []
+      },
+      "source_recovery_mass": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "C6.source_recovery_mass has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "C6.source_recovery_mass has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "steps": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "missing_seeds": []
+      },
+      "test_inference_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          57760.0,
+          57760.0
+        ],
+        "median": 57760.0,
+        "missing_seeds": []
+      },
+      "trainable_parameters": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          361.0,
+          361.0
+        ],
+        "median": 361.0,
+        "missing_seeds": []
+      },
+      "training_search_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          11552.0,
+          11552.0
+        ],
+        "median": 11552.0,
+        "missing_seeds": []
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.002188991755247116,
+          0.0022858940064907074
+        ],
+        "median": 0.0022374428808689117,
+        "missing_seeds": []
+      }
+    },
+    "E1": {
+      "candidate_evaluations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "clean_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9912930053799699,
+          1.0527920118274225
+        ],
+        "median": 1.0220425086036962,
+        "missing_seeds": []
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.complexity_ast_depth has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.complexity_ast_depth has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.complexity_ast_nodes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.complexity_ast_nodes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_free_constants": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.complexity_free_constants has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.complexity_free_constants has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.complexity_serialized_length has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.complexity_serialized_length has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.fidelity_max_absolute_error has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.fidelity_max_absolute_error has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.fidelity_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.fidelity_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_pearson": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.fidelity_pearson has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.fidelity_pearson has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "noisy_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9972121833566763,
+          1.0851923568507018
+        ],
+        "median": 1.041202270103689,
+        "missing_seeds": []
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          623833088.0,
+          632557568.0
+        ],
+        "median": 628195328.0,
+        "missing_seeds": []
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E1.residual_spline_energy_ratio has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E1.residual_spline_energy_ratio has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "sample_presentations": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          16.0,
+          16.0
+        ],
+        "median": 16.0,
+        "missing_seeds": []
+      },
+      "shape_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0004249003680858,
+          1.0017986866474302
+        ],
+        "median": 1.001111793507758,
+        "missing_seeds": []
+      },
+      "source_recovery_mass": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.2297165991492179,
+          0.2505922510601406
+        ],
+        "median": 0.24015442510467927,
+        "missing_seeds": []
+      },
+      "steps": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "missing_seeds": []
+      },
+      "test_inference_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          18400.0,
+          18400.0
+        ],
+        "median": 18400.0,
+        "missing_seeds": []
+      },
+      "trainable_parameters": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          115.0,
+          115.0
+        ],
+        "median": 115.0,
+        "missing_seeds": []
+      },
+      "training_search_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          3680.0,
+          3680.0
+        ],
+        "median": 3680.0,
+        "missing_seeds": []
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0032466622069478035,
+          0.09370967838913202
+        ],
+        "median": 0.04847817029803991,
+        "missing_seeds": []
+      }
+    },
+    "E2": {
+      "candidate_evaluations": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          48.0,
+          48.0
+        ],
+        "median": 48.0,
+        "missing_seeds": []
+      },
+      "clean_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9903396842595984,
+          1.0512776622606497
+        ],
+        "median": 1.020808673260124,
+        "missing_seeds": []
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          4.0,
+          4.0
+        ],
+        "median": 4.0,
+        "missing_seeds": []
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          25.0,
+          25.0
+        ],
+        "median": 25.0,
+        "missing_seeds": []
+      },
+      "complexity_free_constants": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          25.0,
+          25.0
+        ],
+        "median": 25.0,
+        "missing_seeds": []
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1103.0,
+          1107.0
+        ],
+        "median": 1105.0,
+        "missing_seeds": []
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0034611457986091663,
+          0.004507946338056738
+        ],
+        "median": 0.003984546068332952,
+        "missing_seeds": []
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.21895355834506278,
+          0.27814255121294296
+        ],
+        "median": 0.24854805477900288,
+        "missing_seeds": []
+      },
+      "fidelity_pearson": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.966229748839743,
+          0.9769730693023616
+        ],
+        "median": 0.9716014090710523,
+        "missing_seeds": []
+      },
+      "noisy_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.996277431774666,
+          1.0836603504095559
+        ],
+        "median": 1.039968891092111,
+        "missing_seeds": []
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E2.peak_memory_bytes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E2.peak_memory_bytes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "sample_presentations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E2.sample_presentations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E2.sample_presentations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "shape_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0001324470603348,
+          1.0013644819009622
+        ],
+        "median": 1.0007484644806484,
+        "missing_seeds": []
+      },
+      "source_recovery_mass": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.2297165991492179,
+          0.2505922510601406
+        ],
+        "median": 0.24015442510467927,
+        "missing_seeds": []
+      },
+      "steps": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E2.steps has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E2.steps has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "test_inference_flops": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E2.test_inference_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E2.test_inference_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "trainable_parameters": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "training_search_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          3502080.0,
+          4206080.0
+        ],
+        "median": 3854080.0,
+        "missing_seeds": []
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.7315495908260345,
+          2.1418427051976323
+        ],
+        "median": 1.9366961480118334,
+        "missing_seeds": []
+      }
+    },
+    "E3": {
+      "candidate_evaluations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E3.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E3.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "clean_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9626959482226325,
+          0.9932862049012832
+        ],
+        "median": 0.9779910765619578,
+        "missing_seeds": []
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          4.0,
+          4.0
+        ],
+        "median": 4.0,
+        "missing_seeds": []
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          25.0,
+          25.0
+        ],
+        "median": 25.0,
+        "missing_seeds": []
+      },
+      "complexity_free_constants": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          25.0,
+          25.0
+        ],
+        "median": 25.0,
+        "missing_seeds": []
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1119.0,
+          1132.0
+        ],
+        "median": 1125.5,
+        "missing_seeds": []
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.03445969526295455,
+          0.06660932632949297
+        ],
+        "median": 0.05053451079622376,
+        "missing_seeds": []
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.6661859684443191,
+          1.0985593463902077
+        ],
+        "median": 0.8823726574172635,
+        "missing_seeds": []
+      },
+      "fidelity_pearson": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9120605340732196,
+          0.93639879109692
+        ],
+        "median": 0.9242296625850699,
+        "missing_seeds": []
+      },
+      "noisy_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9683618283015882,
+          1.026805435137777
+        ],
+        "median": 0.9975836317196826,
+        "missing_seeds": []
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          624799744.0,
+          632647680.0
+        ],
+        "median": 628723712.0,
+        "missing_seeds": []
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "sample_presentations": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          16.0,
+          16.0
+        ],
+        "median": 16.0,
+        "missing_seeds": []
+      },
+      "shape_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.989191471881364,
+          0.9914211160059211
+        ],
+        "median": 0.9903062939436426,
+        "missing_seeds": []
+      },
+      "source_recovery_mass": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.2860810303709219,
+          0.30761726463035904
+        ],
+        "median": 0.2968491475006405,
+        "missing_seeds": []
+      },
+      "steps": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "missing_seeds": []
+      },
+      "test_inference_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          38560.0,
+          38560.0
+        ],
+        "median": 38560.0,
+        "missing_seeds": []
+      },
+      "trainable_parameters": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          241.0,
+          241.0
+        ],
+        "median": 241.0,
+        "missing_seeds": []
+      },
+      "training_search_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          7712.0,
+          7712.0
+        ],
+        "median": 7712.0,
+        "missing_seeds": []
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.005488136783242226,
+          0.006172803230583668
+        ],
+        "median": 0.005830470006912947,
+        "missing_seeds": []
+      }
+    },
+    "E4": {
+      "candidate_evaluations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E4.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E4.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "clean_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9625735609185171,
+          0.9931535302344882
+        ],
+        "median": 0.9778635455765026,
+        "missing_seeds": []
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          4.0,
+          4.0
+        ],
+        "median": 4.0,
+        "missing_seeds": []
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          25.0,
+          25.0
+        ],
+        "median": 25.0,
+        "missing_seeds": []
+      },
+      "complexity_free_constants": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          25.0,
+          25.0
+        ],
+        "median": 25.0,
+        "missing_seeds": []
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1119.0,
+          1132.0
+        ],
+        "median": 1125.5,
+        "missing_seeds": []
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.034378914801935515,
+          0.06658185923938667
+        ],
+        "median": 0.05048038702066109,
+        "missing_seeds": []
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.6621891072858841,
+          1.0934088817794907
+        ],
+        "median": 0.8777989945326874,
+        "missing_seeds": []
+      },
+      "fidelity_pearson": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9123232693952971,
+          0.9368620584838043
+        ],
+        "median": 0.9245926639395508,
+        "missing_seeds": []
+      },
+      "noisy_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9682409560418914,
+          1.0266743955814048
+        ],
+        "median": 0.9974576758116481,
+        "missing_seeds": []
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          625041408.0,
+          632647680.0
+        ],
+        "median": 628844544.0,
+        "missing_seeds": []
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          7.065932101730268e-06,
+          2.226632949254357e-05
+        ],
+        "median": 1.4666130797136919e-05,
+        "missing_seeds": []
+      },
+      "sample_presentations": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          16.0,
+          16.0
+        ],
+        "median": 16.0,
+        "missing_seeds": []
+      },
+      "shape_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.9891549825397179,
+          0.9913927058703605
+        ],
+        "median": 0.9902738442050392,
+        "missing_seeds": []
+      },
+      "source_recovery_mass": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.286609360171135,
+          0.308063781491997
+        ],
+        "median": 0.29733657083156595,
+        "missing_seeds": []
+      },
+      "steps": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "missing_seeds": []
+      },
+      "test_inference_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          57760.0,
+          57760.0
+        ],
+        "median": 57760.0,
+        "missing_seeds": []
+      },
+      "trainable_parameters": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          361.0,
+          361.0
+        ],
+        "median": 361.0,
+        "missing_seeds": []
+      },
+      "training_search_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          11552.0,
+          11552.0
+        ],
+        "median": 11552.0,
+        "missing_seeds": []
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.006047983653843403,
+          0.006268574856221676
+        ],
+        "median": 0.006158279255032539,
+        "missing_seeds": []
+      }
+    },
+    "E5": {
+      "candidate_evaluations": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          2.0,
+          2.0
+        ],
+        "median": 2.0,
+        "missing_seeds": []
+      },
+      "clean_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.8113601247519839,
+          0.9124358250712602
+        ],
+        "median": 0.861897974911622,
+        "missing_seeds": []
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          4.0,
+          4.0
+        ],
+        "median": 4.0,
+        "missing_seeds": []
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          6.0,
+          6.0
+        ],
+        "median": 6.0,
+        "missing_seeds": []
+      },
+      "complexity_free_constants": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          2.0,
+          2.0
+        ],
+        "median": 2.0,
+        "missing_seeds": []
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          469.0,
+          469.0
+        ],
+        "median": 469.0,
+        "missing_seeds": []
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "fidelity_pearson": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "missing_seeds": []
+      },
+      "noisy_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.8320841586999194,
+          0.9532591757357464
+        ],
+        "median": 0.8926716672178329,
+        "missing_seeds": []
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E5.peak_memory_bytes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E5.peak_memory_bytes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "sample_presentations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E5.sample_presentations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E5.sample_presentations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "shape_nrmse": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0080890239753393,
+          1.018412134017061
+        ],
+        "median": 1.0132505789962,
+        "missing_seeds": []
+      },
+      "source_recovery_mass": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "missing_seeds": []
+      },
+      "steps": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E5.steps has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E5.steps has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "test_inference_flops": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "E5.test_inference_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "E5.test_inference_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "trainable_parameters": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "missing_seeds": []
+      },
+      "training_search_flops": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          1280.0,
+          1280.0
+        ],
+        "median": 1280.0,
+        "missing_seeds": []
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [
+          8675901,
+          8675902
+        ],
+        "full_seed_range": [
+          0.0006785476580262184,
+          0.0013527823612093925
+        ],
+        "median": 0.0010156650096178055,
+        "missing_seeds": []
+      }
+    },
+    "HARD": {
+      "candidate_evaluations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.candidate_evaluations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "clean_nrmse": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.clean_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.clean_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_ast_depth": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.complexity_ast_depth has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.complexity_ast_depth has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_ast_nodes": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.complexity_ast_nodes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.complexity_ast_nodes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_free_constants": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.complexity_free_constants has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.complexity_free_constants has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "complexity_serialized_length": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.complexity_serialized_length has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.complexity_serialized_length has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_max_absolute_error": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.fidelity_max_absolute_error has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.fidelity_max_absolute_error has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_nrmse": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.fidelity_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.fidelity_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "fidelity_pearson": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.fidelity_pearson has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.fidelity_pearson has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "noisy_nrmse": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.noisy_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.noisy_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "peak_memory_bytes": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.peak_memory_bytes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.peak_memory_bytes has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "residual_spline_energy_ratio": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.residual_spline_energy_ratio has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.residual_spline_energy_ratio has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "sample_presentations": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.sample_presentations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.sample_presentations has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "shape_nrmse": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.shape_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.shape_nrmse has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "source_recovery_mass": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.source_recovery_mass has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.source_recovery_mass has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "steps": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.steps has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.steps has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "test_inference_flops": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.test_inference_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.test_inference_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "trainable_parameters": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.trainable_parameters has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.trainable_parameters has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "training_search_flops": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.training_search_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.training_search_flops has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      },
+      "wall_clock_seconds": {
+        "available_seeds": [],
+        "full_seed_range": {
+          "reason": "HARD.wall_clock_seconds has no finite value on any seed",
+          "value": "N/A"
+        },
+        "median": {
+          "reason": "HARD.wall_clock_seconds has no finite value on any seed",
+          "value": "N/A"
+        },
+        "missing_seeds": [
+          8675901,
+          8675902
+        ]
+      }
+    }
+  },
+  "linked_accounting": {
+    "controls": {
+      "null": {
+        "aggregate": {
+          "peak_memory_bytes_max": 632971264,
+          "sample_presentations": 32,
+          "steps": 2,
+          "training_search_flops": 23104,
+          "wall_clock_seconds": 0.01497596688568592
+        },
+        "per_seed": {
+          "8675901": {
+            "accounting": {
+              "peak_memory_bytes": 632078336,
+              "sample_presentations": 16,
+              "steps": 1,
+              "training_search_flops": 11552,
+              "wall_clock_seconds": 0.007331382483243942
+            },
+            "control_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/controls/null/seed_8675901/manifest.json",
+              "sha256": "73345d2413b573daa7c13ea59ce95a6b6bd3a04beb32564ccdf5162c49e249c5"
+            },
+            "training_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/manifests/E4_NULL/seed_8675901_null_e4_null/manifest.json",
+              "sha256": "504663aae4a835b8e0f2c85c66f1ffbdd7ea2c28b9fa4868574dd25203033864"
+            }
+          },
+          "8675902": {
+            "accounting": {
+              "peak_memory_bytes": 632971264,
+              "sample_presentations": 16,
+              "steps": 1,
+              "training_search_flops": 11552,
+              "wall_clock_seconds": 0.0076445844024419785
+            },
+            "control_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/controls/null/seed_8675902/manifest.json",
+              "sha256": "4cf315194ca00881a5ee0d3906b6f15d8a569cbfa2419ef8836eea12705edebc"
+            },
+            "training_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/manifests/E4_NULL/seed_8675902_null_e4_null/manifest.json",
+              "sha256": "6e9c8403ad478143522e38a13cca381b04aded4f0e66527bcf860b81b63305ab"
+            }
+          }
+        }
+      },
+      "source_removed": {
+        "aggregate": {
+          "peak_memory_bytes_max": 633675776,
+          "sample_presentations": 32,
+          "steps": 2,
+          "training_search_flops": 19264,
+          "wall_clock_seconds": 0.014052282087504864
+        },
+        "per_seed": {
+          "8675901": {
+            "accounting": {
+              "peak_memory_bytes": 632082432,
+              "sample_presentations": 16,
+              "steps": 1,
+              "training_search_flops": 9632,
+              "wall_clock_seconds": 0.006850067526102066
+            },
+            "control_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/controls/source_removed/seed_8675901/manifest.json",
+              "sha256": "030f71b337da0494f0a3db2b855592e507eac815db81c44dd9dbbc0bf152cb2e"
+            },
+            "training_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675901_source_removed_e4_source_removed/manifest.json",
+              "sha256": "e83d7f7c3ec0491cf51eff86884942dbf48ab66bc5d067e6cf2515ecb256c9b2"
+            }
+          },
+          "8675902": {
+            "accounting": {
+              "peak_memory_bytes": 633675776,
+              "sample_presentations": 16,
+              "steps": 1,
+              "training_search_flops": 9632,
+              "wall_clock_seconds": 0.007202214561402798
+            },
+            "control_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/controls/source_removed/seed_8675902/manifest.json",
+              "sha256": "9663c200b9837b9494db93b683e7ff94ec051eeceb31115759b95972e9969099"
+            },
+            "training_manifest": {
+              "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675902_source_removed_e4_source_removed/manifest.json",
+              "sha256": "a7514b2d52ddd913efe2a6150b24226df3e871cc8a261363e77cd14aba325125"
+            }
+          }
+        }
+      }
+    },
+    "promotion": {
+      "null_promotion": {
+        "accounting": {
+          "family_fit_flops": 0,
+          "nondup_audit_flops": 0,
+          "total_estimated_flops": 0
+        },
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/models/null_promotion/manifest.json",
+        "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+      },
+      "promotion": {
+        "accounting": {
+          "family_fit_flops": 0,
+          "nondup_audit_flops": 0,
+          "total_estimated_flops": 0
+        },
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_merkle_final_cpu_v1/models/promotion/manifest.json",
+        "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+      }
+    }
+  },
+  "schema_version": 1,
+  "scientific_evidence": false
+}

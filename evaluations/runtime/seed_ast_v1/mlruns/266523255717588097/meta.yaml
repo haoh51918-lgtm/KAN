@@ -1,0 +1,9 @@
+artifact_location: file:///zju_0012/htq/aaai26_alpha/aaai27_evosci/mlruns/266523255717588097
+creation_time: 1784229013896
+effective_trace_archival_retention: null
+experiment_id: '266523255717588097'
+last_update_time: 1784229013896
+lifecycle_stage: active
+name: mirage_kan_s0_seed_ast_v1
+trace_location: null
+workspace: default

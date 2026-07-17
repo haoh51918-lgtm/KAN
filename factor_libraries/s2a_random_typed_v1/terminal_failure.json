@@ -1,0 +1,10 @@
+{
+  "error": "S2a permutation admission is below the frozen minimum",
+  "error_type": "ValueError",
+  "kan_mined": false,
+  "library_role": "random_typed",
+  "partial_files": {},
+  "publication_state": "terminal_failure",
+  "schema_version": "mirage_factor_library_terminal_v1",
+  "scientific_result": false
+}

@@ -1,0 +1,37 @@
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.evosci/
+	../../../.gitignore
+	../../../KAN_Alpha_PR.md
+	../../../README.md
+	../../../Review-from-claude.md
+	../../../artifacts/
+	../../../audits/
+	../../../configs/
+	../../../controls/
+	../../../docs/
+	../../
+	../../../experiments/
+	../../../factor_libraries/
+	../../../figures/
+	../../../governance/
+	../../../ledgers/
+	../../../logs/
+	../../../mechanism_cards/
+	../../../memory/
+	../../../plans/
+	../../../prereg/
+	../../../pyproject.toml
+	../../../reports/
+	../../../research_request.md
+	../../../reviews/
+	../../../runtime/
+	../../../src/
+	../../../tests/
+	../../../uv.lock
+
+nothing added to commit but untracked files present (use "git add" to track)

@@ -1,0 +1,22 @@
+{
+  "control": "date_block_label_permutation",
+  "input_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/controls/null/seed_8675501/input_manifest.json",
+  "input_manifest_sha256": "aa325f8955b9941c3eaef218875eeddd24818ff590819eac6abf172f2936be31",
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "residual_shape_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/residual_shapes/null/seed_8675501/manifest.json",
+  "schema_version": 1,
+  "seed": 8675501,
+  "selection": {
+    "edge": 2,
+    "primitive": "Square",
+    "selected_input_mass": 0.2635838765872982,
+    "selection_status": "selected",
+    "source": "Return(Close,10)",
+    "window": 10
+  },
+  "test_access": false,
+  "validation_permuted_clean_nrmse": 1.0153621122938472
+}

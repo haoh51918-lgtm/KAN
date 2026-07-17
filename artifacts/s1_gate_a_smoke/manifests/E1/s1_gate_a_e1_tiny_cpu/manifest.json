@@ -1,0 +1,44 @@
+{
+  "accounting": {
+    "optimizer_steps": 3,
+    "peak_memory_bytes": 590712832,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 384,
+    "trainable_parameters": 115,
+    "wall_clock_seconds": 0.15576672088354826
+  },
+  "arm": "E1",
+  "device": "cpu",
+  "model_class": "FreeSplineKAN",
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_smoke/checkpoints/E1/s1_gate_a_e1_tiny_cpu/selected.pt",
+    "console_log": "logs/s1_gate_a_e1_tiny_cpu/console.log",
+    "data_manifest": "artifacts/s1_gate_a_smoke/data/s1_gate_a_e1_tiny_cpu/manifest.json",
+    "manifest": "artifacts/s1_gate_a_smoke/manifests/E1/s1_gate_a_e1_tiny_cpu/manifest.json",
+    "test_metrics": "artifacts/s1_gate_a_smoke/metrics/E1/s1_gate_a_e1_tiny_cpu/test.json"
+  },
+  "run_id": "s1_gate_a_e1_tiny_cpu",
+  "schema_version": 1,
+  "selection": {
+    "dataset": "validation",
+    "metric": "nrmse",
+    "selected_step": 3,
+    "selected_value": 0.9674947381597797,
+    "target": "clean_truth",
+    "within_0.005_tiebreak": "lower_trainable_parameter_count"
+  },
+  "settings": {
+    "batch_size": 128,
+    "dtype": "float64",
+    "early_stopping_patience_validations": 3,
+    "learning_rate": 0.003,
+    "max_steps": 3,
+    "seed": 41,
+    "validation_interval_steps": 1
+  },
+  "test_once": {
+    "evaluated": true,
+    "metrics_path": "artifacts/s1_gate_a_smoke/metrics/E1/s1_gate_a_e1_tiny_cpu/test.json"
+  },
+  "torch_version": "2.9.1+cu129"
+}

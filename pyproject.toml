@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mirage-kan"
+version = "0.1.0"
+description = "Auditable MIRAGE-KAN factor discovery experiments"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26", "pandas>=2.0", "pyarrow>=14", "PyYAML>=6", "scipy>=1.17", "torch>=2.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=9", "ruff>=0.12"]
+
+[project.scripts]
+mirage-kan = "mirage_kan.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

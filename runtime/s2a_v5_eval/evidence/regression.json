@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "pytest": {
+    "command": "env -u MLFLOW_TRACKING_URI PYTHONPATH=/zju_0012/htq/aaai26_alpha/aaai27_evosci/src PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 MLFLOW_ALLOW_FILE_STORE=true QLIB_DATA_DIR=/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data runtime/s2a_v4_eval/.venv/bin/python -m pytest -q --tb=short",
+    "duration_seconds": 142.88,
+    "exit_code": 0,
+    "passed_tests": 372,
+    "warning_count": 933
+  },
+  "real_quanta_label_access": false,
+  "ruff": [
+    {
+      "command": "runtime/s2a_v4_eval/.venv/bin/ruff check src tests runtime/s2a_v5_eval/tools",
+      "passed": true
+    }
+  ],
+  "schema_version": "s2a_v5_regression_v1"
+}

@@ -1,0 +1,8 @@
+{
+  "arm": "E4_HARD_ANALYTICAL",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675921/manifest.json",
+  "input_manifest_sha256": "ace4dfb5945ea3154acfd944acfb08e80b443b207e555c6095f2117100f5f0fc",
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675921",
+  "schema_version": 1,
+  "seed": 8675921
+}

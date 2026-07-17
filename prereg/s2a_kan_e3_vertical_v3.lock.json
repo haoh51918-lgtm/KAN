@@ -1,0 +1,68 @@
+{
+  "baseline_metric": {
+    "path": "/zju_0012/htq/aaai26_alpha/09_kan_factor/results/metrics_baseline_a158lgb_qa_FAITHFUL.json",
+    "sha256": "b4ee33a7dedf19c00e9b2370968a669f8cc71c185254e14cda9148b3cf9c26fb"
+  },
+  "data": {
+    "cache_path": "/zju_0012/htq/aaai26_alpha/05_experiments/_cache/pit_full_csi300_qa_v2.parquet",
+    "cache_sha256": "cbcf1c0e06f0a966f503d9c2fc1688fbe78faee5a9a46b99f32abf9498229f69",
+    "config_path": "configs/data/pit_cache.json",
+    "config_sha256": "5db3cef008cb26f8c287feb39560ab96809b2f8b743080751d177c8004359cc3"
+  },
+  "evidence_class": "prospective_development_screen",
+  "formal_promotion_allowed": false,
+  "governance": {
+    "active_directive_path": "governance/decisions/2026-07-17_kan_interpretability_first_directive.md",
+    "active_directive_sha256": "2c109786944736e2964e847d08dfe061100f171074492202fdf29736f0e673f4",
+    "supersession_incident_path": "governance/incidents/2026-07-17_s2a_v3_corrective_successor.md",
+    "supersession_incident_sha256": "65d93033c2a43dbd8174d8db71164bb626c6a30aa2b9132c1806fb76f8fdfb92",
+    "v1_candidate_membership_reuse_allowed": false,
+    "v1_scientific_seeds_retired": true,
+    "v2_candidate_membership_reuse_allowed": false,
+    "v2_disposition": "terminal_pre_label_infrastructure_failure"
+  },
+  "predecessor_custody": {
+    "files": {
+      "artifacts/s2a_kan_e3_mining_v2/terminal_failure.json": "afe8bc304d09fbf8534e92852dcc085e6f6ae75177f62d1129ec981a39ba97ef",
+      "controls/s2a_matched_blackbox_v2/terminal_failure.json": "e72b872f81c207d2af4f892b68b793bfaeef4622dc637dda3dfb7ec0764cbdd6",
+      "factor_libraries/s2a_kan_e3_permutation_control_v2/terminal_failure.json": "af7ea16cb402a91536838373834bdf8e146560daf29eab0b46463bd92c498d6f",
+      "factor_libraries/s2a_kan_e3_selected_v2/terminal_failure.json": "cd81ed7b30bbe3e24ece907ff5edf9eb11fa626dc5bf459b08935a40b77ca437",
+      "factor_libraries/s2a_typed_gp_sr_control_v2/terminal_failure.json": "9384dfd283dcabdad2f6da672c029c35c4ca23113218050fc96680747aa55cf0",
+      "governance/authority/s2a_kan_e3_vertical_v2/receipts/.00000000000000000001.claim": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "governance/authority/s2a_kan_e3_vertical_v2/receipts/00000000000000000001.json": "ae5c1b86031b64ada99d65d0432544f17a59d6d2db436fa1937bdb0ec7e33e19",
+      "governance/authority/s2a_kan_e3_vertical_v2/revalidation.jsonl": "0f3fa79b511960047176f67bf8bad0319cd50d23e4b580e2d80a42349b9a407c",
+      "governance/incidents/2026-07-17_s2a_v2_entitlement_serialization_failure.md": "800bcc967b44d2d7fef378742564a6740ecd53d08584c398f88ba1fda756ce12",
+      "governance/openings/s2a_kan_e3_vertical_v2_mining.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "governance/openings/s2a_kan_e3_vertical_v2_mining_preclaim.json": "04d62cae982e5bfb02c72d8c8b6b3deb0dc420ebad8b8816266295875756f5d2",
+      "mechanism_cards/s2a_kan_e3_selected_v2/terminal_failure.json": "d06825e138668d33858852a3d288aa34f6246d645c0a543272b37aa3d77fc2a6",
+      "prereg/s2a_kan_e3_vertical_v2.lock.json": "65d00b5ea05336fd28c5277340aa3ff38f602f6c7d07952b1af6dd04fb504ae7",
+      "prereg/s2a_kan_e3_vertical_v2_implementation.lock.json": "f22e592379f8045aef0f690e770eee54d1dd27415404760ecd99d27f778863bd",
+      "reviews/s2a_kan_e3_blind_v2/terminal_failure.json": "716a53ee94dcf4ef6e052e588e932529531383e2fc22f2b2966e082655eee731"
+    },
+    "protocol_id": "s2a_kan_e3_vertical_v2",
+    "scientific_observation": "none"
+  },
+  "preregistration": {
+    "path": "prereg/s2a_kan_e3_vertical_v3.md",
+    "sha256": "703bdfeecebc7bb27ef10ebbf6346a68e1fa4447d157a45ecf7f311316201e00"
+  },
+  "proposal": {
+    "authority": "sole_proposal_authority",
+    "path": "KAN_Alpha_PR.md",
+    "sha256": "1ceb575843c02caa770e650f35d425013da3436583e5fe61685984e991ac5218"
+  },
+  "protocol": {
+    "path": "configs/experiments/s2a_kan_e3_vertical_v3.yaml",
+    "protocol_id": "s2a_kan_e3_vertical_v3",
+    "sha256": "0b88d467c5c05489d4d18b7ef6adcfe83692e65d06671cbf6199e01323fb4919"
+  },
+  "quanta": {
+    "commit": "b7ceb27b1001261d7a95b209a963664ae1f8ab23",
+    "config_sha256": "4e095512025a44dcca279e3d3c4d02fc83367caf044032b6c9f6eeb94405a832",
+    "pinned_config_path": "configs/evaluation/quanta_pinned.json",
+    "pinned_config_sha256": "57874840d49a4ba5e0bd71590776d4c5542960a15a02ddbe7d186cf095392d4f",
+    "runner_sha256": "a18ec5bfbe57b452dbacb3cdd15249f99c2b53e7c0761c178e9fbb89db7d34d8"
+  },
+  "schema_version": "mirage_s2_prereg_lock_v2",
+  "test_period_role": "development_evidence_not_final_confirmation"
+}

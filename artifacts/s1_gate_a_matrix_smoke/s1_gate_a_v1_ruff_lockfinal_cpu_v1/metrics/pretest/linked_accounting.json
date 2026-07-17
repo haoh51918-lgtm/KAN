@@ -1,0 +1,114 @@
+{
+  "controls": {
+    "null": {
+      "aggregate": {
+        "peak_memory_bytes_max": 634994688,
+        "sample_presentations": 32,
+        "steps": 2,
+        "training_search_flops": 23104,
+        "wall_clock_seconds": 0.016242503188550472
+      },
+      "per_seed": {
+        "8675921": {
+          "accounting": {
+            "peak_memory_bytes": 633999360,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 11552,
+            "wall_clock_seconds": 0.008045380935072899
+          },
+          "control_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/controls/null/seed_8675921/manifest.json",
+            "sha256": "92510f6a0a6f16b9e3854110020c2a7166c6cd3ab960deeca846d9a4e33c02a3"
+          },
+          "training_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E4_NULL/seed_8675921_null_e4_null/manifest.json",
+            "sha256": "3c8287c2d85db0176762029541239ea4cf023b00773ca4b5319e0d8ade2c78a4"
+          }
+        },
+        "8675922": {
+          "accounting": {
+            "peak_memory_bytes": 634994688,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 11552,
+            "wall_clock_seconds": 0.008197122253477573
+          },
+          "control_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/controls/null/seed_8675922/manifest.json",
+            "sha256": "3612597b28ed24f9f1fdcc764990f084b15ac68f7005486ed532b9230f635cff"
+          },
+          "training_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E4_NULL/seed_8675922_null_e4_null/manifest.json",
+            "sha256": "c10b52827ab30bcc6b9a86d77266dace7fb42191fce19ef9f8e4c02dddb4a2b0"
+          }
+        }
+      }
+    },
+    "source_removed": {
+      "aggregate": {
+        "peak_memory_bytes_max": 635011072,
+        "sample_presentations": 32,
+        "steps": 2,
+        "training_search_flops": 19264,
+        "wall_clock_seconds": 0.01430211029946804
+      },
+      "per_seed": {
+        "8675921": {
+          "accounting": {
+            "peak_memory_bytes": 633999360,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 9632,
+            "wall_clock_seconds": 0.007126783952116966
+          },
+          "control_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/controls/source_removed/seed_8675921/manifest.json",
+            "sha256": "597e5a51a1fadec52d3eec5e9f826d95326c4c6d929f164da670f8ca982aa52c"
+          },
+          "training_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675921_source_removed_e4_source_removed/manifest.json",
+            "sha256": "6678eb53e49fea8442001dcd589d6f8024729f50eebec94771323dcd60f56f4c"
+          }
+        },
+        "8675922": {
+          "accounting": {
+            "peak_memory_bytes": 635011072,
+            "sample_presentations": 16,
+            "steps": 1,
+            "training_search_flops": 9632,
+            "wall_clock_seconds": 0.007175326347351074
+          },
+          "control_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/controls/source_removed/seed_8675922/manifest.json",
+            "sha256": "c03dbf09cb8fe794d8d83758d43fdcd792393cb0a102c6d2f804b87f5d3205d4"
+          },
+          "training_manifest": {
+            "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E4_SOURCE_REMOVED/seed_8675922_source_removed_e4_source_removed/manifest.json",
+            "sha256": "763f46ee9171c649b562a87bcc037f908acb7216467e4fe05debc4dcc544af59"
+          }
+        }
+      }
+    }
+  },
+  "promotion": {
+    "null_promotion": {
+      "accounting": {
+        "family_fit_flops": 0,
+        "nondup_audit_flops": 0,
+        "total_estimated_flops": 0
+      },
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/null_promotion/manifest.json",
+      "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+    },
+    "promotion": {
+      "accounting": {
+        "family_fit_flops": 0,
+        "nondup_audit_flops": 0,
+        "total_estimated_flops": 0
+      },
+      "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/models/promotion/manifest.json",
+      "sha256": "b8ca39dfba7c8d7f2e59af457cd6847368b7f741d912c672d7de55c8d5b258d0"
+    }
+  }
+}

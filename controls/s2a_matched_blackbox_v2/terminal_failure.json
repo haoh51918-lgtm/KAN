@@ -1,0 +1,10 @@
+{
+  "error": "Object of type date is not JSON serializable",
+  "failure_class": "s2a_v2_mining_failure",
+  "partial_files": {},
+  "phase": "mining",
+  "protocol_id": "s2a_kan_e3_vertical_v2",
+  "publication_state": "terminal_failure",
+  "topology_key": "blackbox_control",
+  "topology_sha256": "fbe1e835104783ea2c0a0444ecc81399484c1bc16518e8ccf075cea7ff685805"
+}

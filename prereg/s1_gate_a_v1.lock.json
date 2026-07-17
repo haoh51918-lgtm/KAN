@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "proposal_authority": "KAN_Alpha_PR.md",
+  "proposal_sha256": "1880ccf174c3c691f4296eec52b3536d651421f0f0b81bc2d4031d6bc5cdc41a",
+  "protocol_path": "prereg/s1_gate_a_v1.md",
+  "protocol_sha256": "a91f6b97ba6d7c172cc91b7313a83c069bdd79e88e04fc03dd2c2a960fcab97f",
+  "config_path": "configs/experiments/s1_gate_a_v1.yaml",
+  "config_sha256": "3af2a7f4febb769c4e0ad3019f03708d5ce05e4e721f22592b79a418b385c11a",
+  "supersedes_lock": "prereg/s1_gate_a_v0.lock.json",
+  "frozen_at_utc": "2026-07-16T21:23:19Z",
+  "scientific_results_observed": false,
+  "non_scientific_smoke_observed": true,
+  "supersession_reason": "Full four-affine non-duplication code audit found the v0 target within the registered initial-dictionary duplicate threshold; no frozen-seed result was observed."
+}

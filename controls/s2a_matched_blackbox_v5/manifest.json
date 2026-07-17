@@ -1,0 +1,55 @@
+{
+  "arm": "matched_blackbox_control",
+  "budget_counts": {
+    "completed_updates": 2100,
+    "controls": 7,
+    "scheduled_updates_per_control": 300
+  },
+  "control_count": 7,
+  "factor_library_publication_allowed": false,
+  "files": {
+    "control_receipts.jsonl": "50be03b76ecd86ffbe49d79952a5800da11c4ea3c786a4ccedc1841e5ac9f886",
+    "control_trajectories.jsonl": "d16c06d89949f66289d73cf31ee4e47a33e38b705424e560682a6534405037fa",
+    "prediction_panel.parquet": "a6fc3da7a8847748b51a5615767a010a493927b69428dbaa745839ed2f40b204",
+    "tensor_evidence.zlib": "df68e79f501c5d95cd0b3ea3079c911e8de8a98341c889dc1ecb12a53c77e0f7"
+  },
+  "identities": {
+    "authority_sha256": "e700873667bf780d50fbf1a6014b0c7418fdadbc662eadf0013ca9eb74102805",
+    "implementation_sha256": "03dfd21c545feb0cddfd0599bbed8ec51903f852389b4c7642386860fdedc394",
+    "protocol_sha256": "cf2ed15dc5802d00e4bdc9c122b1cba6af84ac522569abe1b020e6611e534c7a"
+  },
+  "kan_mined": false,
+  "output_kind": "control_panel_not_factor_library",
+  "paired_kan_global_attempt_indices": [
+    20,
+    215,
+    188,
+    244,
+    222,
+    236,
+    251
+  ],
+  "promotion_eligible": false,
+  "publication_state": "staged_unpublished",
+  "role": "falsification_control_never_production",
+  "schema_version": "mirage_matched_blackbox_control_v2",
+  "selected_kan_factor_ids": [
+    "kan_short_price_020",
+    "kan_price_volume_023",
+    "kan_reversal_060",
+    "kan_price_volume_052",
+    "kan_price_volume_030",
+    "kan_price_volume_044",
+    "kan_price_volume_059"
+  ],
+  "tensor_evidence": {
+    "encoding": "zlib_level_9_of_concatenated_little_endian_tensors",
+    "references": [
+      "control_receipts.jsonl",
+      "control_trajectories.jsonl"
+    ]
+  },
+  "topology_binding_required_before_publication": true,
+  "topology_key": "blackbox_control",
+  "topology_sha256": "c23f1578d7c11f72a2ccd9ee139b6b9c5640975c0ae1f75b5b5cf879f0358969"
+}

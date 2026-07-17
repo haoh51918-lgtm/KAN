@@ -1,0 +1,10 @@
+{
+  "arm": "kan_e3_permutation_control",
+  "base_lock_sha256": "d5e17ebea34653f09bb4d8ee7046fc4afc819afab7d1c51cef1b137b4dc55472",
+  "boundary": "before_each_scientific_or_control_arm",
+  "protocol_id": "s2a_kan_e3_vertical_v8",
+  "receipt_sequence": 6,
+  "receipt_sha256": "be9ad5819fca44b13a4648f3be857b719dffcafe3052d966fab52bb275055379",
+  "schema_version": "mirage_s2a_arm_authority_consumption_v2",
+  "state": "consumed_before_arm_identity_or_adapter_access"
+}

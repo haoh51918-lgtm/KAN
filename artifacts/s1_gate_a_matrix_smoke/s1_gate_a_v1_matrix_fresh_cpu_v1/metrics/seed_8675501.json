@@ -1,0 +1,204 @@
+{
+  "C6": {
+    "clean_nrmse": 1.2028635431168928,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 1.1758250529272045,
+      "method": "circular_moving_date_block",
+      "point": 1.2028635431168928,
+      "replicates": 2,
+      "seed": 1224107446713648397,
+      "upper": 1.2006631561460102
+    },
+    "description_length": "N/A",
+    "estimated_flops": 11552,
+    "fidelity_nrmse": "N/A",
+    "fidelity_reason": "matched MLP is a non-symbolic numerical control",
+    "noisy_nrmse": 1.216826476741878,
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 624459776,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 16,
+    "shape_nrmse": 1.150491814399481,
+    "trainable_parameters": 361,
+    "wall_clock_seconds": 0.002631237730383873
+  },
+  "E1": {
+    "clean_nrmse": 1.0175691328907166,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 1.0178701746991763,
+      "method": "circular_moving_date_block",
+      "point": 1.0175691328907166,
+      "replicates": 2,
+      "seed": 2460261334749026699,
+      "upper": 1.0389793237751728
+    },
+    "description_length": "N/A",
+    "estimated_flops": 3680,
+    "fidelity_nrmse": "N/A",
+    "fidelity_reason": "free spline has no independent hard program",
+    "noisy_nrmse": 1.0304737010213645,
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 622452736,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 16,
+    "shape_nrmse": 1.0039218007977695,
+    "trainable_parameters": 115,
+    "wall_clock_seconds": 0.09990379679948092
+  },
+  "E2": {
+    "candidate_evaluations": 48,
+    "clean_nrmse": 1.017814647173818,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 1.0228537801017357,
+      "method": "circular_moving_date_block",
+      "point": 1.017814647173818,
+      "replicates": 2,
+      "seed": 8158934498519976101,
+      "upper": 1.0253873905387934
+    },
+    "complexity": {
+      "ast_depth": 4,
+      "ast_node_count": 25,
+      "free_constants": 25,
+      "serialized_description_length": 1110
+    },
+    "description_length": 1110,
+    "estimated_flops": 4119040,
+    "fidelity_max_absolute_error": 0.0012621891135447608,
+    "fidelity_nrmse": 0.038021973374720595,
+    "fidelity_pearson": 0.9994314346280361,
+    "noisy_nrmse": 1.0307312136818347,
+    "optimizer_steps": {
+      "reason": "non-neural arm has no optimizer-step or peak-memory measurement",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": {
+      "reason": "non-neural arm has no optimizer-step or peak-memory measurement",
+      "value": "N/A"
+    },
+    "shape_nrmse": 1.0029572390126407,
+    "trainable_parameters": 0,
+    "wall_clock_seconds": 2.13102740701288
+  },
+  "E3": {
+    "clean_nrmse": 0.9955834119863459,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 1.004350883077501,
+      "method": "circular_moving_date_block",
+      "point": 0.9955834119863459,
+      "replicates": 2,
+      "seed": 1744187915137219079,
+      "upper": 1.0126135178638334
+    },
+    "complexity": {
+      "ast_depth": 4,
+      "ast_node_count": 25,
+      "free_constants": 25,
+      "serialized_description_length": 1145
+    },
+    "description_length": 1145,
+    "estimated_flops": 7712,
+    "fidelity_max_absolute_error": 0.034079437666449,
+    "fidelity_nrmse": 0.8328404964560532,
+    "fidelity_pearson": 0.9276618097284104,
+    "noisy_nrmse": 1.0082867973720462,
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 623517696,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "sample_presentations": 16,
+    "shape_nrmse": 0.9931243974773177,
+    "trainable_parameters": 241,
+    "wall_clock_seconds": 0.006837247870862484
+  },
+  "E4": {
+    "clean_nrmse": 0.9955101330109666,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.9912831889193082,
+      "method": "circular_moving_date_block",
+      "point": 0.9955101330109666,
+      "replicates": 2,
+      "seed": 6807537876901200972,
+      "upper": 1.0090966314855183
+    },
+    "complexity": {
+      "ast_depth": 4,
+      "ast_node_count": 25,
+      "free_constants": 25,
+      "serialized_description_length": 1145
+    },
+    "description_length": 1145,
+    "eligible": false,
+    "estimated_flops": 11552,
+    "fidelity_max_absolute_error": 0.03400535037594471,
+    "fidelity_nrmse": 0.8282589019084355,
+    "fidelity_pearson": 0.9281975448056,
+    "noisy_nrmse": 1.0082154763826658,
+    "optimizer_steps": 1,
+    "peak_memory_bytes": 623988736,
+    "peak_memory_kind": "process_peak_rss_linux",
+    "prepromotion_fidelity": {
+      "max_absolute_error": 0.03400535037594471,
+      "nrmse": 0.8282589019084355,
+      "pearson": 0.9281975448056
+    },
+    "residual_energy_ratio": 3.282796035917324e-05,
+    "residual_raw_energy": 6.306405080078825e-10,
+    "sample_presentations": 16,
+    "selected_input_mass": 0.25678444990587124,
+    "selected_source": "Return(Close,2)",
+    "selected_window": 2,
+    "shape_nrmse": 0.99311840648936,
+    "trainable_parameters": 361,
+    "wall_clock_seconds": 0.008164639584720135
+  },
+  "E5": {
+    "candidate_evaluations": 2,
+    "clean_nrmse": 0.8819349368305107,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.883485795422479,
+      "method": "circular_moving_date_block",
+      "point": 0.8819349368305107,
+      "replicates": 2,
+      "seed": 8001101923584617697,
+      "upper": 0.9254997472014195
+    },
+    "complexity": {
+      "ast_depth": 4,
+      "ast_node_count": 6,
+      "free_constants": 2,
+      "serialized_description_length": 469
+    },
+    "description_length": 469,
+    "estimated_flops": 1280,
+    "fidelity_max_absolute_error": 0.0,
+    "fidelity_nrmse": 0.0,
+    "fidelity_pearson": 1.0,
+    "noisy_nrmse": 0.8887050770597981,
+    "optimizer_steps": {
+      "reason": "non-neural arm has no optimizer-step or peak-memory measurement",
+      "value": "N/A"
+    },
+    "peak_memory_bytes": {
+      "reason": "non-neural arm has no optimizer-step or peak-memory measurement",
+      "value": "N/A"
+    },
+    "shape_nrmse": 1.0271604324215138,
+    "trainable_parameters": 0,
+    "wall_clock_seconds": 0.0008444404229521751
+  },
+  "HARD": {
+    "clean_nrmse": "N/A",
+    "description_length": "N/A",
+    "fidelity_nrmse": "N/A",
+    "fidelity_pearson": "N/A",
+    "reason": "no governed primitive was fitted for this seed",
+    "value": "N/A"
+  },
+  "seed": 8675501
+}

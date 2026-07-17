@@ -1,0 +1,10 @@
+{
+  "error": "hard-AST selection is incomplete: selected=7, target=None, minimum_size_met=False, profile_quota_met=True",
+  "failure_class": "s2a_v2_mining_failure",
+  "partial_files": {},
+  "phase": "mining",
+  "protocol_id": "s2a_kan_e3_vertical_v3",
+  "publication_state": "terminal_failure",
+  "topology_key": "permutation_control_library",
+  "topology_sha256": "cbcb014a67fac9b34cec1c380453d1c7094f5fdfac1302b81227a4dfc641f9bb"
+}

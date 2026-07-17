@@ -1,0 +1,14 @@
+artifact_uri: file:///zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking/mlruns/999735545716982447/868956f85dce43f091550939a5fe3bfc/artifacts
+end_time: 1784286454628
+entry_point_name: ''
+experiment_id: '999735545716982447'
+lifecycle_stage: active
+run_id: 868956f85dce43f091550939a5fe3bfc
+run_name: backtest_v2_recorder
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784286412645
+status: 3
+tags: []
+user_id: root

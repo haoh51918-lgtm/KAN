@@ -1,0 +1,13 @@
+{
+  "label_mode": "real",
+  "label_sha256": "471afcb6c42189dd9f6392287f2c925a55aa48d959787619538207c820a12473",
+  "scoring_run_id": "123b65d5c9a493e89bce7a422c84a50ba64d1d791c4cf7e991ada61c66121fa7",
+  "train": [
+    "2016-01-01",
+    "2020-12-31"
+  ],
+  "validation": [
+    "2021-01-01",
+    "2021-12-31"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "blackbox_manifest_sha256": "389579dd3164c17c67c51be4e52c22ecf5b7f5bab22bbb67d1ba0339d0d6dabd",
+  "crossed_mapping_rejected": true,
+  "factor_count": 7,
+  "mapping_exact": true,
+  "ordered_lists_differ": true,
+  "passed": true,
+  "real_scientific_label_access": false,
+  "schema_version": "s2a_v6_lineage_compatibility_smoke_v1",
+  "top_manifest_sha256": "b0e3b0894b5e909af8ce1158cce6c54014d5a6db90df72ab3e1ef41c9f5a56dd"
+}

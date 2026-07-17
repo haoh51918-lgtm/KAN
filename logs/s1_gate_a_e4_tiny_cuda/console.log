@@ -1,0 +1,4 @@
+run=s1_gate_a_e4_tiny_cuda arm=E4 device=cuda:0 dtype=float64 parameters=361 max_steps=2
+step=1 train_mse=0.262969867781 penalty_total=0.001875 validation_clean_nrmse=0.994778778085 selected=True
+step=2 train_mse=0.257640664594 penalty_total=0.00187152425921 validation_clean_nrmse=0.989820579082 selected=False
+selected_step=1 selected_validation_clean_nrmse=0.994778778085 manifest=artifacts/s1_gate_a_symbolic_smoke/manifests/E4/s1_gate_a_e4_tiny_cuda/manifest.json

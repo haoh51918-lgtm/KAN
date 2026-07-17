@@ -1,0 +1,46 @@
+{
+  "completed": [
+    "S0 real vertical chain completed from PIT OHLCV through a hand-wired AST library to pinned Quanta LightGBM and a 966-step cost-aware backtest",
+    "PIT identities, membership/observation separation, and exact comparable one-day/twenty-day label values passed",
+    "Four proposal-legal wiring-control factors were published no-replace and independently recomputed",
+    "Quanta source, configuration, and runner identities passed",
+    "GPFS publication uses tested exclusive mkdir, O_EXCL, manifest-last, and fsync semantics",
+    "Main-agent rerun passed 11 pytest behaviors and compileall"
+  ],
+  "unmet_success_signals": [
+    "Torch batch execution and Pandas-to-Torch value/mask/index parity are not implemented",
+    "The first real run did not retain an independent console transcript",
+    "ruff is unavailable, so static checks were skipped",
+    "S0 metrics are connectivity observations and provide no KAN, MIRAGE, or mined-library performance evidence"
+  ],
+  "skill_suggestions": [
+    "tdd"
+  ],
+  "stage_modifications": [
+    {
+      "stage": "S0",
+      "change": "Close as real-chain connectivity passed and scientific evaluation not started; do not compare the wiring-control metrics to baselines or unlock graph work."
+    },
+    {
+      "stage": "S1",
+      "change": "Make the Torch executor and Pandas-to-Torch parity the first gate, covering values, NaNs, membership/observed masks, lookback, cross-sectional axis, and canonical AST identity."
+    },
+    {
+      "stage": "S1",
+      "change": "Freeze the out-of-dictionary E1-E5 preregistration before any run, including generation mechanisms, budgets, seeds, recovery rate, shape error, fidelity, and Gate A failure criteria."
+    },
+    {
+      "stage": "graph stages",
+      "change": "Remain locked; S0 connectivity and hand-wired factor backtests are not unlock evidence."
+    }
+  ],
+  "new_stages": [],
+  "todo_updates": [
+    "Capture a console transcript for every future run and cross-reference it with the Qlib/MLflow record and manifest",
+    "Add ruff to the environment lock before the next implementation score",
+    "Run the full test suite and compileall after Torch parity",
+    "Create and seal the E1-E5 out-of-dictionary preregistration",
+    "Continue complete candidate, failure, configuration-identity, and data-access accounting",
+    "Do not expand graph-control implementation before Gate A evidence"
+  ]
+}

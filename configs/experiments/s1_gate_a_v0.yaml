@@ -1,0 +1,105 @@
+schema_version: 1
+proposal: KAN_Alpha_PR.md
+stage: S1
+seeds: [1729, 2718, 31415]
+panel:
+  rng: numpy.random.Generator(PCG64)
+  assets: 64
+  burn_in_dates: 60
+  split_dates:
+    train: 256
+    validation: 64
+    test: 128
+  split_seed_offsets:
+    train: 0
+    validation: 10000
+    test: 20000
+  innovation_draw_order:
+    - return
+    - volatility
+    - open
+    - high
+    - low
+    - volume
+    - target_noise
+  innovation_array_order: date_major
+  initial_close: 100.0
+  initial_return: 0.0
+  initial_log_volatility: 0.0
+  initial_log_volume: 0.0
+  return_process:
+    ar: 0.15
+    base_scale: 0.012
+  log_volatility_process:
+    ar: 0.90
+    innovation_scale: 0.20
+  log_volume_process:
+    ar: 0.75
+    abs_return_loading: 4.0
+    innovation_scale: 0.25
+  overnight_scale: 0.003
+  intraday_spread_scale: 0.006
+  volume_level: 1000000.0
+mechanism:
+  source: Return(Close,5)
+  input_scale: 0.03
+  input_clip: [-4.0, 4.0]
+  negative_amplitude: -0.8
+  negative_rate: 1.5
+  positive_amplitude: 1.4
+  positive_rate: 0.7
+  noise_fraction_of_train_clean_std: 0.10
+candidate_inputs:
+  - Return(Close,2)
+  - Return(Close,5)
+  - Return(Close,10)
+  - Return(Close,20)
+  - SafeDiv(Sub(High,Low),Close)
+  - Sub(SafeDiv(Volume,TsMean(Volume,20)),1)
+initial_primitives:
+  - Identity
+  - Abs
+  - Square
+  - SignedLog1p
+  - Tanh
+  - Clip(-1,1)
+  - PositiveHinge(0)
+  - NegativeHinge(0)
+forbidden_before_promotion:
+  - Exp
+  - AsymmetricSaturation
+  - PiecewiseExponential
+training:
+  dtype: float64
+  optimizer: AdamW
+  learning_rate: 0.003
+  batch_size: 2048
+  max_steps: 2000
+  validation_interval_steps: 20
+  early_stopping_patience_validations: 200
+  max_trainable_parameters: 10000
+  mlp_parameter_match_relative_tolerance: 0.10
+symbolic_search:
+  max_distinct_valid_ast_evaluations: 12000
+  max_depth: 5
+  max_nodes: 15
+posthoc_symbolification:
+  max_fits_per_edge: 8
+shape_grid:
+  minimum: -4.0
+  maximum: 4.0
+  points: 801
+residual_shape_min_pairwise_correlation: 0.95
+negative_control:
+  permutation_block_dates: 20
+thresholds:
+  capacity_median_clean_nrmse_max: 0.15
+  recovery_min_successful_seeds: 2
+  e4_median_shape_nrmse_max: 0.12
+  e4_successful_seed_shape_nrmse_max: 0.18
+  e4_shape_relative_improvement_vs_symbolic_min: 0.15
+  e4_clean_nrmse_gap_to_best_numeric_max: 0.15
+  hardened_median_clean_nrmse_max: 0.15
+  hardened_soft_hard_correlation_min: 0.98
+  hardened_median_soft_hard_nrmse_max: 0.10
+  null_promotions_max: 0

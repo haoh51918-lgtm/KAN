@@ -1,0 +1,8 @@
+{
+  "arm": "E4_HARD_ANALYTICAL",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E4_HARD_ANALYTICAL/seed_31415/manifest.json",
+  "input_manifest_sha256": "88dd2dae08d7dccbf0521abf325a3115b48ab83ee4bcbca31ac7526b2f177693",
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_31415",
+  "schema_version": 1,
+  "seed": 31415
+}

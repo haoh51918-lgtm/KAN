@@ -1,0 +1,47 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+
+# Reconstructible binary environments are not tracked; runtime manifests and tools are.
+wheelhouse/
+
+# Qlib/MLflow must be directed to a run-owned runtime directory.
+/mlruns/
+/zju_0012/
+
+# Local scratch and incomplete publications are never evidence artifacts.
+*.tmp
+*.staging/
+.INCOMPLETE
+
+# Large frozen evidence binaries (>10MB) stay on local disk only; their sha256
+# identities are pinned by the committed governance manifests.
+artifacts/s2a_kan_e3_mining_v4/kan_tensor_evidence.zlib
+artifacts/s2a_kan_e3_mining_v4/kan_permutation_profile_runs.jsonl
+artifacts/s2a_kan_e3_mining_v4/kan_profile_runs.jsonl
+artifacts/s2a_kan_e3_mining_v5/kan_tensor_evidence.zlib
+artifacts/s2a_kan_e3_mining_v5/kan_permutation_profile_runs.jsonl
+artifacts/s2a_kan_e3_mining_v5/kan_profile_runs.jsonl
+artifacts/s2a_kan_e3_mining_v6/kan_tensor_evidence.zlib
+artifacts/s2a_kan_e3_mining_v6/kan_permutation_profile_runs.jsonl
+artifacts/s2a_kan_e3_mining_v6/kan_profile_runs.jsonl
+controls/s2a_matched_blackbox_v4/tensor_evidence.zlib
+controls/s2a_matched_blackbox_v4/prediction_panel.parquet
+controls/s2a_matched_blackbox_v5/tensor_evidence.zlib
+controls/s2a_matched_blackbox_v5/prediction_panel.parquet
+controls/s2a_matched_blackbox_v6/tensor_evidence.zlib
+controls/s2a_matched_blackbox_v6/prediction_panel.parquet
+factor_libraries/s2a_kan_e3_permutation_control_v4/factor_panel.parquet
+factor_libraries/s2a_kan_e3_permutation_control_v5/factor_panel.parquet
+factor_libraries/s2a_kan_e3_permutation_control_v6/factor_panel.parquet
+factor_libraries/s2a_typed_gp_sr_control_v4/factor_panel.parquet
+factor_libraries/s2a_typed_gp_sr_control_v5/factor_panel.parquet
+factor_libraries/s2a_typed_gp_sr_control_v6/factor_panel.parquet
+factor_libraries/s2a_kan_e3_selected_v4/factor_panel.parquet
+factor_libraries/s2a_kan_e3_selected_v5/factor_panel.parquet
+factor_libraries/s2a_kan_e3_selected_v6/factor_panel.parquet
+factor_libraries/seed_ast_v1/factor_panel.parquet
+

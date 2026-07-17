@@ -1,0 +1,8 @@
+{
+  "arm": "C6",
+  "input_manifest": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/manifests/C6/seed_8675701_main_c6/manifest.json",
+  "input_manifest_sha256": "f7010e9460790b04212abc9dbe8cecd7af670dd20656298c938e8f196767b5d9",
+  "opening": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/predictions/seed_8675701",
+  "schema_version": 1,
+  "seed": 8675701
+}

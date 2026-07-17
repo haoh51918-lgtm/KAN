@@ -1,0 +1,84 @@
+{
+  "arm_claims": {
+    "C6": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/C6/seed_1729_main_c6/manifest.json.test_once.claim",
+    "E1": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E1/seed_1729_main_e1/manifest.json.test_once.claim",
+    "E2": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E2/seed_1729/manifest.json.test_once.claim",
+    "E3": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E3/seed_1729_main_e3/manifest.json.test_once.claim",
+    "E3_HARD": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E3_HARD/seed_1729/manifest.json.test_once.claim",
+    "E4": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E4/seed_1729_main_e4/manifest.json.test_once.claim",
+    "E4_HARD_ANALYTICAL": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E4_HARD_ANALYTICAL/seed_1729/manifest.json.test_once.claim",
+    "E5": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E5/seed_1729/manifest.json.test_once.claim"
+  },
+  "arms": [
+    "C6",
+    "E1",
+    "E2",
+    "E3",
+    "E3_HARD",
+    "E4",
+    "E4_HARD_ANALYTICAL",
+    "E5"
+  ],
+  "paths": {
+    "claim": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729.test_once.claim",
+    "metrics": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/metrics.json",
+    "predictions": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/row_aligned_predictions.npz"
+  },
+  "preflight": {
+    "arm_manifests": {
+      "C6": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/C6/seed_1729_main_c6/manifest.json",
+        "sha256_before": "b7908b2f84b93b4b1c1a361f8520a94d8dcb0bf409a9f65283904d077bcacdcd"
+      },
+      "E1": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E1/seed_1729_main_e1/manifest.json",
+        "sha256_before": "f94b0e2cec05b53fce458d44912c966a88aef87c5252a6995acedc2dae972303"
+      },
+      "E2": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E2/seed_1729/manifest.json",
+        "sha256_before": "4ac54be45047fd33feac14b08f7d0c5c5f62e0c2fa876e3a6e764a18d514e570"
+      },
+      "E3": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E3/seed_1729_main_e3/manifest.json",
+        "sha256_before": "72be71a73e160ea33de95127616ca67b3d65ab075f71dd11ec963556fe4b0e2d"
+      },
+      "E3_HARD": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E3_HARD/seed_1729/manifest.json",
+        "sha256_before": "6ae3ac07f7f2e7ddac8dedaa134445cc58bbc13470e6ad0766eb2508581ed7b6"
+      },
+      "E4": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/manifests/E4/seed_1729_main_e4/manifest.json",
+        "sha256_before": "f82946dd9255a1afa8231c0e5993f17d9ba9565e1691643f4e0b6d69838442be"
+      },
+      "E4_HARD_ANALYTICAL": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E4_HARD_ANALYTICAL/seed_1729/manifest.json",
+        "sha256_before": "b998fed1d8b58119ccfa0a53e8f50d2eaff530541a053b6de685bc889f0c9830"
+      },
+      "E5": {
+        "path": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/models/E5/seed_1729/manifest.json",
+        "sha256_before": "75b89ae7ec4e3f58086705195dfc089cfba58122a2f357f9eb0cb0dec591c8d1"
+      }
+    }
+  },
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "receipts": {
+    "C6": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/C6.json",
+    "E1": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E1.json",
+    "E2": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E2.json",
+    "E3": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E3.json",
+    "E3_HARD": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E3_HARD.json",
+    "E4": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E4.json",
+    "E4_HARD_ANALYTICAL": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E4_HARD_ANALYTICAL.json",
+    "E5": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/predictions/seed_1729/receipts/E5.json"
+  },
+  "schema_version": 1,
+  "seed": 1729,
+  "sha256": {
+    "metrics": "f331adc027678d211cd816ba64478be76d54681fdfde494c9fd4d25770c60cb6",
+    "predictions": "200fdd0dd7487f0a39f56a6618a0c6030b54e7efaecb6098ab56163458209124"
+  },
+  "single_opening": true
+}

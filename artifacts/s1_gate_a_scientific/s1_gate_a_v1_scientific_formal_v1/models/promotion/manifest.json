@@ -1,0 +1,353 @@
+{
+  "accounting": {
+    "family_fit_flops": 2101824,
+    "nondup_audit_flops": 268652992,
+    "total_estimated_flops": 270754816
+  },
+  "candidate_audits": [
+    {
+      "all_passed": false,
+      "checks": {
+        "boundary_continuity": true,
+        "domain": true,
+        "low_complexity_approximation": false,
+        "monotonicity": true,
+        "non_duplication": false,
+        "reconstructability": true,
+        "stability": true
+      },
+      "description_length_bits": 640,
+      "duplicate_audit": {
+        "absolute_pearson": 0.9999790626637433,
+        "affine_fit_nrmse": 0.00647103037712726,
+        "audited_curve": "fitted_candidate_family",
+        "candidate_duplicate": true,
+        "candidate_fit": {
+          "absolute_pearson": 0.9999790626637433,
+          "affine_fit_nrmse": 0.00647103037712726,
+          "audited_curve": "fitted_candidate_family",
+          "function_evaluations": 7,
+          "parameters": [
+            0.3353878388281985,
+            0.9867912140215006,
+            0.31027218970054055,
+            -0.3102721866864576
+          ],
+          "primitive": "Clip(-1,1)",
+          "primitive_order": 5,
+          "seed": 2718,
+          "start_order": 2,
+          "success": true
+        },
+        "duplicate": true,
+        "estimated_flops": 88910464,
+        "fit_semantics": "full_initial_primitive_input_and_output_affine_transform",
+        "frozen_residual_fit": {
+          "absolute_pearson": 0.9596396324388657,
+          "affine_fit_nrmse": 0.2812326009775512,
+          "audited_curve": "frozen_residual_shape",
+          "function_evaluations": 25,
+          "parameters": [
+            1.1922987773533147,
+            -0.7629441421028863,
+            -0.02934493375813668,
+            0.07613033749814777
+          ],
+          "primitive": "Square",
+          "primitive_order": 2,
+          "seed": 1729,
+          "start_order": 3,
+          "success": true
+        },
+        "function_evaluations": 7,
+        "parameters": [
+          0.3353878388281985,
+          0.9867912140215006,
+          0.31027218970054055,
+          -0.3102721866864576
+        ],
+        "primitive": "Clip(-1,1)",
+        "primitive_order": 5,
+        "residual_already_in_dictionary": false,
+        "seed": 2718,
+        "start_order": 2,
+        "success": true,
+        "total_function_evaluations": 5704
+      },
+      "family_id": "asymmetric_exponential_saturation_v1",
+      "family_order": 0,
+      "maximum_seed_residual_shape_nrmse": 0.7333089496198765,
+      "median_seed_residual_shape_nrmse": 0.6699882748263555,
+      "seed_fits": {
+        "1729": {
+          "continuous_optimization": true,
+          "function_evaluations": 42,
+          "nrmse": 0.5897525665224205,
+          "parameters": [
+            7.999999999999957,
+            0.020200675870472445,
+            1.0000000000000002e-06,
+            0.0010000000000000002
+          ],
+          "success": true
+        },
+        "2718": {
+          "continuous_optimization": true,
+          "function_evaluations": 40,
+          "nrmse": 0.7333089496198765,
+          "parameters": [
+            7.9999999999841425,
+            0.013535912426192146,
+            1.0000000000000002e-06,
+            0.0010000000000000002
+          ],
+          "success": true
+        },
+        "31415": {
+          "continuous_optimization": true,
+          "function_evaluations": 36,
+          "nrmse": 0.6699882748263555,
+          "parameters": [
+            7.999999999998739,
+            0.016389825363444653,
+            1.0000000000000002e-06,
+            0.0010000000000000002
+          ],
+          "success": true
+        }
+      }
+    },
+    {
+      "all_passed": false,
+      "checks": {
+        "boundary_continuity": true,
+        "domain": true,
+        "low_complexity_approximation": false,
+        "monotonicity": true,
+        "non_duplication": false,
+        "reconstructability": true,
+        "stability": true
+      },
+      "description_length_bits": 632,
+      "duplicate_audit": {
+        "absolute_pearson": 0.9999995236497383,
+        "affine_fit_nrmse": 0.0009760636745296666,
+        "audited_curve": "fitted_candidate_family",
+        "candidate_duplicate": true,
+        "candidate_fit": {
+          "absolute_pearson": 0.9999995236497383,
+          "affine_fit_nrmse": 0.0009760636745296666,
+          "audited_curve": "fitted_candidate_family",
+          "function_evaluations": 11,
+          "parameters": [
+            0.3336150782039051,
+            0.9980169737883522,
+            0.317538364639912,
+            -0.31753824967442523
+          ],
+          "primitive": "Clip(-1,1)",
+          "primitive_order": 5,
+          "seed": 2718,
+          "start_order": 2,
+          "success": true
+        },
+        "duplicate": true,
+        "estimated_flops": 90332448,
+        "fit_semantics": "full_initial_primitive_input_and_output_affine_transform",
+        "frozen_residual_fit": {
+          "absolute_pearson": 0.9596396324388657,
+          "affine_fit_nrmse": 0.2812326009775512,
+          "audited_curve": "frozen_residual_shape",
+          "function_evaluations": 25,
+          "parameters": [
+            1.1922987773533147,
+            -0.7629441421028863,
+            -0.02934493375813668,
+            0.07613033749814777
+          ],
+          "primitive": "Square",
+          "primitive_order": 2,
+          "seed": 1729,
+          "start_order": 3,
+          "success": true
+        },
+        "function_evaluations": 11,
+        "parameters": [
+          0.3336150782039051,
+          0.9980169737883522,
+          0.317538364639912,
+          -0.31753824967442523
+        ],
+        "primitive": "Clip(-1,1)",
+        "primitive_order": 5,
+        "residual_already_in_dictionary": false,
+        "seed": 2718,
+        "start_order": 2,
+        "success": true,
+        "total_function_evaluations": 5778
+      },
+      "family_id": "asymmetric_rational_saturation_v1",
+      "family_order": 1,
+      "maximum_seed_residual_shape_nrmse": 0.7325870163451382,
+      "median_seed_residual_shape_nrmse": 0.6688156523543751,
+      "seed_fits": {
+        "1729": {
+          "continuous_optimization": true,
+          "function_evaluations": 9,
+          "nrmse": 0.588110442804529,
+          "parameters": [
+            0.1575812232128296,
+            0.001000000000000001,
+            1.000000000002829e-06,
+            7.999999999999999
+          ],
+          "success": true
+        },
+        "2718": {
+          "continuous_optimization": true,
+          "function_evaluations": 10,
+          "nrmse": 0.7325870163451382,
+          "parameters": [
+            0.10656945808915863,
+            0.0010000000000001113,
+            1.0000000000000002e-06,
+            7.999999999999999
+          ],
+          "success": true
+        },
+        "31415": {
+          "continuous_optimization": true,
+          "function_evaluations": 9,
+          "nrmse": 0.6688156523543751,
+          "parameters": [
+            0.12855489433998635,
+            0.0010000000000000002,
+            1.0000000000001672e-06,
+            7.999999999999999
+          ],
+          "success": true
+        }
+      }
+    },
+    {
+      "all_passed": false,
+      "checks": {
+        "boundary_continuity": true,
+        "domain": true,
+        "low_complexity_approximation": false,
+        "monotonicity": true,
+        "non_duplication": false,
+        "reconstructability": true,
+        "stability": true
+      },
+      "description_length_bits": 488,
+      "duplicate_audit": {
+        "absolute_pearson": 0.9999998627086477,
+        "affine_fit_nrmse": 0.0005240063796998709,
+        "audited_curve": "fitted_candidate_family",
+        "candidate_duplicate": true,
+        "candidate_fit": {
+          "absolute_pearson": 0.9999998627086477,
+          "affine_fit_nrmse": 0.0005240063796998709,
+          "audited_curve": "fitted_candidate_family",
+          "function_evaluations": 13,
+          "parameters": [
+            0.33340536750129746,
+            0.9991575516195725,
+            0.31825422566241307,
+            -0.3182542226574584
+          ],
+          "primitive": "Clip(-1,1)",
+          "primitive_order": 5,
+          "seed": 2718,
+          "start_order": 3,
+          "success": true
+        },
+        "duplicate": true,
+        "estimated_flops": 89410080,
+        "fit_semantics": "full_initial_primitive_input_and_output_affine_transform",
+        "frozen_residual_fit": {
+          "absolute_pearson": 0.9596396324388657,
+          "affine_fit_nrmse": 0.2812326009775512,
+          "audited_curve": "frozen_residual_shape",
+          "function_evaluations": 25,
+          "parameters": [
+            1.1922987773533147,
+            -0.7629441421028863,
+            -0.02934493375813668,
+            0.07613033749814777
+          ],
+          "primitive": "Square",
+          "primitive_order": 2,
+          "seed": 1729,
+          "start_order": 3,
+          "success": true
+        },
+        "function_evaluations": 13,
+        "parameters": [
+          0.33340536750129746,
+          0.9991575516195725,
+          0.31825422566241307,
+          -0.3182542226574584
+        ],
+        "primitive": "Clip(-1,1)",
+        "primitive_order": 5,
+        "residual_already_in_dictionary": false,
+        "seed": 2718,
+        "start_order": 3,
+        "success": true,
+        "total_function_evaluations": 5730
+      },
+      "family_id": "two_sided_tanh_v1",
+      "family_order": 2,
+      "maximum_seed_residual_shape_nrmse": 0.73250919657826,
+      "median_seed_residual_shape_nrmse": 0.6687390087082538,
+      "seed_fits": {
+        "1729": {
+          "continuous_optimization": true,
+          "function_evaluations": 59,
+          "nrmse": 0.5880646809287209,
+          "parameters": [
+            7.99999999999352,
+            0.019660756065570516,
+            1.0000000000000002e-06,
+            0.0010000000000000002
+          ],
+          "success": true
+        },
+        "2718": {
+          "continuous_optimization": true,
+          "function_evaluations": 64,
+          "nrmse": 0.73250919657826,
+          "parameters": [
+            7.999999999991205,
+            0.01328868087511624,
+            1.0000000000000002e-06,
+            0.0010000000000000002
+          ],
+          "success": true
+        },
+        "31415": {
+          "continuous_optimization": true,
+          "function_evaluations": 59,
+          "nrmse": 0.6687390087082538,
+          "parameters": [
+            7.999999999970653,
+            0.016033470829328166,
+            1.0000000000000002e-06,
+            0.0010000000000000002
+          ],
+          "success": true
+        }
+      }
+    }
+  ],
+  "gate_a_executable_promotion": false,
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "reason": "no_governed_candidate",
+  "schema_version": 1,
+  "status": "semi_symbolic_no_promotion"
+}

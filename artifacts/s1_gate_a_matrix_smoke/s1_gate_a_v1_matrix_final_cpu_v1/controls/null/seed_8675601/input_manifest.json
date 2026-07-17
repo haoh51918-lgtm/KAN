@@ -1,0 +1,40 @@
+{
+  "array_path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_final_cpu_v1/controls/null/seed_8675601/targets.npz",
+  "array_sha256": "368597115e8be5df50ebd86322278e75f15a5821bd039f9f4d69d50d4c5cb804",
+  "control": "date_block_label_permutation",
+  "evidence": {
+    "train": {
+      "block_dates": 20,
+      "feature_order_preserved": true,
+      "feature_row_order_changed": false,
+      "interpretation": "same whole-date label permutation is used for noisy training objective and clean validation selection",
+      "method": "nonzero_circular_whole_date_block_shift",
+      "nonzero_circular_date_shift": 20,
+      "row_or_future_feature_access": false,
+      "seed": 8745601,
+      "training_objective_permuted": true,
+      "validation_selection_permuted": true,
+      "whole_cross_section_preserved": true
+    },
+    "validation": {
+      "block_dates": 20,
+      "feature_order_preserved": true,
+      "feature_row_order_changed": false,
+      "interpretation": "same whole-date label permutation is used for noisy training objective and clean validation selection",
+      "method": "nonzero_circular_whole_date_block_shift",
+      "nonzero_circular_date_shift": 20,
+      "row_or_future_feature_access": false,
+      "seed": 8755601,
+      "training_objective_permuted": true,
+      "validation_selection_permuted": true,
+      "whole_cross_section_preserved": true
+    }
+  },
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "schema_version": 1,
+  "seed": 8675601,
+  "test_access": false
+}

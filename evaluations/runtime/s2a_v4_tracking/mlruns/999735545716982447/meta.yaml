@@ -1,0 +1,9 @@
+artifact_location: file:///zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking/mlruns/999735545716982447
+creation_time: 1784286409159
+effective_trace_archival_retention: null
+experiment_id: '999735545716982447'
+last_update_time: 1784286409159
+lifecycle_stage: active
+name: mirage_kan_s2a_kan_e3_vertical_v4_alpha158_replay
+trace_location: null
+workspace: default

@@ -1,0 +1,144 @@
+{
+  "budget_counts": {
+    "gp_attempts": 256,
+    "kan_attempts": 256,
+    "kan_updates": 76800,
+    "mlp_controls": 7,
+    "mlp_updates": 2100,
+    "permutation_attempts": 256
+  },
+  "child_manifest_sha256": {
+    "blackbox_control": "c81ac971b2beae3ca1859e4d0015cc00160d8d9d874ff2078f0b5d2b926c2123",
+    "blind_review_package": "07c92b6f529576f2f09ac6e6eec5fa125ef34d13f4d039157429fe2d1afb7d09",
+    "gp_control_library": "8ee0c1634bcc9e31127897a317b003c12c90ee8b9a581ebd7431e7ff9e804e73",
+    "kan_library": "117496297ae14127975ecea0070b29f5b373b2b27668265ad9e87e1b4ffdca74",
+    "mechanism_cards": "e20fee40f4bde3e6469518b8fa41904c4606d4f0cb9b05e1e94aa4c515e7ddbf",
+    "permutation_control_library": "38eeecb3530351dc103a1eddd41b8138496d4187d23aed07443da791c884ddd4"
+  },
+  "child_manifests": {
+    "blackbox_control": "c81ac971b2beae3ca1859e4d0015cc00160d8d9d874ff2078f0b5d2b926c2123",
+    "blind_review_package": "07c92b6f529576f2f09ac6e6eec5fa125ef34d13f4d039157429fe2d1afb7d09",
+    "gp_control_library": "8ee0c1634bcc9e31127897a317b003c12c90ee8b9a581ebd7431e7ff9e804e73",
+    "kan_library": "117496297ae14127975ecea0070b29f5b373b2b27668265ad9e87e1b4ffdca74",
+    "mechanism_cards": "e20fee40f4bde3e6469518b8fa41904c4606d4f0cb9b05e1e94aa4c515e7ddbf",
+    "permutation_control_library": "38eeecb3530351dc103a1eddd41b8138496d4187d23aed07443da791c884ddd4"
+  },
+  "files": {
+    "children.json": "6f9483b7f6b648f1d6c7612c0c1cf415763877f332c445c270b49905b8a58fbb",
+    "gp_generation.jsonl": "8d4d28715d24c4b35b33dbfd67d0fe60a1b69b1d4554b36d15e04162564e7a95",
+    "gp_scoring.jsonl": "263c10804cbbc473e8636a87919130da433e2ebaf99c8d6a24f626931a7837e7",
+    "gp_scoring_metadata.json": "374e9b9c7ef8198975a398609592a9a52e1766121719cb334ba7fde4171160f3",
+    "gp_selection.json": "f6bfed5f007e3246a6de380ee85cf73f898dca2611c9d6a445450f024c6347b0",
+    "kan_permutation_false_positive_ledger.jsonl": "1b95f57029a1ef069f9ef3ce453befc02e6f2189ac561a591d337570d8374100",
+    "kan_permutation_profile_runs.jsonl": "f3501f5346c0544aff48441154d5d3fe624d17965bcd0c4defd87eb2da99b773",
+    "kan_permutation_scoring.jsonl": "6f84581039b55111bbbf0a7fa8561165f785f82157ca75d5c8b7efbab5022d10",
+    "kan_permutation_scoring_metadata.json": "8ab7693985c55eafe36ccac0a057f7431b4db79873fc72c2700d63b2e0355284",
+    "kan_permutation_selection.json": "9cf48b03ad5948fec432f44194f2c8a8b95fa831d15e278643c07fd40516ed7b",
+    "kan_profile_runs.jsonl": "8e4c1a7819bbb92b1ac389f7c59392452097498232e7c164b55b00620c393dab",
+    "kan_real_scoring.jsonl": "d058a21355de9d189e7167d77fc55265dfd5d9a52eaeaf9881ca8e68744f4c08",
+    "kan_real_scoring_metadata.json": "3ca7d11f8f916573f3b7e74e60d56610cacec7215581e65625a0e3faa90c31cb",
+    "kan_real_selection.json": "f67f5e30d4483d9f26a2bc1589e25c4a6b3927812117bb1e551e63144ae5af50",
+    "kan_tensor_evidence.zlib": "1cf68e2648f866802b3468950dd104e7271bdf53f4cd4e9cec2265a6eb8bebda"
+  },
+  "gp_ledger": {
+    "generation_attempts": 256,
+    "generation_disposition_counts": {
+      "duplicate_formula": 48,
+      "generated": 197,
+      "invalid_same_atom": 11
+    },
+    "generation_seed": 15485863,
+    "invalid_and_duplicate_attempts_retained": true,
+    "scoring_rows": 256,
+    "selection_dispositions": 256
+  },
+  "identities": {
+    "authority_sha256": "3f2a475ed0ef699ec4a4e3ac8b7e3b98b1b7f5e75ee02d429c6357d95d7869b9",
+    "implementation_sha256": "05fc2f7ea02d98966cbd2e665322a911505fbadd2702d67183d72bcd6558ef2d",
+    "protocol_sha256": "d9c9768038500c3a2eaeafe7a9d151854f6eb7f2694aa6331453e210039cdd61"
+  },
+  "kan_mined": true,
+  "kan_profile_evidence": {
+    "completed_updates": 76800,
+    "miners": 256,
+    "profiles": 4
+  },
+  "kan_real_ledger": {
+    "label_mode": "real",
+    "label_sha256": "471afcb6c42189dd9f6392287f2c925a55aa48d959787619538207c820a12473",
+    "scoring_rows": 256,
+    "scoring_run_id": "123b65d5c9a493e89bce7a422c84a50ba64d1d791c4cf7e991ada61c66121fa7",
+    "selected_count": 7,
+    "selection_dispositions": 256
+  },
+  "kan_selected_lineage": {
+    "kan_price_volume_023": {
+      "canonical_hash": "baef05dbca0e00f4253db3d6a811fee207fe4c07313d8765da186e60b070c84c",
+      "global_attempt_index": 215
+    },
+    "kan_price_volume_030": {
+      "canonical_hash": "ee273d95d38e15748ac41f32f9b9fda68a8af32ce8601c261002f7f332b64dd3",
+      "global_attempt_index": 222
+    },
+    "kan_price_volume_044": {
+      "canonical_hash": "9d83e6d043c71c22896e85474cf6de68f591b1bd965686bf033d81cfe21563e0",
+      "global_attempt_index": 236
+    },
+    "kan_price_volume_052": {
+      "canonical_hash": "b33ebbedf3b2d7702557cbdcacffcecabe19f3de09213d3c7cc11e07773aa8b9",
+      "global_attempt_index": 244
+    },
+    "kan_price_volume_059": {
+      "canonical_hash": "e64a78272d679dcf1f06754bbf03888ef596fef56d51a3e5a5e4915c6e8edbb4",
+      "global_attempt_index": 251
+    },
+    "kan_reversal_060": {
+      "canonical_hash": "55071dcf081e521a98ec25767489d0fbccfcf9cc2009ff5b793c2dc0a37d674d",
+      "global_attempt_index": 188
+    },
+    "kan_short_price_020": {
+      "canonical_hash": "e2924360873fcdc01ee916c9e094e819756c655dbce99d9190e16efbf5737355",
+      "global_attempt_index": 20
+    }
+  },
+  "mechanism_cards_manifest_sha256": "e20fee40f4bde3e6469518b8fa41904c4606d4f0cb9b05e1e94aa4c515e7ddbf",
+  "permutation_ledger": {
+    "label_mode": "within_date_permutation",
+    "label_sha256": "9ce8a430d5a067fb0588480d0803ae812adedfff24b69f7d764b8c296bb3b59b",
+    "real_threshold_false_positive_count": 0,
+    "real_threshold_false_positive_rows": 256,
+    "scoring_rows": 256,
+    "scoring_run_id": "3bcde26881c5586def88a9ea3450df6933949edd77168d3067a5a62406dae57b",
+    "selected_count": 7,
+    "selection_dispositions": 256
+  },
+  "permutation_profile_evidence": {
+    "completed_updates": 76800,
+    "miners": 256,
+    "profiles": 4
+  },
+  "promotion_eligible": false,
+  "publication_state": "staged_unpublished",
+  "published_child_paths": {
+    "blackbox_control": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/controls/s2a_matched_blackbox_v6",
+    "blind_review_package": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/reviews/s2a_kan_e3_blind_v6",
+    "gp_control_library": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_typed_gp_sr_control_v6",
+    "kan_library": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_kan_e3_selected_v6",
+    "mechanism_cards": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/mechanism_cards/s2a_kan_e3_selected_v6",
+    "permutation_control_library": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/factor_libraries/s2a_kan_e3_permutation_control_v6"
+  },
+  "published_child_topology_sha256": "5194c5c9193620c2948d6b0cfce23e63707e5840724203a4238e0e0886327668",
+  "role": "mining_top_bundle",
+  "schema_version": "mirage_s2a_v2_staging_bundle_v1",
+  "tensor_evidence": {
+    "encoding": "zlib_level_9_of_concatenated_little_endian_tensors",
+    "references": [
+      "kan_profile_runs.jsonl",
+      "kan_permutation_profile_runs.jsonl"
+    ]
+  },
+  "top_bundle_must_publish_after_all_children": true,
+  "topology_binding_required_before_publication": true,
+  "topology_key": "mining_run",
+  "topology_sha256": "5194c5c9193620c2948d6b0cfce23e63707e5840724203a4238e0e0886327668"
+}

@@ -1,0 +1,3 @@
+run=seed_8675922_main_e1 arm=E1 device=cpu dtype=float64 parameters=115 max_steps=1
+step=1 train_mse=0.441196532012 penalty_total=0 validation_clean_nrmse=1.07719401732 selected=True
+selected_step=1 selected_validation_clean_nrmse=1.07719401732 manifest=/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E1/seed_8675922_main_e1/manifest.json

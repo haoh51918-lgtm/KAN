@@ -1,0 +1,28 @@
+{
+  "arm": "E1",
+  "claim": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E1/seed_8675921_main_e1/manifest.json.test_once.claim",
+  "claim_sha256": "90cc1d3b4f117e6deb6d2cf18c78e55af29c0724da3b0894aeaa0646879ea138",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/manifests/E1/seed_8675921_main_e1/manifest.json",
+  "input_manifest_sha256_after": "4ec88b187258b0cbb811d0255e8403527035094adc40fccbf301c9f98f24f4a2",
+  "input_manifest_sha256_before": "4ec88b187258b0cbb811d0255e8403527035094adc40fccbf301c9f98f24f4a2",
+  "metrics": {
+    "clean_nrmse": 0.994713749796374,
+    "clean_nrmse_bootstrap": {
+      "block_dates": 20,
+      "lower": 0.991740310938395,
+      "method": "circular_moving_date_block",
+      "point": 0.994713749796374,
+      "replicates": 2,
+      "seed": 2460261334749027119,
+      "upper": 1.0175267937087966
+    },
+    "noisy_nrmse": 0.9969579678067354
+  },
+  "opening": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_ruff_lockfinal_cpu_v1/predictions/seed_8675921",
+  "prediction_key": "E1_prediction",
+  "publication": {
+    "no_replace": true
+  },
+  "schema_version": 1,
+  "seed": 8675921
+}

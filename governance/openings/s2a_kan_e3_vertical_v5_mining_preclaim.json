@@ -1,0 +1,18 @@
+{
+  "config_sha256": "cf2ed15dc5802d00e4bdc9c122b1cba6af84ac522569abe1b020e6611e534c7a",
+  "phase": "mining",
+  "protocol_id": "s2a_kan_e3_vertical_v5",
+  "publication_state": "preclaimed",
+  "schema_version": "mirage_topology_preclaim_v2",
+  "targets": {
+    "blackbox_control": "controls/s2a_matched_blackbox_v5",
+    "blind_review_package": "reviews/s2a_kan_e3_blind_v5",
+    "gp_control_library": "factor_libraries/s2a_typed_gp_sr_control_v5",
+    "kan_library": "factor_libraries/s2a_kan_e3_selected_v5",
+    "mechanism_cards": "mechanism_cards/s2a_kan_e3_selected_v5",
+    "mining_run": "artifacts/s2a_kan_e3_mining_v5",
+    "permutation_control_library": "factor_libraries/s2a_kan_e3_permutation_control_v5"
+  },
+  "top_key": "mining_run",
+  "topology_sha256": "c23f1578d7c11f72a2ccd9ee139b6b9c5640975c0ae1f75b5b5cf879f0358969"
+}

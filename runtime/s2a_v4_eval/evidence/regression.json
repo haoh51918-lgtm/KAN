@@ -1,0 +1,27 @@
+{
+  "format": {
+    "command": "runtime/s2a_v4_eval/.venv/bin/ruff format --check runtime/s2a_v4_eval/tools src/mirage_kan/governance/implementation_lock.py tests/governance/test_implementation_lock.py",
+    "files_checked": 7,
+    "passed": true,
+    "scope_note": "The full historical project format check is not a gate because 47 pre-existing files drift; no broad reformat was performed."
+  },
+  "passed": true,
+  "pytest": {
+    "command": "env -u MLFLOW_TRACKING_URI PYTHONPATH=/zju_0012/htq/aaai26_alpha/aaai27_evosci/src PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 MLFLOW_ALLOW_FILE_STORE=true QLIB_DATA_DIR=/zju_0012/htq/aaai26_alpha/QuantaAlpha/data/qlib/cn_data runtime/s2a_v4_eval/.venv/bin/python -m pytest -q --tb=short --disable-warnings",
+    "duration_seconds": 129.95,
+    "exit_code": 0,
+    "passed_tests": 368,
+    "warning_count": 933
+  },
+  "ruff": [
+    {
+      "command": "runtime/s2a_v4_eval/.venv/bin/ruff check src tests",
+      "passed": true
+    },
+    {
+      "command": "runtime/s2a_v4_eval/.venv/bin/ruff check runtime/s2a_v4_eval/tools",
+      "passed": true
+    }
+  ],
+  "schema_version": "s2a_v4_regression_v1"
+}

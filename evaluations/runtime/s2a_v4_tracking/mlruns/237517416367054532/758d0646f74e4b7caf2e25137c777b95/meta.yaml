@@ -1,0 +1,14 @@
+artifact_uri: file:///zju_0012/htq/aaai26_alpha/aaai27_evosci/evaluations/runtime/s2a_v4_tracking/mlruns/237517416367054532/758d0646f74e4b7caf2e25137c777b95/artifacts
+end_time: 1784286548189
+entry_point_name: ''
+experiment_id: '237517416367054532'
+lifecycle_stage: active
+run_id: 758d0646f74e4b7caf2e25137c777b95
+run_name: mirage_kan_s2a_kan_e3_vertical_v4_kan_e3_selected
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784286511528
+status: 3
+tags: []
+user_id: root

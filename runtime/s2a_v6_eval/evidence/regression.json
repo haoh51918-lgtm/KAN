@@ -1,0 +1,25 @@
+{
+  "full_pytest": {
+    "command": "runtime/s2a_v4_eval/.venv/bin/python -m pytest -q --tb=short",
+    "elapsed_seconds": 162.02,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 377,
+    "warnings": 933,
+    "warnings_disposition": "pre_existing_pandas_futurewarning_at_src/mirage_kan/dsl/core.py:248"
+  },
+  "lineage_contract_tdd": {
+    "initial_state": "three_new_regressions_failed_before_implementation",
+    "negative_crossed_pairing_rejected": true,
+    "selection_order_mapping_accepted": true,
+    "top_bundle_mapping_gate_strengthened": true
+  },
+  "passed": true,
+  "real_scientific_label_access": false,
+  "ruff": {
+    "command": "runtime/s2a_v4_eval/.venv/bin/ruff check src tests runtime/s2a_v6_eval/tools",
+    "exit_code": 0,
+    "result": "All checks passed"
+  },
+  "schema_version": "s2a_v6_prelock_regression_v1"
+}

@@ -1,0 +1,16 @@
+{
+  "error": "implementation runtime identity mismatch",
+  "failure_class": "s2a_v2_decision_assembly_failure",
+  "partial_files": {
+    "kan_e3_selected_cumulative_excess.csv": "396d799fbad76112aeeddf00f7d09aa38b6e3b5116457622130300a6191ddf9e",
+    "manifest.json": "82fab5335025267aa62c381fd83495ae98f3ad6419c50704329b95c3af11e49d",
+    "portfolio_daily.parquet": "459f81bc1aba69b8ef0feaa1b09ff1e8091e9f6bbb812e5611493742f983b6ba",
+    "prediction_coverage.parquet": "335f03271005ebcd57842c1db9463f81d371cba90924f8284d242f31c406e830",
+    "qlib_report.parquet": "1bae533b78a8b59fa29d95e4e16d8b5386bc751c5090dc331eb67c076d394a79"
+  },
+  "phase": "development",
+  "protocol_id": "s2a_kan_e3_vertical_v8",
+  "publication_state": "terminal_failure",
+  "topology_key": "evaluation:kan_e3_selected",
+  "topology_sha256": "406e00185768165c41122bc7c84756aa7f080335cfb80a09a384f32f4b223535"
+}

@@ -1,0 +1,22 @@
+{
+  "control": "date_block_label_permutation",
+  "input_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/controls/null/seed_2718/input_manifest.json",
+  "input_manifest_sha256": "74cb991d3265b51a40ea7c27f8c28cec281a16970c979e3f64fe976ff8ce5346",
+  "publication": {
+    "manifest_last": true,
+    "no_replace": true
+  },
+  "residual_shape_manifest": "/zju_0012/htq/aaai26_alpha/aaai27_evosci/artifacts/s1_gate_a_scientific/s1_gate_a_v1_scientific_formal_v1/residual_shapes/null/seed_2718/manifest.json",
+  "schema_version": 1,
+  "seed": 2718,
+  "selection": {
+    "edge": 3,
+    "primitive": "NegativeHinge(0)",
+    "selected_input_mass": 0.3912387072364134,
+    "selection_status": "selected",
+    "source": "Return(Close,20)",
+    "window": 20
+  },
+  "test_access": false,
+  "validation_permuted_clean_nrmse": 1.0003812154319718
+}

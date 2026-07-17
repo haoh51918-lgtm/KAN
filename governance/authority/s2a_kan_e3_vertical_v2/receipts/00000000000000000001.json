@@ -1,0 +1,20 @@
+{
+  "arm": null,
+  "authority_files": {
+    "config": "ba92f685886a6fe77d3b92f29c158b6c9b4ef85bb74c6b2789d04e0b9f701d23",
+    "directive": "2c109786944736e2964e847d08dfe061100f171074492202fdf29736f0e673f4",
+    "incident": "350fe8c0ebddd4497f18ad040b448d5ac872edf2cf7698f8a41b4fd9d3d94b1a",
+    "preregistration": "790567b0b4b8f6604baff0e4d6af7227e8f950457fd31caef926e90c1d1e6421",
+    "proposal": "1ceb575843c02caa770e650f35d425013da3436583e5fe61685984e991ac5218"
+  },
+  "authority_sha256": "2a323503bc3c137833da9d4ebc691ed33ada4171911601f7e05761430682881c",
+  "base_lock_sha256": "65d00b5ea05336fd28c5277340aa3ff38f602f6c7d07952b1af6dd04fb504ae7",
+  "boundary": "before_first_label_access",
+  "capability": "7d5f2de10ecad0f35940999e9e51011bba80e7c7b61144c68b5324479b699fe6",
+  "checked_at_unix_ns": 1784262249796264842,
+  "guard_instance_sha256": "685841919bf3e7c319cc8c39c5092266381df40b053cf1c8bea95fe2d75d8cb8",
+  "protocol_id": "s2a_kan_e3_vertical_v2",
+  "receipt_sha256": "5c3f36721e20419525bef3e267d0d86653f147d0ca2d63acccaec4f38d6929a3",
+  "schema_version": "mirage_authority_receipt_v2",
+  "sequence": 1
+}

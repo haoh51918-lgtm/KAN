@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "decision_timing": "before_any_scientific_metric_after_non_scientific_smoke_code_audit",
+  "post_smoke_change_basis": "code_audit_only_not_smoke_metric_adaptation",
+  "source_selection": {
+    "criterion": "centered_full_edge_contribution_energy_mass_on_train_plus_validation",
+    "required_source": "Return(Close,5)",
+    "tie_break": "frozen_source_order"
+  },
+  "residual_freeze": {
+    "coordinate": "standardized_selected_source_z",
+    "grid": [-4.0, 4.0, 801],
+    "other_standardized_features": 0.0,
+    "publication": "exclusive_directory_no_replace_manifest_last"
+  },
+  "alignment": {
+    "operation": "subtract_mean_then_divide_by_positive_population_standard_deviation",
+    "sign_flip": false,
+    "pairwise_pearson_minimum": 0.95,
+    "eligibility": "largest_pairwise-complete_exact-source_seed_subset_has_at_least_two_members"
+  },
+  "families": [
+    {
+      "id": "asymmetric_exponential_saturation_v1",
+      "equation": "x<0:-a_neg*(1-exp(k_neg*x));x>=0:a_pos*(1-exp(-k_pos*x))",
+      "parameter_order": ["a_neg", "k_neg", "a_pos", "k_pos"],
+      "bounds": [[0.000001, 8.0], [0.001, 8.0], [0.000001, 8.0], [0.001, 8.0]],
+      "base_ast_nodes": 11
+    },
+    {
+      "id": "asymmetric_rational_saturation_v1",
+      "equation": "x<0:-a_neg*(-x)/(1+k_neg*(-x));x>=0:a_pos*x/(1+k_pos*x)",
+      "parameter_order": ["a_neg", "k_neg", "a_pos", "k_pos"],
+      "bounds": [[0.000001, 8.0], [0.001, 8.0], [0.000001, 8.0], [0.001, 8.0]],
+      "base_ast_nodes": 13
+    },
+    {
+      "id": "two_sided_tanh_v1",
+      "equation": "x<0:-a_neg*tanh(k_neg*(-x));x>=0:a_pos*tanh(k_pos*x)",
+      "parameter_order": ["a_neg", "k_neg", "a_pos", "k_pos"],
+      "bounds": [[0.000001, 8.0], [0.001, 8.0], [0.000001, 8.0], [0.001, 8.0]],
+      "base_ast_nodes": 11
+    }
+  ],
+  "optimization": {
+    "method": "scipy.optimize.least_squares_trf",
+    "loss": "linear",
+    "max_nfev": 2000,
+    "starts": "cartesian_product_amplitude_[0.25,1.0]_rate_[0.25,1.0]_shared_by_sides",
+    "fit_scope": "one_parameter_vector_per_eligible_seed_frozen_residual_shape",
+    "family_score": "median_seed_residual_shape_nrmse",
+    "selection": "minimum_score_then_description_length_then_declared_family_order"
+  },
+  "governance": {
+    "median_eligible_seed_residual_shape_nrmse_maximum": 0.15,
+    "each_eligible_seed_residual_shape_nrmse_maximum": 0.25,
+    "audit_grid": [-6.0, 6.0, 1201],
+    "boundary_continuity_absolute_tolerance": 1e-10,
+    "monotonic_first_difference_tolerance": 1e-10,
+    "maximum_absolute_output": 8.0,
+    "maximum_absolute_numerical_slope": 64.0,
+    "duplicate_pearson_absolute_minimum": 0.995,
+    "duplicate_affine_fit_nrmse_maximum": 0.05,
+    "existing_dictionary_residual_pearson_minimum": 0.999999999,
+    "existing_dictionary_residual_nrmse_maximum": 1e-8,
+    "non_duplication_fit": {
+      "semantics": "full_initial_primitive_input_and_output_affine_transform",
+      "optimizer": "scipy.optimize.least_squares",
+      "method": "trf",
+      "loss": "linear",
+      "max_nfev": 500,
+      "parameter_order": ["input_scale", "input_bias", "output_scale", "output_bias"],
+      "lower_bounds": [-8.0, -8.0, -8.0, -8.0],
+      "upper_bounds": [8.0, 8.0, 8.0, 8.0],
+      "starts": [[1.0, 0.0, 1.0, 0.0], [-1.0, 0.0, 1.0, 0.0], [0.5, 0.0, 1.0, 0.0], [2.0, 0.0, 1.0, 0.0]],
+      "selection": "minimum_curve_nrmse_then_maximum_absolute_pearson_then_primitive_order_then_start_order",
+      "estimated_flops": "function_evaluations_times_grid_points_times_16"
+    },
+    "initial_primitives": ["Identity", "Abs", "Square", "SignedLog1p", "Tanh", "Clip(-1,1)", "PositiveHinge(0)", "NegativeHinge(0)"],
+    "reconstructability": "canonical_json_round_trip_and_prediction_bitwise_equality",
+    "primitive_id": "family_id_plus_sha256_of_equation_parameter_order_bounds_and_governance_prefix_16"
+  },
+  "hard_refit": {
+    "discrete_structure": "frozen",
+    "replaced_component": "eligible_selected_e4_spline_residual_edge_only",
+    "retained": "all_selected_analytical_primitives_and_input_affine_transforms",
+    "continuous_fit": "numpy.linalg.lstsq",
+    "design": "six_fixed_analytical_edge_outputs_plus_one_fixed_promoted_residual_output_plus_intercept",
+    "data": "train_noisy_rows_concatenated_with_validation_clean_rows",
+    "test_access": false,
+    "publication": "exclusive_directory_no_replace_manifest_last"
+  }
+}

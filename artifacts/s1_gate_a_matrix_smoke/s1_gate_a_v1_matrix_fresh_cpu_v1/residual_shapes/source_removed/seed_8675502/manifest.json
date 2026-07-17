@@ -1,0 +1,10 @@
+{
+  "array_path": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_matrix_fresh_cpu_v1/residual_shapes/source_removed/seed_8675502/residual_shape.npz",
+  "array_sha256": "e3d631d32ca9949c4f279d9a8ad9896b7c6f5904eca894f0aeb0f7a6c9d3dfaa",
+  "centered_contribution_mass": 0.3161851708730001,
+  "schema_version": 1,
+  "seed": 8675502,
+  "selection_data": "train_plus_validation_features_only",
+  "source": "SafeDiv(Sub(High,Low),Close)",
+  "test_access": false
+}

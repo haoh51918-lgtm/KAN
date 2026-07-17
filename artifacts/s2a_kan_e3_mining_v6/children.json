@@ -1,0 +1,70 @@
+[
+  {
+    "artifact_role": "falsification_control_never_production",
+    "budget_counts": {
+      "completed_updates": 2100,
+      "controls": 7,
+      "scheduled_updates_per_control": 300
+    },
+    "kan_mined": false,
+    "manifest_sha256": "c81ac971b2beae3ca1859e4d0015cc00160d8d9d874ff2078f0b5d2b926c2123",
+    "output_count": 7,
+    "promotion_eligible": false,
+    "topology_role": "blackbox_control"
+  },
+  {
+    "artifact_role": "human_blind_review_input",
+    "budget_counts": {
+      "blind_items": 7
+    },
+    "kan_mined": false,
+    "manifest_sha256": "07c92b6f529576f2f09ac6e6eec5fa125ef34d13f4d039157429fe2d1afb7d09",
+    "output_count": 7,
+    "promotion_eligible": false,
+    "topology_role": "blind_review_package"
+  },
+  {
+    "artifact_role": "typed_gp_sr_control",
+    "budget_counts": {
+      "factor_count": 7
+    },
+    "kan_mined": false,
+    "manifest_sha256": "8ee0c1634bcc9e31127897a317b003c12c90ee8b9a581ebd7431e7ff9e804e73",
+    "output_count": 7,
+    "promotion_eligible": false,
+    "topology_role": "gp_control_library"
+  },
+  {
+    "artifact_role": "kan_e3_selected",
+    "budget_counts": {
+      "factor_count": 7
+    },
+    "kan_mined": true,
+    "manifest_sha256": "117496297ae14127975ecea0070b29f5b373b2b27668265ad9e87e1b4ffdca74",
+    "output_count": 7,
+    "promotion_eligible": true,
+    "topology_role": "kan_library"
+  },
+  {
+    "artifact_role": "kan_mechanism_evidence_pending_human_review",
+    "budget_counts": {
+      "mechanism_cards": 7
+    },
+    "kan_mined": true,
+    "manifest_sha256": "e20fee40f4bde3e6469518b8fa41904c4606d4f0cb9b05e1e94aa4c515e7ddbf",
+    "output_count": 7,
+    "promotion_eligible": false,
+    "topology_role": "mechanism_cards"
+  },
+  {
+    "artifact_role": "kan_e3_permutation_control",
+    "budget_counts": {
+      "factor_count": 7
+    },
+    "kan_mined": false,
+    "manifest_sha256": "38eeecb3530351dc103a1eddd41b8138496d4187d23aed07443da791c884ddd4",
+    "output_count": 7,
+    "promotion_eligible": false,
+    "topology_role": "permutation_control_library"
+  }
+]

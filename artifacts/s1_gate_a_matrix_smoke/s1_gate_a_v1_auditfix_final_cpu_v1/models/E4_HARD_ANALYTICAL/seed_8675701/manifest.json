@@ -1,0 +1,131 @@
+{
+  "arm": "E4_HARD_ANALYTICAL",
+  "canonical": {
+    "edges": [
+      {
+        "affine": [
+          1.0029699651229433,
+          -0.0029999302020339547,
+          0.012999699651225419,
+          -0.002999999302004262
+        ],
+        "edge": 0,
+        "primitive": "Identity",
+        "source": "Return(Close,2)",
+        "window": 2
+      },
+      {
+        "affine": [
+          1.0029699667152578,
+          -0.0029999302020339547,
+          0.012999699667148921,
+          -0.002999999302004262
+        ],
+        "edge": 1,
+        "primitive": "Identity",
+        "source": "Return(Close,5)",
+        "window": 5
+      },
+      {
+        "affine": [
+          1.002969958449337,
+          -0.0029999302020339547,
+          0.012999699584487672,
+          -0.002999999302004262
+        ],
+        "edge": 2,
+        "primitive": "Identity",
+        "source": "Return(Close,10)",
+        "window": 10
+      },
+      {
+        "affine": [
+          1.002969942394165,
+          -0.0029999302020339547,
+          0.012999699423930698,
+          -0.002999999302004262
+        ],
+        "edge": 3,
+        "primitive": "Identity",
+        "source": "Return(Close,20)",
+        "window": 20
+      },
+      {
+        "affine": [
+          1.0029699838132946,
+          0.002999946575747836,
+          0.012999699676264178,
+          -0.002999999302004262
+        ],
+        "edge": 4,
+        "primitive": "Square",
+        "source": "SafeDiv(Sub(High,Low),Close)",
+        "window": null
+      },
+      {
+        "affine": [
+          0.9969751177147201,
+          -0.0029999302020339547,
+          0.006999751263723729,
+          -0.002999999302004262
+        ],
+        "edge": 5,
+        "primitive": "Identity",
+        "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+        "window": 20
+      }
+    ],
+    "output_bias": -0.0029999999127505146,
+    "type": "AdditiveSymbolicKAN"
+  },
+  "checkpoint_sha256": "fb1e0ea72c30539d2a17f658eceb3adcb4d9b754f556ce46acfc88975a6621eb",
+  "complexity": {
+    "ast_depth": 4,
+    "ast_node_count": 25,
+    "free_constants": 25,
+    "serialized_description_length": 1125
+  },
+  "metadata": {},
+  "paths": {
+    "checkpoint": "artifacts/s1_gate_a_matrix_smoke/s1_gate_a_v1_auditfix_final_cpu_v1/models/E4_HARD_ANALYTICAL/seed_8675701/hard_model.pt"
+  },
+  "schema_version": 1,
+  "selected_metadata": [
+    {
+      "edge": 0,
+      "primitive": "Identity",
+      "source": "Return(Close,2)",
+      "window": 2
+    },
+    {
+      "edge": 1,
+      "primitive": "Identity",
+      "source": "Return(Close,5)",
+      "window": 5
+    },
+    {
+      "edge": 2,
+      "primitive": "Identity",
+      "source": "Return(Close,10)",
+      "window": 10
+    },
+    {
+      "edge": 3,
+      "primitive": "Identity",
+      "source": "Return(Close,20)",
+      "window": 20
+    },
+    {
+      "edge": 4,
+      "primitive": "Square",
+      "source": "SafeDiv(Sub(High,Low),Close)",
+      "window": null
+    },
+    {
+      "edge": 5,
+      "primitive": "Identity",
+      "source": "Sub(SafeDiv(Volume,TsMean(Volume,20)),1)",
+      "window": 20
+    }
+  ]
+}
