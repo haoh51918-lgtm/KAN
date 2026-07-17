@@ -390,4 +390,22 @@ S1b（小时级，今日可发射）────────┐
 
 ---
 
+## 评审 #2 补遗：一条勘误与两项提醒 — 2026-07-17 18:05 UTC
+
+背景：本日晚间对 2026-07-17 权威重组（AGENTS.md 行为契约、Living Manual 单一状态源、implementation_lock 排除动态文档与启动器状态、PR 降级 idea_draft）做了逐项核验，结论为修改正确、程序合规（授权文件 `governance/decisions/2026-07-17_review_adoption_and_living_manual.md`）；399 测试与 Ruff 声明复跑吻合。项目已建立 git 仓库并推送（main@73339c9 → github.com/haoh51918-lgtm/KAN；25 个 >10MB 二进制证据留本地、由已提交清单的 sha256 锚定）。核验中发现下列三点，按追加式惯例记录于此，评审 #2 原文不改。
+
+### 勘误：v8 的真实消耗状态
+
+评审 #2 中"v8 未消耗任何统计资源""v8 开封前死亡、v9 享有完全前瞻自由"的表述**有误**。物理证据（`governance/openings/s2a_kan_e3_vertical_v8_development.json`、五份 `governance/authority/s2a_kan_e3_vertical_v8/arm_consumptions/*.json`、五棵 `evaluations/s2a_v8_*` 评估树）表明：v8 的 development opening 与全部五臂**均已实际消耗**，terminal_failure 发生在其后的 decision assembly（runtime identity mismatch）。开封前死亡的是 v7，本人将其错误外推到了 v8。推论相应收紧：未来任何确认协议设计**不得**声称"开发期数据从未被观察"，必须把 v8 隔离指标作为潜在污染源如实披露；评审 #2 §2.5 中依赖"v9 完全前瞻自由"的论证强度应按此折减。隔离指标永不得用于调阈值或入论文的纪律不变。
+
+### 提醒一：MLP 禁令的权威存放位置
+
+PR 降级为 idea_draft 后，"MLP 永不进入矿池（仅作评估对照）"这条 principal 硬约束目前**只**存在于 `governance/decisions/2026-07-17_kan_interpretability_first_directive.md`——而决策日志在新权威序（AGENTS.md §Authority）中位列第 5 级"dated historical context"。常设约束住在"历史语境"层，存在被未来会话当作过期历史而遗忘的风险。建议：在 Living Manual §6（Working scientific contracts）增补一行复述该禁令，使常设约束住在常设文档里；同类需自查的还有盲评 release gate、S1b mandatory 等原 PR §25 指令的落点。
+
+### 提醒二：锁仍绑定绝对路径
+
+`implementation_lock.py` 修复后，runtime identity 已排除 PYTHONPATH/全量 sys.path/动态文档，但仍包含 venv prefix、Python executable、site-packages 根等**绝对路径**。因此 workspace 或 venv 整体搬迁（换挂载点、迁移节点、重建 venv）仍会触发 identity mismatch。该设计可辩护——搬迁确实可能改变二进制行为——但属于残留触发面：若未来需要搬迁环境，应在搬迁后**主动重建锁**（作为可逆软件动作），而不是在下一次科学运行时才发现失配并再次消耗诊断精力。
+
+---
+
 *（后续评审条目按日期追加于下方）*
